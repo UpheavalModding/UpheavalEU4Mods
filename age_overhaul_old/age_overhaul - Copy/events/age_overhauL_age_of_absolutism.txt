@@ -1,0 +1,1040 @@
+##############################
+# Age Overhaul               #
+# Age of Absolutism          #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_age_of_absolutism
+
+# Initialization 
+country_event = {
+	id = age_overhaul_age_of_absolutism.0
+	title = age_overhaul_age_of_absolutism.0.title
+	desc = age_overhaul_age_of_absolutism.0.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = age_overhaul_initialized
+		NOT = { current_age = age_of_absolutism }
+		NOT = { has_country_flag = age_overhaul_age_of_absolutism_abilities_selected }
+		NOT = { has_country_flag = age_overhaul_age_of_absolutism_abilities_selecting }
+		has_country_flag = age_overhaul_age_of_discovery_abilities_selected
+		has_country_flag = age_overhaul_age_of_reformation_abilities_selected
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_of_absolutism_abilities_selecting
+
+			# set the number of abilities currently selected for carryover
+			set_variable = {
+				which = age_overhaul_ability_carryover_currently_selected
+				value = 0
+			}
+
+			# Set the number of abilities that will be allowed to be carried over
+			set_variable = {
+				which = age_overhaul_ability_carryover_max_abilities
+				value = 0
+			}
+
+			# Count up all the Abilities that were selected in the last age
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_allow_edict_of_absolutism
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_rival_change
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_rival_border_fort
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_autonomy
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_harsh_treatment
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_adm_efficiency
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_yearly_absolutism
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_france_fire_damage
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_dutch_anti_corruption
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_sweden_manpower
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_manchu_banner
+						has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+
+			# If the max abilities is greater than what is set for the age, set it down to the max value for the age
+			if = {
+				limit = {
+					check_variable = {
+						which = age_overhaul_ability_carryover_max_abilities
+						which = age_overhaul_option_max_age_abilities_age_of_absolutism
+					}
+				}
+
+				set_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					which = age_overhaul_option_max_age_abilities_age_of_absolutism
+				}
+			}
+
+			# Helper variable
+			set_variable = {
+				which = age_overhaul_ability_carryover_max_abilities_invalid
+				which = age_overhaul_ability_carryover_max_abilities
+			}
+			change_variable = {
+				which = age_overhaul_ability_carryover_max_abilities_invalid
+				value = 1
+			}
+		}
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+		country_event = { id = age_overhaul_age_of_absolutism.1 }
+	}
+}
+
+# Select Age Abilities to Carryover
+country_event = {
+	id = age_overhaul_age_of_absolutism.1
+	title = age_overhaul_age_of_absolutism.1.title
+	desc = age_overhaul_age_carryover_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = age_overhaul_confirm_abilities
+		highlight = yes
+
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = age_overhaul_ability_carryover_currently_selected
+					which = age_overhaul_ability_carryover_max_abilities_invalid
+				}
+				AND = {
+					check_variable = {
+						which = age_overhaul_ability_carryover_max_abilities
+						value = 0
+					}
+					NOT = {
+						check_variable = {
+							which = age_overhaul_ability_carryover_max_abilities
+							value = 1
+						}
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_age_of_absolutism.2 }
+		}
+	}
+	
+	option = {
+		name = age_overhaul_skip_abilities
+		highlight = yes
+
+		ai_chance = { factor = 1000 }
+		trigger = {
+			check_variable = {
+				which = age_overhaul_ability_carryover_max_abilities
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_of_absolutism_abilities_selected
+		}
+	}
+
+	# ab_allow_edict_of_absolutism
+	option = {
+		name = age_overhaul_age_of_absolutism.1.a.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_allow_edict_of_absolutism
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_allow_edict_of_absolutism }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_allow_edict_of_absolutism
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.a.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_allow_edict_of_absolutism
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_allow_edict_of_absolutism
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_rival_change
+	option = {
+		name = age_overhaul_age_of_absolutism.1.b.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_rival_change
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_rival_change }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_rival_change
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.b.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_rival_change
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_rival_change
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_rival_border_fort
+	option = {
+		name = age_overhaul_age_of_absolutism.1.c.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_rival_border_fort
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_rival_border_fort }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_rival_border_fort
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.c.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_rival_border_fort
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_rival_border_fort
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_autonomy
+	option = {
+		name = age_overhaul_age_of_absolutism.1.d.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_autonomy
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_autonomy }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_autonomy
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.d.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_autonomy
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_autonomy
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_harsh_treatment
+	option = {
+		name = age_overhaul_age_of_absolutism.1.e.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_harsh_treatment
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_harsh_treatment }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_harsh_treatment
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.e.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_harsh_treatment
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_harsh_treatment
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_adm_efficiency
+	option = {
+		name = age_overhaul_age_of_absolutism.1.f.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_adm_efficiency
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_adm_efficiency }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_adm_efficiency
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.f.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_adm_efficiency
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_adm_efficiency
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_yearly_absolutism
+	option = {
+		name = age_overhaul_age_of_absolutism.1.g.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_yearly_absolutism
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_yearly_absolutism }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_yearly_absolutism
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.g.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_yearly_absolutism
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_yearly_absolutism
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_france_fire_damage
+	option = {
+		name = age_overhaul_age_of_absolutism.1.h.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_france_fire_damage
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_france_fire_damage }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_france_fire_damage
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 100 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.h.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_france_fire_damage
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_france_fire_damage
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_dutch_anti_corruption
+	option = {
+		name = age_overhaul_age_of_absolutism.1.i.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_dutch_anti_corruption
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_dutch_anti_corruption }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_dutch_anti_corruption
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 100 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.i.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_dutch_anti_corruption
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_dutch_anti_corruption
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_sweden_manpower
+	option = {
+		name = age_overhaul_age_of_absolutism.1.j.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_sweden_manpower
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_sweden_manpower }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_sweden_manpower
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.j.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_sweden_manpower
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_sweden_manpower
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+
+	# ab_manchu_banner
+	option = {
+		name = age_overhaul_age_of_absolutism.1.k.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_manchu_banner
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_manchu_banner }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_manchu_banner
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_absolutism.1.k.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_manchu_banner
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_manchu_banner
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.5
+		}
+	}
+}
+
+# Assign the Bonuses that are Carrying Over
+country_event = {
+	id = age_overhaul_age_of_absolutism.2
+	title = age_overhaul_age_of_absolutism.2.title
+	desc = age_overhaul_age_of_absolutism.2.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = age_overhaul_age_of_absolutism_abilities_selected
+
+		# ab_allow_edict_of_absolutism
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_allow_edict_of_absolutism
+			}
+			set_country_flag = edict_of_absolutism
+		}
+
+		# ab_rival_change
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_rival_change
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_rival_change
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_rival_change
+					duration = -1
+				}
+			}
+		}
+
+		# ab_rival_border_fort
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_rival_border_fort
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_rival_border_fort
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_rival_border_fort
+					duration = -1
+				}
+			}
+		}
+
+		# ab_autonomy
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_autonomy
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_autonomy
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_autonomy
+					duration = -1
+				}
+			}
+		}
+
+		# ab_harsh_treatment
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_harsh_treatment
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_harsh_treatment
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_harsh_treatment
+					duration = -1
+				}
+			}
+		}
+
+		# ab_adm_efficiency
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_adm_efficiency
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_adm_efficiency
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_adm_efficiency
+					duration = -1
+				}
+			}
+		}
+
+		# ab_yearly_absolutism
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_yearly_absolutism
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_yearly_absolutism
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_yearly_absolutism
+					duration = -1
+				}
+			}
+		}
+
+		# ab_france_fire_damage
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_france_fire_damage
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_france_fire_damage
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_france_fire_damage
+					duration = -1
+				}
+			}
+		}
+
+		# ab_dutch_anti_corruption
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_dutch_anti_corruption
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_dutch_anti_corruption
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_dutch_anti_corruption
+					duration = -1
+				}
+			}
+		}
+
+		# ab_sweden_manpower
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_sweden_manpower
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_sweden_manpower
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_sweden_manpower
+					duration = -1
+				}
+			}
+		}
+
+		# ab_manchu_banner
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_manchu_banner
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_manchu_banner
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_manchu_banner
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = age_overhaul_confirm_abilities
+
+		if = {
+			limit = {
+				has_global_flag = age_overhaul_option_skipped_age_of_revolutions
+			}
+
+			country_event = { id = age_overhaul_age_of_revolution.0 }
+		}
+	}
+
+}

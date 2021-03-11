@@ -1,0 +1,26 @@
+# Unqual Nations
+# Nerfs and Buffs - Legendary Nation Modifier
+
+unequal_nations_buff_legendary = {
+	ae_impact = -1
+	unjustified_demands = -0.5
+	province_warscore_cost = -0.5
+	diplomatic_annexation_cost = -0.5
+	land_forcelimit_modifier = 0.5
+	land_maintenance_modifier = -0.5
+	global_manpower_modifier = 0.5
+	land_maintenance_modifier = -0.5
+	global_regiment_cost = -0.5
+	discipline = 0.1
+	
+	naval_forcelimit_modifier = 0.5
+	global_sailors_modifier = 0.5
+	sailors_recovery_speed = 0.5
+	naval_morale = 0.5
+	global_ship_cost = -0.5
+	capture_ship_chance = 0.5
+	heavy_ship_power = 0.2
+	light_ship_power = 0.2
+	galley_power = 0.2
+	transport_power = 0.2
+}

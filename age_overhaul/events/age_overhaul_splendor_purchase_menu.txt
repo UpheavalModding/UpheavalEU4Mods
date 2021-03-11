@@ -1,0 +1,126 @@
+##############################
+# Age Overhaul Options       #
+# Splendor Purchase          #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_splendor_purchase_menu
+
+# Golden Splendor Generation
+country_event = {
+	id = age_overhaul_splendor_purchase_menu.1
+	title = age_overhaul_splendor_purchase_menu.1.title
+	desc = age_overhaul_splendor_purchase_menu.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# Exit
+	option = {
+		name = age_overhaul_options_exit
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	# Purchase 100 Splendor
+	option = {
+		name = age_overhaul_splendor_purchase_menu.1.a
+		
+		trigger = {
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				value = 125
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = -125
+		}
+		add_splendor = 100
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.12 }
+		}
+	}
+
+	# Purchase 200 Splendor
+	option = {
+		name = age_overhaul_splendor_purchase_menu.1.b
+
+		trigger = {
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				value = 250
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = -250
+		}
+		add_splendor = 200
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.12 }
+		}
+	}
+
+	# Purchase 400 Splendor
+	option = {
+		name = age_overhaul_splendor_purchase_menu.1.c
+
+		trigger = {
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				value = 500
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = -500
+		}
+		add_splendor = 400
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.12 }
+		}
+	}
+
+	# Purchase 800 Splendor
+	option = {
+		name = age_overhaul_splendor_purchase_menu.1.d
+
+		trigger = {
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				value = 1000
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = -1000
+		}
+		add_splendor = 800
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.12 }
+		}
+	}
+}

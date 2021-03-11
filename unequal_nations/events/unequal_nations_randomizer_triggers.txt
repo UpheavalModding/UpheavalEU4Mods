@@ -1,0 +1,92 @@
+##############################
+# Unequal Nations            #
+# Randomizer Trigger         #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_randomizer_triggers
+
+# Randomizer - Age of Reformation
+country_event = {
+	id = unequal_nations_randomizer_triggers.1
+	title = unequal_nations_randomizer_triggers.1.title
+	desc = unequal_nations_randomizer_triggers_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = unequal_nations_initialized
+		has_global_flag = unequal_nations_option_reroll_each_age
+		NOT = { has_global_flag = unequal_nations_age_of_reformation }
+		current_age = age_of_reformation
+	}
+
+	immediate = {
+		set_global_flag = unequal_nations_age_of_reformation
+		country_event = { id = unequal_nations_randomizer.1 }
+	}
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Randomizer - Age of Absolutism
+country_event = {
+	id = unequal_nations_randomizer_triggers.2
+	title = unequal_nations_randomizer_triggers.2.title
+	desc = unequal_nations_randomizer_triggers_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = unequal_nations_initialized
+		has_global_flag = unequal_nations_option_reroll_each_age
+		NOT = { has_global_flag = unequal_nations_age_of_absolutism }
+		current_age = age_of_absolutism
+	}
+
+	immediate = {
+		set_global_flag = unequal_nations_age_of_absolutism
+		country_event = { id = unequal_nations_randomizer.1 }
+	}
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Randomizer - Age of Revolutions
+country_event = {
+	id = unequal_nations_randomizer_triggers.3
+	title = unequal_nations_randomizer_triggers.3.title
+	desc = unequal_nations_randomizer_triggers_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = unequal_nations_initialized
+		has_global_flag = unequal_nations_option_reroll_each_age
+		NOT = { has_global_flag = unequal_nations_age_of_revolutions }
+		current_age = age_of_revolutions
+	}
+
+	immediate = {
+		set_global_flag = unequal_nations_age_of_revolutions
+		country_event = { id = unequal_nations_randomizer.1 }
+	}
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}

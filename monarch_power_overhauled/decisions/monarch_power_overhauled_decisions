@@ -1,0 +1,389 @@
+##############################
+# Monarch Power Overhauled   #
+# Decisions                  #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+country_decisions = {
+    ### 25 MANA
+    # Get ADM Power
+	monarch_power_overhauled_adm = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 0.5
+		}
+		effect = {
+			add_years_of_income = -0.5
+			add_adm_power = 25
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 2
+                    }
+                    adm = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { adm = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { adm = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { adm = 500 }
+			}
+		}
+	}
+
+    # Get DIP Power
+	monarch_power_overhauled_dip = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 0.5
+		}
+		effect = {
+			add_years_of_income = -0.5
+			add_dip_power = 25
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 2
+                    }
+                    dip = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { dip = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { dip = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { dip = 500 }
+			}
+		}
+	}
+
+    # Get MIL Power
+	monarch_power_overhauled_mil = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 0.5
+		}
+		effect = {
+			add_years_of_income = -0.5
+			add_mil_power = 25
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 2
+                    }
+                    mil = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { mil = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { mil = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { mil = 500 }
+			}
+		}
+	}
+
+    ### 125 MANA
+    # Get ADM Power
+	monarch_power_overhauled_adm2 = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 2.5
+		}
+		effect = {
+			add_years_of_income = -2.5
+			add_adm_power = 125
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 5
+                    }
+                    adm = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { adm = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { adm = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { adm = 500 }
+			}
+		}
+	}
+
+    # Get DIP Power
+	monarch_power_overhauled_dip2 = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 2.5
+		}
+		effect = {
+			add_years_of_income = -2.5
+			add_dip_power = 125
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 5
+                    }
+                    dip = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { dip = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { dip = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { dip = 500 }
+			}
+		}
+	}
+
+    # Get MIL Power
+	monarch_power_overhauled_mil2 = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 2.5
+		}
+		effect = {
+			add_years_of_income = -2.5
+			add_mil_power = 125
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 5
+                    }
+                    mil = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { mil = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { mil = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { mil = 500 }
+			}
+		}
+	}
+
+    ### 250 MANA
+    # Get ADM Power
+	monarch_power_overhauled_adm3 = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 5
+		}
+		effect = {
+			add_years_of_income = -5
+			add_adm_power = 250
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 7
+                    }
+                    adm = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { adm = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { adm = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { adm = 500 }
+			}
+		}
+	}
+
+    # Get DIP Power
+	monarch_power_overhauled_dip3 = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 5
+		}
+		effect = {
+			add_years_of_income = -5
+			add_dip_power = 250
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 7
+                    }
+                    dip = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { dip = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { dip = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { dip = 500 }
+			}
+		}
+	}
+
+    # Get MIL Power
+	monarch_power_overhauled_mil3 = {
+        potential = {
+            always = yes
+        }
+		allow = {
+		    years_of_income = 5
+		}
+		effect = {
+			add_years_of_income = -5
+			add_mil_power = 250
+		}
+		ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                OR = {
+                    NOT = {
+                        years_of_income = 7
+                    }
+                    mil = 725
+                }
+			}
+            modifier = {
+                factor = 100
+                years_of_income = 10
+			}
+            modifier = {
+                factor = 1000
+                NOT = { mil = 100 }
+			}
+            modifier = {
+                factor = 500
+                NOT = { mil = 250 }
+			}
+            modifier = {
+                factor = 250
+                NOT = { mil = 500 }
+			}
+		}
+	}
+}

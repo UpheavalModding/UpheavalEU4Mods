@@ -1,0 +1,380 @@
+﻿l_english:
+##### Flags
+age_overhaul_initialized:0 "Age Overhaul Initialized"
+age_overhaul_initialize_starting:0 "Age Overhaul Initializing"
+age_overhaul_option_skipped_age_of_discovery:0 "Age of Discovery Skipped"
+age_overhaul_option_skipped_age_of_reformation:0 "Age of Reformation Skipped"
+age_overhaul_option_skipped_age_of_absolutism:0 "Age of Absolutism Skipped"
+age_overhaul_option_skipped_age_of_revolutions:0 "Age of Revolutions Skipped"
+age_overhaul_option_age_of_industrialization_enabled:0 "Age of Industrialization Enabled"
+age_overhaul_option_age_ability_carryover_power_100:0 "100% Ability Carryover Power"
+age_overhaul_option_age_ability_carryover_power_75:0 "75% Ability Carryover Power"
+age_overhaul_option_age_ability_carryover_power_50:0 "50% Ability Carryover Power"
+age_overhaul_option_age_ability_carryover_power_25:0 "25% Ability Carryover Power"
+age_overhaul_option_country_specific_abilities_for_all:0 "Country-Specific Abilities Available for All"
+age_overhaul_option_country_specific_abilities_no_unique_countries:0 "Country-Specific Abilities, No Unique Countries"
+age_overhaul_option_country_specific_abilities_disabled:0 "Country-Specific Abilities Disabled"
+age_overhaul_age_of_discovery_abilities_selected:0 "Age of Discovery Abilities Selected"
+age_overhaul_age_of_discovery_abilities_selecting:0 "Selecting Age of Discovery Abilities"
+age_overhaul_age_of_reformation_abilities_selected:0 "Age of Reformation Abilities Selected"
+age_overhaul_age_of_reformation_abilities_selecting:0 "Selecting Age of Reformation Abilities"
+age_overhaul_age_of_absolutism_abilities_selected:0 "Age of Absolutism Abilities Selected"
+age_overhaul_age_of_absolutism_abilities_selecting:0 "Selecting Age of Absolutism Abilities"
+age_overhaul_age_of_revolution_abilities_selected:0 "Age of Revolutions Abilities Selected"
+age_overhaul_age_of_revolution_abilities_selecting:0 "Selecting Age of Revolutions Abilities"
+
+
+##### Custom Localisation
+### Age of Industrialization
+age_overhaul_age_of_industrialization_enabled:0 "Age Enabled"
+age_overhaul_age_of_industrialization_disabled:0 "Age Disabled"
+
+### Country-Specific Abilities
+age_overhaul_country_specific_abilities_unlocked:0 "Unlocked for All Countries"
+age_overhaul_country_specific_abilities_default:0 "Unlocked for Specific Countries (Vanilla)"
+age_overhaul_country_specific_abilities_no_unique_countries:0 "Unlocked for All Countries, No 'Shortcuts'"
+age_overhaul_country_specific_abilities_disabled:0 "Disabled for All Countries"
+
+### Age Ability Power
+age_overhaul_ability_power_setting_100:0 "100%"
+age_overhaul_ability_power_setting_75:0 "75%"
+age_overhaul_ability_power_setting_50:0 "50%"
+age_overhaul_ability_power_setting_25:0 "25%"
+
+
+
+##### Age of Industrialization
+### Basics
+ age_of_industrialization:0 "Age of Industrialization"
+ age_of_industrialization_desc:0 "The Industrialization of the first-world economic world powers has led to a downfall of usage of hand tools and non-industrial power-driven machines such as the Steam Engine."
+
+### Age of Industrialization Objectives
+ obj_industry:0 "Industrialization"
+ obj_industry_desc:0 "Owns at least 7 furnaces"
+ obj_home_trade_node_owner:0 "Home Trade Node Owner"
+ obj_home_trade_node_owner_desc:0 "Control more than 90% of your home trade node"
+ obj_great_project_builder:0 "Wonders of the Industrial Era"
+ obj_great_project_builder_desc:0 "Own at least one great project, or start construction of a great project"
+ obj_multiculturalism:0 "Multiculturalism"
+ obj_multiculturalism_desc:0 "Have at least 7 accepted cultures"
+ obj_progressive:0 "Shatter the Glass Ceiling"
+ obj_progressive_desc:0 "Have a female ruler or heir"
+ obj_great_power:0 "Great Power"
+ obj_great_power_desc:0 "Be a great power with a capital of at least 60 development"
+ obj_birthplace_of_the_industrial_revolution:0 "Birthplace of the Industrial Revolution"
+ obj_birthplace_of_the_industrial_revolution_desc:0 "Have the Industrialization institution and own the origin of Industrialization"
+
+### Age of Industrialization Abilities
+ ab_general_staff:0 "General Staff"
+ ab_admiralty:0 "Admiralty Board"
+ ab_rule_the_land:0 "An Army with a Country"
+ ab_rule_the_seas:0 "Rule the Seas"
+ ab_rule_the_economy:0 "Economic Revolution"
+ ab_embrace_nationalism:0 "Embrace Nationalism"
+ ab_integrate_subjects:0 "Integrate Subjects"
+ ab_origin_of_the_industrial_revolution:0 "Birthplace of the Industrial Revolution"
+ ab_manifest_destiny:0 "Manifest Destiny"
+ ab_concert_of_europe:0 "Concert of Europe"
+ ab_war_of_independence:0 "War of Independence"
+
+
+
+##### Age Ability Name Overwrites
+### Age of Discovery
+ ab_ottoman_siege_ability:0 "Advanced Artillery"
+ ab_portugal_colonial_growth:0 "Colonial Growth"
+ ab_denmark_reduced_lib_desire:0 "Subject Loyalty"
+ ab_venice_ship_trade:0 "Maritime Trade"
+### Age of Reformation
+ ab_spain_tercio:0 "Tercio Formations"
+ ab_mughal_artillery:0 "Mass-Produced Artillery"
+ ab_polish_legitimacy:0 "Advanced Production"
+ ab_persia_reinforce:0 "Rapid Reinforcements"
+### Age of Absolutism
+ ab_france_fire_damage:0 "Disciplined Musketeers"
+ ab_dutch_anti_corruption:0 "Colonial Officials"
+ ab_sweden_manpower:0 "Inspirational Recruitment"
+### Age of Revolutions
+ ab_pru_military:0 "Iron Discipline"
+ ab_gbr_fleet:0 "Wooden Wall"
+ ab_russia_boost:0 "Transcontinental Empire"
+ ab_austria_rep:0 "Dynastic Diplomacy"
+
+
+
+##### Events
+### Common
+ age_overhaul_options_skip:0 "Skip"
+ age_overhaul_options_back:0 "Back"
+ age_overhaul_options_random:0 "Randomize"
+ age_overhaul_confirm_abilities:0 "Confirm Selected Abilities"
+ age_overhaul_skip_abilities:0 "Skip Ability Selection (No abilities available!)"
+ age_overhaul_skipper_desc:0 "You shouldn't be seeing this..."
+
+### Common - Age Carryover Settings
+ age_overhaul_options_abilities_0:0 "0 Abilities"
+ age_overhaul_options_abilities_1:0 "1 Ability"
+ age_overhaul_options_abilities_2:0 "2 Abilities"
+ age_overhaul_options_abilities_3:0 "3 Abilities"
+ age_overhaul_options_abilities_4:0 "4 Abilities"
+ age_overhaul_options_abilities_5:0 "5 Abilities"
+ age_overhaul_options_abilities_6:0 "6 Abilities"
+ age_overhaul_options_abilities_7:0 "7 Abilities"
+ age_overhaul_options_abilities_8:0 "8 Abilities"
+ age_overhaul_options_abilities_9:0 "9 Abilities"
+ age_overhaul_options_abilities_10:0 "10 Abilities"
+ age_overhaul_options_abilities_11:0 "11 Abilities"
+
+### Common - Carryover Description
+ age_overhaul_age_carryover_desc:0 "Choose the Age Abilities that you wish to carryover to the next age.\n\n   Current Count of Abilities Carrying Over: [Root.age_overhaul_ability_carryover_currently_selected.GetValue]\n\n   Max Number of Abilities that can Carryover: [Root.age_overhaul_ability_carryover_max_abilities.GetValue]"
+
+### Common - Menu Description
+ age_overhaul_options_main_menu.1.desc:0 "Current Settings \n   Country-specific Age Abilities: [GetCountrySpecificAbilitiesUnlocked] \n   Age of Industrialization: [GetAgeOfIndustrializationEnabled] \n\n   Age Ability Carryover Power Setting: [GetAgeAbilityPowerSetting] \n\n   Age of Discovery Max Carryover Age Abilities: [Root.age_overhaul_option_max_age_abilities_age_of_discovery.GetValue] \n   Age of Reformation Max Carryover Age Abilities: [Root.age_overhaul_option_max_age_abilities_age_of_reformation.GetValue] \n   Age of Absolutism Max Carryover Age Abilities: [Root.age_overhaul_option_max_age_abilities_age_of_absolutism.GetValue] \n   Age of Revolution Max Carryover Age Abilities: [Root.age_overhaul_option_max_age_abilities_age_of_revolution.GetValue]"
+
+### Menu Skipper
+ age_overhaul_options_menu_skipper.1.title:0 "Going to Main Menu..."
+ age_overhaul_options_menu_skipper.2.title:0 "Going to Carryover Menu..."
+ age_overhaul_options_menu_skipper.3.title:0 "Continue Selection"
+ age_overhaul_options_menu_skipper.4.title:0 "Continue Selection"
+ age_overhaul_options_menu_skipper.5.title:0 "Continue Selection"
+ age_overhaul_options_menu_skipper.6.title:0 "Continue Selection"
+
+### Main Menu
+ age_overhaul_options_main_menu.0.title:0 "Age Overhaul - Initialization"
+
+ age_overhaul_options_main_menu.1.title:0 "Age Overhaul - Main Menu"
+ age_overhaul_options_main_menu.1.a:0 "Confirm Settings"
+ age_overhaul_options_main_menu.1.b:0 "Country-Specific Age Ability Settings Menu"
+ age_overhaul_options_main_menu.1.c:0 "Age Ability Carryover Count Settings Menu"
+ age_overhaul_options_main_menu.1.d:0 "Age Ability Carryover Power Settings Menu"
+ age_overhaul_options_main_menu.1.e:0 "Age of Industrialization Settings Menu"
+
+### Country-Specific Ability Menu
+ age_overhaul_options_menu_country_abilities.1.title:0 "Age Overhaul - Country-Specific Abilities"
+ age_overhaul_options_menu_country_abilities.1.a:0 "Unlock Country-Specific Age Abilities for All"
+ age_overhaul_options_menu_country_abilities.1.b:0 "(Vanilla) Lock Country-Specific Age Abilities to Specific Countries"
+ age_overhaul_options_menu_country_abilities.1.c:0 "Unlock Country-Specific Age Abilities for All, No Country 'Shortcuts'"
+ age_overhaul_options_menu_country_abilities.1.d:0 "Disable Country-Specific Age Abilities"
+
+### Age Carryover Count Menu
+ age_overhaul_options_menu_age_ability_carryover_settings.1.title:0 "Age Overhaul - Age Ability Carryover Count Menu"
+ age_overhaul_options_menu_age_ability_carryover_settings.1.a:0 "Global Age Ability Carryover Setting"
+ age_overhaul_options_menu_age_ability_carryover_settings.1.b:0 "Age of Discovery Age Ability Carryover Setting"
+ age_overhaul_options_menu_age_ability_carryover_settings.1.c:0 "Age of Reformation Age Ability Carryover Setting"
+ age_overhaul_options_menu_age_ability_carryover_settings.1.d:0 "Age of Absolutism Age Ability Carryover Setting"
+ age_overhaul_options_menu_age_ability_carryover_settings.1.e:0 "Age of Revolution Age Ability Carryover Setting"
+
+### Age Carryover Power Menu
+ age_overhaul_options_menu_carryover_power.1.title:0 "Age Overhaul - Age Ability Carryover Power Menu"
+ age_overhaul_options_menu_carryover_power.1.a:0 "100% Power"
+ age_overhaul_options_menu_carryover_power.1.b:0 "75% Power"
+ age_overhaul_options_menu_carryover_power.1.c:0 "50% Power"
+ age_overhaul_options_menu_carryover_power.1.d:0 "25% Power"
+
+### Age of Industrialization Menu
+ age_overhaul_options_menu_age_of_industrialization.1.title:0 "Age Overhaul - Age of Industrialization"
+ age_overhaul_options_menu_age_of_industrialization.1.a:0 "Enable the Age of Industrialization"
+ age_overhaul_options_menu_age_of_industrialization.1.b:0 "Disable the Age of Industrialization"
+
+### Age of Discovery
+ age_overhaul_age_of_discovery.1.title:0 "Age of Discovery Ability Carryover Selection"
+ age_overhaul_age_of_discovery.1.a.e:0 "Select Feudal De Jure Law"
+ age_overhaul_age_of_discovery.1.a.d:0 "Deselect Feudal De Jure Law"
+ age_overhaul_age_of_discovery.1.b.e:0 "Select Justified Wars"
+ age_overhaul_age_of_discovery.1.b.d:0 "Deselect Justified Wars"
+ age_overhaul_age_of_discovery.1.c.e:0 "Select Transfer Vassal Wargoal"
+ age_overhaul_age_of_discovery.1.c.d:0 "Deselect Transfer Vassal Wargoal"
+ age_overhaul_age_of_discovery.1.d.e:0 "Select Improved War Taxes"
+ age_overhaul_age_of_discovery.1.d.d:0 "Deselect Improved War Taxes"
+ age_overhaul_age_of_discovery.1.e.e:0 "Select Cavalry Armies"
+ age_overhaul_age_of_discovery.1.e.d:0 "Deselect Cavalry Armies"
+ age_overhaul_age_of_discovery.1.f.e:0 "Select Higher Developed Colonies"
+ age_overhaul_age_of_discovery.1.f.d:0 "Deselect Higher Developed Colonies"
+ age_overhaul_age_of_discovery.1.g.e:0 "Select Adaptative Combat Terrain"
+ age_overhaul_age_of_discovery.1.g.d:0 "Deselect Adaptative Combat Terrain"
+ age_overhaul_age_of_discovery.1.h.e:0 "Select Advanced Artillery"
+ age_overhaul_age_of_discovery.1.h.d:0 "Deselect Advanced Artillery"
+ age_overhaul_age_of_discovery.1.i.e:0 "Select Colonial Growth"
+ age_overhaul_age_of_discovery.1.i.d:0 "Deselect Colonial Growth"
+ age_overhaul_age_of_discovery.1.j.e:0 "Select Subject Loyalty"
+ age_overhaul_age_of_discovery.1.j.d:0 "Deselect Subject Loyalty"
+ age_overhaul_age_of_discovery.1.k.e:0 "Select Maritime Trade"
+ age_overhaul_age_of_discovery.1.k.d:0 "Deselect Maritime Trade"
+
+### Age of Reformation
+ age_overhaul_age_of_reformation.1.title:0 "Age of Reformation Ability Carryover Selection"
+ age_overhaul_age_of_reformation.1.a.e:0 "Select Religion Enforced Edict"
+ age_overhaul_age_of_reformation.1.a.d:0 "Deselect Religion Enforced Edict"
+ age_overhaul_age_of_reformation.1.b.e:0 "Select Religious Wars"
+ age_overhaul_age_of_reformation.1.b.d:0 "Deselect Religious Wars"
+ age_overhaul_age_of_reformation.1.c.e:0 "Select Mercenary Discipline"
+ age_overhaul_age_of_reformation.1.c.d:0 "Deselect Mercenary Discipline"
+ age_overhaul_age_of_reformation.1.d.e:0 "Select Powerful Tradeships"
+ age_overhaul_age_of_reformation.1.d.d:0 "Deselect Powerful Tradeships"
+ age_overhaul_age_of_reformation.1.e.e:0 "Select Institutional Spread"
+ age_overhaul_age_of_reformation.1.e.d:0 "Deselect Institutional Spread"
+ age_overhaul_age_of_reformation.1.f.e:0 "Select Prestigious Conversions"
+ age_overhaul_age_of_reformation.1.f.d:0 "Deselect Prestigious Conversions"
+ age_overhaul_age_of_reformation.1.g.e:0 "Select Floating Batteries"
+ age_overhaul_age_of_reformation.1.g.d:0 "Deselect Floating Batteries"
+ age_overhaul_age_of_reformation.1.h.e:0 "Select Tercio Formations"
+ age_overhaul_age_of_reformation.1.h.d:0 "Deselect Tercio Formations"
+ age_overhaul_age_of_reformation.1.i.e:0 "Select Mass-Produced Artillery"
+ age_overhaul_age_of_reformation.1.i.d:0 "Deselect Mass-Produced Artillery"
+ age_overhaul_age_of_reformation.1.j.e:0 "Select Advanced Production"
+ age_overhaul_age_of_reformation.1.j.d:0 "Deselect Advanced Production"
+ age_overhaul_age_of_reformation.1.k.e:0 "Select Rapid Reinforcements"
+ age_overhaul_age_of_reformation.1.k.d:0 "Deselect Rapid Reinforcements"
+
+### Age of Absolutism
+ age_overhaul_age_of_absolutism.1.title:0 "Age of Absolutism Ability Carryover Selection"
+ age_overhaul_age_of_absolutism.1.a.e:0 "Select Edict of Absolutism"
+ age_overhaul_age_of_absolutism.1.a.d:0 "Deselect Edict of Absolutism"
+ age_overhaul_age_of_absolutism.1.b.e:0 "Select Flexible Rivalries"
+ age_overhaul_age_of_absolutism.1.b.d:0 "Deselect Flexible Rivalries"
+ age_overhaul_age_of_absolutism.1.c.e:0 "Select Protecting Forts"
+ age_overhaul_age_of_absolutism.1.c.d:0 "Deselect Protecting Forts"
+ age_overhaul_age_of_absolutism.1.d.e:0 "Select Efficient Autonomy"
+ age_overhaul_age_of_absolutism.1.d.d:0 "Deselect Efficient Autonomy"
+ age_overhaul_age_of_absolutism.1.e.e:0 "Select Harsher Treatment"
+ age_overhaul_age_of_absolutism.1.e.d:0 "Deselect Harsher Treatment"
+ age_overhaul_age_of_absolutism.1.f.e:0 "Select Administrative Efficiency"
+ age_overhaul_age_of_absolutism.1.f.d:0 "Deselect Administrative Efficiency"
+ age_overhaul_age_of_absolutism.1.g.e:0 "Select Absolute Government"
+ age_overhaul_age_of_absolutism.1.g.d:0 "Deselect Absolute Government"
+ age_overhaul_age_of_absolutism.1.h.e:0 "Select Disciplined Musketeers"
+ age_overhaul_age_of_absolutism.1.h.d:0 "Deselect Disciplined Musketeers"
+ age_overhaul_age_of_absolutism.1.i.e:0 "Select Colonial Officials"
+ age_overhaul_age_of_absolutism.1.i.d:0 "Deselect Colonial Officials"
+ age_overhaul_age_of_absolutism.1.j.e:0 "Select Inspirational Recruitment"
+ age_overhaul_age_of_absolutism.1.j.d:0 "Deselect Inspirational Recruitment"
+ age_overhaul_age_of_absolutism.1.k.e:0 "Select Manchu Banners"
+ age_overhaul_age_of_absolutism.1.k.d:0 "Deselect Manchu Banners"
+
+### Age of Revolution
+ age_overhaul_age_of_revolution.1.title:0 "Age of Revolutions Ability Carryover Selection"
+ age_overhaul_age_of_revolution.1.a.e:0 "Select Anti-Revolutionary Zeal"
+ age_overhaul_age_of_revolution.1.a.d:0 "Deselect Anti-Revolutionary Zeal"
+ age_overhaul_age_of_revolution.1.b.e:0 "Select Napoleonic Warfare"
+ age_overhaul_age_of_revolution.1.b.d:0 "Deselect Napoleonic Warfare"
+ age_overhaul_age_of_revolution.1.c.e:0 "Select Improved Force March"
+ age_overhaul_age_of_revolution.1.c.d:0 "Deselect Improved Force March"
+ age_overhaul_age_of_revolution.1.d.e:0 "Select Naval Engagement"
+ age_overhaul_age_of_revolution.1.d.d:0 "Deselect Naval Engagement"
+ age_overhaul_age_of_revolution.1.e.e:0 "Select Unrestricted Conquest"
+ age_overhaul_age_of_revolution.1.e.d:0 "Deselect Unrestricted Conquest"
+ age_overhaul_age_of_revolution.1.f.e:0 "Select Loyal Subjects"
+ age_overhaul_age_of_revolution.1.f.d:0 "Deselect Loyal Subjects"
+ age_overhaul_age_of_revolution.1.g.e:0 "Select Improved Artillery Range"
+ age_overhaul_age_of_revolution.1.g.d:0 "Deselect Improved Artillery Range"
+ age_overhaul_age_of_revolution.1.h.e:0 "Select Iron Discipline"
+ age_overhaul_age_of_revolution.1.h.d:0 "Deselect Iron Discipline"
+ age_overhaul_age_of_revolution.1.i.e:0 "Select Wooden Wall"
+ age_overhaul_age_of_revolution.1.i.d:0 "Deselect Wooden Wall"
+ age_overhaul_age_of_revolution.1.j.e:0 "Select Transcontinental Empire"
+ age_overhaul_age_of_revolution.1.j.d:0 "Deselect Transcontinental Empire"
+ age_overhaul_age_of_revolution.1.k.e:0 "Select Dynastic Diplomacy"
+ age_overhaul_age_of_revolution.1.k.d:0 "Deselect Dynastic Diplomacy"
+
+
+##### Modifier Names
+### 100% Power
+#age_overhaul_age_ability_100_:0 ""
+# Age of Discovery
+ age_overhaul_age_ability_100_ab_justified_wars:0 "Justified Wars (100%)"
+ age_overhaul_age_ability_100_ab_transfer_vassal_wargoal:0 "Transfer Vassal Wargoal (100%)"
+ age_overhaul_age_ability_100_ab_free_war_taxes:0 "Improved War Taxes (100%)"
+ age_overhaul_age_ability_100_ab_cavalry_armies:0 "Cavalry Armies (100%)"
+ age_overhaul_age_ability_100_ab_colony_boost_development:0 "Higher Developed Colonies (100%)"
+ age_overhaul_age_ability_100_ab_attack_bonus_in_capital_terrain:0 "Adaptative Combat Terrain (100%)"
+ age_overhaul_age_ability_100_ab_ottoman_siege_ability:0 "Advanced Artillery (100%)"
+ age_overhaul_age_ability_100_ab_portugal_colonial_growth:0 "Colonial Growth (100%)"
+ age_overhaul_age_ability_100_ab_denmark_reduced_lib_desire:0 "Subject Loyalty (100%)"
+ age_overhaul_age_ability_100_ab_venice_ship_trade:0 "Maritime Trade (100%)"
+# Age of Reformation
+ age_overhaul_age_ability_100_ab_siege_blockades:0 "Floating Batteries (100%)"
+ age_overhaul_age_ability_100_ab_warscore_vs_religion:0 "Religious Wars (100%)"
+ age_overhaul_age_ability_100_ab_mercenary_discipline:0 "Mercenary Discipline (100%)"
+ age_overhaul_age_ability_100_ab_ship_power_propagation:0 "Powerful Tradeships (100%)"
+ age_overhaul_age_ability_100_ab_institution_spread_from_true_faith:0 "Institutional Spread (100%)"
+ age_overhaul_age_ability_100_ab_prestige_per_development_from_conversion:0 "Prestigious Conversions (100%)"
+ age_overhaul_age_ability_100_ab_spain_tercio:0 "Tercio Formations (100%)"
+ age_overhaul_age_ability_100_ab_mughal_artillery:0 "Mass-Produced Artillery (100%)"
+ age_overhaul_age_ability_100_ab_polish_legitimacy:0 "Advanced Production (100%)"
+ age_overhaul_age_ability_100_ab_persia_reinforce:0 "Rapid Reinforcements (100%)"
+# Age of Absolutism
+ age_overhaul_age_ability_100_ab_rival_change:0 "Flexible Rivalries (100%)"
+ age_overhaul_age_ability_100_ab_rival_border_fort:0 "Protecting Forts (100%)"
+ age_overhaul_age_ability_100_ab_autonomy:0 "Efficient Autonomy (100%)"
+ age_overhaul_age_ability_100_ab_harsh_treatment:0 "Harsher Treatment (100%)"
+ age_overhaul_age_ability_100_ab_adm_efficiency:0 "Administrative Efficiency (100%)"
+ age_overhaul_age_ability_100_ab_yearly_absolutism:0 "Absolute Government (100%)"
+ age_overhaul_age_ability_100_ab_france_fire_damage:0 "Disciplined Musketeers (100%)"
+ age_overhaul_age_ability_100_ab_dutch_anti_corruption:0 "Colonial Officials (100%)"
+ age_overhaul_age_ability_100_ab_sweden_manpower:0 "Inspirational Recruitment (100%)"
+ age_overhaul_age_ability_100_ab_manchu_banner:0 "Manchu Banners (100%)"
+# Age of Revolutions
+ age_overhaul_age_ability_100_ab_allow_anti_revolutionary_zeal:0 "Anti-Revolutionary Zeal (100%)"
+ age_overhaul_age_ability_100_ab_napoleonic_warfare:0 "Napoleonic Warfare (100%)"
+ age_overhaul_age_ability_100_ab_force_march:0 "Improved Force March (100%)"
+ age_overhaul_age_ability_100_ab_more_ships_can_fire:0 "Naval Engagement (100%)"
+ age_overhaul_age_ability_100_ab_no_distance_for_core:0 "Unrestricted Conquest (100%)"
+ age_overhaul_age_ability_100_ab_backrow_artillery:0 "Improved Artillery Range (100%)"
+ age_overhaul_age_ability_100_ab_same_contine_lib_desire:0 "Loyal Subjects (100%)"
+ age_overhaul_age_ability_100_ab_pru_military:0 "Iron Discipline (100%)"
+ age_overhaul_age_ability_100_ab_gbr_fleet:0 "Wooden Wall (100%)"
+ age_overhaul_age_ability_100_ab_russia_boost:0 "Transcontinental Empire (100%)"
+ age_overhaul_age_ability_100_ab_austria_rep:0 "Dynastic Diplomacy (100%)"
+
+### 50% Power
+#age_overhaul_age_ability_50_:0 ""
+# Age of Discovery
+ age_overhaul_age_ability_50_ab_justified_wars:0 "Justified Wars (50%)"
+ age_overhaul_age_ability_50_ab_transfer_vassal_wargoal:0 "Transfer Vassal Wargoal (50%)"
+ age_overhaul_age_ability_50_ab_free_war_taxes:0 "Improved War Taxes (50%)"
+ age_overhaul_age_ability_50_ab_cavalry_armies:0 "Cavalry Armies (50%)"
+ age_overhaul_age_ability_50_ab_colony_boost_development:0 "Higher Developed Colonies (50%)"
+ age_overhaul_age_ability_50_ab_attack_bonus_in_capital_terrain:0 "Adaptative Combat Terrain (50%)"
+ age_overhaul_age_ability_50_ab_ottoman_siege_ability:0 "Advanced Artillery (50%)"
+ age_overhaul_age_ability_50_ab_portugal_colonial_growth:0 "Colonial Growth (50%)"
+ age_overhaul_age_ability_50_ab_denmark_reduced_lib_desire:0 "Subject Loyalty (50%)"
+ age_overhaul_age_ability_50_ab_venice_ship_trade:0 "Maritime Trade (50%)"
+# Age of Reformation
+ age_overhaul_age_ability_50_ab_siege_blockades:0 "Floating Batteries (50%)"
+ age_overhaul_age_ability_50_ab_warscore_vs_religion:0 "Religious Wars (50%)"
+ age_overhaul_age_ability_50_ab_mercenary_discipline:0 "Mercenary Discipline (50%)"
+ age_overhaul_age_ability_50_ab_ship_power_propagation:0 "Powerful Tradeships (50%)"
+ age_overhaul_age_ability_50_ab_institution_spread_from_true_faith:0 "Institutional Spread (50%)"
+ age_overhaul_age_ability_50_ab_prestige_per_development_from_conversion:0 "Prestigious Conversions (50%)"
+ age_overhaul_age_ability_50_ab_spain_tercio:0 "Tercio Formations (50%)"
+ age_overhaul_age_ability_50_ab_mughal_artillery:0 "Mass-Produced Artillery (50%)"
+ age_overhaul_age_ability_50_ab_polish_legitimacy:0 "Advanced Production (50%)"
+ age_overhaul_age_ability_50_ab_persia_reinforce:0 "Rapid Reinforcements (50%)"
+# Age of Absolutism
+ age_overhaul_age_ability_50_ab_rival_change:0 "Flexible Rivalries (50%)"
+ age_overhaul_age_ability_50_ab_rival_border_fort:0 "Protecting Forts (50%)"
+ age_overhaul_age_ability_50_ab_autonomy:0 "Efficient Autonomy (50%)"
+ age_overhaul_age_ability_50_ab_harsh_treatment:0 "Harsher Treatment (50%)"
+ age_overhaul_age_ability_50_ab_adm_efficiency:0 "Administrative Efficiency (50%)"
+ age_overhaul_age_ability_50_ab_yearly_absolutism:0 "Absolute Government (50%)"
+ age_overhaul_age_ability_50_ab_france_fire_damage:0 "Disciplined Musketeers (50%)"
+ age_overhaul_age_ability_50_ab_dutch_anti_corruption:0 "Colonial Officials (50%)"
+ age_overhaul_age_ability_50_ab_sweden_manpower:0 "Inspirational Recruitment (50%)"
+ age_overhaul_age_ability_50_ab_manchu_banner:0 "Manchu Banners (50%)"
+# Age of Revolutions
+ age_overhaul_age_ability_50_ab_allow_anti_revolutionary_zeal:0 "Anti-Revolutionary Zeal (50%)"
+ age_overhaul_age_ability_50_ab_napoleonic_warfare:0 "Napoleonic Warfare (50%)"
+ age_overhaul_age_ability_50_ab_force_march:0 "Improved Force March (50%)"
+ age_overhaul_age_ability_50_ab_more_ships_can_fire:0 "Naval Engagement (50%)"
+ age_overhaul_age_ability_50_ab_no_distance_for_core:0 "Unrestricted Conquest (50%)"
+ age_overhaul_age_ability_50_ab_backrow_artillery:0 "Improved Artillery Range (50%)"
+ age_overhaul_age_ability_50_ab_same_contine_lib_desire:0 "Loyal Subjects (50%)"
+ age_overhaul_age_ability_50_ab_pru_military:0 "Iron Discipline (50%)"
+ age_overhaul_age_ability_50_ab_gbr_fleet:0 "Wooden Wall (50%)"
+ age_overhaul_age_ability_50_ab_russia_boost:0 "Transcontinental Empire (50%)"
+ age_overhaul_age_ability_50_ab_austria_rep:0 "Dynastic Diplomacy (50%)"
+
+
+##### Tooltips
+### Age of Discovery
+ age_overhaul_tooltip_ab_allow_feudal_de_jure_law:0 "This is a test"

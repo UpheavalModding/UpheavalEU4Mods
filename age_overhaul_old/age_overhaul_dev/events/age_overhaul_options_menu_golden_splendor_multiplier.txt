@@ -1,0 +1,232 @@
+##############################
+# Age Overhaul Options       #
+# Golden Splendor Multiplier #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_menu_golden_splendor_multiplier
+
+# Golden Splendor Generation
+country_event = {
+	id = age_overhaul_options_menu_golden_splendor_multiplier.1
+	title = age_overhaul_options_menu_golden_splendor_multiplier.1.title
+	desc = age_overhaul_options_menu_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = age_overhaul_options_back
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# Randomize the Golden Splendor Multiplier
+	option = {
+		name = age_overhaul_options_random
+		hidden_effect = {
+			random_list = {
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 1
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 1.5
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 2
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 2.5
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 3
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 3.5
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 4
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 4.5
+						}
+					}
+				}
+				10 = {
+					every_country = {
+						set_variable = {
+							which = age_overhaul_golden_splendor_multiplier
+							value = 5
+						}
+					}
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 1x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.a
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 1
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 1.5x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.b
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 1.5
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 2x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.c
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 2
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 2.5x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.d
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 2.5
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 3x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.e
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 3
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 3.5x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.e
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 3.5
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 4x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.e
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 4
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 4.5x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.e
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 4.5
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# 5x
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_multiplier.1.e
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 5
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+}

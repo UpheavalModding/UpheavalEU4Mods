@@ -1,0 +1,53 @@
+##############################
+# Age Overhaul Options       #
+# About                      #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_about
+
+# About 
+country_event = {
+	id = age_overhaul_about.1
+	title = age_overhaul_about.1.title
+	desc = age_overhaul_about.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# What is Golden Splendor?
+	option = {
+		name = age_overhaul_about.2.title
+		country_event = { id = age_overhaul_about.2 }
+	}
+
+	# OK
+	option = {
+		name = age_overhaul_options_ok
+
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_settings_host
+			}
+			country_event = { id = age_overhaul_options_main_menu.1 }
+		}
+	}
+}
+
+# About Golden Splendor
+country_event = {
+	id = age_overhaul_about.2
+	title = age_overhaul_about.2.title
+	desc = age_overhaul_about.2.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = age_overhaul_options_ok
+
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+}

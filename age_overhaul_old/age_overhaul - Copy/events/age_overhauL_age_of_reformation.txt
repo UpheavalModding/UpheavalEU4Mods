@@ -1,0 +1,1038 @@
+##############################
+# Age Overhaul               #
+# Age of Reformation          #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_age_of_reformation
+
+# Initialization 
+country_event = {
+	id = age_overhaul_age_of_reformation.0
+	title = age_overhaul_age_of_reformation.0.title
+	desc = age_overhaul_age_of_reformation.0.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = age_overhaul_initialized
+		NOT = { current_age = age_of_reformation }
+		NOT = { has_country_flag = age_overhaul_age_of_reformation_abilities_selected }
+		NOT = { has_country_flag = age_overhaul_age_of_reformation_abilities_selecting }
+		has_country_flag = age_overhaul_age_of_discovery_abilities_selected
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_of_reformation_abilities_selecting
+
+			# set the number of abilities currently selected for carryover
+			set_variable = {
+				which = age_overhaul_ability_carryover_currently_selected
+				value = 0
+			}
+
+			# Set the number of abilities that will be allowed to be carried over
+			set_variable = {
+				which = age_overhaul_ability_carryover_max_abilities
+				value = 0
+			}
+
+			# Count up all the Abilities that were selected in the last age
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_allow_religion_enforced
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_warscore_vs_religion
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_mercenary_discipline
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_ship_power_propagation
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_institution_spread_from_true_faith
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_prestige_per_development_from_conversion
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_siege_blockades
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_spain_tercio
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_mughal_artillery
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_polish_legitimacy
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_country_flag = age_overhaul_age_ability_ab_persia_reinforce
+						has_global_flag = age_overhaul_option_skipped_age_of_reformation
+					}
+				}
+				change_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+
+			# If the max abilities is greater than what is set for the age, set it down to the max value for the age
+			if = {
+				limit = {
+					check_variable = {
+						which = age_overhaul_ability_carryover_max_abilities
+						which = age_overhaul_option_max_age_abilities_age_of_reformation
+					}
+				}
+
+				set_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					which = age_overhaul_option_max_age_abilities_age_of_reformation
+				}
+			}
+
+			# Helper variable
+			set_variable = {
+				which = age_overhaul_ability_carryover_max_abilities_invalid
+				which = age_overhaul_ability_carryover_max_abilities
+			}
+			change_variable = {
+				which = age_overhaul_ability_carryover_max_abilities_invalid
+				value = 1
+			}
+		}
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+		country_event = { id = age_overhaul_age_of_reformation.1 }
+	}
+}
+
+# Select Age Abilities to Carryover
+country_event = {
+	id = age_overhaul_age_of_reformation.1
+	title = age_overhaul_age_of_reformation.1.title
+	desc = age_overhaul_age_carryover_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = age_overhaul_confirm_abilities
+		highlight = yes
+
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = age_overhaul_ability_carryover_currently_selected
+					which = age_overhaul_ability_carryover_max_abilities_invalid
+				}
+				AND = {
+					check_variable = {
+						which = age_overhaul_ability_carryover_max_abilities
+						value = 0
+					}
+					NOT = {
+						check_variable = {
+							which = age_overhaul_ability_carryover_max_abilities
+							value = 1
+						}
+					}
+				}
+			}
+		}
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_age_of_reformation.2 }
+		}
+	}
+	
+	option = {
+		name = age_overhaul_skip_abilities
+		highlight = yes
+
+		ai_chance = { factor = 1000 }
+		trigger = {
+			check_variable = {
+				which = age_overhaul_ability_carryover_max_abilities
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+					which = age_overhaul_ability_carryover_max_abilities
+					value = 1
+				}
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_of_reformation_abilities_selected
+		}
+	}
+
+	# ab_allow_religion_enforced
+	option = {
+		name = age_overhaul_age_of_reformation.1.a.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_allow_religion_enforced
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_allow_religion_enforced }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_allow_religion_enforced
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.a.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_allow_religion_enforced
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_allow_religion_enforced
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_warscore_vs_religion
+	option = {
+		name = age_overhaul_age_of_reformation.1.b.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_warscore_vs_religion
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_warscore_vs_religion }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_warscore_vs_religion
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.b.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_warscore_vs_religion
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_warscore_vs_religion
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_mercenary_discipline
+	option = {
+		name = age_overhaul_age_of_reformation.1.c.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_mercenary_discipline
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_mercenary_discipline }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_mercenary_discipline
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.c.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_mercenary_discipline
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_mercenary_discipline
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_ship_power_propagation
+	option = {
+		name = age_overhaul_age_of_reformation.1.d.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_ship_power_propagation
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_ship_power_propagation }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_ship_power_propagation
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.d.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_ship_power_propagation
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_ship_power_propagation
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_institution_spread_from_true_faith
+	option = {
+		name = age_overhaul_age_of_reformation.1.e.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_institution_spread_from_true_faith
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_institution_spread_from_true_faith }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_institution_spread_from_true_faith
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.e.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_institution_spread_from_true_faith
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_institution_spread_from_true_faith
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_prestige_per_development_from_conversion
+	option = {
+		name = age_overhaul_age_of_reformation.1.f.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_prestige_per_development_from_conversion
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_prestige_per_development_from_conversion }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_prestige_per_development_from_conversion
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.f.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_prestige_per_development_from_conversion
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_prestige_per_development_from_conversion
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_siege_blockades
+	option = {
+		name = age_overhaul_age_of_reformation.1.g.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_siege_blockades
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_siege_blockades }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_siege_blockades
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.g.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_siege_blockades
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_siege_blockades
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_spain_tercio
+	option = {
+		name = age_overhaul_age_of_reformation.1.h.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_spain_tercio
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_spain_tercio }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_spain_tercio
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 100 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.h.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_spain_tercio
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_spain_tercio
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_mughal_artillery
+	option = {
+		name = age_overhaul_age_of_reformation.1.i.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_mughal_artillery
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_mughal_artillery }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_mughal_artillery
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 100 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.i.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_mughal_artillery
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_mughal_artillery
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_polish_legitimacy
+	option = {
+		name = age_overhaul_age_of_reformation.1.j.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_polish_legitimacy
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_polish_legitimacy }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_polish_legitimacy
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.j.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_polish_legitimacy
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_polish_legitimacy
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+
+	# ab_persia_reinforce
+	option = {
+		name = age_overhaul_age_of_reformation.1.k.e
+		
+		set_country_flag = age_overhaul_ability_carryover_ab_persia_reinforce
+		trigger = {
+			NOT = { has_country_flag = age_overhaul_ability_carryover_ab_persia_reinforce }
+			OR = {
+				has_country_flag = age_overhaul_age_ability_ab_persia_reinforce
+				has_global_flag = age_overhaul_option_skipped_age_of_reformation
+			}
+		}
+		ai_chance = { factor = 10 }
+
+		change_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+	option = {
+		name = age_overhaul_age_of_reformation.1.k.d
+		
+		clr_country_flag = age_overhaul_ability_carryover_ab_persia_reinforce
+		trigger = {
+			has_country_flag = age_overhaul_ability_carryover_ab_persia_reinforce
+			ai = no
+		}
+		
+		subtract_variable = {
+			which = age_overhaul_ability_carryover_currently_selected
+			value = 1
+		}
+		country_event = {
+			id = age_overhaul_options_menu_skipper.4
+		}
+	}
+}
+
+# Assign the Bonuses that are Carrying Over
+country_event = {
+	id = age_overhaul_age_of_reformation.2
+	title = age_overhaul_age_of_reformation.2.title
+	desc = age_overhaul_age_of_reformation.2.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = age_overhaul_age_of_reformation_abilities_selected
+
+		# ab_allow_religion_enforced
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_allow_religion_enforced
+			}
+			set_country_flag = religion_enforced_edict
+		}
+
+		# ab_warscore_vs_religion
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_warscore_vs_religion
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_warscore_vs_religion
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_warscore_vs_religion
+					duration = -1
+				}
+			}
+		}
+
+		# ab_mercenary_discipline
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_mercenary_discipline
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_mercenary_discipline
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_mercenary_discipline
+					duration = -1
+				}
+			}
+		}
+
+		# ab_ship_power_propagation
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_ship_power_propagation
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_ship_power_propagation
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_ship_power_propagation
+					duration = -1
+				}
+			}
+		}
+
+		# ab_institution_spread_from_true_faith
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_institution_spread_from_true_faith
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_institution_spread_from_true_faith
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_institution_spread_from_true_faith
+					duration = -1
+				}
+			}
+		}
+
+		# ab_prestige_per_development_from_conversion
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_prestige_per_development_from_conversion
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_prestige_per_development_from_conversion
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_prestige_per_development_from_conversion
+					duration = -1
+				}
+			}
+		}
+
+		# ab_siege_blockades
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_siege_blockades
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_siege_blockades
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_siege_blockades
+					duration = -1
+				}
+			}
+		}
+
+		# ab_spain_tercio
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_spain_tercio
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_spain_tercio
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_spain_tercio
+					duration = -1
+				}
+			}
+		}
+
+		# ab_mughal_artillery
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_mughal_artillery
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_mughal_artillery
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_mughal_artillery
+					duration = -1
+				}
+			}
+		}
+
+		# ab_polish_legitimacy
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_polish_legitimacy
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_polish_legitimacy
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_polish_legitimacy
+					duration = -1
+				}
+			}
+		}
+
+		# ab_persia_reinforce
+		if = {
+			limit = {
+				has_country_flag = age_overhaul_ability_carryover_ab_persia_reinforce
+			}
+
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_100
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_100_ab_persia_reinforce
+					duration = -1
+				}
+			}
+
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = age_overhaul_option_age_ability_carryover_power_50
+				}
+				add_country_modifier = {
+					name = age_overhaul_age_ability_50_ab_persia_reinforce
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = age_overhaul_confirm_abilities
+
+		if = {
+			limit = {
+				has_global_flag = age_overhaul_option_skipped_age_of_absolutism
+			}
+
+			country_event = { id = age_overhaul_age_of_absolutism.0 }
+		}
+	}
+}

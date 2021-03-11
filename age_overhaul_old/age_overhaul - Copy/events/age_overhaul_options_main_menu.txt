@@ -1,0 +1,140 @@
+##############################
+# Age Overhaul Options       #
+# Main Menu                  #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_main_menu
+
+# Initialization 
+country_event = {
+	id = age_overhaul_options_main_menu.0
+	title = age_overhaul_options_main_menu.0.title
+	desc = age_overhaul_options_main_menu.0.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		ai = no
+		NOT = { has_global_flag = age_overhaul_initialized }
+		NOT = { has_global_flag = age_overhaul_initialize_starting }
+	}
+
+	immediate = {
+		set_global_flag = age_overhaul_initialize_starting
+
+		set_global_flag = age_overhaul_option_age_ability_carryover_power_50
+
+		if = {
+			limit = { 
+				NOT = { current_age = age_of_discovery }
+				current_age = age_of_reformation
+				NOT = { current_age = age_of_absolutism }
+				NOT = { current_age = age_of_revolutions }
+				NOT = { current_age = age_of_industrialization }
+			}
+			
+			set_global_flag = age_overhaul_option_skipped_age_of_discovery
+		}
+
+		if = {
+			limit = { 
+				NOT = { current_age = age_of_discovery }
+				NOT = { current_age = age_of_reformation }
+				current_age = age_of_absolutism
+				NOT = { current_age = age_of_revolutions }
+			}
+			
+			set_global_flag = age_overhaul_option_skipped_age_of_discovery
+			set_global_flag = age_overhaul_option_skipped_age_of_reformation
+		}
+
+		if = {
+			limit = { 
+				NOT = { current_age = age_of_discovery }
+				NOT = { current_age = age_of_reformation }
+				NOT = { current_age = age_of_absolutism }
+				current_age = age_of_revolutions
+			}
+			
+			set_global_flag = age_overhaul_option_skipped_age_of_discovery
+			set_global_flag = age_overhaul_option_skipped_age_of_reformation
+			set_global_flag = age_overhaul_option_skipped_age_of_absolutism
+		}
+
+		every_country = {
+			set_variable = {
+				which = age_overhaul_option_max_age_abilities_age_of_discovery
+				value = 2
+			}
+			set_variable = {
+				which = age_overhaul_option_max_age_abilities_age_of_reformation
+				value = 2
+			}
+			set_variable = {
+				which = age_overhaul_option_max_age_abilities_age_of_absolutism
+				value = 2
+			}
+			set_variable = {
+				which = age_overhaul_option_max_age_abilities_age_of_revolution
+				value = 2
+			}
+		}
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+		country_event = { id = age_overhaul_options_main_menu.1 }
+	}
+}
+
+# Main Menu
+country_event = {
+	id = age_overhaul_options_main_menu.1
+	title = age_overhaul_options_main_menu.1.title
+	desc = age_overhaul_options_main_menu.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Open Sub-menu to choose whether or not to allow country-specific age abilities to be "unlocked" for all
+	option = {
+		name = age_overhaul_options_main_menu.1.b
+		country_event = { id = age_overhaul_options_menu_country_abilities.1 }
+	}
+
+	# Open Sub-menu to choose settings for number of age abilities to carry over
+	option = {
+		name = age_overhaul_options_main_menu.1.c
+		country_event = { id = age_overhaul_options_menu_age_ability_carryover_settings.1 }
+	}
+
+	# Open Sub-menu to choose the power of the bonueses being carried over
+	option = {
+		name = age_overhaul_options_main_menu.1.d
+		country_event = { id = age_overhaul_options_menu_carryover_power.1 }
+	}
+
+	# Confirm settings
+	option = {
+		name = age_overhaul_options_main_menu.1.a
+		highlight = yes
+		set_global_flag = age_overhaul_initialized
+
+		if = {
+			limit = {
+				has_global_flag = age_overhaul_option_skipped_age_of_discovery
+			}
+
+			every_country = {
+				country_event = { id = age_overhaul_age_of_discovery.0 }
+			}
+		}
+	}
+}

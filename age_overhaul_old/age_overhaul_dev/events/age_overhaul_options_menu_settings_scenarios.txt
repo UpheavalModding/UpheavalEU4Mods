@@ -1,0 +1,250 @@
+##############################
+# Age Overhaul Options       #
+# Settings Scenarios         #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_menu_settings_scenarios
+
+# Country-specific Age Ability Unlock Menu
+country_event = {
+	id = age_overhaul_options_menu_settings_scenarios.1
+	title = age_overhaul_options_menu_settings_scenarios.1.title
+	desc = age_overhaul_options_menu_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = age_overhaul_options_back
+		country_event = { id = age_overhaul_menu_skipper.1 }
+	}
+
+	# Default Mod Settings Scenario
+	option = {
+		name = age_overhaul_options_menu_settings_scenarios.1.a
+		hidden_effect = {
+			# Default Country-Specific Ability Settings
+			clr_global_flag = age_overhaul_option_country_specific_abilities_disabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			set_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			set_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			set_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			# Feature Enablement
+			clr_global_flag = age_overhaul_enable_splendor_purchasing
+			clr_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			clr_global_flag = age_overhaul_option_carryover_enabled
+			
+			set_global_flag = age_overhaul_enable_splendor_purchasing
+			set_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			set_global_flag = age_overhaul_option_carryover_enabled
+
+			# Default Golden Splendor Settings
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 800
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_cost
+					value = 800
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 1
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor
+					value = 0
+				}
+			}
+		
+			country_event = { id = age_overhaul_menu_skipper.9 }
+		}
+	}
+
+	# Default Vanilla Settings Scenario
+	option = {
+		name = age_overhaul_options_menu_settings_scenarios.1.b
+		hidden_effect = {
+			# Default Country-Specific Ability Settings
+			clr_global_flag = age_overhaul_option_country_specific_abilities_disabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			set_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+
+			# Feature Enablement
+			clr_global_flag = age_overhaul_enable_splendor_purchasing
+			clr_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			clr_global_flag = age_overhaul_option_carryover_enabled
+
+			# Default Golden Splendor Settings
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 0
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_cost
+					value = 0
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 1
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor
+					value = 0
+				}
+			}
+		
+			country_event = { id = age_overhaul_menu_skipper.9 }
+		}
+	}
+
+	# Carryover Everything Scenario
+	option = {
+		name = age_overhaul_options_menu_settings_scenarios.1.c
+		hidden_effect = {
+			# Default Country-Specific Ability Settings
+			clr_global_flag = age_overhaul_option_country_specific_abilities_disabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			set_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			set_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			set_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			# Feature Enablement
+			clr_global_flag = age_overhaul_enable_splendor_purchasing
+			clr_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			clr_global_flag = age_overhaul_option_carryover_enabled
+			
+			set_global_flag = age_overhaul_enable_splendor_purchasing
+			set_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			set_global_flag = age_overhaul_option_carryover_enabled
+
+			# Default Golden Splendor Settings
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 8000
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_cost
+					value = 800
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 1
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor
+					value = 0
+				}
+			}
+		
+			country_event = { id = age_overhaul_menu_skipper.9 }
+		}
+	}
+
+	# Never-Gain Golden Splendor Scenario
+	option = {
+		name = age_overhaul_options_menu_settings_scenarios.1.d
+		hidden_effect = {
+			# Default Country-Specific Ability Settings
+			clr_global_flag = age_overhaul_option_country_specific_abilities_disabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			set_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			set_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			set_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			# Feature Enablement
+			clr_global_flag = age_overhaul_enable_splendor_purchasing
+			clr_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			clr_global_flag = age_overhaul_option_carryover_enabled
+			
+			set_global_flag = age_overhaul_enable_splendor_purchasing
+			set_global_flag = age_overhaul_option_carryover_enabled
+
+			# Default Golden Splendor Settings
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 0
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_cost
+					value = 800
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 1
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor
+					value = 16000
+				}
+			}
+		
+			country_event = { id = age_overhaul_menu_skipper.9 }
+		}
+	}
+
+	# Unrestricted Scenario
+	option = {
+		name = age_overhaul_options_menu_settings_scenarios.1.e
+		hidden_effect = {
+			# Default Country-Specific Ability Settings
+			clr_global_flag = age_overhaul_option_country_specific_abilities_disabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+			clr_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			set_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+			# Feature Enablement
+			clr_global_flag = age_overhaul_enable_splendor_purchasing
+			clr_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			clr_global_flag = age_overhaul_option_carryover_enabled
+			
+			set_global_flag = age_overhaul_enable_splendor_purchasing
+			set_global_flag = age_overhaul_enable_golden_splendor_purchasing
+			set_global_flag = age_overhaul_option_carryover_enabled
+
+			# Default Golden Splendor Settings
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 800
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_cost
+					value = 800
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor_multiplier
+					value = 1
+				}
+				set_variable = {
+					which = age_overhaul_golden_splendor
+					value = 0
+				}
+			}
+		
+			country_event = { id = age_overhaul_menu_skipper.9 }
+		}
+	}
+}

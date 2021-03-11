@@ -1,0 +1,148 @@
+##############################
+# Unequal Nations            #
+# Menu "Skippers"            #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_menu_skipper
+
+# Go to About Menu
+country_event = {
+	id = unequal_nations_menu_skipper.1
+	title = unequal_nations_about.1.title
+	desc = unequal_nations_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_about.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Main Menu
+country_event = {
+	id = unequal_nations_menu_skipper.2
+	title = unequal_nations_main_menu.1.title
+	desc = unequal_nations_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_main_menu.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Legendary Country Option Menu
+country_event = {
+	id = unequal_nations_menu_skipper.3
+	title = unequal_nations_options_legendary_country.1.title
+	desc = unequal_nations_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_options_legendary_country.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Buff/Nerf Reroll Menu
+country_event = {
+	id = unequal_nations_menu_skipper.4
+	title = unequal_nations_options_reroll.1.title
+	desc = unequal_nations_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_options_reroll.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Category Enablement Menu
+country_event = {
+	id = unequal_nations_menu_skipper.5
+	title = unequal_nations_options_category_enablement.1.title
+	desc = unequal_nations_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_options_category_enablement.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Player Impact Menu
+country_event = {
+	id = unequal_nations_menu_skipper.6
+	title = unequal_nations_options_player_impact.1.title
+	desc = unequal_nations_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_options_player_impact.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Presets Menu
+country_event = {
+	id = unequal_nations_menu_skipper.7
+	title = unequal_nations_options_presets.1.title
+	desc = unequal_nations_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_options_presets.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}

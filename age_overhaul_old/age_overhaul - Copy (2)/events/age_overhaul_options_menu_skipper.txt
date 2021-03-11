@@ -1,0 +1,133 @@
+##############################
+# Age Overhaul Options       #
+# Menu Skipper               #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_menu_skipper
+
+# Initialization 
+country_event = {
+	id = age_overhaul_options_menu_skipper.1
+	title = age_overhaul_options_menu_skipper.1.title
+	desc = age_overhaul_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = age_overhaul_options_main_menu.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+	}
+}
+
+
+# Initialization 
+country_event = {
+	id = age_overhaul_options_menu_skipper.2
+	title = age_overhaul_options_menu_skipper.2.title
+	desc = age_overhaul_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = age_overhaul_options_menu_age_ability_carryover_settings.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+	}
+}
+
+
+# Age of Discovery 
+country_event = {
+	id = age_overhaul_options_menu_skipper.3
+	title = age_overhaul_options_menu_skipper.3.title
+	desc = age_overhaul_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = age_overhaul_age_of_discovery.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+	}
+}
+
+
+# Age of Reformation 
+country_event = {
+	id = age_overhaul_options_menu_skipper.4
+	title = age_overhaul_options_menu_skipper.4.title
+	desc = age_overhaul_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = age_overhaul_age_of_reformation.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+	}
+}
+
+
+# Age of Absolutism 
+country_event = {
+	id = age_overhaul_options_menu_skipper.5
+	title = age_overhaul_options_menu_skipper.5.title
+	desc = age_overhaul_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = age_overhaul_age_of_absolutism.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+	}
+}
+
+
+# Age of Revolutions 
+country_event = {
+	id = age_overhaul_options_menu_skipper.6
+	title = age_overhaul_options_menu_skipper.6.title
+	desc = age_overhaul_skipper_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = age_overhaul_age_of_revolution.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_options_skip
+	}
+}

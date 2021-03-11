@@ -1,0 +1,60 @@
+##############################
+# Unequal Nations Options    #
+# Main Menu                  #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_main_menu
+
+# Main Menu
+country_event = {
+	id = unequal_nations_main_menu.1
+	title = unequal_nations_main_menu.1.title
+	desc = unequal_nations_options_menu_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Open Sub-menu to choose presets
+	option = {
+		name = unequal_nations_main_menu.1.b
+		country_event = { id = unequal_nations_options_presets.1 }
+	}
+
+	# Open Sub-menu to choose whether or not to allow player countries to be impacted by the buffs/nerfs
+	option = {
+		name = unequal_nations_main_menu.1.c
+		country_event = { id = unequal_nations_options_player_impact.1 }
+	}
+
+	# Open Sub-menu to choose the legendary country settings
+	option = {
+		name = unequal_nations_main_menu.1.d
+		country_event = { id = unequal_nations_options_legendary_country.1 }
+	}
+
+	# Open Sub-menu to choose whether to reroll the buffs/nerfs each age or just once
+	option = {
+		name = unequal_nations_main_menu.1.e
+		country_event = { id = unequal_nations_options_reroll.1 }
+	}
+
+	# Open Sub-menu to choose what categories are enabled
+	option = {
+		name = unequal_nations_main_menu.1.f
+		country_event = { id = unequal_nations_options_category_enablement.1 }
+	}
+
+	# Confirm settings
+	option = {
+		name = unequal_nations_main_menu.1.a
+		highlight = yes
+		set_global_flag = unequal_nations_initialized
+
+		hidden_effect = {
+			country_event = { id = unequal_nations_randomizer.1 }
+		}
+	}
+}

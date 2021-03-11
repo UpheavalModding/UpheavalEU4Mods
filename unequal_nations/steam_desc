@@ -1,0 +1,43 @@
+[h1]Unequal Nations[/h1]
+Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765]Unequal Countries[/url], this mod provides a random set of nerfs and buffs to nations throughout the world, providing a more dynamic world with new and unique situations.
+
+[h1]Features[/h1]
+- Full configuration of all features
+- 7 tiers and 7 categories of buffs and nerfs
+- Legendary countries with extra buffs
+- Ability for player nation to be impacted by buffs and nerfs
+- Ability to reroll buffs and nerfs midgame
+
+[h1]Legendary Country[/h1]
+[b]Legendary Countries[/b] are countries with maxed out buffs, and with an extra extremely powerful buff that makes them extremely formidable. Various settings allow there to be more than one legendary country at a time, and to set minimum development sizes for countries that are considered for being legendary allowing for the possibility of powerful "bosses" for players.
+
+[h1]Future Plans[/h1]
+- Ability to reselect the "host" player (in multiplayer, the "host", who controls the settings, is chosen randomly currently. There should be a way to change hosts)
+- Ability to change options mid-game
+- Balancing (let me know what you all think of the current balance!)
+- Compatibility with mods adding new Ages
+- More settings for legendary countries?
+- More settings for when to reroll buffs?
+- More tiers?
+- More categories?
+
+[h1]Usage of this Mod[/h1]
+Feel free to use this mod in any modpack, or to create compatibility patches for this and other mods. If you want to incorporate this mod into your mod, contact one of the creators to let us know.
+
+[h1]Compatibility[/h1]
+[b]Mod Compatibility[/b] - This mod should be fully compatible with everything, unless for some reason both mods maintain files or flags with similar names.
+
+[b][u]Not[/u] Achievement Compatible[/b]
+
+[h1]Thanks[/h1]
+Big thanks to https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765 for the inspiration!
+
+[h1]Version[/h1]
+1.0.3 - Fixed issue causing age changing to constantly update buffs/nerfs.
+1.0.2 - Setting menu linking fix.
+1.0.1 - Minor localization fixes.
+1.0.0 - Initial release.
+
+[h1]My EU4 Mods[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2313248827]Unequal Nations[/url] - Random Buffs/Nerfs for Unique Playthroughs
+Age Overhaul (Coming soon!) - Unlocks Country-Specific Age Abilities for everyone and allows carrying over Age Abilities to new ages

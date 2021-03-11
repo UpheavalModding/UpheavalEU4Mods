@@ -1,0 +1,99 @@
+##############################
+# Unequal Nations            #
+# About                      #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_about
+
+# About 
+country_event = {
+	id = unequal_nations_about.1
+	title = unequal_nations_about.1.title
+	desc = unequal_nations_about.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# What are the buff and nerf categories?
+	option = {
+		name = unequal_nations_about.2.title
+		country_event = { id = unequal_nations_about.2 }
+	}
+
+	# What Buff/Nerf tiers are available?
+	option = {
+		name = unequal_nations_about.4.title
+		country_event = { id = unequal_nations_about.4 }
+	}
+
+	# What are Legendary Countries?
+	option = {
+		name = unequal_nations_about.3.title
+		country_event = { id = unequal_nations_about.3 }
+	}
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+
+		if = {
+			limit = {
+				has_country_flag = unequal_nations_settings_host
+			}
+			country_event = { id = unequal_nations_main_menu.1 }
+		}
+	}
+}
+
+# About Buff and Nerf Categories
+country_event = {
+	id = unequal_nations_about.2
+	title = unequal_nations_about.2.title
+	desc = unequal_nations_about.2.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+
+		country_event = { id = unequal_nations_menu_skipper.1 }
+	}
+}
+
+# About Legendary Countries
+country_event = {
+	id = unequal_nations_about.3
+	title = unequal_nations_about.3.title
+	desc = unequal_nations_about.3.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+
+		country_event = { id = unequal_nations_menu_skipper.1 }
+	}
+}
+
+# About Buff/Nerf Tiers
+country_event = {
+	id = unequal_nations_about.4
+	title = unequal_nations_about.4.title
+	desc = unequal_nations_about.4.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+
+		country_event = { id = unequal_nations_menu_skipper.1 }
+	}
+}

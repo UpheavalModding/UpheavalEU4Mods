@@ -1,0 +1,151 @@
+##############################
+# Unequal Nations Options    #
+# Legendary Country Setting  #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_options_legendary_country
+
+# Main Menu
+country_event = {
+	id = unequal_nations_options_legendary_country.1
+	title = unequal_nations_options_legendary_country.1.title
+	desc = unequal_nations_options_menu_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_back
+		highlight = yes
+		country_event = { id = unequal_nations_menu_skipper.2 }
+	}
+
+	# Randomize
+	option = {
+		name = unequal_nations_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
+
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_option_legendary_countries_global_choice
+				}
+				10 = {
+					set_global_flag = unequal_nations_option_legendary_countries_random_chance
+				}
+				10 = { }
+			}
+
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
+			random_list = {
+				10 = { }
+				10 = {
+					set_global_flag = unequal_nations_option_legendary_countries_min_size_250
+				}
+				10 = {
+					set_global_flag = unequal_nations_option_legendary_countries_min_size_500
+				}
+				10 = {
+					set_global_flag = unequal_nations_option_legendary_countries_min_size_750
+				}
+			}
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+
+	# Disable Legendary Countries
+	option = {
+		name = unequal_nations_options_legendary_country.1.a
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+
+	# Enable Global Legendary Country
+	option = {
+		name = unequal_nations_options_legendary_country.1.b
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
+			
+			set_global_flag = unequal_nations_option_legendary_countries_global_choice
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+
+	# Enable Per Random Legendary Country (3% chance)
+	option = {
+		name = unequal_nations_options_legendary_country.1.c
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
+			
+			set_global_flag = unequal_nations_option_legendary_countries_random_chance
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+
+	# Enable Min Size 0
+	option = {
+		name = unequal_nations_options_legendary_country.1.d
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
+
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+
+	# Enable Min Size 250
+	option = {
+		name = unequal_nations_options_legendary_country.1.e
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
+			
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+
+	# Enable Min Size 500
+	option = {
+		name = unequal_nations_options_legendary_country.1.f
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			set_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
+			
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+
+	# Enable Min Size 750
+	option = {
+		name = unequal_nations_options_legendary_country.1.g
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			set_global_flag = unequal_nations_option_legendary_countries_min_size_750
+			
+			country_event = { id = unequal_nations_menu_skipper.3 }
+		}
+	}
+}

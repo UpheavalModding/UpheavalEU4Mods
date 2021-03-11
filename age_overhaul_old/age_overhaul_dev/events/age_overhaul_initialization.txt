@@ -1,0 +1,98 @@
+##############################
+# Age Overhaul Options       #
+# Initialization             #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_initialization
+
+# Initialize the Mod 
+country_event = {
+	id = age_overhaul_initialization.1
+	title = age_overhaul_initialization.1.title
+	desc = age_overhaul_initialization.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		NOT = { has_global_flag = age_overhaul_initialized }
+		NOT = { has_global_flag = age_overhaul_configuration }
+	}
+
+	immediate = {
+		# Remove the flag to indicate that the player is going to be the settings chooser
+		every_country = {
+			limit = {
+				ai = no
+			}
+
+			clr_country_flag = age_overhaul_settings_host
+		}
+
+		# Choose a random player to be the host
+		random_country = {
+			limit = {
+				ai = no
+			}
+
+			set_country_flag = age_overhaul_settings_host
+		}
+
+		# Bring up the About menu for all players
+		every_country = {
+			limit = {
+				ai = no
+			}
+
+			country_event = { id = age_overhaul_about.1 }
+		}
+
+		# Default Country-Specific Ability Settings
+		clr_global_flag = age_overhaul_option_country_specific_abilities_disabled
+		clr_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+		clr_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+		clr_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+		set_global_flag = age_overhaul_option_country_specific_abilities_special_requirements_enabled
+		set_global_flag = age_overhaul_option_country_specific_abilities_special_country_shortcuts_enabled
+		set_global_flag = age_overhaul_option_country_specific_abilities_unlocked_for_all
+
+		# Feature Enablement
+		clr_global_flag = age_overhaul_enable_splendor_purchasing
+		clr_global_flag = age_overhaul_enable_golden_splendor_purchasing
+		clr_global_flag = age_overhaul_option_carryover_enabled
+		
+		set_global_flag = age_overhaul_enable_splendor_purchasing
+		set_global_flag = age_overhaul_enable_golden_splendor_purchasing
+		set_global_flag = age_overhaul_option_carryover_enabled
+
+		# Default Golden Splendor Settings
+		every_country = {
+			set_variable = {
+				which = age_overhaul_golden_splendor_generation
+				value = 800
+			}
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost
+				value = 800
+			}
+			set_variable = {
+				which = age_overhaul_golden_splendor_multiplier
+				value = 1
+			}
+			set_variable = {
+				which = age_overhaul_golden_splendor
+				value = 0
+			}
+		}
+	}
+
+	# OK
+	option = {
+		name = age_overhaul_options_ok
+	}
+}
