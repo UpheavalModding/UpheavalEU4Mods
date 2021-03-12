@@ -24,7 +24,7 @@ country_event = {
 
 	# OK
 	option = {
-		name = age_overhaul_options_ok
+		name = age_overhaul_ok
 
 		if = {
 			limit = {
@@ -46,7 +46,7 @@ country_event = {
 
 	# OK
 	option = {
-		name = age_overhaul_options_ok
+		name = age_overhaul_ok
 
 		country_event = { id = age_overhaul_menu_skipper.1 }
 	}

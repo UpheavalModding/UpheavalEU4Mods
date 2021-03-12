@@ -11,7 +11,7 @@ namespace = age_overhaul_options_golden_splendor_starting
 country_event = {
 	id = age_overhaul_options_golden_splendor_starting.1
 	title = age_overhaul_options_golden_splendor_starting.1.title
-	desc = age_overhaul_options_menu_desc
+	desc = age_overhaul_options
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	major = yes
@@ -19,7 +19,7 @@ country_event = {
 
 	# Return to Golden Splendor Menu
 	option = {
-		name = age_overhaul_options_return
+		name = age_overhaul_back
 		country_event = { id = age_overhaul_menu_skipper.5 }
 	}
 
@@ -30,21 +30,8 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				change_variable = {
-					which = age_overhaul_golden_splendor
+					which = age_overhaul_starting_golden_splendor
 					value = 25
-				}
-			}
-		}
-		country_event = { id = age_overhaul_menu_skipper.9 }
-	}
-	# Increase Amount by 50
-	option = {
-		name = age_overhaul_options_menu_golden_splendor_amount_50
-		hidden_effect = {
-			every_country = {
-				change_variable = {
-					which = age_overhaul_golden_splendor
-					value = 50
 				}
 			}
 		}
@@ -56,21 +43,8 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				change_variable = {
-					which = age_overhaul_golden_splendor
+					which = age_overhaul_starting_golden_splendor
 					value = 100
-				}
-			}
-		}
-		country_event = { id = age_overhaul_menu_skipper.9 }
-	}
-	# Increase Amount by 200
-	option = {
-		name = age_overhaul_options_menu_golden_splendor_amount_200
-		hidden_effect = {
-			every_country = {
-				change_variable = {
-					which = age_overhaul_golden_splendor
-					value = 200
 				}
 			}
 		}
@@ -82,8 +56,21 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				change_variable = {
-					which = age_overhaul_golden_splendor
+					which = age_overhaul_starting_golden_splendor
 					value = 400
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.9 }
+	}
+	# Increase Amount by 800
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_800
+		hidden_effect = {
+			every_country = {
+				change_variable = {
+					which = age_overhaul_starting_golden_splendor
+					value = 800
 				}
 			}
 		}
@@ -97,7 +84,7 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				subtract_variable = {
-					which = age_overhaul_golden_splendor
+					which = age_overhaul_starting_golden_splendor
 					value = 25
 				}
 
@@ -105,43 +92,14 @@ country_event = {
 					limit = {
 						NOT = {
 							check_variable = {
-								which = age_overhaul_golden_splendor
+								which = age_overhaul_starting_golden_splendor
 								value = 0
 							}
 						}
 					}
 					
 					set_variable = {
-						which = age_overhaul_golden_splendor
-						value = 0
-					}
-				}
-			}
-		}
-		country_event = { id = age_overhaul_menu_skipper.9 }
-	}
-	# Decrease Amount by 50
-	option = {
-		name = age_overhaul_options_menu_golden_splendor_amount_50_d
-		hidden_effect = {
-			every_country = {
-				subtract_variable = {
-					which = age_overhaul_golden_splendor
-					value = 50
-				}
-
-				if = {
-					limit = {
-						NOT = {
-							check_variable = {
-								which = age_overhaul_golden_splendor
-								value = 0
-							}
-						}
-					}
-					
-					set_variable = {
-						which = age_overhaul_golden_splendor
+						which = age_overhaul_starting_golden_splendor
 						value = 0
 					}
 				}
@@ -155,7 +113,7 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				subtract_variable = {
-					which = age_overhaul_golden_splendor
+					which = age_overhaul_starting_golden_splendor
 					value = 100
 				}
 
@@ -163,43 +121,14 @@ country_event = {
 					limit = {
 						NOT = {
 							check_variable = {
-								which = age_overhaul_golden_splendor
+								which = age_overhaul_starting_golden_splendor
 								value = 0
 							}
 						}
 					}
 					
 					set_variable = {
-						which = age_overhaul_golden_splendor
-						value = 0
-					}
-				}
-			}
-		}
-		country_event = { id = age_overhaul_menu_skipper.9 }
-	}
-	# Decrease Amount by 200
-	option = {
-		name = age_overhaul_options_menu_golden_splendor_amount_200_d
-		hidden_effect = {
-			every_country = {
-				subtract_variable = {
-					which = age_overhaul_golden_splendor
-					value = 200
-				}
-
-				if = {
-					limit = {
-						NOT = {
-							check_variable = {
-								which = age_overhaul_golden_splendor
-								value = 0
-							}
-						}
-					}
-					
-					set_variable = {
-						which = age_overhaul_golden_splendor
+						which = age_overhaul_starting_golden_splendor
 						value = 0
 					}
 				}
@@ -213,7 +142,7 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				subtract_variable = {
-					which = age_overhaul_golden_splendor
+					which = age_overhaul_starting_golden_splendor
 					value = 400
 				}
 
@@ -221,14 +150,43 @@ country_event = {
 					limit = {
 						NOT = {
 							check_variable = {
-								which = age_overhaul_golden_splendor
+								which = age_overhaul_starting_golden_splendor
 								value = 0
 							}
 						}
 					}
 					
 					set_variable = {
-						which = age_overhaul_golden_splendor
+						which = age_overhaul_starting_golden_splendor
+						value = 0
+					}
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.9 }
+	}
+	# Decrease Amount by 800
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_800_d
+		hidden_effect = {
+			every_country = {
+				subtract_variable = {
+					which = age_overhaul_starting_golden_splendor
+					value = 800
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = age_overhaul_starting_golden_splendor
+								value = 0
+							}
+						}
+					}
+					
+					set_variable = {
+						which = age_overhaul_starting_golden_splendor
 						value = 0
 					}
 				}

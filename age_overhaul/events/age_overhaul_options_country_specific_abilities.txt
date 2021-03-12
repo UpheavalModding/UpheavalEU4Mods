@@ -11,7 +11,7 @@ namespace = age_overhaul_options_country_specific_abilities
 country_event = {
 	id = age_overhaul_options_country_specific_abilities.1
 	title = age_overhaul_options_country_specific_abilities.1.title
-	desc = age_overhaul_options_menu_desc
+	desc = age_overhaul_options
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	major = yes
@@ -19,7 +19,7 @@ country_event = {
 
 	# Return to Main Menu
 	option = {
-		name = age_overhaul_options_return
+		name = age_overhaul_back
 		country_event = { id = age_overhaul_menu_skipper.2 }
 	}
 

@@ -107,7 +107,7 @@ age_of_discovery = {
 				custom_tooltip = feudal_de_jure_law
 				set_country_flag = feudal_de_jure_law
 
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_allow_feudal_de_jure_law
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -120,7 +120,7 @@ age_of_discovery = {
 		
 		ab_justified_wars = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_justified_wars
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -137,7 +137,7 @@ age_of_discovery = {
 		ab_transfer_vassal_wargoal = 
 		{
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_transfer_vassal_wargoal
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -154,7 +154,7 @@ age_of_discovery = {
 		
 		ab_free_war_taxes = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_free_war_taxes
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -170,7 +170,7 @@ age_of_discovery = {
 		
 		ab_cavalry_armies = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_cavalry_armies
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -186,7 +186,7 @@ age_of_discovery = {
 
 		ab_colony_boost_development = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_colony_boost_development
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -206,7 +206,7 @@ age_of_discovery = {
 		
 		ab_attack_bonus_in_capital_terrain = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_attack_bonus_in_capital_terrain
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -222,7 +222,7 @@ age_of_discovery = {
 		
 		ab_ottoman_siege_ability = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_ottoman_siege_ability
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -236,6 +236,7 @@ age_of_discovery = {
 						is_great_power = yes
 					}
 					was_tag = TUR
+					tag = TUR
 				}
 			}
 			modifier = {
@@ -248,7 +249,7 @@ age_of_discovery = {
 		
 		ab_portugal_colonial_growth = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_portugal_colonial_growth
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -262,6 +263,7 @@ age_of_discovery = {
 						is_great_power = yes
 					}
 					was_tag = POR
+					tag = POR
 				}
 			}
 			modifier = {
@@ -274,7 +276,7 @@ age_of_discovery = {
 
 		ab_denmark_reduced_lib_desire = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_denmark_reduced_lib_desire
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -288,6 +290,7 @@ age_of_discovery = {
 						is_great_power = yes
 					}
 					was_tag = DAN
+					tag = DAN
 				}
 			}
 			modifier = {
@@ -308,7 +311,7 @@ age_of_discovery = {
 
 		ab_venice_ship_trade = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_venice_ship_trade
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -322,6 +325,7 @@ age_of_discovery = {
 						is_great_power = yes
 					}
 					was_tag = VEN
+					tag = VEN
 				}
 			}
 			modifier = {
@@ -340,7 +344,6 @@ age_of_reformation = {
 	can_start = {
 		is_religion_enabled = protestant
 	}
-	
 	
 	religious_conflicts = yes
 	papacy = 1.25
@@ -410,7 +413,7 @@ age_of_reformation = {
 				custom_tooltip = religion_enforced_edict
 				set_country_flag = religion_enforced_edict
 				
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_allow_religion_enforced
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -423,7 +426,7 @@ age_of_reformation = {
 		
 		ab_siege_blockades = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_siege_blockades
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -446,7 +449,7 @@ age_of_reformation = {
 		
 		ab_warscore_vs_religion = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_warscore_vs_religion
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -462,7 +465,7 @@ age_of_reformation = {
 		
 		ab_mercenary_discipline = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_mercenary_discipline
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -478,7 +481,7 @@ age_of_reformation = {
 
 		ab_ship_power_propagation = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_ship_power_propagation
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -494,7 +497,7 @@ age_of_reformation = {
 		
 		ab_institution_spread_from_true_faith = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_institution_spread_from_true_faith
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -510,7 +513,7 @@ age_of_reformation = {
 
 		ab_prestige_per_development_from_conversion = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_prestige_per_development_from_conversion
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -526,7 +529,7 @@ age_of_reformation = {
 		
 		ab_spain_tercio = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_spain_tercio
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -542,6 +545,9 @@ age_of_reformation = {
 					was_tag = SPA
 					was_tag = CAS
 					was_tag = ARA
+					tag = SPA
+					tag = CAS
+					tag = ARA
 				}
 			}
 			modifier = {
@@ -551,9 +557,10 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
+
 		ab_mughal_artillery = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_mughal_artillery
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -567,6 +574,7 @@ age_of_reformation = {
 						is_great_power = yes
 					}
 					was_tag = MUG
+					tag = MUG
 				}
 			}
 			modifier = {
@@ -579,7 +587,7 @@ age_of_reformation = {
 		
 		ab_polish_legitimacy = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_polish_legitimacy
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -594,6 +602,8 @@ age_of_reformation = {
 					}
 					was_tag = PLC
 					was_tag = POL
+					tag = PLC
+					tag = POL
 				}
 			}
 			modifier = {
@@ -606,7 +616,7 @@ age_of_reformation = {
 		
 		ab_persia_reinforce = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_persia_reinforce
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -620,6 +630,7 @@ age_of_reformation = {
 						is_great_power = yes
 					}
 					was_tag = PER
+					tag = PER
 				}
 			}
 			modifier = {
@@ -696,7 +707,7 @@ age_of_absolutism = {
 				custom_tooltip = edict_of_absolutism_tt
 				set_country_flag = edict_of_absolutism
 
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_allow_edict_of_absolutism
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -709,7 +720,7 @@ age_of_absolutism = {
 
 		ab_rival_change = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_rival_change
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -725,7 +736,7 @@ age_of_absolutism = {
 
 		ab_rival_border_fort = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_rival_border_fort
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -741,7 +752,7 @@ age_of_absolutism = {
 		
 		ab_autonomy = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_autonomy
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -757,7 +768,7 @@ age_of_absolutism = {
 
 		ab_harsh_treatment = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_harsh_treatment
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -773,7 +784,7 @@ age_of_absolutism = {
 		
 		ab_adm_efficiency = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_adm_efficiency
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -789,7 +800,7 @@ age_of_absolutism = {
 
 		ab_yearly_absolutism = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_yearly_absolutism
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -805,7 +816,7 @@ age_of_absolutism = {
 
 		ab_france_fire_damage = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_france_fire_damage
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -819,6 +830,7 @@ age_of_absolutism = {
 						is_great_power = yes
 					}
 					was_tag = FRA
+					tag = FRA
 				}
 			}
 			modifier = {
@@ -828,9 +840,10 @@ age_of_absolutism = {
 				factor = 100
 			}
 		}
+
 		ab_dutch_anti_corruption = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_dutch_anti_corruption
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -844,6 +857,7 @@ age_of_absolutism = {
 						is_great_power = yes
 					}
 					was_tag = NED
+					tag = NED
 				}
 			}
 			modifier = {
@@ -852,10 +866,11 @@ age_of_absolutism = {
 			ai_will_do = {
 				factor = 100
 			}
-		}	
+		}
+		
 		ab_sweden_manpower = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_sweden_manpower
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -869,6 +884,7 @@ age_of_absolutism = {
 						is_great_power = yes
 					}
 					was_tag = SWE
+					tag = SWE
 				}
 			}
 			modifier = {
@@ -881,7 +897,7 @@ age_of_absolutism = {
 
 		ab_manchu_banner = {
 			effect = {
-				set_country_flag = age_overhaul_age_ability_
+				set_country_flag = age_overhaul_age_ability_ab_manchu_banner
 				change_variable = {
 					which = age_overhaul_golden_splendor
 					which = age_overhaul_golden_splendor_generation
@@ -901,6 +917,8 @@ age_of_absolutism = {
 					}
 					was_tag = MCH
 					was_tag = QNG
+					tag = MCH
+					tag = QNG
 				}
 			}
 			modifier = {
@@ -977,8 +995,14 @@ age_of_revolutions = {
 	}
 
 	abilities = {
-
 		ab_allow_anti_revolutionary_zeal = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_allow_anti_revolutionary_zeal
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			modifier = {
 				liberty_desire_from_subject_development = -0.33
 			}
@@ -996,6 +1020,13 @@ age_of_revolutions = {
 		}
 
 		ab_napoleonic_warfare = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_napoleonic_warfare
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			modifier = {
 				artillery_bonus_vs_fort = 3
 			}
@@ -1005,6 +1036,13 @@ age_of_revolutions = {
 		}
 		
 		ab_force_march = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_force_march
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			rule = {
 				force_march_free = yes
 			}
@@ -1014,6 +1052,13 @@ age_of_revolutions = {
 		}
 
 		ab_more_ships_can_fire = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_more_ships_can_fire
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			modifier = {
 				global_naval_engagement_modifier = 0.20
 			}
@@ -1023,6 +1068,13 @@ age_of_revolutions = {
 		}
 
 		ab_no_distance_for_core = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_no_distance_for_core
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			rule = {
 				ignore_coring_distance = yes
 			}
@@ -1032,6 +1084,13 @@ age_of_revolutions = {
 		}
 		
 		ab_backrow_artillery = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_backrow_artillery
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			modifier = {
 				backrow_artillery_damage = 0.20
 			}
@@ -1041,6 +1100,13 @@ age_of_revolutions = {
 		}
 
 		ab_same_contine_lib_desire = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_same_contine_lib_desire
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			modifier = {
 				reduced_liberty_desire_on_same_continent = 25
 			}
@@ -1059,6 +1125,13 @@ age_of_revolutions = {
 		}
 
 		ab_pru_military = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_pru_military
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			allow = {
 				OR = {
 					has_global_flag = age_overhaul_country_specific_abilities_for_all
@@ -1067,6 +1140,7 @@ age_of_revolutions = {
 						is_great_power = yes
 					}
 					was_tag = PRU
+					tag = PRU
 				}
 			}
 			modifier = {
@@ -1078,6 +1152,13 @@ age_of_revolutions = {
 		}
 
 		ab_gbr_fleet = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_gbr_fleet
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			allow = {
 				OR = {
 					has_global_flag = age_overhaul_country_specific_abilities_for_all
@@ -1087,6 +1168,8 @@ age_of_revolutions = {
 					}
 					was_tag = GBR
 					was_tag = ENG
+					tag = GBR
+					tag = ENG
 				}
 			}
 			modifier = {
@@ -1098,6 +1181,13 @@ age_of_revolutions = {
 		}
 
 		ab_russia_boost = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_russia_boost
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			allow = {
 				OR = {
 					has_global_flag = age_overhaul_country_specific_abilities_for_all
@@ -1106,6 +1196,7 @@ age_of_revolutions = {
 						is_great_power = yes
 					}
 					was_tag = RUS
+					tag = RUS
 				}
 			}
 			modifier = {
@@ -1117,6 +1208,13 @@ age_of_revolutions = {
 		}
 
 		ab_austria_rep = {
+			effect = {
+				set_country_flag = age_overhaul_age_ability_ab_austria_rep
+				change_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_golden_splendor_generation
+				}
+			}
 			allow = {
 				OR = {
 					has_global_flag = age_overhaul_country_specific_abilities_for_all
@@ -1125,6 +1223,7 @@ age_of_revolutions = {
 						is_great_power = yes
 					}
 					was_tag = HAB
+					tag = HAB
 				}
 			}
 			modifier = {

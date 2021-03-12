@@ -12,7 +12,7 @@ namespace = age_overhaul_menu_carryover_selection_initialization
 country_event = {
 	id = age_overhaul_menu_carryover_selection_initialization.1
 	title = age_overhaul_menu_carryover_selection_initialization.1.title
-	desc = age_overhaul_menu_carryover_selection_desc
+	desc = age_overhaul_you_should_not_see_this
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	hidden = yes
@@ -22,18 +22,14 @@ country_event = {
 		### Set the Age of Discovery ability cost
 		set_variable = {
 			which = age_overhaul_golden_splendor_cost_age_of_discovery
-			which = age_overhaul_golden_splendor_current_cost
+			which = age_overhaul_golden_splendor_cost
 		}
 		if = {
 			limit = {
 				check_variable = {
 					which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
-					value = 1
+					value = 1.01
 				}
-			}
-			multiply_variable = {
-				which = age_overhaul_golden_splendor_cost_age_of_discovery
-				which = age_overhaul_golden_splendor_multiplier
 			}
 			multiply_variable = {
 				which = age_overhaul_golden_splendor_cost_age_of_discovery
@@ -44,18 +40,14 @@ country_event = {
 		### Set the Age of Reformation ability cost
 		set_variable = {
 			which = age_overhaul_golden_splendor_cost_age_of_reformation
-			which = age_overhaul_golden_splendor_current_cost
+			which = age_overhaul_golden_splendor_cost
 		}
 		if = {
 			limit = {
 				check_variable = {
 					which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
-					value = 1
+					value = 1.01
 				}
-			}
-			multiply_variable = {
-				which = age_overhaul_golden_splendor_cost_age_of_reformation
-				which = age_overhaul_golden_splendor_multiplier
 			}
 			multiply_variable = {
 				which = age_overhaul_golden_splendor_cost_age_of_reformation
@@ -66,18 +58,14 @@ country_event = {
 		### Set the Age of Absolutism ability cost
 		set_variable = {
 			which = age_overhaul_golden_splendor_cost_age_of_absolutism
-			which = age_overhaul_golden_splendor_current_cost
+			which = age_overhaul_golden_splendor_cost
 		}
 		if = {
 			limit = {
 				check_variable = {
 					which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
-					value = 1
+					value = 1.01
 				}
-			}
-			multiply_variable = {
-				which = age_overhaul_golden_splendor_cost_age_of_absolutism
-				which = age_overhaul_golden_splendor_multiplier
 			}
 			multiply_variable = {
 				which = age_overhaul_golden_splendor_cost_age_of_absolutism
@@ -88,18 +76,14 @@ country_event = {
 		### Set the Age of Revolutions ability cost
 		set_variable = {
 			which = age_overhaul_golden_splendor_cost_age_of_revolutions
-			which = age_overhaul_golden_splendor_current_cost
+			which = age_overhaul_golden_splendor_cost
 		}
 		if = {
 			limit = {
 				check_variable = {
 					which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
-					value = 1
+					value = 1.01
 				}
-			}
-			multiply_variable = {
-				which = age_overhaul_golden_splendor_cost_age_of_revolutions
-				which = age_overhaul_golden_splendor_multiplier
 			}
 			multiply_variable = {
 				which = age_overhaul_golden_splendor_cost_age_of_revolutions
@@ -110,7 +94,7 @@ country_event = {
 
 	# Close the event if it manages to pop up
 	option = {
-		name = age_overhaul_options_skip
+		name = age_overhaul_ok
 
 		country_event = { id = age_overhaul_menu_carryover_selection_initialization.2 }
 	}
@@ -120,7 +104,7 @@ country_event = {
 country_event = {
 	id = age_overhaul_menu_carryover_selection_initialization.2
 	title = age_overhaul_menu_carryover_selection_initialization.2.title
-	desc = age_overhaul_menu_carryover_selection_desc
+	desc = age_overhaul_you_should_not_see_this
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	hidden = yes
@@ -877,8 +861,8 @@ country_event = {
 
 	# Close the event if it manages to pop up
 	option = {
-		name = age_overhaul_options_skip
+		name = age_overhaul_ok
 
-		country_event = { id = age_overhaul_menu_carryover_selection.2 }
+		country_event = { id = age_overhaul_menu_carryover_selection.1 }
 	}
 }

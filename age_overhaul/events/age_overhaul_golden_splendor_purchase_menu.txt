@@ -18,7 +18,7 @@ country_event = {
 
 	# Exit
 	option = {
-		name = age_overhaul_options_exit
+		name = age_overhaul_exit
 		ai_chance = {
 			factor = 1
 			

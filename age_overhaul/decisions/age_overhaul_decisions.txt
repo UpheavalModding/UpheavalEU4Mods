@@ -36,7 +36,7 @@ country_decisions = {
 		}
 
 		effect = {
-			custom_tooltip = age_overhaul_options_menu_desc
+			custom_tooltip = age_overhaul_options
 		}
 	}
 

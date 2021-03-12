@@ -5,6 +5,7 @@ Welcome to Age Overhaul! This mod focuses on making [b]Age Abilities[/b] availab
 - Unlocks country-specific [b]Age Abilities[/b] for purchase by all countries
 - Ability to carry over Age Abilities from one age to the next using [b]Golden Splendor[/b]
 - Full configuration of all features
+- Safe to drop in to games mid-way
 
 [h1]"Golden Splendor"[/h1]
 [b]Golden Splendor[/b] is the currency that is used to carry over [b]Age Abilities[/b] from one age to the next. It is generated every time you purchase an [b]Age Ability[/b] in a particular age. At the end of the Age, a menu will appear that will allow you to repurchase [b]Age Abilities[/b] that you had previously owned in the last Age. Unlike regular Splendor, [b]Golden Splendor[/b] carries through different Ages, allowing you to stockpile [b]Golden Splendor[/b].
@@ -14,6 +15,8 @@ Configuration options for the mod allow you to:
 - Change how much [b]Golden Splendor[/b] it costs to purchase a previously owned [b]Age Ability[/b] in future Ages.
 - Modify a multiplier that will make older [b]Age Abilities[/b] progressively more expensive as time goes on (e.g. Age of Discovery bonuses can be progressively harder to maintain the longer things last).
 - Enable or Disable carrying over Age Abilities
+- Settings for enabling/disabling decisions for converting Golden Splendor to Splendor and vice-versa
+- Settings for changing whether Country-Specific Age Abilities (i.e. The Guns of Urban) can be unlocked by other nations
 
 [h1]Tutorial/Example of Mechanics[/h1]
 [i]With Default Settings[/i]
@@ -40,19 +43,26 @@ Configuration options for the mod allow you to:
 
 [h1]Future Plans[/h1]
 - Balancing
-- New Age(s)? Age of Enlightenment and/or Age of Industrialization (balancing concerns, etc. need to be worked through first)
-- Rework of the mod to allow easier time supporting other mods that touch Age Abilities (if possible)
-- Rework the configuration menus to allow more granular control over Golden Splendor Generation and Cost (similar to the starting Golden Splendor menu)
-- Configuration of the max power an Age Ability can be when carried over (i.e. if you want to cap it at 50% strength only)
-- Rework of the Age Ability carryover menu to go to the max settings you can purchase at automatically rather than always defaulting to 100%. Or not even pop up if you can't buy anything anyway
-- Extra Age Abilties per Age (make it more of a choice which ones you actually purchase rather than being able to pick up all of them)
-- Additional ways to generate splendor
+- Better handling of how the AI chooses abilities to carry over
+- Additional ways to generate Splendor
+- Additional ways to spend Golden Splendor (boost your monarch points possibly? etc.)
+- Patches so the mod can work with other mods that touch Age Abilities (ex.: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2172666098]Ages and Splendor Expanded[/url]). Alternatively merging with those mods!
 
 [h1]Usage of this Mod[/h1]
 Feel free to use this mod in any modpack, or to create compatibility patches for this and other mods. If you want to incorporate this mod into your mod, contact one of the creators to let us know.
 
-[h1]Ironman/Achievement Compatibility[/h1]
-This mod is not Achievement compatible
+[b][u]Not[/u] Achievement Compatible[/b]
 
 [h1]Mod Compatibility[/h1]
-This mod is fully compatible with any mod that does not change Age Abilities. Any mod that does touch Age Abilities (ex.: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2172666098]Ages and Splendor Expanded[/url]) are not compatible with this mod at this time.
+This mod is fully compatible with any mod that does [u]not[/u] change Age Abilities. Any mod that does touch Age Abilities (ex.: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2172666098]Ages and Splendor Expanded[/url]) are not compatible with this mod at this time.
+
+[h1]Recent Version[/h1]
+1.0.0 - Initial Release
+[i][url=https://github.com/UpheavalModding/UpheavalEU4Mods/blob/main/unequal_nations/version_history]Click here for a detailed version history[/url][/i]
+
+[h1]Development/Source Code[/h1]
+Source code for the mod is available on [url=https://github.com/UpheavalModding/UpheavalEU4Mods]GitHub[/url]
+
+[h1]My Other EU4 Mods[/h1]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2313248827]Unequal Nations[/url] - Random Buffs/Nerfs for Unique Playthroughs
+Age Overhaul (Coming soon!) - Unlocks Country-Specific Age Abilities for everyone and allows carrying over Age Abilities to new ages

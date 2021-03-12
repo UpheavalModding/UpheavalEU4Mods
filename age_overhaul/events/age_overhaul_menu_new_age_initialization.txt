@@ -11,7 +11,7 @@ namespace = age_overhaul_menu_new_age_initialization
 country_event = {
 	id = age_overhaul_menu_new_age_initialization.1
 	title = age_overhaul_menu_new_age_initialization.1.title
-	desc = age_overhaul_skipper_desc
+	desc = age_overhaul_you_should_not_see_this
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	hidden = yes
@@ -20,41 +20,49 @@ country_event = {
 
 	trigger = {
 		has_global_flag = age_overhaul_initialized
-		has_global_flag = age_overhaul_option_carryover_enabled
-		NOT = { current_age = age_of_discovery }
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+			has_country_flag = age_overhaul_age_of_discovery_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
 		current_age = age_of_reformation
-		NOT = { current_age = age_of_absolutism }
-		NOT = { current_age = age_of_revolutions }
-		NOT = { has_country_flag = age_overhaul_age_of_discovery_abilities_selected }
-		NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
 	}
 
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_country_flag = age_overhaul_age_of_discovery_abilities_selected }
-				NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
+				NOT = {
+					has_country_flag = age_overhaul_age_of_discovery_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
 			}
 
 			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
-				which = 1
+				value = 1
 			}
+			# Age of Reformation
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
-				which = 1
+				value = 1
 			}
+			# Age of Absolutism
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
-				which = 1
+				value = 1
 			}
+			# Age of Revolutions
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
-				which = 1
+				value = 1
 			}
 
-			country_event = { id = age_overhaul_menu_carryover_selection.1 }
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
 		}
 	}
 
@@ -68,7 +76,7 @@ country_event = {
 country_event = {
 	id = age_overhaul_menu_new_age_initialization.2
 	title = age_overhaul_menu_new_age_initialization.2.title
-	desc = age_overhaul_skipper_desc
+	desc = age_overhaul_you_should_not_see_this
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	hidden = yes
@@ -77,41 +85,49 @@ country_event = {
 
 	trigger = {
 		has_global_flag = age_overhaul_initialized
-		has_global_flag = age_overhaul_option_carryover_enabled
-		NOT = { current_age = age_of_discovery }
-		NOT = { current_age = age_of_reformation }
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_revolutions
+			has_country_flag = age_overhaul_age_of_reformation_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
 		current_age = age_of_absolutism
-		NOT = { current_age = age_of_revolutions }
-		NOT = { has_country_flag = age_overhaul_age_of_reformation_abilities_selected }
-		NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
 	}
 
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_country_flag = age_overhaul_age_of_reformation_abilities_selected }
-				NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
+				NOT = {
+					has_country_flag = age_overhaul_age_of_reformation_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
 			}
 
 			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
-				which = 2
+				which = age_overhaul_golden_splendor_multiplier
 			}
+			# Age of Reformation
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
-				which = 1
+				value = 1
 			}
+			# Age of Absolutism
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
-				which = 1
+				value = 1
 			}
+			# Age of Revolutions
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
-				which = 1
+				value = 1
 			}
 
-			country_event = { id = age_overhaul_menu_carryover_selection.1 }
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
 		}
 	}
 
@@ -125,7 +141,7 @@ country_event = {
 country_event = {
 	id = age_overhaul_menu_new_age_initialization.3
 	title = age_overhaul_menu_new_age_initialization.3.title
-	desc = age_overhaul_skipper_desc
+	desc = age_overhaul_you_should_not_see_this
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	hidden = yes
@@ -134,41 +150,53 @@ country_event = {
 
 	trigger = {
 		has_global_flag = age_overhaul_initialized
-		has_global_flag = age_overhaul_option_carryover_enabled
-		NOT = { current_age = age_of_discovery }
-		NOT = { current_age = age_of_reformation }
-		NOT = { current_age = age_of_absolutism }
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+			has_country_flag = age_overhaul_age_of_absolutism_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
 		current_age = age_of_revolutions
-		NOT = { has_country_flag = age_overhaul_age_of_absolutism_abilities_selected }
-		NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
 	}
 
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_country_flag = age_overhaul_age_of_absolutism_abilities_selected }
-				NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
+				NOT = {
+					has_country_flag = age_overhaul_age_of_absolutism_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
 			}
 
 			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
-				which = 3
+				which = age_overhaul_golden_splendor_multiplier
 			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Reformation
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
-				which = 2
+				which = age_overhaul_golden_splendor_multiplier
 			}
+			# Age of Absolutism
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
-				which = 1
+				value = 1
 			}
+			# Age of Revolutions
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
-				which = 1
+				value = 1
 			}
 
-			country_event = { id = age_overhaul_menu_carryover_selection.1 }
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
 		}
 	}
 
@@ -182,7 +210,7 @@ country_event = {
 country_event = {
 	id = age_overhaul_menu_new_age_initialization.4
 	title = age_overhaul_menu_new_age_initialization.4.title
-	desc = age_overhaul_skipper_desc
+	desc = age_overhaul_you_should_not_see_this
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	hidden = yes
@@ -191,41 +219,61 @@ country_event = {
 
 	trigger = {
 		has_global_flag = age_overhaul_initialized
-		has_global_flag = age_overhaul_option_carryover_enabled
-		NOT = { current_age = age_of_discovery }
-		NOT = { current_age = age_of_reformation }
-		NOT = { current_age = age_of_absolutism }
-		NOT = { current_age = age_of_revolutions }
-		NOT = { has_country_flag = age_overhaul_age_of_revolutions_abilities_selected }
-		NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+			has_country_flag = age_overhaul_age_of_revolutions_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
 	}
 
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = { has_country_flag = age_overhaul_age_of_revolutions_abilities_selected }
-				NOT = { has_country_flag = age_overhaul_age_ability_purchasing }
+				NOT = {
+					has_country_flag = age_overhaul_age_of_revolutions_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
 			}
 
 			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
-				which = 4
+				which = age_overhaul_golden_splendor_multiplier
 			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Reformation
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
-				which = 3
+				which = age_overhaul_golden_splendor_multiplier
 			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Absolutism
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
-				which = 2
+				which = age_overhaul_golden_splendor_multiplier
 			}
+			# Age of Revolutions
 			set_variable = {
 				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
-				which = 1
+				value = 1
 			}
 
-			country_event = { id = age_overhaul_menu_carryover_selection.1 }
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
 		}
 	}
 
