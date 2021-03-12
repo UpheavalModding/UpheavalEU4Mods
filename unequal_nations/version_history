@@ -1,0 +1,15 @@
+1.0.4 (11/03/2021)
+- Updated steam description and started towards adding a detailed revision history.
+- Added decision to allow rerolling buffs/nerfs (unequal_nations_reroll_nations). This can be used at any time, will likely go through changes/restrictions in the future (not too heavily tested right now).
+
+1.0.3 (11/12/2020)
+- Fixed issue causing age changing to constantly update buffs/nerfs.
+
+1.0.2 (08/12/2020)
+ - Setting menu linking fix.
+
+1.0.1 (08/12/2020)
+ - Minor localization fixes.
+
+1.0.0 (08/12/2020)
+ - Initial release.

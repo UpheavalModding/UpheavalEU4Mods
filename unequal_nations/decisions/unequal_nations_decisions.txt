@@ -24,3 +24,24 @@ country_decisions = {
 		}
 	}
 }
+
+country_decisions = {
+	unequal_nations_reroll_nations = {
+		major = yes
+		
+		potential = {
+			has_global_flag = unequal_nations_initialized
+			has_country_flag = unequal_nations_settings_host
+		}
+		allow = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			country_event = { id = unequal_nations_randomizer.1 }
+		}
+	}
+}

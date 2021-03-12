@@ -33,11 +33,16 @@ Feel free to use this mod in any modpack, or to create compatibility patches for
 Big thanks to https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765 for the inspiration!
 
 [h1]Version[/h1]
+1.0.4 - Added decision to allow rerolling buffs/nerfs and minor text updates to the steam description.
 1.0.3 - Fixed issue causing age changing to constantly update buffs/nerfs.
 1.0.2 - Setting menu linking fix.
 1.0.1 - Minor localization fixes.
 1.0.0 - Initial release.
+[i][url=https://github.com/UpheavalModding/UpheavalEU4Mods/blob/main/unequal_nations/version_history]Click here for a detailed version history[/url][/i]
 
-[h1]My EU4 Mods[/h1]
+[h1]Development/Source Code[/h1]
+Source code for the mod is available on [url=https://github.com/UpheavalModding/UpheavalEU4Mods]GitHub[/url]
+
+[h1]My Other EU4 Mods[/h1]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2313248827]Unequal Nations[/url] - Random Buffs/Nerfs for Unique Playthroughs
 Age Overhaul (Coming soon!) - Unlocks Country-Specific Age Abilities for everyone and allows carrying over Age Abilities to new ages

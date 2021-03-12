@@ -2,6 +2,9 @@
 ##### Decisions
  current_unequal_nations_settings_title:0 "Unequal Nations - Settings"
 
+ unequal_nations_reroll_nations_title:0 "Unequal Nations - Reroll Buffs/Nerfs"
+ unequal_nations_reroll_nations_desc:0 "Rerolls buffs and nerfs for all nations based on current settings."
+
 ##### Dynamic Localizations
 ### Get Player Nation Mod Impact
  unequal_nation_localization_player_nation_impact_enabled:0 "Player Nations Allowed"
