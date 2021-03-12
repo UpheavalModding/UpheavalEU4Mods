@@ -10,3 +10,8 @@ Extended Diplomacy | Planning | N/A | [Repo Link](https://github.com/UpheavalMod
 National Personalities | Planning | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/national_personalities) | An RPG-esque trait system for unlocking various bonuses (or nerfs!) for one's nation.
 Military Overhaul | Planning | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/military_overhaul) | Overhauled military (army and navy).
 Natural Development | Planning | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/natural_development) | My take on dynamic development
+
+# How to Get Started with Development
+1) Download Visual Studio Code: https://code.visualstudio.com/
+2) Download CWTools for Visual Studio Code: https://marketplace.visualstudio.com/items?itemName=tboby.cwtools-vscode (and https://marketplace.visualstudio.com/items?itemName=tboby.paradox-syntax ). Follow the instructions for enabling the extension properly.
+3) Download the codebase and get started making PRs!
