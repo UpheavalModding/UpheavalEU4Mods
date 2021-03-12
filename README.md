@@ -8,3 +8,5 @@ Unequal Nations | Released | [Workshop Link](https://steamcommunity.com/sharedfi
 Age Overhaul | Dev (rework) | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/age_overhaul) | A mod that allows nations to carry over age abilities and set whether country-specific age abilities are unlocked for other nations or not.
 Extended Diplomacy | Planning | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/extended_diplomacy) | Extra diplomacy options giving more variety in nation interaction (especially in multiplayer).
 National Personalities | Planning | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/national_personalities) | An RPG-esque trait system for unlocking various bonuses (or nerfs!) for one's nation.
+Military Overhaul | Planning | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/military_overhaul) | Overhauled military (army and navy).
+Natural Development | Planning | N/A | [Repo Link](https://github.com/UpheavalModding/UpheavalEU4Mods/tree/main/natural_development) | My take on dynamic development
