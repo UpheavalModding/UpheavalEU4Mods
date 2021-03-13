@@ -1,0 +1,1375 @@
+##############################
+# Age Overhaul Options       #
+# Carryover Selection Menu   #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_menu_carryover_selection
+
+# Ability Purchase Menu
+country_event = {
+	id = age_overhaul_menu_carryover_selection.1
+	title = age_overhaul_menu_carryover_selection.1.title
+	desc = {
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+			current_age = age_of_reformation
+		}
+		desc = age_overhaul_purchases_age_of_discovery
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_revolutions
+			}
+			current_age = age_of_absolutism
+		}
+		desc = age_overhaul_purchases_age_of_reformation
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+			}
+			current_age = age_of_revolutions
+		}
+		desc = age_overhaul_purchases_age_of_absolutism
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				current_age = age_of_discovery
+				current_age = age_of_reformation
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
+		desc = age_overhaul_purchases_age_of_revolutions
+	}
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# Exit
+	option = {
+		name = age_overhaul_exit
+		ai_chance = { factor = 1 }
+
+		hidden_effect = {
+			clr_country_flag = age_overhaul_age_ability_purchasing
+
+			if = {
+				limit = {
+					current_age = age_of_reformation
+				}
+				set_country_flag = age_overhaul_age_of_discovery_abilities_selected
+			}
+			if = {
+				limit = {
+					current_age = age_of_absolutism
+				}
+				set_country_flag = age_overhaul_age_of_reformation_abilities_selected
+			}
+			if = {
+				limit = {
+					current_age = age_of_revolutions
+				}
+				set_country_flag = age_overhaul_age_of_absolutism_abilities_selected
+			}
+			if = {
+				limit = {
+					NOT = {
+						current_age = age_of_discovery
+						current_age = age_of_reformation
+						current_age = age_of_absolutism
+						current_age = age_of_revolutions
+					}
+				}
+				set_country_flag = age_overhaul_age_of_revolutions_abilities_selected
+			}
+		}
+	}
+
+	##### State Edicts
+	# ab_allow_feudal_de_jure_law
+	option = {
+		name = age_overhaul_ab_allow_feudal_de_jure_law
+		custom_tooltip = feudal_de_jure_law
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_allow_feudal_de_jure_law
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = feudal_de_jure_law
+			set_country_flag = age_overhaul_age_ability_ab_allow_feudal_de_jure_law
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_allow_feudal_de_jure_law
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_allow_religion_enforced
+	option = {
+		name = age_overhaul_ab_allow_religion_enforced
+		custom_tooltip = religion_enforced_edict
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_allow_religion_enforced
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = religion_enforced_edict
+			set_country_flag = age_overhaul_age_ability_ab_allow_religion_enforced
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_allow_religion_enforced
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_allow_edict_of_absolutism
+	option = {
+		name = age_overhaul_ab_allow_edict_of_absolutism
+		custom_tooltip = edict_of_absolutism_tt
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_allow_edict_of_absolutism
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = edict_of_absolutism
+			set_country_flag = age_overhaul_age_ability_ab_allow_edict_of_absolutism
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_allow_edict_of_absolutism
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+
+	### Age of Discovery
+	# ab_justified_wars
+	option = {
+		name = age_overhaul_ab_justified_wars
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_justified_wars
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_justified_wars
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_justified_wars
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_justified_wars
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_transfer_vassal_wargoal
+	option = {
+		name = age_overhaul_ab_transfer_vassal_wargoal
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_transfer_vassal_wargoal
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_transfer_vassal_wargoal
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_transfer_vassal_wargoal
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_transfer_vassal_wargoal
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_free_war_taxes
+	option = {
+		name = age_overhaul_ab_free_war_taxes
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_free_war_taxes
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_free_war_taxes
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_free_war_taxes
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_free_war_taxes
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_cavalry_armies
+	option = {
+		name = age_overhaul_ab_cavalry_armies
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_cavalry_armies
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_cavalry_armies
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_cavalry_armies
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_cavalry_armies
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_colony_boost_development
+	option = {
+		name = age_overhaul_ab_colony_boost_development
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_colony_boost_development
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_colony_boost_development
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_colony_boost_development
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_colony_boost_development
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_attack_bonus_in_capital_terrain
+	option = {
+		name = age_overhaul_ab_attack_bonus_in_capital_terrain
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_attack_bonus_in_capital_terrain
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_attack_bonus_in_capital_terrain
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_attack_bonus_in_capital_terrain
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_attack_bonus_in_capital_terrain
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_ottoman_siege_ability
+	option = {
+		name = age_overhaul_ab_ottoman_siege_ability
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_ottoman_siege_ability
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_ottoman_siege_ability
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_ottoman_siege_ability
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_ottoman_siege_ability
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_portugal_colonial_growth
+	option = {
+		name = age_overhaul_ab_portugal_colonial_growth
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_portugal_colonial_growth
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_portugal_colonial_growth
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_portugal_colonial_growth
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_portugal_colonial_growth
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_denmark_reduced_lib_desire
+	option = {
+		name = age_overhaul_ab_denmark_reduced_lib_desire
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_denmark_reduced_lib_desire
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_denmark_reduced_lib_desire
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_denmark_reduced_lib_desire
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_denmark_reduced_lib_desire
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_venice_ship_trade
+	option = {
+		name = age_overhaul_ab_venice_ship_trade
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_venice_ship_trade
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_discovery
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_venice_ship_trade
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_discovery
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_venice_ship_trade
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_venice_ship_trade
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	### Age of Reformation
+	# ab_siege_blockades
+	option = {
+		name = age_overhaul_ab_siege_blockades
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_siege_blockades
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_siege_blockades
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_siege_blockades
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_siege_blockades
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_warscore_vs_religion
+	option = {
+		name = age_overhaul_ab_warscore_vs_religion
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_warscore_vs_religion
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_warscore_vs_religion
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_warscore_vs_religion
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_warscore_vs_religion
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_mercenary_discipline
+	option = {
+		name = age_overhaul_ab_mercenary_discipline
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_mercenary_discipline
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_mercenary_discipline
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_mercenary_discipline
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_mercenary_discipline
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_ship_power_propagation
+	option = {
+		name = age_overhaul_ab_ship_power_propagation
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_ship_power_propagation
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_ship_power_propagation
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_ship_power_propagation
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_ship_power_propagation
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_institution_spread_from_true_faith
+	option = {
+		name = age_overhaul_ab_institution_spread_from_true_faith
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_institution_spread_from_true_faith
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_institution_spread_from_true_faith
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_institution_spread_from_true_faith
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_institution_spread_from_true_faith
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_prestige_per_development_from_conversion
+	option = {
+		name = age_overhaul_ab_prestige_per_development_from_conversion
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_prestige_per_development_from_conversion
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_prestige_per_development_from_conversion
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_prestige_per_development_from_conversion
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_prestige_per_development_from_conversion
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_spain_tercio
+	option = {
+		name = age_overhaul_ab_spain_tercio
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_spain_tercio
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_spain_tercio
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_spain_tercio
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_spain_tercio
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_mughal_artillery
+	option = {
+		name = age_overhaul_ab_mughal_artillery
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_mughal_artillery
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_mughal_artillery
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_mughal_artillery
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_mughal_artillery
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_polish_legitimacy
+	option = {
+		name = age_overhaul_ab_polish_legitimacy
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_polish_legitimacy
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_polish_legitimacy
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_polish_legitimacy
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_polish_legitimacy
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_persia_reinforce
+	option = {
+		name = age_overhaul_ab_persia_reinforce
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_persia_reinforce
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_reformation
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_persia_reinforce
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_reformation
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_persia_reinforce
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_persia_reinforce
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	### Age of Absolutism
+	# ab_rival_change
+	option = {
+		name = age_overhaul_ab_rival_change
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_rival_change
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_rival_change
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_rival_change
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_rival_change
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_rival_border_fort
+	option = {
+		name = age_overhaul_ab_rival_border_fort
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_rival_border_fort
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_rival_border_fort
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_rival_border_fort
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_rival_border_fort
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_autonomy
+	option = {
+		name = age_overhaul_ab_autonomy
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_autonomy
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_autonomy
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_autonomy
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_autonomy
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_harsh_treatment
+	option = {
+		name = age_overhaul_ab_harsh_treatment
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_harsh_treatment
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_harsh_treatment
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_harsh_treatment
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_harsh_treatment
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_adm_efficiency
+	option = {
+		name = age_overhaul_ab_adm_efficiency
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_adm_efficiency
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_adm_efficiency
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_adm_efficiency
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_adm_efficiency
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_yearly_absolutism
+	option = {
+		name = age_overhaul_ab_yearly_absolutism
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_yearly_absolutism
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_yearly_absolutism
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_yearly_absolutism
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_yearly_absolutism
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_france_fire_damage
+	option = {
+		name = age_overhaul_ab_france_fire_damage
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_france_fire_damage
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_france_fire_damage
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_france_fire_damage
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_france_fire_damage
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_dutch_anti_corruption
+	option = {
+		name = age_overhaul_ab_dutch_anti_corruption
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_dutch_anti_corruption
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_dutch_anti_corruption
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_dutch_anti_corruption
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_dutch_anti_corruption
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_sweden_manpower
+	option = {
+		name = age_overhaul_ab_sweden_manpower
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_sweden_manpower
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_sweden_manpower
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_sweden_manpower
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_sweden_manpower
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_manchu_banner
+	option = {
+		name = age_overhaul_ab_manchu_banner
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_manchu_banner
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_absolutism
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_manchu_banner
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_absolutism
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_manchu_banner
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_manchu_banner
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	### Age of Revolutions
+	# ab_allow_anti_revolutionary_zeal
+	option = {
+		name = age_overhaul_ab_allow_anti_revolutionary_zeal
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_allow_anti_revolutionary_zeal
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_allow_anti_revolutionary_zeal
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_allow_anti_revolutionary_zeal
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_allow_anti_revolutionary_zeal
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_napoleonic_warfare
+	option = {
+		name = age_overhaul_ab_napoleonic_warfare
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_napoleonic_warfare
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_napoleonic_warfare
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_napoleonic_warfare
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_napoleonic_warfare
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_force_march
+	option = {
+		name = age_overhaul_ab_force_march
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_force_march
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_force_march
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_force_march
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_force_march
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_more_ships_can_fire
+	option = {
+		name = age_overhaul_ab_more_ships_can_fire
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_more_ships_can_fire
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_more_ships_can_fire
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_more_ships_can_fire
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_more_ships_can_fire
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_no_distance_for_core
+	option = {
+		name = age_overhaul_ab_no_distance_for_core
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_no_distance_for_core
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_no_distance_for_core
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_no_distance_for_core
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_no_distance_for_core
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_backrow_artillery
+	option = {
+		name = age_overhaul_ab_backrow_artillery
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_backrow_artillery
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_backrow_artillery
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_backrow_artillery
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_backrow_artillery
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_same_contine_lib_desire
+	option = {
+		name = age_overhaul_ab_same_contine_lib_desire
+		ai_chance = { factor = 10 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_same_contine_lib_desire
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_same_contine_lib_desire
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_same_contine_lib_desire
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_same_contine_lib_desire
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_pru_military
+	option = {
+		name = age_overhaul_ab_pru_military
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_pru_military
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_pru_military
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_pru_military
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_pru_military
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_gbr_fleet
+	option = {
+		name = age_overhaul_ab_gbr_fleet
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_gbr_fleet
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_gbr_fleet
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_gbr_fleet
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_gbr_fleet
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_russia_boost
+	option = {
+		name = age_overhaul_ab_russia_boost
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_russia_boost
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_russia_boost
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_russia_boost
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_russia_boost
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+	# ab_austria_rep
+	option = {
+		name = age_overhaul_ab_austria_rep
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_country_flag = age_overhaul_age_ability_purchasable_ab_austria_rep
+
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				which = age_overhaul_golden_splendor_cost_age_of_revolutions
+			}
+		}
+		
+		add_country_modifier = {
+			name = age_overhaul_age_ability_ab_austria_rep
+			duration = -1
+		}
+
+		subtract_variable = {
+			which = age_overhaul_golden_splendor
+			which = age_overhaul_golden_splendor_cost_age_of_revolutions
+		}
+
+		hidden_effect = {
+			set_country_flag = age_overhaul_age_ability_ab_austria_rep
+			clr_country_flag = age_overhaul_age_ability_purchasable_ab_austria_rep
+			country_event = { id = age_overhaul_menu_skipper.13 }
+		}
+	}
+}

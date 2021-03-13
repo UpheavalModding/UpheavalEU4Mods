@@ -1,0 +1,197 @@
+##############################
+# Age Overhaul Options       #
+# Golden Splendor Generation #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_golden_splendor_generation
+
+# Main Menu
+country_event = {
+	id = age_overhaul_options_golden_splendor_generation.1
+	title = age_overhaul_options_golden_splendor_generation.1.title
+	desc = age_overhaul_options
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Return to Golden Splendor Menu
+	option = {
+		name = age_overhaul_back
+		country_event = { id = age_overhaul_menu_skipper.5 }
+	}
+
+	### Increases
+	# Increase Generation by 25
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_25
+		hidden_effect = {
+			every_country = {
+				change_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 25
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+	# Increase Generation by 100
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_100
+		hidden_effect = {
+			every_country = {
+				change_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 100
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+	# Increase Generation by 400
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_400
+		hidden_effect = {
+			every_country = {
+				change_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 400
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+	# Increase Generation by 800
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_800
+		hidden_effect = {
+			every_country = {
+				change_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 800
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+
+	### Decreases
+	# Decrease Generation by 25
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_25_d
+		hidden_effect = {
+			every_country = {
+				subtract_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 25
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = age_overhaul_golden_splendor_generation
+								value = 0
+							}
+						}
+					}
+					
+					set_variable = {
+						which = age_overhaul_golden_splendor_generation
+						value = 0
+					}
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+	# Decrease Generation by 100
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_100_d
+		hidden_effect = {
+			every_country = {
+				subtract_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 100
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = age_overhaul_golden_splendor_generation
+								value = 0
+							}
+						}
+					}
+					
+					set_variable = {
+						which = age_overhaul_golden_splendor_generation
+						value = 0
+					}
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+	# Decrease Generation by 400
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_400_d
+		hidden_effect = {
+			every_country = {
+				subtract_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 400
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = age_overhaul_golden_splendor_generation
+								value = 0
+							}
+						}
+					}
+					
+					set_variable = {
+						which = age_overhaul_golden_splendor_generation
+						value = 0
+					}
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+	# Decrease Generation by 800
+	option = {
+		name = age_overhaul_options_menu_golden_splendor_amount_800_d
+		hidden_effect = {
+			every_country = {
+				subtract_variable = {
+					which = age_overhaul_golden_splendor_generation
+					value = 800
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = age_overhaul_golden_splendor_generation
+								value = 0
+							}
+						}
+					}
+					
+					set_variable = {
+						which = age_overhaul_golden_splendor_generation
+						value = 0
+					}
+				}
+			}
+		}
+		country_event = { id = age_overhaul_menu_skipper.6 }
+	}
+}

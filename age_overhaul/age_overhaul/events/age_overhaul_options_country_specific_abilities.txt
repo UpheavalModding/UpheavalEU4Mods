@@ -1,0 +1,55 @@
+##############################
+# Age Overhaul Options       #
+# Country-Specific Abilities #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_country_specific_abilities
+
+# Main Menu
+country_event = {
+	id = age_overhaul_options_country_specific_abilities.1
+	title = age_overhaul_options_country_specific_abilities.1.title
+	desc = age_overhaul_options
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Return to Main Menu
+	option = {
+		name = age_overhaul_back
+		country_event = { id = age_overhaul_menu_skipper.2 }
+	}
+
+	# Default (Vanilla) - Country-Specific Abilities only for specific countries
+	option = {
+		name = age_overhaul_options_country_specific_abilities.1.a
+		hidden_effect = {
+			clr_global_flag = age_overhaul_country_specific_abilities_for_all
+			clr_global_flag = age_overhaul_country_specific_abilities_for_great_powers
+			country_event = { id = age_overhaul_menu_skipper.3 }
+		}
+	}
+
+	# Country-Specific Abilities only for specific countries for All Countries
+	option = {
+		name = age_overhaul_options_country_specific_abilities.1.b
+		hidden_effect = {
+			set_global_flag = age_overhaul_country_specific_abilities_for_all
+			clr_global_flag = age_overhaul_country_specific_abilities_for_great_powers
+			country_event = { id = age_overhaul_menu_skipper.3 }
+		}
+	}
+
+	# Country-Specific Abilities only for specific countries or Great Powers
+	option = {
+		name = age_overhaul_options_country_specific_abilities.1.c
+		hidden_effect = {
+			clr_global_flag = age_overhaul_country_specific_abilities_for_all
+			set_global_flag = age_overhaul_country_specific_abilities_for_great_powers
+			country_event = { id = age_overhaul_menu_skipper.3 }
+		}
+	}
+}

@@ -1,0 +1,59 @@
+##############################
+# Age Overhaul Options       #
+# Main Menu                  #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_main_menu
+
+# Main Menu
+country_event = {
+	id = age_overhaul_options_main_menu.1
+	title = age_overhaul_options_main_menu.1.title
+	desc = age_overhaul_options
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Open Sub-menu to select between pre-sets
+	option = {
+		name = age_overhaul_options_main_menu.1.e
+		country_event = { id = age_overhaul_options_presets.1 }
+	}
+
+	# Open Sub-menu to choose settings regarding country-specific age abilities
+	option = {
+		name = age_overhaul_options_main_menu.1.b
+		country_event = { id = age_overhaul_options_country_specific_abilities.1 }
+	}
+
+	# Open Sub-menu to enable/disable various decisions
+	option = {
+		name = age_overhaul_options_main_menu.1.c
+		country_event = { id = age_overhaul_options_decisions.1 }
+	}
+
+	# Open Sub-menu to choose whether to enable Golden Splendor and control various aspects of generation/cost
+	option = {
+		name = age_overhaul_options_main_menu.1.d
+		country_event = { id = age_overhaul_options_golden_splendor.1 }
+	}
+
+	# Confirm settings
+	option = {
+		name = age_overhaul_options_main_menu.1.a
+		highlight = yes
+		set_global_flag = age_overhaul_initialized
+
+		hidden_effect = {
+			every_country = {
+				set_variable = {
+					which = age_overhaul_golden_splendor
+					which = age_overhaul_starting_golden_splendor
+				}
+			}
+		}
+	}
+}

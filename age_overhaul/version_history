@@ -1,0 +1,11 @@
+1.0.0 (12/03/2021)
+ - Initial release.
+ - Updated Age Abilities as follows:
+ +++ All age abilities now generate Golden Splendor (if enabled) when purchased
+ +++ All country-specific Age Abilities now use `was_tag` as well as `tag` (allowing a Germany to still select the Prussian ability if they ever were Prussia, for example)
+ +++ ab_spain_tercio: Allows ARA and CAS to also select this ability if they exist, not just ab_spain_tercio
+ +++ ab_manchu_banner: If a nation has at least one banner, they can now select this ability
+ +++ Country-specific age abilities can be unlocked by other nations, depending on mod settings
+ - Golden Splendor: Generated when age abilities are purchased. The amount generated can be configured during setup
+ - About menu, setup menu, and age ability purchase menus have been added
+ - Decisions to purchase Golden Splendor (using Splendor) or vice-versa have been added

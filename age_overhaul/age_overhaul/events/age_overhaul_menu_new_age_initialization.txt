@@ -1,0 +1,284 @@
+##############################
+# Age Overhaul Options       #
+# New Age Initialization     #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_menu_new_age_initialization
+
+# Age of Discovery Initialization
+country_event = {
+	id = age_overhaul_menu_new_age_initialization.1
+	title = age_overhaul_menu_new_age_initialization.1.title
+	desc = age_overhaul_you_should_not_see_this
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = age_overhaul_initialized
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+			has_country_flag = age_overhaul_age_of_discovery_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
+		current_age = age_of_reformation
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = age_overhaul_age_of_discovery_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
+			}
+
+			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				value = 1
+			}
+			# Age of Reformation
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
+				value = 1
+			}
+			# Age of Absolutism
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
+				value = 1
+			}
+			# Age of Revolutions
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
+				value = 1
+			}
+
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
+		}
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_skip
+	}
+}
+
+# Age of Reformation Initialization
+country_event = {
+	id = age_overhaul_menu_new_age_initialization.2
+	title = age_overhaul_menu_new_age_initialization.2.title
+	desc = age_overhaul_you_should_not_see_this
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = age_overhaul_initialized
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_revolutions
+			has_country_flag = age_overhaul_age_of_reformation_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
+		current_age = age_of_absolutism
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = age_overhaul_age_of_reformation_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
+			}
+
+			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Reformation
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
+				value = 1
+			}
+			# Age of Absolutism
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
+				value = 1
+			}
+			# Age of Revolutions
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
+				value = 1
+			}
+
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
+		}
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_skip
+	}
+}
+
+# Age of Absolutism Initialization
+country_event = {
+	id = age_overhaul_menu_new_age_initialization.3
+	title = age_overhaul_menu_new_age_initialization.3.title
+	desc = age_overhaul_you_should_not_see_this
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = age_overhaul_initialized
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+			has_country_flag = age_overhaul_age_of_absolutism_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
+		current_age = age_of_revolutions
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = age_overhaul_age_of_absolutism_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
+			}
+
+			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Reformation
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Absolutism
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
+				value = 1
+			}
+			# Age of Revolutions
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
+				value = 1
+			}
+
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
+		}
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_skip
+	}
+}
+
+# Age of Revolutions Initialization
+country_event = {
+	id = age_overhaul_menu_new_age_initialization.4
+	title = age_overhaul_menu_new_age_initialization.4.title
+	desc = age_overhaul_you_should_not_see_this
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		has_global_flag = age_overhaul_initialized
+		has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		NOT = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+			has_country_flag = age_overhaul_age_of_revolutions_abilities_selected
+			has_country_flag = age_overhaul_age_ability_purchasing
+		}
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				NOT = {
+					has_country_flag = age_overhaul_age_of_revolutions_abilities_selected
+					has_country_flag = age_overhaul_age_ability_purchasing
+				}
+			}
+
+			set_country_flag = age_overhaul_age_ability_purchasing
+			# Age of Discovery
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_discovery
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Reformation
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			multiply_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_reformation
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Absolutism
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_absolutism
+				which = age_overhaul_golden_splendor_multiplier
+			}
+			# Age of Revolutions
+			set_variable = {
+				which = age_overhaul_golden_splendor_cost_multiplier_age_of_revolutions
+				value = 1
+			}
+
+			country_event = { id = age_overhaul_menu_carryover_selection_initialization.1 }
+		}
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = age_overhaul_skip
+	}
+}

@@ -1,0 +1,151 @@
+##############################
+# Age Overhaul Options       #
+# Golden Splendor Purchase   #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_golden_splendor_purchase_menu
+
+# Golden Splendor Generation
+country_event = {
+	id = age_overhaul_golden_splendor_purchase_menu.1
+	title = age_overhaul_golden_splendor_purchase_menu.1.title
+	desc = age_overhaul_golden_splendor_purchase_menu.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# Exit
+	option = {
+		name = age_overhaul_exit
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				splendor = 100
+			}
+			modifier = {
+				factor = 1000
+				NOT = { splendor = 100 }
+			}
+		}
+	}
+
+	# Purchase 100 Golden Splendor
+	option = {
+		name = age_overhaul_golden_splendor_purchase_menu.1.a
+		
+		trigger = {
+			splendor = 100
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				splendor = 200
+			}
+			modifier = {
+				factor = 1000
+				NOT = { splendor = 200 }
+			}
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = 100
+		}
+		add_splendor = -100
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.11 }
+		}
+	}
+
+	# Purchase 200 Golden Splendor
+	option = {
+		name = age_overhaul_golden_splendor_purchase_menu.1.b
+
+		trigger = {
+			splendor = 200
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				splendor = 400
+			}
+			modifier = {
+				factor = 1000
+				NOT = { splendor = 400 }
+			}
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = 200
+		}
+		add_splendor = -200
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.11 }
+		}
+	}
+
+	# Purchase 400 Golden Splendor
+	option = {
+		name = age_overhaul_golden_splendor_purchase_menu.1.c
+
+		trigger = {
+			splendor = 400
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				splendor = 800
+			}
+			modifier = {
+				factor = 1000
+				NOT = { splendor = 800 }
+			}
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = 400
+		}
+		add_splendor = -400
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.11 }
+		}
+	}
+
+	# Purchase 800 Golden Splendor
+	option = {
+		name = age_overhaul_golden_splendor_purchase_menu.1.d
+
+		trigger = {
+			splendor = 800
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1000
+				NOT = { splendor = 801 }
+			}
+		}
+
+		change_variable = {
+			which = age_overhaul_golden_splendor
+			value = 800
+		}
+		add_splendor = -800
+
+		hidden_effect = {
+			country_event = { id = age_overhaul_menu_skipper.11 }
+		}
+	}
+}

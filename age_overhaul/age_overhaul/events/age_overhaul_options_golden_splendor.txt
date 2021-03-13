@@ -1,0 +1,77 @@
+##############################
+# Age Overhaul Options       #
+# Golden Splendor            #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = age_overhaul_options_golden_splendor
+
+# Main Menu
+country_event = {
+	id = age_overhaul_options_golden_splendor.1
+	title = age_overhaul_options_golden_splendor.1.title
+	desc = age_overhaul_options
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Return to Main Menu
+	option = {
+		name = age_overhaul_back
+		country_event = { id = age_overhaul_menu_skipper.2 }
+	}
+
+	### Golden Splendor/Age Ability Carryover Enabled
+	# Enable Golden Splendor
+	option = {
+		name = age_overhaul_options_golden_splendor.1.a.1
+
+		trigger = {
+			NOT = { has_global_flag = age_overhaul_golden_splendor_carryover_enabled }
+		}
+
+		hidden_effect = {
+			set_global_flag = age_overhaul_golden_splendor_carryover_enabled
+			country_event = { id = age_overhaul_menu_skipper.5 }
+		}
+	}
+	# Disable Golden Splendor
+	option = {
+		name = age_overhaul_options_golden_splendor.1.a.2
+
+		trigger = {
+			has_global_flag = age_overhaul_golden_splendor_carryover_enabled
+		}
+
+		hidden_effect = {
+			clr_global_flag = age_overhaul_golden_splendor_carryover_enabled
+			country_event = { id = age_overhaul_menu_skipper.5 }
+		}
+	}
+
+	### Golden Splendor Generation Sub-Menu
+	option = {
+		name = age_overhaul_options_golden_splendor.1.b
+		country_event = { id = age_overhaul_options_golden_splendor_generation.1 }
+	}
+
+	### Golden Splendor Cost Sub-Menu
+	option = {
+		name = age_overhaul_options_golden_splendor.1.c
+		country_event = { id = age_overhaul_options_golden_splendor_cost.1 }
+	}
+
+	### Golden Splendor Multiplier Sub-Menu
+	option = {
+		name = age_overhaul_options_golden_splendor.1.d
+		country_event = { id = age_overhaul_options_golden_splendor_multiplier.1 }
+	}
+
+	### Starting Golden Splendor Sub-Menu
+	option = {
+		name = age_overhaul_options_golden_splendor.1.e
+		country_event = { id = age_overhaul_options_golden_splendor_starting.1 }
+	}
+}

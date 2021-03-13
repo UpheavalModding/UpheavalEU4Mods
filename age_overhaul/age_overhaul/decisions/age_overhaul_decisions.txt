@@ -1,0 +1,85 @@
+##############################
+# Age Overhaul Decisions     #
+#                            #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+country_decisions = {
+	current_golden_splendor = {
+		major = yes
+		potential = {
+			has_global_flag = age_overhaul_initialized
+		}
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			custom_tooltip = current_golden_splendor_desc
+		}
+	}
+
+	current_age_overhaul_settings = {
+		major = yes
+		potential = {
+			has_global_flag = age_overhaul_initialized
+		}
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			custom_tooltip = age_overhaul_options
+		}
+	}
+
+	purchase_golden_splendor = {
+		potential = {
+			has_global_flag = age_overhaul_initialized
+		}
+		allow = {
+			splendor = 100
+			has_global_flag = age_overhaul_enable_golden_splendor_purchasing
+		}
+		effect = {
+			country_event = { id = age_overhaul_golden_splendor_purchase_menu.1 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { splendor = 999 }
+			}
+			modifier = {
+				factor = 1000
+				splendor = 1000
+			}
+		}
+	}
+
+	purchase_splendor = {
+		potential = {
+			has_global_flag = age_overhaul_initialized
+		}
+		allow = {
+			check_variable = {
+				which = age_overhaul_golden_splendor
+				value = 125
+			}
+			has_global_flag = age_overhaul_enable_splendor_purchasing
+		}
+		effect = {
+			country_event = { id = age_overhaul_splendor_purchase_menu.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

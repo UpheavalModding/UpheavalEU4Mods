@@ -1,0 +1,281 @@
+﻿l_english:
+####### Decisions
+ current_golden_splendor_title:0 "Age Overhaul - Current Golden Splendor"
+ current_golden_splendor_desc:0 "Current Golden Splendor: [Root.age_overhaul_golden_splendor.GetValue]"
+ purchase_golden_splendor_title:0 "Age Overhaul - Purchase Golden Splendor"
+ purchase_golden_splendor_desc:0 "Purchase Golden Splendor for regular Splendor"
+ purchase_splendor_title:0 "Age Overhaul - Purchase Splendor"
+ purchase_splendor_desc:0 "Purchase regular Splendor for Golden Splendor"
+ current_age_overhaul_settings_title:0 "Age Overhaul - Current Settings"
+ current_age_overhaul_settings_desc:0 "Current Settings of the Age Overhaul mod"
+
+####### Variable Localization
+ age_overhaul_golden_splendor:0 "Golden Splendor"
+ age_overhaul_starting_golden_splendor:0 "Golden Splendor"
+ age_overhaul_golden_splendor_generation:0 "Golden Splendor"
+ age_overhaul_golden_splendor_cost:0 "Golden Splendor"
+ age_overhaul_golden_splendor_multiplier:0 "Golden Splendor Multiplier"
+
+ age_overhaul_golden_splendor_cost_age_of_discovery:0 "Golden Splendor"
+ age_overhaul_golden_splendor_cost_age_of_reformation:0 "Golden Splendor"
+ age_overhaul_golden_splendor_cost_age_of_absolutism:0 "Golden Splendor"
+ age_overhaul_golden_splendor_cost_age_of_revolutions:0 "Golden Splendor"
+ 
+
+
+
+####### Flags
+ age_overhaul_initialized:0 "Age Overhaul Initialized"
+ age_overhaul_initialize_starting:0 "Age Overhaul Initializing"
+ age_overhaul_option_skipped_age_of_discovery:0 "Skipped Age of Discovery"
+ age_overhaul_option_skipped_age_of_reformation:0 "Skipped Age of Reformation"
+ age_overhaul_option_skipped_age_of_absolutism:0 "Skipped Age of Absolutism"
+ age_overhaul_option_skipped_age_of_revolutions:0 "Skipped Age of Revolutions"
+
+ age_overhaul_settings_host:0 "Age Overhaul Host"
+
+ age_overhaul_country_specific_abilities_for_all:0 "Country-Specific Abilities Available Unlocked for All"
+ age_overhaul_country_specific_abilities_for_great_powers:0 "Country-Specific Abilities Unlocked for Great Powers"
+ age_overhaul_enable_splendor_purchasing:0 "Golden Splendor -> Splendor Purchasing Enabled"
+ age_overhaul_enable_golden_splendor_purchasing:0 "Splendor -> Golden Splendor Purchasing Enabled"
+ age_overhaul_golden_splendor_carryover_enabled:0 "Age Abilities can be carried over"
+
+
+
+####### Custom Localisation
+##### Country-Specific Abilities
+ age_overhaul_country_specific_abilities_default:0 "Unlocked for Specific Countries (Vanilla)"
+ age_overhaul_country_specific_abilities_unlocked:0 "Unlocked for All Countries"
+ age_overhaul_country_specific_abilities_great_powers:0 "Unlocked for Great Powers and Specific Countries"
+##### Enablement
+ age_overhaul_enabled:0 "Enabled"
+ age_overhaul_disabled:0 "Disabled"
+
+
+
+####### Events
+##### Common
+ age_overhaul_ok:0 "OK"
+ age_overhaul_exit:0 "Exit"
+ age_overhaul_skip:0 "Skip"
+ age_overhaul_back:0 "(Back)"
+ age_overhaul_you_should_not_see_this:0 "You shouldn't be seeing this..."
+
+##### Options Common
+ age_overhaul_options:0 "Current Settings \n   Country-specific Age Abilities: [GetCountrySpecificAbilitiesUnlocked]\n\n   Age Ability Carryover: [GetAgeAbilitiesCarryoverEnabled]\n   Golden Splendor Generation: [Root.age_overhaul_golden_splendor_generation.GetValue] per Purchased Age Ability\n   Golden Splendor Cost: [Root.age_overhaul_golden_splendor_cost.GetValue] to purchase Age Ability\n   Golden Splendor Age Multiplier: [Root.age_overhaul_golden_splendor_multiplier.GetValue]x to purchase Age Ability per Later Age\n   Starting Golden Splendor: [Root.age_overhaul_starting_golden_splendor.GetValue]\n   Golden Splendor -> Splendor Decision: [GetGoldenSplendorToSplendor]\n   Splendor -> Golden Splendor Decision: [GetSplendorToGoldenSplendor]"
+
+ age_overhaul_options_menu_golden_splendor_amount_25:0 "Increase by 25 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_100:0 "Increase by 100 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_400:0 "Increase by 400 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_800:0 "Increase by 800 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_25_d:0 "Decrease by 25 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_100_d:0 "Decrease by 100 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_400_d:0 "Decrease by 400 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_800_d:0 "Decrease by 800 Golden Splendor"
+ age_overhaul_options_menu_golden_splendor_amount_25_m:0 "Increase by .25x"
+ age_overhaul_options_menu_golden_splendor_amount_50_m:0 "Increase by .5x"
+ age_overhaul_options_menu_golden_splendor_amount_100_m:0 "Increase by 1x"
+ age_overhaul_options_menu_golden_splendor_amount_25_md:0 "Decrease by .25x"
+ age_overhaul_options_menu_golden_splendor_amount_50_md:0 "Decrease by .5x"
+ age_overhaul_options_menu_golden_splendor_amount_100_md:0 "Decrease by 1x"
+
+
+##### Per Event
+### About
+ age_overhaul_about.1.title:0 "Welcome to Age Overhaul!"
+ age_overhaul_about.1.desc:0 "Welcome to Age Overhaul! This mod focuses on making Age Abilities available for all nations (if configured for such) and allowing players (and AI nations!) the ability to carry over previously purchased Age Abilities from one age to the next."
+
+### About - Golden Splendor
+ age_overhaul_about.2.title:0 "What is Golden Splendor?"
+ age_overhaul_about.2.desc:0 "Golden Splendor is the currency that you will use to purchase Age Abilities from one age to the next. It is generated every time you purchase a new Age Ability in a particular Age (at a default rate of 800 Golden Splendor per Age). When the next Age begins, a purchasing menu will pop up that will allow you to buy all Age Abilities that you had in the previous Age (whether new Age Abilities bought for that last Age or Age Abilities that you had carried over from an earlier age). By default, carrying over Age Abilities will cost 800 Golden Splendor.\n\nAdditionally, depending on the configuration of the mod, a multiplier may be applied so that Age Abilities from earlier ages cost more as time goes on (while purchasing an Age of Discovery ability in the Age of Reformation may cost 800 Golden Splendor, it may cost 1600 Golden Splendor in the Age of Absolutism). By default this multiplier is disabled."
+
+### Golden Splendor Purchase Menu
+ age_overhaul_golden_splendor_purchase_menu.1.title:0 "Purchase Golden Splendor"
+ age_overhaul_golden_splendor_purchase_menu.1.desc:0 "Current Golden Splendor: [Root.age_overhaul_golden_splendor.GetValue]"
+ age_overhaul_golden_splendor_purchase_menu.1.a:0 "100 Splendor -> 100 Golden Splendor"
+ age_overhaul_golden_splendor_purchase_menu.1.b:0 "200 Splendor -> 200 Golden Splendor"
+ age_overhaul_golden_splendor_purchase_menu.1.c:0 "400 Splendor -> 400 Golden Splendor"
+ age_overhaul_golden_splendor_purchase_menu.1.d:0 "800 Splendor -> 800 Golden Splendor"
+
+### Splendor Purchase Menu
+ age_overhaul_splendor_purchase_menu.1.title:0 "Purchase Golden Splendor"
+ age_overhaul_splendor_purchase_menu.1.desc:0 "Current Golden Splendor: [Root.age_overhaul_golden_splendor.GetValue]"
+ age_overhaul_splendor_purchase_menu.1.a:0 "125 Golden Splendor -> 100 Splendor"
+ age_overhaul_splendor_purchase_menu.1.b:0 "250 Golden Splendor -> 200 Splendor"
+ age_overhaul_splendor_purchase_menu.1.c:0 "500 Golden Splendor -> 400 Splendor"
+ age_overhaul_splendor_purchase_menu.1.d:0 "1000 Golden Splendor -> 800 Splendor"
+
+### Initialization
+ age_overhaul_initialization.1.title:0 "Age Overhaul Initialization"
+
+### Carryover Selection Initialization
+ age_overhaul_menu_carryover_selection_initialization.1.title:0 "Age Ability Purchase - Initialization - Cost"
+ age_overhaul_menu_carryover_selection_initialization.2.title:0 "Age Ability Purchase - Initialization - Age Abilities Available"
+
+### Age Ability Purchasing
+# Title
+ age_overhaul_menu_carryover_selection.1.title:0 "Age Overhaul - Purchase Age Abilities for Carryover"
+# Description
+ age_overhaul_purchases_age_of_discovery:0 "Age of Discovery Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_discovery.GetValue] Golden Splendor\n\nCurrent Remaining Golden Splendor: [Root.age_overhaul_golden_splendor.GetValue]"
+ age_overhaul_purchases_age_of_reformation:0 "Age of Discovery Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_discovery.GetValue] Golden Splendor\nAge of Reformation Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_reformation.GetValue] Golden Splendor\n\nCurrent Remaining Golden Splendor: [Root.age_overhaul_golden_splendor.GetValue]"
+ age_overhaul_purchases_age_of_absolutism:0 "Age of Discovery Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_discovery.GetValue] Golden Splendor\nAge of Reformation Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_reformation.GetValue] Golden Splendor\nAge of Absolutism Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_absolutism.GetValue] Golden Splendor\n\nCurrent Remaining Golden Splendor: [Root.age_overhaul_golden_splendor.GetValue]"
+ age_overhaul_purchases_age_of_revolutions:0 "Age of Discovery Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_discovery.GetValue] Golden Splendor\nAge of Reformation Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_reformation.GetValue] Golden Splendor\nAge of Absolutism Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_absolutism.GetValue] Golden Splendor\nAge of Revolutions Abilities Cost: [Root.age_overhaul_golden_splendor_cost_age_of_revolutions.GetValue] Golden Splendor\n\nCurrent Remaining Golden Splendor: [Root.age_overhaul_golden_splendor.GetValue]"
+# Age of Discovery
+ age_overhaul_ab_allow_feudal_de_jure_law:0 "Feudal De Jure Law"
+ age_overhaul_ab_justified_wars:0 "Justified Wars"
+ age_overhaul_ab_transfer_vassal_wargoal:0 "Transfer Vassal Wargoal"
+ age_overhaul_ab_free_war_taxes:0 "Improved War Taxes"
+ age_overhaul_ab_cavalry_armies:0 "Cavalry Armies"
+ age_overhaul_ab_colony_boost_development:0 "Higher Developed Colonies"
+ age_overhaul_ab_attack_bonus_in_capital_terrain:0 "Adaptative Combat Terrain"
+ age_overhaul_ab_ottoman_siege_ability:0 "The Guns of Urban"
+ age_overhaul_ab_portugal_colonial_growth:0 "Portuguese Colonial Growth"
+ age_overhaul_ab_denmark_reduced_lib_desire:0 "Danish Subject Loyalty"
+ age_overhaul_ab_venice_ship_trade:0 "Venetian Trade"
+# Age of Reformation
+ age_overhaul_ab_allow_religion_enforced:0 "Religion Enforced Edict"
+ age_overhaul_ab_siege_blockades:0 "Floating Batteries"
+ age_overhaul_ab_warscore_vs_religion:0 "Religious Wars"
+ age_overhaul_ab_mercenary_discipline:0 "Mercenary Discipline"
+ age_overhaul_ab_ship_power_propagation:0 "Powerful Tradeships"
+ age_overhaul_ab_institution_spread_from_true_faith:0 "Institutional Spread"
+ age_overhaul_ab_prestige_per_development_from_conversion:0 "Prestigious Conversions"
+ age_overhaul_ab_spain_tercio:0 "Spanish Tercios"
+ age_overhaul_ab_mughal_artillery:0 "Mughal Artillery"
+ age_overhaul_ab_polish_legitimacy:0 "Polish Crown"
+ age_overhaul_ab_persia_reinforce:0 "Persian Reinforcement"
+# Age of Absolutism
+ age_overhaul_ab_allow_edict_of_absolutism:0 "Edict of Absolutism"
+ age_overhaul_ab_rival_change:0 "Flexible Rivalries"
+ age_overhaul_ab_rival_border_fort:0 "Protecting Forts"
+ age_overhaul_ab_autonomy:0 "Efficient Autonomy"
+ age_overhaul_ab_harsh_treatment:0 "Harsher Treatment"
+ age_overhaul_ab_adm_efficiency:0 "Administrative Efficiency"
+ age_overhaul_ab_yearly_absolutism:0 "Absolute Government"
+ age_overhaul_ab_france_fire_damage:0 "French Musketeers"
+ age_overhaul_ab_dutch_anti_corruption:0 "Dutch Officials"
+ age_overhaul_ab_sweden_manpower:0 "Swedish Recruitment"
+ age_overhaul_ab_manchu_banner:0 "Manchu Banners"
+# Age of Revolution
+ age_overhaul_ab_allow_anti_revolutionary_zeal:0 "Anti-Revolutionary Zeal"
+ age_overhaul_ab_napoleonic_warfare:0 "Napoleonic Warfare"
+ age_overhaul_ab_force_march:0 "Improved Force March"
+ age_overhaul_ab_more_ships_can_fire:0 "Naval Engagement"
+ age_overhaul_ab_no_distance_for_core:0 "Unrestricted Conquest"
+ age_overhaul_ab_backrow_artillery:0 "Improved Artillery Range"
+ age_overhaul_ab_same_contine_lib_desire:0 "Loyal Subjects"
+ age_overhaul_ab_pru_military:0 "Prussian Discipline"
+ age_overhaul_ab_gbr_fleet:0 "British Fleet"
+ age_overhaul_ab_russia_boost:0 "Russian Empire"
+ age_overhaul_ab_austria_rep:0 "Austrian Diplomacy"
+
+### Age of Discovery Initialization
+ age_overhaul_menu_new_age_initialization.1.title:0 "Age Overhaul - Age of Discovery Initialization"
+
+### Age of Reformation Initialization
+ age_overhaul_menu_new_age_initialization.2.title:0 "Age Overhaul - Age of Reformation Initialization"
+
+### Age of Absolutism Initialization
+ age_overhaul_menu_new_age_initialization.3.title:0 "Age Overhaul - Age of Absolutism Initialization"
+
+### Age of Revolutions Initialization
+ age_overhaul_menu_new_age_initialization.4.title:0 "Age Overhaul - Age of Revolutions Initialization"
+
+### Options Menu - Main Menu
+ age_overhaul_options_main_menu.1.title:0 "Age Overhaul - Settings"
+ age_overhaul_options_main_menu.1.a:0 "Exit (make sure you're done adjusting settings!)"
+ age_overhaul_options_main_menu.1.b:0 "Change Country-Specific Age Ability Settings"
+ age_overhaul_options_main_menu.1.c:0 "Change Decision Enablement Settings"
+ age_overhaul_options_main_menu.1.d:0 "Adjust Golden Splendor Settings"
+ age_overhaul_options_main_menu.1.e:0 "Choose Preset Settings"
+
+### Options Menu - Country-Specific Age Abilities
+ age_overhaul_options_country_specific_abilities.1.title:0 "Age Overhaul - Settings - Country-Specific Abilities"
+ age_overhaul_options_country_specific_abilities.1.a:0 "Vanilla (Country-Specific Abilities only for Specific Countries)"
+ age_overhaul_options_country_specific_abilities.1.b:0 "Country-Specific Age Abilities for All Countries"
+ age_overhaul_options_country_specific_abilities.1.c:0 "Country-Specific Age Abilities for Great Powers and Specific Countries"
+
+### Options Menu - Decisions
+ age_overhaul_options_decisions.1.title:0 "Age Overhaul - Settings - Decisions"
+ age_overhaul_options_decisions.1.a.1:0 "Enable Golden Splendor -> Splendor Decision"
+ age_overhaul_options_decisions.1.a.2:0 "Disable Golden Splendor -> Splendor Decision"
+ age_overhaul_options_decisions.1.b.1:0 "Enable Splendor -> Golden Splendor Decision"
+ age_overhaul_options_decisions.1.b.2:0 "Disable Splendor -> Golden Splendor Decision"
+
+### Options Menu - Golden Splendor Main Menu
+ age_overhaul_options_golden_splendor.1.title:0 "Age Overhaul - Settings - Golden Splendor Settings Menu"
+ age_overhaul_options_golden_splendor.1.a.1:0 "Enable Age Ability Carryover"
+ age_overhaul_options_golden_splendor.1.a.2:0 "Disable Age Ability Carryover"
+ age_overhaul_options_golden_splendor.1.b:0 "Golden Splendor Generation Submenu"
+ age_overhaul_options_golden_splendor.1.c:0 "Golden Splendor Cost Submenu"
+ age_overhaul_options_golden_splendor.1.d:0 "Golden Splendor Multiplier Submenu"
+ age_overhaul_options_golden_splendor.1.e:0 "Starting Golden Splendor Submenu"
+
+### Options Menu - Golden Splendor Cost
+ age_overhaul_options_golden_splendor_cost.1.title:0 "Age Overhaul - Settings - Golden Splendor Cost"
+
+### Options Menu - Golden Splendor Generation
+ age_overhaul_options_golden_splendor_generation.1.title:0 "Age Overhaul - Settings - Golden Splendor Generation"
+
+### Options Menu - Golden Splendor Multiplier
+ age_overhaul_options_golden_splendor_multiplier.1.title:0 "Age Overhaul - Settings - Golden Splendor Multiplier"
+
+### Options Menu - Starting Golden Splendor
+ age_overhaul_options_golden_splendor_starting.1.title:0 "Age Overhaul - Settings - Starting Golden Splendor"
+
+### Options Menu - Presets
+ age_overhaul_options_presets.1.title:0 "Age Overhaul - Settings - Presets"
+ age_overhaul_options_presets.1.a:0 "Default Mod Settings"
+ age_overhaul_options_presets.1.b:0 "Vanilla"
+ age_overhaul_options_presets.1.c:0 "Extra Golden Splendor"
+ age_overhaul_options_presets.1.d:0 "Dwindling Pool"
+ age_overhaul_options_presets.1.e:0 "Multiplayer Balanced"
+
+
+##### Modifier Names
+#age_overhaul_age_ability_:0 ""
+# Age of Discovery
+ age_overhaul_age_ability_ab_justified_wars:0 "Justified Wars"
+ age_overhaul_age_ability_ab_transfer_vassal_wargoal:0 "Transfer Vassal Wargoal"
+ age_overhaul_age_ability_ab_free_war_taxes:0 "Improved War Taxes"
+ age_overhaul_age_ability_ab_cavalry_armies:0 "Cavalry Armies"
+ age_overhaul_age_ability_ab_colony_boost_development:0 "Higher Developed Colonies"
+ age_overhaul_age_ability_ab_attack_bonus_in_capital_terrain:0 "Adaptative Combat Terrain"
+ age_overhaul_age_ability_ab_ottoman_siege_ability:0 "The Guns of Urban"
+ age_overhaul_age_ability_ab_portugal_colonial_growth:0 "Portuguese Colonial Growth"
+ age_overhaul_age_ability_ab_denmark_reduced_lib_desire:0 "Danish Subject Loyalty"
+ age_overhaul_age_ability_ab_venice_ship_trade:0 "Venetian Trade"
+# Age of Reformation
+ age_overhaul_age_ability_ab_siege_blockades:0 "Floating Batteries"
+ age_overhaul_age_ability_ab_warscore_vs_religion:0 "Religious Wars"
+ age_overhaul_age_ability_ab_mercenary_discipline:0 "Mercenary Discipline"
+ age_overhaul_age_ability_ab_ship_power_propagation:0 "Powerful Tradeships"
+ age_overhaul_age_ability_ab_institution_spread_from_true_faith:0 "Institutional Spread"
+ age_overhaul_age_ability_ab_prestige_per_development_from_conversion:0 "Prestigious Conversions"
+ age_overhaul_age_ability_ab_spain_tercio:0 "Spanish Tercios"
+ age_overhaul_age_ability_ab_mughal_artillery:0 "Mughal Artillery"
+ age_overhaul_age_ability_ab_polish_legitimacy:0 "Polish Crown"
+ age_overhaul_age_ability_ab_persia_reinforce:0 "Persian Reinforcement"
+# Age of Absolutism
+ age_overhaul_age_ability_ab_rival_change:0 "Flexible Rivalries"
+ age_overhaul_age_ability_ab_rival_border_fort:0 "Protecting Forts"
+ age_overhaul_age_ability_ab_autonomy:0 "Efficient Autonomy"
+ age_overhaul_age_ability_ab_harsh_treatment:0 "Harsher Treatment"
+ age_overhaul_age_ability_ab_adm_efficiency:0 "Administrative Efficiency"
+ age_overhaul_age_ability_ab_yearly_absolutism:0 "Absolute Government"
+ age_overhaul_age_ability_ab_france_fire_damage:0 "French Musketeers"
+ age_overhaul_age_ability_ab_dutch_anti_corruption:0 "Dutch Officials"
+ age_overhaul_age_ability_ab_sweden_manpower:0 "Swedish Recruitment"
+ age_overhaul_age_ability_ab_manchu_banner:0 "Manchu Banners"
+# Age of Revolutions
+ age_overhaul_age_ability_ab_allow_anti_revolutionary_zeal:0 "Anti-Revolutionary Zeal"
+ age_overhaul_age_ability_ab_napoleonic_warfare:0 "Napoleonic Warfare"
+ age_overhaul_age_ability_ab_force_march:0 "Improved Force March"
+ age_overhaul_age_ability_ab_more_ships_can_fire:0 "Naval Engagement"
+ age_overhaul_age_ability_ab_no_distance_for_core:0 "Unrestricted Conquest"
+ age_overhaul_age_ability_ab_backrow_artillery:0 "Improved Artillery Range"
+ age_overhaul_age_ability_ab_same_contine_lib_desire:0 "Loyal Subjects"
+ age_overhaul_age_ability_ab_pru_military:0 "Prussian Discipline"
+ age_overhaul_age_ability_ab_gbr_fleet:0 "British Fleet"
+ age_overhaul_age_ability_ab_russia_boost:0 "Russian Empire"
+ age_overhaul_age_ability_ab_austria_rep:0 "Austrian Diplomacy"
