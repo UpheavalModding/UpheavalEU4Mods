@@ -216,6 +216,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = TUR
+							tag = TUR
 						}
 					}
 				}
@@ -239,6 +240,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = POR
+							tag = POR
 						}
 					}
 				}
@@ -262,6 +264,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = DAN
+							tag = DAN
 						}
 					}
 				}
@@ -285,6 +288,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = VEN
+							tag = VEN
 						}
 					}
 				}
@@ -402,6 +406,9 @@ country_event = {
 							was_tag = SPA
 							was_tag = CAS
 							was_tag = ARA
+							tag = SPA
+							tag = CAS
+							tag = ARA
 						}
 					}
 				}
@@ -425,6 +432,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = MUG
+							tag = MUG
 						}
 					}
 				}
@@ -449,6 +457,8 @@ country_event = {
 							}
 							was_tag = PLC
 							was_tag = POL
+							tag = PLC
+							tag = POL
 						}
 					}
 				}
@@ -472,6 +482,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = PER
+							tag = PER
 						}
 					}
 				}
@@ -587,6 +598,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = FRA
+							tag = FRA
 						}
 					}
 				}
@@ -610,6 +622,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = NED
+							tag = NED
 						}
 					}
 				}
@@ -633,6 +646,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = SWE
+							tag = SWE
 						}
 					}
 				}
@@ -662,6 +676,8 @@ country_event = {
 							}
 							was_tag = MCH
 							was_tag = QNG
+							tag = MCH
+							tag = QNG
 						}
 					}
 				}
@@ -778,6 +794,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = PRU
+							tag = PRU
 						}
 					}
 				}
@@ -802,6 +819,8 @@ country_event = {
 							}
 							was_tag = GBR
 							was_tag = ENG
+							tag = GBR
+							tag = ENG
 						}
 					}
 				}
@@ -825,6 +844,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = RUS
+							tag = RUS
 						}
 					}
 				}
@@ -848,6 +868,7 @@ country_event = {
 								is_great_power = yes
 							}
 							was_tag = HAB
+							tag = HAB
 						}
 					}
 				}

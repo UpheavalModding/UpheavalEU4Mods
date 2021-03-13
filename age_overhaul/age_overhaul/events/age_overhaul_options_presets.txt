@@ -54,7 +54,7 @@ country_event = {
 				}
 				set_variable = {
 					which = age_overhaul_golden_splendor_multiplier
-					value = 1.25
+					value = 1
 				}
 				set_variable = {
 					which = age_overhaul_starting_golden_splendor
