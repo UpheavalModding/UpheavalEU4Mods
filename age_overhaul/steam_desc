@@ -38,7 +38,7 @@ Configuration options for the mod allow you to:
 - Golden Splendor Generation: 800 GS per Age Ability
 - Golden Splendor Cost: 800 GS per Age Ability
 - Golden Splendor Multiplier: 1x
-- Country-Specific Bonuses: Unlocked for All, Special Requirements if Not Intended Country
+- Country-Specific Bonuses: Vanilla (only specific countries can unlock the country-specific Age Abilities)
 - Golden Splendor -> Splendor Decision: Enabled
 - Splendor -> Golden Splendor Decision: Enabled
 - Carrying over Age Abilities: Enabled
