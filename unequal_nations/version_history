@@ -1,3 +1,6 @@
+1.0.5 (12/03/2021)
+- Removed screenshots, steam_desc, and version_history files from the mod directory.
+
 1.0.4 (11/03/2021)
 - Updated steam description and started towards adding a detailed revision history.
 - Added decision to allow rerolling buffs/nerfs (unequal_nations_reroll_nations). This can be used at any time, will likely go through changes/restrictions in the future (not too heavily tested right now).
