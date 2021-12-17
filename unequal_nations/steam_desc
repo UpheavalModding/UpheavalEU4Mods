@@ -3,7 +3,7 @@ Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=19197557
 
 [h1]Features[/h1]
 - Full configuration of all features
-- 7 tiers and 7 categories of buffs and nerfs
+- 7 tiers and 9 categories of buffs and nerfs
 - Legendary countries with extra buffs
 - Ability for player nation to be impacted by buffs and nerfs
 - Ability to reroll buffs and nerfs midgame
@@ -12,14 +12,12 @@ Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=19197557
 [b]Legendary Countries[/b] are countries with maxed out buffs, and with an extra extremely powerful buff that makes them extremely formidable. Various settings allow there to be more than one legendary country at a time, and to set minimum development sizes for countries that are considered for being legendary allowing for the possibility of powerful "bosses" for players.
 
 [h1]Future Plans[/h1]
-- Ability to reselect the "host" player (in multiplayer, the "host", who controls the settings, is chosen randomly currently. There should be a way to change hosts)
-- Ability to change options mid-game
 - Balancing (let me know what you all think of the current balance!)
-- Compatibility with mods adding new Ages
-- More settings for legendary countries?
 - More settings for when to reroll buffs?
 - More tiers?
 - More categories?
+--- Might split/rebalance existing categories to support more
+- Compatibility with mods adding new Ages
 
 [h1]Usage of this Mod[/h1]
 Feel free to use this mod in any modpack, or to create compatibility patches for this and other mods. If you want to incorporate this mod into your mod, contact one of the creators to let us know.
@@ -33,6 +31,7 @@ Feel free to use this mod in any modpack, or to create compatibility patches for
 Big thanks to https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765 for the inspiration!
 
 [h1]Recent Version[/h1]
+1.1.0 - Upgraded to EU4 1.32, added per-continent legendary countries, configurable chance for legendary nations, added Court and Trade categories, small change to Economy category, added some extra presets
 1.0.5 - Removed extra unneeded files from the mod.
 1.0.4 - Added decision to allow rerolling buffs/nerfs and minor text updates to the steam description.
 1.0.3 - Fixed issue causing age changing to constantly update buffs/nerfs.
@@ -40,7 +39,3 @@ Big thanks to https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765 
 
 [h1]Development/Source Code[/h1]
 Source code for the mod is available on [url=https://github.com/UpheavalModding/UpheavalEU4Mods]GitHub[/url]
-
-[h1]My Other EU4 Mods[/h1]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2313248827]Unequal Nations[/url] - Random Buffs/Nerfs for Unique Playthroughs
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2422816834]Age Overhaul[/url] - Unlocks Country-Specific Age Abilities for everyone and allows carrying over Age Abilities to new ages

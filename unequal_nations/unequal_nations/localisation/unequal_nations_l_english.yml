@@ -12,6 +12,7 @@
 ### Get Legendary Country Setting
  unequal_nation_localization_legendary_countries_disabled:0 "Disabled"
  unequal_nation_localization_legendary_countries_global:0 "Random Global Nation"
+ unequal_nation_localization_legendary_countries_continental:0 "Random Nation per Continent"
  unequal_nation_localization_legendary_countries_random:0 "Random Chance per Nation"
  
 ### Get Legendary Country Size Setting
@@ -19,6 +20,16 @@
  unequal_nation_localization_legendary_countries_min_size_250:0 "250"
  unequal_nation_localization_legendary_countries_min_size_500:0 "500"
  unequal_nation_localization_legendary_countries_min_size_750:0 "750"
+ 
+### Get Legendary Country Random Chance Setting
+ unequal_nation_localization_legendary_countries_random_chance_NA:0 "N/A"
+ unequal_nation_localization_legendary_countries_random_chance_1:0 "1%"
+ unequal_nation_localization_legendary_countries_random_chance_3:0 "3%"
+ unequal_nation_localization_legendary_countries_random_chance_5:0 "5%"
+ unequal_nation_localization_legendary_countries_random_chance_15:0 "15%"
+ unequal_nation_localization_legendary_countries_random_chance_25:0 "25%"
+ unequal_nation_localization_legendary_countries_random_chance_50:0 "50%"
+ unequal_nation_localization_legendary_countries_random_chance_100:0 "100%"
  
 ### Get Reroll Setting
  unequal_nation_localization_reroll_disabled:0 "Disabled"
@@ -84,7 +95,7 @@
  unequal_nations_about.1.title:0 "Welcome to Unequal Nations!"
  unequal_nations_about.1.desc:0 "This mod will give all nations in the world (including player nations, if the setting is enabled!) buffs or nerfs in a variety of categories, allowing for more new and unique situations to be created throughout the world!"
  unequal_nations_about.2.title:0 "Buff and Nerf Categories"
- unequal_nations_about.2.desc:0 "There are a variety of categories of buffs/nerfs, each impacting a different part of a nation. These categories are:\n   Army - Impacts the size of armies\n   Navy - Impacts the size of navies\n   Expansion - Impacts the expansion of nations\n   Administration - Impacts the Administration of nations\n   Economy - Impacts the economy of nations\n   Tech - Impacts the technological development of nations\n   Culture & Religion - Impacts the cultural and religious development of nations"
+ unequal_nations_about.2.desc:0 "There are a variety of categories of buffs/nerfs, each impacting a different part of a nation. These categories are:\n   Army - Impacts the size of armies\n   Navy - Impacts the size of navies\n   Expansion - Impacts the expansion of nations\n   Administration - Impacts the Administration of nations\n   Economy - Impacts the economy of nations\n   Tech - Impacts the technological development of nations\n   Culture & Religion - Impacts the cultural and religious development of nations\n   Court - Impacts the skills of nation's courts\n   Trade - Impacts the trading abilities of nations"
  unequal_nations_about.3.title:0 "Legendary Countries"
  unequal_nations_about.3.desc:0 "Depending on the settings involved, there may be some nations that are choosen to be legendary nations. Besides having the the max tier buffs, these nations have an additional 'Legendary' Buff that provides large bonuses."
  unequal_nations_about.4.title:0 "Buff/Nerf Tiers"
@@ -99,7 +110,7 @@
 
 ### Options Menu Common
 # Common
- unequal_nations_options_menu_desc:0 "Current Settings:\n   Player Nation Impacted: [UnequalNationGetPlayerNationImpacted]\n   Legendary Country Setting: [UnequalNationGetLegendaryCountrySetting] (min development: [UnequalNationGetLegendaryCountrySizeSetting])\n   Buff/Nerf Reroll Setting: [UnequalNationGetRerollSetting]\n   Army Category: [UnequalNationGetCategoryEnablementArmy]\n   Navy Category: [UnequalNationGetCategoryEnablementNavy]\n   Expansion Category: [UnequalNationGetCategoryEnablementExpansion]\n   Administration Category: [UnequalNationGetCategoryEnablementAdministration]\n   Economy Category: [UnequalNationGetCategoryEnablementEconomy]\n   Tech Category: [UnequalNationGetCategoryEnablementTech]\n   Culture & Religion Category: [UnequalNationGetCategoryEnablementCultureReligion]"
+ unequal_nations_options_menu_desc:0 "Current Settings:\n   Player Nation Impacted: [UnequalNationGetPlayerNationImpacted]\n   Legendary Country Setting: [UnequalNationGetLegendaryCountrySetting] (min development: [UnequalNationGetLegendaryCountrySizeSetting], Random Chance: [UnequalNationGetLegendaryRandomChanceSetting])\n   Buff/Nerf Reroll Setting: [UnequalNationGetRerollSetting]\n   Army Category: [UnequalNationGetCategoryEnablementArmy]\n   Navy Category: [UnequalNationGetCategoryEnablementNavy]\n   Expansion Category: [UnequalNationGetCategoryEnablementExpansion]\n   Administration Category: [UnequalNationGetCategoryEnablementAdministration]\n   Economy Category: [UnequalNationGetCategoryEnablementEconomy]\n   Tech Category: [UnequalNationGetCategoryEnablementTech]\n   Culture & Religion Category: [UnequalNationGetCategoryEnablementCultureReligion]\n   Court Category: [UnequalNationGetCategoryEnablementCourt]\n   Trade Category: [UnequalNationGetCategoryEnablementTrade]"
 # Main Menu
  unequal_nations_main_menu.1.title:0 "Unequal Nations Options - Main Menu"
  unequal_nations_main_menu.1.a:0 "Confirm Settings and Play!"
@@ -110,8 +121,10 @@
  unequal_nations_main_menu.1.f:0 "Category Enablement Setting"
 # Presets
  unequal_nations_options_presets.1.title:0 "Unequal Nations Options - Presets"
- unequal_nations_options_presets.1.a:0 "Default Settings Preset"
+ unequal_nations_options_presets.1.a:0 "Default Settings Preset (Global Legendary Country)"
+ unequal_nations_options_presets.1.c:0 "Default Settings Preset (Per-Continent Legendary Country)"
  unequal_nations_options_presets.1.b:0 "Classic Settings Preset"
+ unequal_nations_options_presets.1.d:0 "Hard Mode Preset"
 # Reroll Setting
  unequal_nations_options_reroll.1.title:0 "Unequal Nations Options - Buff/Nerf Reroll"
  unequal_nations_options_reroll.1.a:0 "Enable Rerolling Buffs/Nerfs Each Age"
@@ -132,15 +145,29 @@
  unequal_nations_options_category_enablement.1.l:0 "Disable Tech Buffs/Nerfs"
  unequal_nations_options_category_enablement.1.m:0 "Enable Culture & Religion Buffs/Nerfs"
  unequal_nations_options_category_enablement.1.n:0 "Disable Culture & Religion Buffs/Nerfs"
+ unequal_nations_options_category_enablement.1.o:0 "Enable Court Buffs/Nerfs"
+ unequal_nations_options_category_enablement.1.p:0 "Disable Court Buffs/Nerfs"
+ unequal_nations_options_category_enablement.1.q:0 "Enable Trade Buffs/Nerfs"
+ unequal_nations_options_category_enablement.1.r:0 "Disable Trade Buffs/Nerfs"
+
 # Legendary Country Setting
  unequal_nations_options_legendary_country.1.title:0 "Unequal Nations Options - Legendary Countries"
- unequal_nations_options_legendary_country.1.a:0 "Disable Legendary Countries"
- unequal_nations_options_legendary_country.1.b:0 "Enable a Global Legendary Country"
- unequal_nations_options_legendary_country.1.c:0 "Enable Per Random Legendary Country (3% chance)"
- unequal_nations_options_legendary_country.1.d:0 "Minimum Development 0"
- unequal_nations_options_legendary_country.1.e:0 "Minimum Development 250"
- unequal_nations_options_legendary_country.1.f:0 "Minimum Development 500"
- unequal_nations_options_legendary_country.1.g:0 "Minimum Development 750"
+ unequal_nations_options_legendary_country.1.main_option.1:0 "Disable Legendary Countries"
+ unequal_nations_options_legendary_country.1.main_option.2:0 "Enable a Global Legendary Country"
+ unequal_nations_options_legendary_country.1.main_option.3:0 "Enable a Legendary Country per Continent"
+ unequal_nations_options_legendary_country.1.main_option.4:0 "Enable Per Random Legendary Country"
+ unequal_nations_options_legendary_country.1.random_chance_1:0 "1% Chance"
+ unequal_nations_options_legendary_country.1.random_chance_3:0 "3% Chance"
+ unequal_nations_options_legendary_country.1.random_chance_5:0 "5% Chance"
+ unequal_nations_options_legendary_country.1.random_chance_15:0 "15% Chance"
+ unequal_nations_options_legendary_country.1.random_chance_25:0 "25% Chance"
+ unequal_nations_options_legendary_country.1.random_chance_50:0 "50% Chance"
+ unequal_nations_options_legendary_country.1.random_chance_100:0 "100% Chance"
+ unequal_nations_options_legendary_country.1.size.0:0 "Minimum Development 0"
+ unequal_nations_options_legendary_country.1.size.250:0 "Minimum Development 250"
+ unequal_nations_options_legendary_country.1.size.500:0 "Minimum Development 500"
+ unequal_nations_options_legendary_country.1.size.750:0 "Minimum Development 750"
+
 # Player Impact Setting
  unequal_nations_options_player_impact.1.title:0 "Unequal Nations Options - Player Nation Impact"
  unequal_nations_options_player_impact.1.a:0 "Allow Player Nations to Have Buffs/Nerfs"

@@ -32,14 +32,23 @@ country_event = {
 			# Clear Flags
 			clr_global_flag = unequal_nations_option_player_impacted
 			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_continental_choice
 			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
-	
+
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_1
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_3
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_5
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_15
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_25
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_50
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_100
+
 			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
 			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
 			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
-	
+
 			clr_global_flag = unequal_nations_option_reroll_each_age
-	
+			
 			clr_global_flag = unequal_nations_category_enabled_army
 			clr_global_flag = unequal_nations_category_enabled_navy
 			clr_global_flag = unequal_nations_category_enabled_expansion
@@ -47,10 +56,12 @@ country_event = {
 			clr_global_flag = unequal_nations_category_enabled_economy
 			clr_global_flag = unequal_nations_category_enabled_tech
 			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			clr_global_flag = unequal_nations_category_enabled_court
+			clr_global_flag = unequal_nations_category_enabled_trade
 	
 			# Set defaults
 			set_global_flag = unequal_nations_option_legendary_countries_global_choice
-			set_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			set_global_flag = unequal_nations_option_legendary_countries_min_size_250
 			set_global_flag = unequal_nations_option_reroll_each_age
 			set_global_flag = unequal_nations_category_enabled_army
 			set_global_flag = unequal_nations_category_enabled_navy
@@ -59,6 +70,61 @@ country_event = {
 			set_global_flag = unequal_nations_category_enabled_economy
 			set_global_flag = unequal_nations_category_enabled_tech
 			set_global_flag = unequal_nations_category_enabled_culturereligion
+			set_global_flag = unequal_nations_category_enabled_court
+			set_global_flag = unequal_nations_category_enabled_trade
+
+			country_event = { id = unequal_nations_menu_skipper.7 }
+		}
+	}
+
+	# Default - Per Continent
+	option = {
+		name = unequal_nations_options_presets.1.c
+
+		hidden_effect = {
+			# Clear Flags
+			clr_global_flag = unequal_nations_option_player_impacted
+			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_continental_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
+
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_1
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_3
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_5
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_15
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_25
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_50
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_100
+
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
+
+			clr_global_flag = unequal_nations_option_reroll_each_age
+			
+			clr_global_flag = unequal_nations_category_enabled_army
+			clr_global_flag = unequal_nations_category_enabled_navy
+			clr_global_flag = unequal_nations_category_enabled_expansion
+			clr_global_flag = unequal_nations_category_enabled_administration
+			clr_global_flag = unequal_nations_category_enabled_economy
+			clr_global_flag = unequal_nations_category_enabled_tech
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			clr_global_flag = unequal_nations_category_enabled_court
+			clr_global_flag = unequal_nations_category_enabled_trade
+	
+			# Set defaults
+			set_global_flag = unequal_nations_option_legendary_countries_continental_choice
+			set_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			set_global_flag = unequal_nations_option_reroll_each_age
+			set_global_flag = unequal_nations_category_enabled_army
+			set_global_flag = unequal_nations_category_enabled_navy
+			set_global_flag = unequal_nations_category_enabled_expansion
+			set_global_flag = unequal_nations_category_enabled_administration
+			set_global_flag = unequal_nations_category_enabled_economy
+			set_global_flag = unequal_nations_category_enabled_tech
+			set_global_flag = unequal_nations_category_enabled_culturereligion
+			set_global_flag = unequal_nations_category_enabled_court
+			set_global_flag = unequal_nations_category_enabled_trade
 
 			country_event = { id = unequal_nations_menu_skipper.7 }
 		}
@@ -72,14 +138,23 @@ country_event = {
 			# Clear Flags
 			clr_global_flag = unequal_nations_option_player_impacted
 			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_continental_choice
 			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
-	
+
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_1
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_3
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_5
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_15
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_25
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_50
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_100
+
 			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
 			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
 			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
-	
+
 			clr_global_flag = unequal_nations_option_reroll_each_age
-	
+			
 			clr_global_flag = unequal_nations_category_enabled_army
 			clr_global_flag = unequal_nations_category_enabled_navy
 			clr_global_flag = unequal_nations_category_enabled_expansion
@@ -87,10 +162,65 @@ country_event = {
 			clr_global_flag = unequal_nations_category_enabled_economy
 			clr_global_flag = unequal_nations_category_enabled_tech
 			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			clr_global_flag = unequal_nations_category_enabled_court
+			clr_global_flag = unequal_nations_category_enabled_trade
 	
 			# Set defaults
 			set_global_flag = unequal_nations_category_enabled_army
 			set_global_flag = unequal_nations_category_enabled_administration
+
+			country_event = { id = unequal_nations_menu_skipper.7 }
+		}
+	}
+
+	# Hard Mode
+	option = {
+		name = unequal_nations_options_presets.1.d
+
+		hidden_effect = {
+			# Clear Flags
+			clr_global_flag = unequal_nations_option_player_impacted
+			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_continental_choice
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance
+
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_1
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_3
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_5
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_15
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_25
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_50
+			clr_global_flag = unequal_nations_option_legendary_countries_random_chance_100
+
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
+
+			clr_global_flag = unequal_nations_option_reroll_each_age
+			
+			clr_global_flag = unequal_nations_category_enabled_army
+			clr_global_flag = unequal_nations_category_enabled_navy
+			clr_global_flag = unequal_nations_category_enabled_expansion
+			clr_global_flag = unequal_nations_category_enabled_administration
+			clr_global_flag = unequal_nations_category_enabled_economy
+			clr_global_flag = unequal_nations_category_enabled_tech
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			clr_global_flag = unequal_nations_category_enabled_court
+			clr_global_flag = unequal_nations_category_enabled_trade
+	
+			# Set defaults
+			set_global_flag = unequal_nations_option_legendary_countries_random_chance
+			set_global_flag = unequal_nations_option_legendary_countries_random_chance_100
+			set_global_flag = unequal_nations_option_reroll_each_age
+			set_global_flag = unequal_nations_category_enabled_army
+			set_global_flag = unequal_nations_category_enabled_navy
+			set_global_flag = unequal_nations_category_enabled_expansion
+			set_global_flag = unequal_nations_category_enabled_administration
+			set_global_flag = unequal_nations_category_enabled_economy
+			set_global_flag = unequal_nations_category_enabled_tech
+			set_global_flag = unequal_nations_category_enabled_culturereligion
+			set_global_flag = unequal_nations_category_enabled_court
+			set_global_flag = unequal_nations_category_enabled_trade
 
 			country_event = { id = unequal_nations_menu_skipper.7 }
 		}

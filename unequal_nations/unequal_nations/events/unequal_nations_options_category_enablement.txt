@@ -35,6 +35,9 @@ country_event = {
 			clr_global_flag = unequal_nations_category_enabled_economy
 			clr_global_flag = unequal_nations_category_enabled_tech
 			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
 
 			# Army
 			random_list = {
@@ -103,6 +106,26 @@ country_event = {
 				}
 				10 = {
 					clr_global_flag = unequal_nations_category_enabled_culturereligion
+				}
+			}
+
+			# Court
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_court
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_court
+				}
+			}
+
+			# Trade
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_trade
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_trade
 				}
 			}
 
@@ -302,6 +325,62 @@ country_event = {
 
 		hidden_effect = {
 			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Court
+	# Enable Court Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.o
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_court }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_court
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Court Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.p
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_court
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_court
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Trade
+	# Enable Trade Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.q
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_trade }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_trade
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Trade Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.r
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_trade
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_trade
 			country_event = { id = unequal_nations_menu_skipper.5 }
 		}
 	}
