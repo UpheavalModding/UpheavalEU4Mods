@@ -18,6 +18,8 @@ Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=19197557
 - More categories?
 --- Might split/rebalance existing categories to support more
 - Compatibility with mods adding new Ages
+- Legendary Nerf
+- rerolls on monarch deaths
 
 [h1]Usage of this Mod[/h1]
 Feel free to use this mod in any modpack, or to create compatibility patches for this and other mods. If you want to incorporate this mod into your mod, contact one of the creators to let us know.
@@ -31,6 +33,7 @@ Feel free to use this mod in any modpack, or to create compatibility patches for
 Big thanks to https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765 for the inspiration!
 
 [h1]Recent Version[/h1]
+1.1.1 - Made sure to clear player modifiers always (if needed :) ), ability to change settings mid-game
 1.1.0 - Upgraded to EU4 1.32, added per-continent legendary countries, configurable chance for legendary nations, added Court and Trade categories, small change to Economy category, added some extra presets
 1.0.5 - Removed extra unneeded files from the mod.
 1.0.4 - Added decision to allow rerolling buffs/nerfs and minor text updates to the steam description.

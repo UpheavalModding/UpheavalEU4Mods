@@ -46,6 +46,17 @@ country_event = {
 		every_country = {
 			limit = {
 				ai = no
+				NOT = { has_global_flag = unequal_nations_initialized }
+				NOT = { has_country_flag = unequal_nations_settings_host }
+			}
+
+			country_event = { id = unequal_nations_about.1 }
+		}
+
+		# Bring up the About menu for the host
+		every_country = {
+			limit = {
+				has_country_flag = unequal_nations_settings_host
 			}
 
 			country_event = { id = unequal_nations_about.1 }

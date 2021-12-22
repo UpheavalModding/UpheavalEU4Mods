@@ -1,6 +1,9 @@
 ﻿l_english:
 ##### Decisions
- current_unequal_nations_settings_title:0 "Unequal Nations - Settings"
+ current_unequal_nations_settings_title:0 "Unequal Nations - Current Settings"
+
+ unequal_nations_change_settings_title:0 "Unequal Nations - Change Settings"
+ unequal_nations_change_settings_desc:0 "Update the current settings for Unequal Nations."
 
  unequal_nations_reroll_nations_title:0 "Unequal Nations - Reroll Buffs/Nerfs"
  unequal_nations_reroll_nations_desc:0 "Rerolls buffs and nerfs for all nations based on current settings."
