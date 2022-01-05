@@ -8,9 +8,6 @@
  unequal_nations_reroll_nations_title:0 "Unequal Nations - Reroll Buffs/Nerfs"
  unequal_nations_reroll_nations_desc:0 "Rerolls buffs and nerfs for all nations based on current settings."
 
- unequal_nations_list_legendary_nations_title:0 "Unequal Nations - List Legendary Countries"
- unequal_nations_list_legendary_nations_desc:0 "The Legendary Countries, if any."
-
 ##### Dynamic Localizations
 ### Get Player Nation Mod Impact
  unequal_nation_localization_player_nation_impact_enabled:0 "Player Nations Allowed"
@@ -91,22 +88,11 @@
  unequal_nations_nerf_l2_tech:0 "Normal Technological Nerf"
  unequal_nations_nerf_l3_tech:0 "Major Technological Nerf"
 
-##### Province Triggered Modifiers
- unequal_nations_reroll_buffs_and_nerfs_title:0 "Reroll the buffs and nerfs!"
- unequal_nations_reroll_buffs_and_nerfs_desc:0 "Reroll the buffs and nerfs!"
-
 ##### Events
 ### Common
  unequal_nations_ok:0 "OK"
  unequal_nations_back:0 "Back"
  unequal_nations_random:0 "Randomize"
-
-### Fake
- unequal_nations_fake.1.title:0 "Legendary Nation"
- unequal_nations_fake.1.desc:0 "You're a Legendary Nation Harry!"
-
- unequal_nations_fake.2.title:0 "Buffs/Nerfs Re-rolled"
- unequal_nations_fake.2.desc:0 "All buffs and nerfs have been re-rolled!"
 
 ### About
  unequal_nations_about.1.title:0 "Welcome to Unequal Nations!"
@@ -172,7 +158,7 @@
  unequal_nations_options_legendary_country.1.main_option.1:0 "Disable Legendary Countries"
  unequal_nations_options_legendary_country.1.main_option.2:0 "Enable a Global Legendary Country"
  unequal_nations_options_legendary_country.1.main_option.3:0 "Enable a Legendary Country per Continent"
- unequal_nations_options_legendary_country.1.main_option.4:0 "Enable Random Chance Legendary Countries"
+ unequal_nations_options_legendary_country.1.main_option.4:0 "Enable Per Random Legendary Country"
  unequal_nations_options_legendary_country.1.random_chance_1:0 "1% Chance"
  unequal_nations_options_legendary_country.1.random_chance_3:0 "3% Chance"
  unequal_nations_options_legendary_country.1.random_chance_5:0 "5% Chance"
@@ -180,7 +166,7 @@
  unequal_nations_options_legendary_country.1.random_chance_25:0 "25% Chance"
  unequal_nations_options_legendary_country.1.random_chance_50:0 "50% Chance"
  unequal_nations_options_legendary_country.1.random_chance_100:0 "100% Chance"
- unequal_nations_options_legendary_country.1.size.0:0 "Minimum Development 1"
+ unequal_nations_options_legendary_country.1.size.0:0 "Minimum Development 0"
  unequal_nations_options_legendary_country.1.size.250:0 "Minimum Development 250"
  unequal_nations_options_legendary_country.1.size.500:0 "Minimum Development 500"
  unequal_nations_options_legendary_country.1.size.750:0 "Minimum Development 750"

@@ -20,7 +20,6 @@ country_event = {
 	immediate = {
 		every_country = {
 			remove_country_modifier = unequal_nations_buff_legendary
-			clr_country_flag = unequal_nation_is_legendary_nation
 
 			remove_country_modifier = unequal_nations_buff_l3_administration
 			remove_country_modifier = unequal_nations_buff_l2_administration
@@ -94,11 +93,6 @@ country_event = {
 						ai = no
 						has_global_flag = unequal_nations_option_player_impacted
 					}
-				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
 				}
 			}
 			
@@ -543,14 +537,6 @@ country_event = {
 
 			country_event = { id = unequal_nations_randomizer.3 }
 		}
-
-		if = {
-			limit = {
-				has_global_flag = unequal_nations_option_legendary_countries_continental_choice
-			}
-
-			country_event = { id = unequal_nations_randomizer.4 }
-		}
 	}
 
 	# OK
@@ -572,11 +558,6 @@ country_event = {
 	immediate = {
 		random_country = {
 			limit = {
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -735,11 +716,6 @@ country_event = {
 	immediate = {
 		every_country = {
 			limit = {
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -970,8 +946,8 @@ country_event = {
 
 # Per-Continent Legendary Country Randomizer
 country_event = {
-	id = unequal_nations_randomizer.4
-	title = unequal_nations_randomizer.4.title
+	id = unequal_nations_randomizer.2
+	title = unequal_nations_randomizer.2.title
 	desc = unequal_nations_randomizer_desc
 	picture = CITY_DEVELOPMENT_eventPicture
 
@@ -984,11 +960,6 @@ country_event = {
 			limit = {
 				capital_scope = {
 					continent = europe
-				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
 				}
 				OR = {
 					ai = yes
@@ -1011,7 +982,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
@@ -1030,11 +1000,6 @@ country_event = {
 				capital_scope = {
 					continent = asia
 				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -1056,7 +1021,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
@@ -1075,11 +1039,6 @@ country_event = {
 				capital_scope = {
 					continent = asia
 				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -1101,7 +1060,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
@@ -1120,11 +1078,6 @@ country_event = {
 				capital_scope = {
 					continent = asia
 				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -1146,7 +1099,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
@@ -1165,11 +1117,6 @@ country_event = {
 				capital_scope = {
 					continent = asia
 				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -1191,7 +1138,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
@@ -1210,11 +1156,6 @@ country_event = {
 				capital_scope = {
 					continent = asia
 				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -1236,7 +1177,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
@@ -1255,11 +1195,6 @@ country_event = {
 				capital_scope = {
 					continent = island_check_provinces
 				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -1281,7 +1216,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
@@ -1300,11 +1234,6 @@ country_event = {
 				capital_scope = {
 					continent = new_world
 				}
-				NOT = {
-					tag = REB
-					tag = PIR
-					tag = NAT
-				}
 				OR = {
 					ai = yes
 					AND = {
@@ -1326,7 +1255,6 @@ country_event = {
 						has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 					}
 					AND = {
-						total_development = 1
 						NOT = {
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
 							has_global_flag = unequal_nations_option_legendary_countries_min_size_500

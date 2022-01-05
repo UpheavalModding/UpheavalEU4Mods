@@ -1,0 +1,52 @@
+# Unqual Nations
+# Nerfs and Buffs - Navy
+
+# L3
+unequal_nations_buff_l3_navy = {
+	naval_forcelimit_modifier = 0.4
+	global_sailors_modifier = 0.6
+	sailors_recovery_speed = 0.6
+	naval_morale = 0.2
+	global_ship_cost = -0.6
+}
+# L2
+unequal_nations_buff_l2_navy = {
+	naval_forcelimit_modifier = 0.2
+	global_sailors_modifier = 0.3
+	sailors_recovery_speed = 0.3
+	naval_morale = 0.1
+	global_ship_cost = -0.3
+}
+# L1
+unequal_nations_buff_l1_navy = {
+	naval_forcelimit_modifier = 0.1
+	global_sailors_modifier = 0.15
+	sailors_recovery_speed = 0.15
+	naval_morale = 0.05
+	global_ship_cost - -0.15
+}
+
+# L1
+unequal_nations_nerf_l1_navy = {
+	naval_forcelimit_modifier = -0.1
+	global_sailors_modifier = -0.15
+	sailors_recovery_speed = -0.15
+	naval_morale = -0.05
+	global_ship_cost = 0.15
+}
+# L2
+unequal_nations_nerf_l2_navy = {
+	naval_forcelimit_modifier = -0.2
+	global_sailors_modifier = -0.3
+	sailors_recovery_speed = -0.3
+	naval_morale = -0.1
+	global_ship_cost = 0.3
+}
+# L3
+unequal_nations_nerf_l3_navy = {
+	naval_forcelimit_modifier = -0.4
+	global_sailors_modifier = -0.6
+	sailors_recovery_speed = -0.6
+	naval_morale = -0.2
+	global_ship_cost = 0.6
+}

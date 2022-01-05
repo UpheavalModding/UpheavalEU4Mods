@@ -1,0 +1,52 @@
+# Unqual Nations
+# Nerfs and Buffs - Culture & Religion
+
+# L3
+unequal_nations_buff_l3_culturereligion = {
+	global_missionary_strength = 0.04
+	missionary_maintenance_cost = -0.4
+	religious_unity = 0.4
+	culture_conversion_cost = -0.4
+	num_accepted_cultures = 4
+}
+# L2
+unequal_nations_buff_l2_culturereligion = {
+	global_missionary_strength = 0.02
+	missionary_maintenance_cost = -0.2
+	religious_unity = 0.2
+	culture_conversion_cost = -0.2
+	num_accepted_cultures = 2
+}
+# L1
+unequal_nations_buff_l1_culturereligion = {
+	global_missionary_strength = 0.01
+	missionary_maintenance_cost = -0.1
+	religious_unity = 0.1
+	culture_conversion_cost = -0.1
+	num_accepted_cultures = 1
+}
+
+# L1
+unequal_nations_nerf_l1_culturereligion = {
+	global_missionary_strength = -0.01
+	missionary_maintenance_cost = 0.1
+	religious_unity = -0.1
+	culture_conversion_cost = 0.1
+	num_accepted_cultures = -1
+}
+# L2
+unequal_nations_nerf_l2_culturereligion = {
+	global_missionary_strength = -0.02
+	missionary_maintenance_cost = 0.2
+	religious_unity = -0.2
+	culture_conversion_cost = 0.2
+	num_accepted_cultures = -2
+}
+# L3
+unequal_nations_nerf_l3_culturereligion = {
+	global_missionary_strength = -0.04
+	missionary_maintenance_cost = 0.4
+	religious_unity = -0.4
+	culture_conversion_cost = 0.4
+	num_accepted_cultures = -4
+}

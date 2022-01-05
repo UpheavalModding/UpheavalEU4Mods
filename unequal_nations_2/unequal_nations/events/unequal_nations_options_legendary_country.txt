@@ -68,14 +68,6 @@ country_event = {
 	option = {
 		name = unequal_nations_options_legendary_country.1.main_option.1
 
-		trigger = {
-			OR = {
-				has_global_flag = unequal_nations_option_legendary_countries_global_choice
-				has_global_flag = unequal_nations_option_legendary_countries_continental_choice
-				has_global_flag = unequal_nations_option_legendary_countries_random_chance
-			}
-		}
-
 		hidden_effect = {
 			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
 			clr_global_flag = unequal_nations_option_legendary_countries_continental_choice
@@ -87,10 +79,6 @@ country_event = {
 	# Enable Global Legendary Country
 	option = {
 		name = unequal_nations_options_legendary_country.1.main_option.2
-
-		trigger = {
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_global_choice }
-		}
 
 		hidden_effect = {
 			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
@@ -106,10 +94,6 @@ country_event = {
 	option = {
 		name = unequal_nations_options_legendary_country.1.main_option.3
 
-		trigger = {
-			NOT = { clr_global_flag = unequal_nations_option_legendary_countries_continental_choice }
-		}
-
 		hidden_effect = {
 			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
 			clr_global_flag = unequal_nations_option_legendary_countries_continental_choice
@@ -120,13 +104,9 @@ country_event = {
 		}
 	}
 
-	# Enable Random Legendary Countries
+	# Enable Per Random Legendary Country
 	option = {
 		name = unequal_nations_options_legendary_country.1.main_option.4
-
-		trigger = {
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance }
-		}
 
 		hidden_effect = {
 			clr_global_flag = unequal_nations_option_legendary_countries_global_choice
@@ -146,8 +126,6 @@ country_event = {
 
 		trigger = {
 			has_global_flag = unequal_nations_option_legendary_countries_random_chance
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance_1 }
 		}
 
 		hidden_effect = {
@@ -171,8 +149,6 @@ country_event = {
 
 		trigger = {
 			has_global_flag = unequal_nations_option_legendary_countries_random_chance
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance_3 }
 		}
 
 		hidden_effect = {
@@ -196,8 +172,6 @@ country_event = {
 
 		trigger = {
 			has_global_flag = unequal_nations_option_legendary_countries_random_chance
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance_5 }
 		}
 
 		hidden_effect = {
@@ -221,8 +195,6 @@ country_event = {
 
 		trigger = {
 			has_global_flag = unequal_nations_option_legendary_countries_random_chance
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance_15 }
 		}
 
 		hidden_effect = {
@@ -246,8 +218,6 @@ country_event = {
 
 		trigger = {
 			has_global_flag = unequal_nations_option_legendary_countries_random_chance
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance_25 }
 		}
 
 		hidden_effect = {
@@ -271,9 +241,6 @@ country_event = {
 
 		trigger = {
 			has_global_flag = unequal_nations_option_legendary_countries_random_chance
-
-			NOT = { 
-				has_global_flag = unequal_nations_option_legendary_countries_random_chance_50 }
 		}
 
 		hidden_effect = {
@@ -297,8 +264,6 @@ country_event = {
 
 		trigger = {
 			has_global_flag = unequal_nations_option_legendary_countries_random_chance
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance_100 }
 		}
 
 		hidden_effect = {
@@ -318,7 +283,7 @@ country_event = {
 
 
 
-	# Enable Min Size 1
+	# Enable Min Size 0
 	option = {
 		name = unequal_nations_options_legendary_country.1.size.0
 
@@ -327,12 +292,6 @@ country_event = {
 				has_global_flag = unequal_nations_option_legendary_countries_global_choice
 				has_global_flag = unequal_nations_option_legendary_countries_continental_choice
 				has_global_flag = unequal_nations_option_legendary_countries_random_chance
-			}
-
-			OR = {
-				has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-				has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-				has_global_flag = unequal_nations_option_legendary_countries_min_size_750
 			}
 		}
 
@@ -355,8 +314,6 @@ country_event = {
 				has_global_flag = unequal_nations_option_legendary_countries_continental_choice
 				has_global_flag = unequal_nations_option_legendary_countries_random_chance
 			}
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_min_size_250 }
 		}
 
 		hidden_effect = {
@@ -378,8 +335,6 @@ country_event = {
 				has_global_flag = unequal_nations_option_legendary_countries_continental_choice
 				has_global_flag = unequal_nations_option_legendary_countries_random_chance
 			}
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_min_size_500 }
 		}
 
 		hidden_effect = {
@@ -401,8 +356,6 @@ country_event = {
 				has_global_flag = unequal_nations_option_legendary_countries_continental_choice
 				has_global_flag = unequal_nations_option_legendary_countries_random_chance
 			}
-
-			NOT = { has_global_flag = unequal_nations_option_legendary_countries_min_size_750 }
 		}
 
 		hidden_effect = {

@@ -1,0 +1,387 @@
+##############################
+# Unequal Nations Options    #
+# Category Enablement Setting#
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_options_category_enablement
+
+# Main Menu
+country_event = {
+	id = unequal_nations_options_category_enablement.1
+	title = unequal_nations_options_category_enablement.1.title
+	desc = unequal_nations_options_menu_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_back
+		highlight = yes
+		country_event = { id = unequal_nations_menu_skipper.2 }
+	}
+
+	# Randomize
+	option = {
+		name = unequal_nations_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_army
+			clr_global_flag = unequal_nations_category_enabled_navy
+			clr_global_flag = unequal_nations_category_enabled_expansion
+			clr_global_flag = unequal_nations_category_enabled_administration
+			clr_global_flag = unequal_nations_category_enabled_economy
+			clr_global_flag = unequal_nations_category_enabled_tech
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
+
+			# Army
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_army
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_army
+				}
+			}
+
+			# Navy
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_navy
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_navy
+				}
+			}
+
+			# Expansion
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_expansion
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_expansion
+				}
+			}
+
+			# Administration
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_administration
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_administration
+				}
+			}
+
+			# Economy
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_economy
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_economy
+				}
+			}
+
+			# Technology
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_tech
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_tech
+				}
+			}
+
+			# Culture & Religion
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_culturereligion
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_culturereligion
+				}
+			}
+
+			# Court
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_court
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_court
+				}
+			}
+
+			# Trade
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_category_enabled_trade
+				}
+				10 = {
+					clr_global_flag = unequal_nations_category_enabled_trade
+				}
+			}
+
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Army
+	# Enable Army Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.a
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_army }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_army
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Army Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.b
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_army
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_army
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Navy
+	# Enable Navy Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.c
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_navy }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_navy
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Navy Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.d
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_navy
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_navy
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Expansion
+	# Enable Expansion Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.e
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_expansion }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_expansion
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Expansion Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.f
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_expansion
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_expansion
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Administration
+	# Enable Administration Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.g
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_administration }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_administration
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Administration Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.h
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_administration
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_administration
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Economy
+	# Enable Economy Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.i
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_economy }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_economy
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Economy Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.j
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_economy
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_economy
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Tech
+	# Enable Tech Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.k
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_tech }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_tech
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Tech Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.l
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_tech
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_tech
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Culture & Religion
+	# Enable Culture & Religion Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.m
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_culturereligion }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_culturereligion
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Culture & Religion Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.n
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_culturereligion
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_culturereligion
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Court
+	# Enable Court Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.o
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_court }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_court
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Court Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.p
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_court
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_court
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+
+	### Trade
+	# Enable Trade Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.q
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_trade }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_category_enabled_trade
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+	# Disable Trade Category
+	option = {
+		name = unequal_nations_options_category_enablement.1.r
+
+		trigger = {
+			has_global_flag = unequal_nations_category_enabled_trade
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_category_enabled_trade
+			country_event = { id = unequal_nations_menu_skipper.5 }
+		}
+	}
+}

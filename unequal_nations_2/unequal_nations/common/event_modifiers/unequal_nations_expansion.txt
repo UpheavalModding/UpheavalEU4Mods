@@ -1,0 +1,52 @@
+# Unqual Nations
+# Nerfs and Buffs - Expansion
+
+# L3
+unequal_nations_buff_l3_expansion = {
+	diplomatic_reputation = 4
+	ae_impact = -0.4
+	unjustified_demands = -0.4
+	province_warscore_cost = -0.4
+	core_creation = -0.4
+}
+# L2
+unequal_nations_buff_l2_expansion = {
+	diplomatic_reputation = 2
+	ae_impact = -0.2
+	unjustified_demands = -0.2
+	province_warscore_cost = -0.2
+	core_creation = -0.2
+}
+# L1
+unequal_nations_buff_l1_expansion = {
+	diplomatic_reputation = 1
+	ae_impact = -0.1
+	unjustified_demands = -0.1
+	province_warscore_cost = -0.1
+	core_creation = -0.1
+}
+
+# L1
+unequal_nations_nerf_l1_expansion = {
+	diplomatic_reputation = -1
+	ae_impact = 0.1
+	unjustified_demands = 0.1
+	province_warscore_cost = 0.1
+	core_creation = 0.1
+}
+# L2
+unequal_nations_nerf_l2_expansion = {
+	diplomatic_reputation = -2
+	ae_impact = 0.2
+	unjustified_demands = 0.2
+	province_warscore_cost = 0.2
+	core_creation = 0.2
+}
+# L3
+unequal_nations_nerf_l3_expansion = {
+	diplomatic_reputation = -4
+	ae_impact = 0.4
+	unjustified_demands = 0.4
+	province_warscore_cost = 0.4
+	core_creation = 0.4
+}

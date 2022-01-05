@@ -1,0 +1,71 @@
+##############################
+# Unequal Nations Options    #
+# Reroll Setting             #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_options_reroll
+
+# Main Menu
+country_event = {
+	id = unequal_nations_options_reroll.1
+	title = unequal_nations_options_reroll.1.title
+	desc = unequal_nations_options_menu_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_back
+		highlight = yes
+		country_event = { id = unequal_nations_menu_skipper.2 }
+	}
+
+	# Randomize
+	option = {
+		name = unequal_nations_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_reroll_each_age
+
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_option_reroll_each_age
+				}
+				10 = {
+					clr_global_flag = unequal_nations_option_reroll_each_age
+				}
+			}
+			country_event = { id = unequal_nations_menu_skipper.4 }
+		}
+	}
+
+	# Enable Rerolling Buffs/Nerfs each age
+	option = {
+		name = unequal_nations_options_reroll.1.a
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_option_reroll_each_age }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_option_reroll_each_age
+			country_event = { id = unequal_nations_menu_skipper.4 }
+		}
+	}
+	# Disable Rerolling Buffs/Nerfs each age
+	option = {
+		name = unequal_nations_options_reroll.1.b
+
+		trigger = {
+			has_global_flag = unequal_nations_option_reroll_each_age
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_reroll_each_age
+			country_event = { id = unequal_nations_menu_skipper.4 }
+		}
+	}
+}

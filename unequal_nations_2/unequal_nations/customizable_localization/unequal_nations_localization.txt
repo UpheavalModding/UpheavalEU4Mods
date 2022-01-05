@@ -1,0 +1,371 @@
+### Get Player Nation Mod Impact
+defined_text = {
+    name = UnequalNationGetPlayerNationImpacted
+
+	# Player Nations Allowed
+	text = {
+        localisation_key = unequal_nation_localization_player_nation_impact_enabled
+        trigger = {
+			has_global_flag = unequal_nations_option_player_impacted
+        }
+	}
+	# Player Nations Not Allowed
+	text = {
+        localisation_key = unequal_nation_localization_player_nation_impact_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_option_player_impacted }
+        }
+	}
+}
+
+### Get Legendary Country Setting
+defined_text = {
+    name = UnequalNationGetLegendaryCountrySetting
+
+	# Disabled
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_disabled
+        trigger = {
+			NOT = {
+				has_global_flag = unequal_nations_option_legendary_countries_global_choice
+				has_global_flag = unequal_nations_option_legendary_countries_random_chance
+				has_global_flag = unequal_nations_option_legendary_countries_continental_choice
+			}
+        }
+	}
+	# Global Choice
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_global
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_global_choice
+        }
+	}
+	# Continental Choice
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_continental
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_continental_choice
+        }
+	}
+	# Random Choice
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+}
+
+### Get Legendary Country Size Setting
+defined_text = {
+    name = UnequalNationGetLegendaryCountrySizeSetting
+
+	# 0
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_min_size_0
+        trigger = {
+			NOT = {
+				has_global_flag = unequal_nations_option_legendary_countries_min_size_250
+				has_global_flag = unequal_nations_option_legendary_countries_min_size_500
+				has_global_flag = unequal_nations_option_legendary_countries_min_size_750
+			}
+        }
+	}
+	# 250
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_min_size_250
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_min_size_250
+        }
+	}
+	# 500
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_min_size_500
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_min_size_500
+        }
+	}
+	# 750
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_min_size_750
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_min_size_750
+        }
+	}
+}
+
+### Get Legendary Country Random Chance Setting
+defined_text = {
+    name = UnequalNationGetLegendaryRandomChanceSetting
+
+	# N/A
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_NA
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_option_legendary_countries_random_chance }
+        }
+	}
+
+	# 1
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_1
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance_1
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+
+	# 3
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_3
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance_3
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+
+	# 5
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_5
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance_5
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+
+	# 15
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_15
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance_15
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+
+	# 25
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_25
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance_25
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+
+	# 50
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_50
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance_50
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+
+	# 100
+	text = {
+        localisation_key = unequal_nation_localization_legendary_countries_random_chance_100
+        trigger = {
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance_100
+			has_global_flag = unequal_nations_option_legendary_countries_random_chance
+        }
+	}
+}
+
+### Get Reroll Setting
+defined_text = {
+    name = UnequalNationGetRerollSetting
+
+	# Disabled
+	text = {
+        localisation_key = unequal_nation_localization_reroll_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_option_reroll_each_age }
+        }
+	}
+	# Per Age Reroll
+	text = {
+        localisation_key = unequal_nation_localization_reroll_per_age
+        trigger = {
+			has_global_flag = unequal_nations_option_reroll_each_age
+        }
+	}
+}
+
+### Army Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementArmy
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_army
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_army }
+        }
+	}
+}
+
+### Navy Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementNavy
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_navy
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_navy }
+        }
+	}
+}
+
+### Expansion Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementExpansion
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_expansion
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_expansion }
+        }
+	}
+}
+
+### Administration Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementAdministration
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_administration
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_administration }
+        }
+	}
+}
+
+### Economy Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementEconomy
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_economy
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_economy }
+        }
+	}
+}
+
+### Tech Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementTech
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_tech
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_tech }
+        }
+	}
+}
+
+### Culture & Religion Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementCultureReligion
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_culturereligion
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_culturereligion }
+        }
+	}
+}
+
+### Court Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementCourt
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_court
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_court }
+        }
+	}
+}
+
+### Trade Category
+defined_text = {
+    name = UnequalNationGetCategoryEnablementTrade
+
+	# Category Disabled
+	text = {
+        localisation_key = unequal_nation_localization_category_enabled
+        trigger = {
+			has_global_flag = unequal_nations_category_enabled_trade
+        }
+	}
+	# Category Enabled
+	text = {
+        localisation_key = unequal_nation_localization_category_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_category_enabled_trade }
+        }
+	}
+}

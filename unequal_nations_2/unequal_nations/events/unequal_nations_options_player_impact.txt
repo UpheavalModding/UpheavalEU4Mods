@@ -1,0 +1,71 @@
+##############################
+# Unequal Nations Options    #
+# Player Impact Setting      #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_options_player_impact
+
+# Main Menu
+country_event = {
+	id = unequal_nations_options_player_impact.1
+	title = unequal_nations_options_player_impact.1.title
+	desc = unequal_nations_options_menu_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_back
+		highlight = yes
+		country_event = { id = unequal_nations_menu_skipper.2 }
+	}
+
+	# Randomize
+	option = {
+		name = unequal_nations_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_player_impacted
+
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_option_player_impacted
+				}
+				10 = {
+					clr_global_flag = unequal_nations_option_player_impacted
+				}
+			}
+			country_event = { id = unequal_nations_menu_skipper.6 }
+		}
+	}
+
+	# Enable Player Country Impact
+	option = {
+		name = unequal_nations_options_player_impact.1.a
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_option_player_impacted }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_option_player_impacted
+			country_event = { id = unequal_nations_menu_skipper.6 }
+		}
+	}
+	# Disable Player Country Impact
+	option = {
+		name = unequal_nations_options_player_impact.1.b
+
+		trigger = {
+			has_global_flag = unequal_nations_option_player_impacted
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_option_player_impacted
+			country_event = { id = unequal_nations_menu_skipper.6 }
+		}
+	}
+}

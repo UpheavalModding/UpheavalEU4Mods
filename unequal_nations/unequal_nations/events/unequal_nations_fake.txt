@@ -1,0 +1,40 @@
+##############################
+# Unequal Nations            #
+# Fake                       #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_fake
+
+# You're a legendary nation Harry!
+country_event = {
+	id = unequal_nations_fake.1
+	title = unequal_nations_fake.1.title
+	desc = unequal_nations_fake.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Confirmation that you re-rolled buffs/nerfs
+country_event = {
+	id = unequal_nations_fake.2
+	title = unequal_nations_fake.2.title
+	desc = unequal_nations_fake.2.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}

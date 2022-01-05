@@ -1,0 +1,119 @@
+##############################
+# Unequal Nations            #
+# Initialization             #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_initialization
+
+# Initialize the Mod 
+country_event = {
+	id = unequal_nations_initialization.1
+	title = unequal_nations_initialization.1.title
+	desc = unequal_nations_initialization.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		NOT = { has_global_flag = unequal_nations_initialized }
+		NOT = { has_global_flag = unequal_nations_initializing }
+	}
+
+	immediate = {
+		# Remove the flag to indicate that the player is going to be the settings chooser
+		every_country = {
+			limit = {
+				ai = no
+			}
+
+			clr_country_flag = unequal_nations_settings_host
+		}
+
+		# Choose a random player to be the host
+		random_country = {
+			limit = {
+				ai = no
+			}
+
+			set_country_flag = unequal_nations_settings_host
+		}
+
+		# Bring up the About menu for all players
+		every_country = {
+			limit = {
+				ai = no
+				NOT = { has_global_flag = unequal_nations_initialized }
+				NOT = { has_country_flag = unequal_nations_settings_host }
+			}
+
+			country_event = { id = unequal_nations_about.1 }
+		}
+
+		# Bring up the About menu for the host
+		every_country = {
+			limit = {
+				has_country_flag = unequal_nations_settings_host
+			}
+
+			country_event = { id = unequal_nations_about.1 }
+		}
+
+		# Flag to say that we've begun configuration
+		set_global_flag = unequal_nations_initializing
+
+		### Feature Enablement (Defaults)
+		# Clear flags (just to be safe!)
+		clr_global_flag = unequal_nations_option_player_impacted
+		clr_global_flag = unequal_nations_option_legendary_countries_global_choice
+		clr_global_flag = unequal_nations_option_legendary_countries_continental_choice
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance
+
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance_1
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance_3
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance_5
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance_15
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance_25
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance_50
+		clr_global_flag = unequal_nations_option_legendary_countries_random_chance_100
+
+		clr_global_flag = unequal_nations_option_legendary_countries_min_size_250
+		clr_global_flag = unequal_nations_option_legendary_countries_min_size_500
+		clr_global_flag = unequal_nations_option_legendary_countries_min_size_750
+
+		clr_global_flag = unequal_nations_option_reroll_each_age
+
+		clr_global_flag = unequal_nations_category_enabled_army
+		clr_global_flag = unequal_nations_category_enabled_navy
+		clr_global_flag = unequal_nations_category_enabled_expansion
+		clr_global_flag = unequal_nations_category_enabled_administration
+		clr_global_flag = unequal_nations_category_enabled_economy
+		clr_global_flag = unequal_nations_category_enabled_tech
+		clr_global_flag = unequal_nations_category_enabled_culturereligion
+		clr_global_flag = unequal_nations_category_enabled_court
+		clr_global_flag = unequal_nations_category_enabled_trade
+
+		# Set defaults
+		set_global_flag = unequal_nations_option_legendary_countries_global_choice
+		set_global_flag = unequal_nations_option_legendary_countries_random_chance_5
+		set_global_flag = unequal_nations_option_legendary_countries_min_size_500
+		set_global_flag = unequal_nations_option_reroll_each_age
+		set_global_flag = unequal_nations_category_enabled_army
+		set_global_flag = unequal_nations_category_enabled_navy
+		set_global_flag = unequal_nations_category_enabled_expansion
+		set_global_flag = unequal_nations_category_enabled_administration
+		set_global_flag = unequal_nations_category_enabled_economy
+		set_global_flag = unequal_nations_category_enabled_tech
+		set_global_flag = unequal_nations_category_enabled_culturereligion
+		set_global_flag = unequal_nations_category_enabled_court
+		set_global_flag = unequal_nations_category_enabled_trade
+	}
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}

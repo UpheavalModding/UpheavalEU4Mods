@@ -1,4 +1,4 @@
-[h1]Unequal Nations[/h1]
+[h1]Unequal Nations 2.0[/h1]
 Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765]Unequal Countries[/url], this mod provides a random set of nerfs and buffs to nations throughout the world, providing a more dynamic world with new and unique situations.
 
 [h1]Features[/h1]
@@ -33,11 +33,12 @@ Feel free to use this mod in any modpack, or to create compatibility patches for
 Big thanks to https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765 for the inspiration!
 
 [h1]Recent Version[/h1]
-1.1.3 - Corrected missing title/description for the new decision in 1.1.2, fixed Continental Legendary Country system, corrected some grammer, made some menu items easier to use, make it so that the decision to reroll the buffs/nerfs is actually random
-1.1.2 - Added decision to allow viewing of legendary countries
-1.1.1 - Made sure to clear player modifiers always (if needed :) ), ability to change settings mid-game
-1.1.0 - Upgraded to EU4 1.32, added per-continent legendary countries, configurable chance for legendary nations, added Court and Trade categories, small change to Economy category, added some extra presets
-1.0.5 - Removed extra unneeded files from the mod.
+2.0.0:
+- Rebuilt from the ground up to be more dynamic and configurable!
+- Three different "categories" of buffs/nerfs: Starting, Dynamically Given, & Rolled
+---- Starting: These are given to all nations to generate a more dynamic starting position for all nations
+---- Dynamically Given: These are given to nations that meet certain conditions
+---- Rolled: These are given like the classic ones
 [i][url=https://raw.githubusercontent.com/UpheavalModding/UpheavalEU4Mods/main/unequal_nations/version_history]Click here for a detailed version history[/url][/i]
 
 [h1]Development/Source Code[/h1]
