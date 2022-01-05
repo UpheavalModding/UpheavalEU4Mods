@@ -62,7 +62,34 @@ country_decisions = {
 		}
 
 		effect = {
-			country_event = { id = unequal_nations_randomizer.1 }
+			random_owned_province = {
+				add_province_triggered_modifier = unequal_nations_reroll_buffs_and_nerfs
+			}
+		}
+	}
+}
+
+country_decisions = {
+	unequal_nations_list_legendary_nations = {
+		major = yes
+		
+		potential = {
+			has_global_flag = unequal_nations_initialized
+		}
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			every_country = {
+				limit = {
+					has_country_modifier = unequal_nations_buff_legendary
+				}
+				country_event = { id = unequal_nations_fake.1 }
+			}
 		}
 	}
 }

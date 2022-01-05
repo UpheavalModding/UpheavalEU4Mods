@@ -1,0 +1,22 @@
+﻿l_english:
+##### Decisions
+
+##### Dynamic Localizations
+ 
+
+##### Modifiers
+
+##### Province Triggered Modifiers
+ unequal_nations_reroll_buffs_and_nerfs_title:0 "Reroll the buffs and nerfs!"
+ unequal_nations_reroll_buffs_and_nerfs_desc:0 "Reroll the buffs and nerfs!"
+
+##### Events
+### Common
+ unequal_nations_ok:0 "OK"
+ unequal_nations_back:0 "Back"
+ unequal_nations_random:0 "Randomize"
+
+### Fake
+
+### About
+

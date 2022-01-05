@@ -35,7 +35,8 @@ Big thanks to https://steamcommunity.com/sharedfiles/filedetails/?id=1919755765 
 [h1]Recent Version[/h1]
 2.0.0:
 - Rebuilt from the ground up to be more dynamic and configurable!
-- Three different "categories" of buffs/nerfs: Starting, Dynamically Given, & Rolled
+- Two different "sets" of buffs/nerfs: Ruler & Country
+---- Ruler: These are buffs/nerfs that are 
 ---- Starting: These are given to all nations to generate a more dynamic starting position for all nations
 ---- Dynamically Given: These are given to nations that meet certain conditions
 ---- Rolled: These are given like the classic ones

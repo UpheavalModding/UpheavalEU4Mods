@@ -1,0 +1,28 @@
+################################
+# Unequal Nations              #
+# Province Triggered Modifiers #
+#                              #
+# Written by von_der_borch     #
+################################
+
+unequal_nations_reroll_buffs_and_nerfs = {
+	potential = {
+	}
+
+	trigger = {
+        always = yes
+	}
+	
+	#Province scope
+	on_activation = {
+        owner = {
+			country_event = { id = unequal_nations_randomizer.1 }
+        }
+        remove_province_triggered_modifier = unequal_nations_reroll_buffs_and_nerfs
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}

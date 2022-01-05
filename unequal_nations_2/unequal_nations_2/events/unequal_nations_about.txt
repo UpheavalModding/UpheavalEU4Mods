@@ -1,0 +1,28 @@
+##############################
+# Unequal Nations            #
+# About                      #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_about
+
+# About 
+country_event = {
+	id = unequal_nations_about.1
+	title = unequal_nations_about.1.title
+	desc = unequal_nations_about.1.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+
+		add_country_modifier = {
+			name = 
+			duration = -1
+		}
+	}
+}

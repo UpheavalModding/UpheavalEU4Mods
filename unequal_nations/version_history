@@ -1,3 +1,25 @@
+1.1.3 (05/01/2022)
+- Corrected missing title/description for the new decision in 1.1.2
+- Fixed Continental Legendary Country system
+- Corrected some grammer in the settings menu
+- Made some menu items easier to use
+- Made it so that the decision to reroll the buffs/nerfs is actually randomized
+
+1.1.2 (04/01/2022)
+- Added decision to allow viewing of legendary countries
+
+1.1.1 (22/12/2021)
+- made sure to clear player modifiers always (if needed :) )
+- added ability to change settings mid-game
+
+1.1.0 (20/12/2021)
+- upgraded to EU4 1.32
+- added per-continent legendary countries
+- configurable chance for legendary nations
+- added Court and Trade categories
+- small change to Economy category
+- added some extra presets
+
 1.0.5 (12/03/2021)
 - Removed screenshots, steam_desc, and version_history files from the mod directory.
 
