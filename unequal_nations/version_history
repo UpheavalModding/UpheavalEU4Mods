@@ -1,13 +1,3 @@
-2.0.0 (xx/xx/2022)
-- Reworked categories to allow for more granular bonuses/nerfs
-- Added Legendary Nerf feature
-- Added feature to allow buff/nerf to be rerolled for a country when a new leader takes over a country
-- Allowed buffs/nerfs for Pirates, Rebels, and Natives (for some categories)
-- Refactored the randomizer code significantly
-- Reworked the Settings Menu to make more sense
-- Different chances for Player vs. AI for categories (VERY rare for players to get L3 buffs/nerfs)
-- Optional different max tiers for players vs. AI (i.e. players can get a range from N1 - B1, while AI get LN - LB)
-
 1.1.3 (05/01/2022)
 - Corrected missing title/description for the new decision in 1.1.2
 - Fixed Continental Legendary Country system

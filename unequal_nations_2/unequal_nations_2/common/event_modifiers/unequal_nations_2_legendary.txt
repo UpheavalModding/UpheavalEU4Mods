@@ -4,8 +4,8 @@
 #                             #
 # Written by von_der_borch    #
 ###############################
-unequal_nations_2_legendary_buff_tier_1 = {
-    prestige_decay = 3
+unequal_nations_2_legendary_buff = {
+    prestige = 3
     land_forcelimit_modifier = 0.5
     global_manpower_modifier = 0.5
     land_morale = 0.25
@@ -22,10 +22,11 @@ unequal_nations_2_legendary_buff_tier_1 = {
     country_military_power = 3
     global_institution_spread = 0.5
     monarch_lifespan = 0.25
+    global_unrest = 15
 }
 
-unequal_nations_2_legendary_nerf_tier_1 = {
-    prestige_decay = -3
+unequal_nations_2_legendary_nerf = {
+    prestige = -3
     land_forcelimit_modifier = -0.5
     global_manpower_modifier = -0.5
     land_morale = -0.25
@@ -42,4 +43,5 @@ unequal_nations_2_legendary_nerf_tier_1 = {
     country_military_power = -3
     global_institution_spread = -0.5
     monarch_lifespan = -0.25
+    global_unrest = -15
 }
