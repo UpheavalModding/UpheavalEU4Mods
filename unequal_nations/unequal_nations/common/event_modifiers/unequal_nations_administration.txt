@@ -1,0 +1,82 @@
+# Unqual Nations
+# Nerfs and Buffs - Administration
+
+# L3
+unequal_nations_buff_l3_administration = {
+	global_unrest = -8
+	stability_cost_modifier = -0.4
+	years_of_nationalism = -8
+	yearly_absolutism = 1
+	prestige = 2
+	legitimacy = 2
+	republican_tradition = 2
+	devotion = 2
+	horde_unity = 2
+	meritocracy = 2
+}
+# L2
+unequal_nations_buff_l2_administration = {
+	global_unrest = -4
+	stability_cost_modifier = -0.2
+	years_of_nationalism = -4
+	yearly_absolutism = 0.5
+	prestige = 1
+	legitimacy = 1
+	republican_tradition = 1
+	devotion = 1
+	horde_unity = 1
+	meritocracy = 1
+}
+# L1
+unequal_nations_buff_l1_administration = {
+	global_unrest = -2
+	stability_cost_modifier = -0.1
+	years_of_nationalism = -2
+	yearly_absolutism = 0.25
+	prestige = 0.5
+	legitimacy = 0.5
+	republican_tradition = 0.5
+	devotion = 0.5
+	horde_unity = 0.5
+	meritocracy = 0.5
+}
+
+# L1
+unequal_nations_nerf_l1_administration = {
+	global_unrest = 2
+	stability_cost_modifier = 0.1
+	years_of_nationalism = 2
+	yearly_absolutism = -0.25
+	prestige = -0.5
+	legitimacy = -0.5
+	republican_tradition = -0.5
+	devotion = -0.5
+	horde_unity = -0.5
+	meritocracy = -0.5
+}
+# L2
+unequal_nations_nerf_l2_administration = {
+	global_unrest = 4
+	stability_cost_modifier = 0.2
+	years_of_nationalism = 4
+	yearly_absolutism = -0.5
+	prestige = -1
+	legitimacy = -1
+	republican_tradition = -1
+	devotion = -1
+	horde_unity = -1
+	meritocracy = -1
+}
+# L3
+unequal_nations_nerf_l3_administration = {
+	global_unrest = 8
+	stability_cost_modifier = 0.4
+	years_of_nationalism = 8
+	yearly_absolutism = -1
+	prestige = -2
+	legitimacy = -2
+	republican_tradition = -2
+	devotion = -2
+	horde_unity = -2
+	meritocracy = -2
+}

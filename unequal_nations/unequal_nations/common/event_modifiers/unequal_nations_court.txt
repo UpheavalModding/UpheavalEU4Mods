@@ -1,0 +1,58 @@
+# Unqual Nations
+# Nerfs and Buffs - Court
+
+# L3
+unequal_nations_buff_l3_court = {
+	advisor_cost = -0.6
+	advisor_pool = 3
+	monthly_splendor = 3
+	monarch_lifespan = 0.20
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+	local_heir_adm = 1
+	local_heir_dip = 1
+	local_heir_mil = 1
+}
+# L2
+unequal_nations_buff_l2_court = {
+	advisor_cost = -0.3
+	advisor_pool = 2
+	monthly_splendor = 2
+	monarch_lifespan = 0.10
+}
+# L1
+unequal_nations_buff_l1_court = {
+	advisor_cost = -0.15
+	advisor_pool = 1
+	monthly_splendor = 1
+	monarch_lifespan = 0.05
+}
+
+# L1
+unequal_nations_nerf_l1_court = {
+	advisor_cost = 0.15
+	advisor_pool = -1
+	monthly_splendor = -1
+	monarch_lifespan = -0.05
+}
+# L2
+unequal_nations_nerf_l2_court = {
+	advisor_cost = 0.3
+	advisor_pool = -2
+	monthly_splendor = -2
+	monarch_lifespan = -0.10
+}
+# L3
+unequal_nations_nerf_l3_court = {
+	advisor_cost = 0.6
+	advisor_pool = -3
+	monthly_splendor = -3
+	monarch_lifespan = -0.20
+	monarch_admin_power = -1
+	monarch_diplomatic_power = -1
+	monarch_military_power = -1
+	local_heir_adm = -1
+	local_heir_dip = -1
+	local_heir_mil = -1
+}

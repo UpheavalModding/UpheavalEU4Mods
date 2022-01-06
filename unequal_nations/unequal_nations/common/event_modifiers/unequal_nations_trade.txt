@@ -1,0 +1,66 @@
+# Unqual Nations
+# Nerfs and Buffs - Trade
+
+# L3
+unequal_nations_buff_l3_trade = {
+	merchants = 1
+	trade_efficiency = 0.4
+	global_trade_power = 0.4
+	trade_range_modifier = 0.4
+	global_ship_trade_power = 0.4
+	caravan_power = 0.4
+	privateer_efficiency = 0.4
+	embargo_efficiency = 0.4
+}
+# L2
+unequal_nations_buff_l2_trade = {
+	trade_efficiency = 0.2
+	global_trade_power = 0.2
+	trade_range_modifier = 0.2
+	global_ship_trade_power = 0.2
+	caravan_power = 0.2
+	privateer_efficiency = 0.2
+	embargo_efficiency = 0.2
+}
+# L1
+unequal_nations_buff_l1_trade = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
+	trade_range_modifier = 0.1
+	global_ship_trade_power = 0.1
+	caravan_power = 0.1
+	privateer_efficiency = 0.1
+	embargo_efficiency = 0.1
+}
+
+# L1
+unequal_nations_nerf_l1_trade = {
+	trade_efficiency = -0.1
+	global_trade_power = -0.1
+	trade_range_modifier = -0.1
+	global_ship_trade_power = -0.1
+	caravan_power = -0.1
+	privateer_efficiency = -0.1
+	embargo_efficiency = -0.1
+}
+# L2
+unequal_nations_nerf_l2_trade = {
+	trade_efficiency = -0.2
+	global_trade_power = -0.2
+	trade_range_modifier = -0.2
+	global_ship_trade_power = -0.2
+	caravan_power = -0.2
+	privateer_efficiency = -0.2
+	embargo_efficiency = -0.2
+}
+# L3
+unequal_nations_nerf_l3_trade = {
+	merchants = -1
+	trade_efficiency = -0.4
+	global_trade_power = -0.4
+	trade_range_modifier = -0.4
+	global_ship_trade_power = -0.4
+	caravan_power = -0.4
+	privateer_efficiency = -0.4
+	embargo_efficiency = -0.4
+}
