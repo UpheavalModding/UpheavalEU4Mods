@@ -1,0 +1,38 @@
+###############################
+# Unequal Nations 2           #
+# Court - Ruler               #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_court_ruler_buff_tier_3 = {
+    monarch_lifespan = 0.15
+    monarch_admin_power = 1.0
+    monarch_diplomatic_power = 1.0
+    monarch_military_power = 1.0
+    candidate_random_bonus = 1.0
+}
+
+unequal_nations_2_court_ruler_buff_tier_2 = {
+    monarch_lifespan = 0.1
+}
+
+unequal_nations_2_court_ruler_buff_tier_1 = {
+    monarch_lifespan = 0.05
+}
+
+unequal_nations_2_court_ruler_nerf_tier_1 = {
+    monarch_lifespan = -0.05
+}
+
+unequal_nations_2_court_ruler_nerf_tier_2 = {
+    monarch_lifespan = -0.1
+}
+
+unequal_nations_2_court_ruler_nerf_tier_3 = {
+    monarch_lifespan = -0.15
+    monarch_admin_power = -1.0
+    monarch_diplomatic_power = -1.0
+    monarch_military_power = -1.0
+    candidate_random_bonus = -1.0
+}
+

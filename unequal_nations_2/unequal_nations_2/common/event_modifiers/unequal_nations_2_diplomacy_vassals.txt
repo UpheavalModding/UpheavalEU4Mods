@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Diplomacy - Vassals         #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_diplomacy_vassals_buff_tier_3 = {
+    vassal_income = 0.15
+    vassal_forcelimit_bonus = 0.15
+}
+
+unequal_nations_2_diplomacy_vassals_buff_tier_2 = {
+    vassal_income = 0.1
+    vassal_forcelimit_bonus = 0.1
+}
+
+unequal_nations_2_diplomacy_vassals_buff_tier_1 = {
+    vassal_income = 0.05
+    vassal_forcelimit_bonus = 0.05
+}
+
+unequal_nations_2_diplomacy_vassals_nerf_tier_1 = {
+    vassal_income = -0.05
+    vassal_forcelimit_bonus = -0.05
+}
+
+unequal_nations_2_diplomacy_vassals_nerf_tier_2 = {
+    vassal_income = -0.1
+    vassal_forcelimit_bonus = -0.1
+}
+
+unequal_nations_2_diplomacy_vassals_nerf_tier_3 = {
+    vassal_income = -0.15
+    vassal_forcelimit_bonus = -0.15
+}
+

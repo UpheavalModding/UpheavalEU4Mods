@@ -1,0 +1,48 @@
+###############################
+# Unequal Nations 2           #
+# Trade - Trade Routes        #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_trade_trade_routes_buff_tier_3 = {
+    global_trade_power = 0.3
+    trade_efficiency = 0.3
+    trade_range_modifier = 0.3
+    trade_steering = 0.3
+}
+
+unequal_nations_2_trade_trade_routes_buff_tier_2 = {
+    global_trade_power = 0.2
+    trade_efficiency = 0.2
+    trade_range_modifier = 0.2
+    trade_steering = 0.2
+}
+
+unequal_nations_2_trade_trade_routes_buff_tier_1 = {
+    global_trade_power = 0.1
+    trade_efficiency = 0.1
+    trade_range_modifier = 0.1
+    trade_steering = 0.1
+}
+
+unequal_nations_2_trade_trade_routes_nerf_tier_1 = {
+    global_trade_power = -0.1
+    trade_efficiency = -0.1
+    trade_range_modifier = -0.1
+    trade_steering = -0.1
+}
+
+unequal_nations_2_trade_trade_routes_nerf_tier_2 = {
+    global_trade_power = -0.2
+    trade_efficiency = -0.2
+    trade_range_modifier = -0.2
+    trade_steering = -0.2
+}
+
+unequal_nations_2_trade_trade_routes_nerf_tier_3 = {
+    global_trade_power = -0.3
+    trade_efficiency = -0.3
+    trade_range_modifier = -0.3
+    trade_steering = -0.3
+}
+

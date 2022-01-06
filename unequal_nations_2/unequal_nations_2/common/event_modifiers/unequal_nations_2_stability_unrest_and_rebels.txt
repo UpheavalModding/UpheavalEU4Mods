@@ -1,0 +1,30 @@
+####################################
+# Unequal Nations 2                #
+# Stability - Unrest and Rebels    #
+#                                  #
+# Written by von_der_borch         #
+####################################
+unequal_nations_2_stability_unrest_and_rebels_buff_tier_3 = {
+    global_rebel_suppression_efficiency = 0.3
+}
+
+unequal_nations_2_stability_unrest_and_rebels_buff_tier_2 = {
+    global_rebel_suppression_efficiency = 0.2
+}
+
+unequal_nations_2_stability_unrest_and_rebels_buff_tier_1 = {
+    global_rebel_suppression_efficiency = 0.1
+}
+
+unequal_nations_2_stability_unrest_and_rebels_nerf_tier_1 = {
+    global_rebel_suppression_efficiency = -0.1
+}
+
+unequal_nations_2_stability_unrest_and_rebels_nerf_tier_2 = {
+    global_rebel_suppression_efficiency = -0.2
+}
+
+unequal_nations_2_stability_unrest_and_rebels_nerf_tier_3 = {
+    global_rebel_suppression_efficiency = -0.3
+}
+

@@ -1,0 +1,24 @@
+###############################
+# Unequal Nations 2           #
+# Stability - Autonomy        #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_stability_autonomy_buff_tier_3 = {
+}
+
+unequal_nations_2_stability_autonomy_buff_tier_2 = {
+}
+
+unequal_nations_2_stability_autonomy_buff_tier_1 = {
+}
+
+unequal_nations_2_stability_autonomy_nerf_tier_1 = {
+}
+
+unequal_nations_2_stability_autonomy_nerf_tier_2 = {
+}
+
+unequal_nations_2_stability_autonomy_nerf_tier_3 = {
+}
+

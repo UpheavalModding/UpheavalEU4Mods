@@ -1,0 +1,48 @@
+###############################
+# Unequal Nations 2           #
+# Army - Quality              #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_army_quality_buff_tier_3 = {
+    discipline = 0.15
+    land_morale = 0.15
+    reserves_organisation = 0.3
+    yearly_army_professionalism = 1.0
+}
+
+unequal_nations_2_army_quality_buff_tier_2 = {
+    discipline = 0.1
+    land_morale = 0.1
+    reserves_organisation = 0.2
+    yearly_army_professionalism = 0.66
+}
+
+unequal_nations_2_army_quality_buff_tier_1 = {
+    discipline = 0.05
+    land_morale = 0.05
+    reserves_organisation = 0.1
+    yearly_army_professionalism = 0.33
+}
+
+unequal_nations_2_army_quality_nerf_tier_1 = {
+    discipline = -0.05
+    land_morale = -0.05
+    reserves_organisation = -0.1
+    yearly_army_professionalism = -0.33
+}
+
+unequal_nations_2_army_quality_nerf_tier_2 = {
+    discipline = -0.1
+    land_morale = -0.1
+    reserves_organisation = -0.2
+    yearly_army_professionalism = -0.66
+}
+
+unequal_nations_2_army_quality_nerf_tier_3 = {
+    discipline = -0.15
+    land_morale = -0.15
+    reserves_organisation = -0.3
+    yearly_army_professionalism = -1.0
+}
+

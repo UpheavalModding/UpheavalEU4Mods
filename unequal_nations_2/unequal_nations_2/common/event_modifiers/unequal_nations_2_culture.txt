@@ -1,0 +1,30 @@
+###############################
+# Unequal Nations 2           #
+# Culture                     #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_culture_buff_tier_3 = {
+    num_accepted_cultures = 3.0
+}
+
+unequal_nations_2_culture_buff_tier_2 = {
+    num_accepted_cultures = 2.0
+}
+
+unequal_nations_2_culture_buff_tier_1 = {
+    num_accepted_cultures = 1.0
+}
+
+unequal_nations_2_culture_nerf_tier_1 = {
+    num_accepted_cultures = -1.0
+}
+
+unequal_nations_2_culture_nerf_tier_2 = {
+    num_accepted_cultures = -2.0
+}
+
+unequal_nations_2_culture_nerf_tier_3 = {
+    num_accepted_cultures = -3.0
+}
+

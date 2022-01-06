@@ -1,0 +1,54 @@
+###############################
+# Unequal Nations 2           #
+# Trade - Ships               #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_trade_ships_buff_tier_3 = {
+    global_ship_trade_power = 0.3
+    privateer_efficiency = 0.3
+    embargo_efficiency = 0.3
+    ship_power_propagation = 0.3
+    naval_tradition_from_trade = 0.3
+}
+
+unequal_nations_2_trade_ships_buff_tier_2 = {
+    global_ship_trade_power = 0.2
+    privateer_efficiency = 0.2
+    embargo_efficiency = 0.2
+    ship_power_propagation = 0.2
+    naval_tradition_from_trade = 0.2
+}
+
+unequal_nations_2_trade_ships_buff_tier_1 = {
+    global_ship_trade_power = 0.1
+    privateer_efficiency = 0.1
+    embargo_efficiency = 0.1
+    ship_power_propagation = 0.1
+    naval_tradition_from_trade = 0.1
+}
+
+unequal_nations_2_trade_ships_nerf_tier_1 = {
+    global_ship_trade_power = -0.1
+    privateer_efficiency = -0.1
+    embargo_efficiency = -0.1
+    ship_power_propagation = -0.1
+    naval_tradition_from_trade = -0.1
+}
+
+unequal_nations_2_trade_ships_nerf_tier_2 = {
+    global_ship_trade_power = -0.2
+    privateer_efficiency = -0.2
+    embargo_efficiency = -0.2
+    ship_power_propagation = -0.2
+    naval_tradition_from_trade = -0.2
+}
+
+unequal_nations_2_trade_ships_nerf_tier_3 = {
+    global_ship_trade_power = -0.3
+    privateer_efficiency = -0.3
+    embargo_efficiency = -0.3
+    ship_power_propagation = -0.3
+    naval_tradition_from_trade = -0.3
+}
+

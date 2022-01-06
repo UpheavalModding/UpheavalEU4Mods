@@ -1,0 +1,34 @@
+###############################
+# Unequal Nations 2           #
+# Trade - Merchants           #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_trade_merchants_buff_tier_3 = {
+    placed_merchant_power = 0.3
+    merchants = 2.0
+}
+
+unequal_nations_2_trade_merchants_buff_tier_2 = {
+    placed_merchant_power = 0.2
+    merchants = 1.0
+}
+
+unequal_nations_2_trade_merchants_buff_tier_1 = {
+    placed_merchant_power = 0.1
+}
+
+unequal_nations_2_trade_merchants_nerf_tier_1 = {
+    placed_merchant_power = -0.1
+}
+
+unequal_nations_2_trade_merchants_nerf_tier_2 = {
+    placed_merchant_power = -0.2
+    merchants = -1.0
+}
+
+unequal_nations_2_trade_merchants_nerf_tier_3 = {
+    placed_merchant_power = -0.3
+    merchants = -2.0
+}
+

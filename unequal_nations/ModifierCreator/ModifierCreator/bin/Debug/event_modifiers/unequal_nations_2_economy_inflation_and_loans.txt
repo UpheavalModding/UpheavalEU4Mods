@@ -1,0 +1,24 @@
+####################################
+# Unequal Nations 2                #
+# Economy - Inflation and Loans    #
+#                                  #
+# Written by von_der_borch         #
+####################################
+unequal_nations_2_economy_inflation_and_loans_buff_tier_3 = {
+}
+
+unequal_nations_2_economy_inflation_and_loans_buff_tier_2 = {
+}
+
+unequal_nations_2_economy_inflation_and_loans_buff_tier_1 = {
+}
+
+unequal_nations_2_economy_inflation_and_loans_nerf_tier_1 = {
+}
+
+unequal_nations_2_economy_inflation_and_loans_nerf_tier_2 = {
+}
+
+unequal_nations_2_economy_inflation_and_loans_nerf_tier_3 = {
+}
+

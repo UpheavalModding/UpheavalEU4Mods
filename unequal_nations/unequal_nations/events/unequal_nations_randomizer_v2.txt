@@ -1,0 +1,88 @@
+##############################
+# Unequal Nations            #
+# Randomizer                 #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_randomizer
+
+# Core Randomizer
+country_event = {
+	id = unequal_nations_randomizer.1
+	title = unequal_nations_randomizer.1.title
+	desc = unequal_nations_randomizer_desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_country = {
+			remove_country_modifier = unequal_nations_buff_legendary
+
+			remove_country_modifier = unequal_nations_buff_l3_administration
+			remove_country_modifier = unequal_nations_buff_l2_administration
+			remove_country_modifier = unequal_nations_buff_l1_administration
+			remove_country_modifier = unequal_nations_nerf_l1_administration
+			remove_country_modifier = unequal_nations_nerf_l2_administration
+			remove_country_modifier = unequal_nations_nerf_l3_administration
+				
+			remove_country_modifier = unequal_nations_buff_l3_army
+			remove_country_modifier = unequal_nations_buff_l2_army
+			remove_country_modifier = unequal_nations_buff_l1_army
+			remove_country_modifier = unequal_nations_nerf_l1_army
+			remove_country_modifier = unequal_nations_nerf_l2_army
+			remove_country_modifier = unequal_nations_nerf_l3_army
+			
+			remove_country_modifier = unequal_nations_buff_l3_culturereligion
+			remove_country_modifier = unequal_nations_buff_l2_culturereligion
+			remove_country_modifier = unequal_nations_buff_l1_culturereligion
+			remove_country_modifier = unequal_nations_nerf_l1_culturereligion
+			remove_country_modifier = unequal_nations_nerf_l2_culturereligion
+			remove_country_modifier = unequal_nations_nerf_l3_culturereligion
+			
+			remove_country_modifier = unequal_nations_buff_l3_economy
+			remove_country_modifier = unequal_nations_buff_l2_economy
+			remove_country_modifier = unequal_nations_buff_l1_economy
+			remove_country_modifier = unequal_nations_nerf_l1_economy
+			remove_country_modifier = unequal_nations_nerf_l2_economy
+			remove_country_modifier = unequal_nations_nerf_l3_economy
+			
+			remove_country_modifier = unequal_nations_buff_l3_expansion
+			remove_country_modifier = unequal_nations_buff_l2_expansion
+			remove_country_modifier = unequal_nations_buff_l1_expansion
+			remove_country_modifier = unequal_nations_nerf_l1_expansion
+			remove_country_modifier = unequal_nations_nerf_l2_expansion
+			remove_country_modifier = unequal_nations_nerf_l3_expansion
+			
+			remove_country_modifier = unequal_nations_buff_l3_navy
+			remove_country_modifier = unequal_nations_buff_l2_navy
+			remove_country_modifier = unequal_nations_buff_l1_navy
+			remove_country_modifier = unequal_nations_nerf_l1_navy
+			remove_country_modifier = unequal_nations_nerf_l2_navy
+			remove_country_modifier = unequal_nations_nerf_l3_navy
+			
+			remove_country_modifier = unequal_nations_buff_l3_tech
+			remove_country_modifier = unequal_nations_buff_l2_tech
+			remove_country_modifier = unequal_nations_buff_l1_tech
+			remove_country_modifier = unequal_nations_nerf_l1_tech
+			remove_country_modifier = unequal_nations_nerf_l2_tech
+			remove_country_modifier = unequal_nations_nerf_l3_tech
+			
+			remove_country_modifier = unequal_nations_buff_l3_court
+			remove_country_modifier = unequal_nations_buff_l2_court
+			remove_country_modifier = unequal_nations_buff_l1_court
+			remove_country_modifier = unequal_nations_nerf_l1_court
+			remove_country_modifier = unequal_nations_nerf_l2_court
+			remove_country_modifier = unequal_nations_nerf_l3_court
+			
+			remove_country_modifier = unequal_nations_buff_l3_trade
+			remove_country_modifier = unequal_nations_buff_l2_trade
+			remove_country_modifier = unequal_nations_buff_l1_trade
+			remove_country_modifier = unequal_nations_nerf_l1_trade
+			remove_country_modifier = unequal_nations_nerf_l2_trade
+			remove_country_modifier = unequal_nations_nerf_l3_trade
+		}
+	}
+}

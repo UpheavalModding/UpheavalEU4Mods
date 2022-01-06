@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Colonists - Income          #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_colonists_income_buff_tier_3 = {
+    global_tariffs = 0.3
+    treasure_fleet_income = 0.3
+}
+
+unequal_nations_2_colonists_income_buff_tier_2 = {
+    global_tariffs = 0.2
+    treasure_fleet_income = 0.2
+}
+
+unequal_nations_2_colonists_income_buff_tier_1 = {
+    global_tariffs = 0.1
+    treasure_fleet_income = 0.1
+}
+
+unequal_nations_2_colonists_income_nerf_tier_1 = {
+    global_tariffs = -0.1
+    treasure_fleet_income = -0.1
+}
+
+unequal_nations_2_colonists_income_nerf_tier_2 = {
+    global_tariffs = -0.2
+    treasure_fleet_income = -0.2
+}
+
+unequal_nations_2_colonists_income_nerf_tier_3 = {
+    global_tariffs = -0.3
+    treasure_fleet_income = -0.3
+}
+

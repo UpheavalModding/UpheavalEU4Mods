@@ -1,0 +1,45 @@
+###############################
+# Unequal Nations 2           #
+# Legendary                   #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_legendary_buff_tier_1 = {
+    prestige_decay = 3
+    land_forcelimit_modifier = 0.5
+    global_manpower_modifier = 0.5
+    land_morale = 0.25
+    naval_forcelimit_modifier = 0.5
+    global_sailors_modifier = 0.5
+    naval_morale = 0.25
+    capture_ship_chance = 0.5
+    heavy_ship_power = 0.25
+    light_ship_power = 0.25
+    galley_power = 0.25
+    transport_power = 0.25
+    country_admin_power = 3
+    country_diplomatic_power = 3
+    country_military_power = 3
+    global_institution_spread = 0.5
+    monarch_lifespan = 0.25
+}
+
+unequal_nations_2_legendary_nerf_tier_1 = {
+    prestige_decay = -3
+    land_forcelimit_modifier = -0.5
+    global_manpower_modifier = -0.5
+    land_morale = -0.25
+    naval_forcelimit_modifier = -0.5
+    global_sailors_modifier = -0.5
+    naval_morale = -0.25
+    capture_ship_chance = -0.5
+    heavy_ship_power = -0.25
+    light_ship_power = -0.25
+    galley_power = -0.25
+    transport_power = -0.25
+    country_admin_power = -3
+    country_diplomatic_power = -3
+    country_military_power = -3
+    global_institution_spread = -0.5
+    monarch_lifespan = -0.25
+}

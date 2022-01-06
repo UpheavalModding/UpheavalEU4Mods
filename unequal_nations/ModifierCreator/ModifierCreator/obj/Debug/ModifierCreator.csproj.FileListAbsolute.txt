@@ -1,0 +1,17 @@
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\bin\Debug\ModifierCreator.exe.config
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\bin\Debug\ModifierCreator.exe
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\bin\Debug\ModifierCreator.pdb
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.csproj.AssemblyReference.cache
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.csproj.SuggestedBindingRedirects.cache
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.MainForm.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.Properties.Resources.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.csproj.GenerateResource.cache
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.csproj.CoreCompileInputs.cache
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.exe
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.pdb
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\bin\Debug\ModifiersList.txt
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.CreateOrEditModifier.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.ModifierConfig.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\unequal_nations\ModifierCreator\ModifierCreator\obj\Debug\ModifierCreator.csproj.CopyComplete
