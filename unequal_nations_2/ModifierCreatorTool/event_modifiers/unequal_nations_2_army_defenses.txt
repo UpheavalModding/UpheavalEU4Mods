@@ -1,0 +1,30 @@
+###############################
+# Unequal Nations 2           #
+# Army - Defenses             #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_army_defenses_buff_tier_3 = {
+    defensiveness = 0.3
+}
+
+unequal_nations_2_army_defenses_buff_tier_2 = {
+    defensiveness = 0.2
+}
+
+unequal_nations_2_army_defenses_buff_tier_1 = {
+    defensiveness = 0.1
+}
+
+unequal_nations_2_army_defenses_nerf_tier_1 = {
+    defensiveness = -0.1
+}
+
+unequal_nations_2_army_defenses_nerf_tier_2 = {
+    defensiveness = -0.2
+}
+
+unequal_nations_2_army_defenses_nerf_tier_3 = {
+    defensiveness = -0.3
+}
+

@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Technology - Institution    #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_technology_institution_buff_tier_3 = {
+    global_institution_spread = 0.3
+    institution_spread_from_true_faith = 0.3
+}
+
+unequal_nations_2_technology_institution_buff_tier_2 = {
+    global_institution_spread = 0.2
+    institution_spread_from_true_faith = 0.2
+}
+
+unequal_nations_2_technology_institution_buff_tier_1 = {
+    global_institution_spread = 0.1
+    institution_spread_from_true_faith = 0.1
+}
+
+unequal_nations_2_technology_institution_nerf_tier_1 = {
+    global_institution_spread = -0.1
+    institution_spread_from_true_faith = -0.1
+}
+
+unequal_nations_2_technology_institution_nerf_tier_2 = {
+    global_institution_spread = -0.2
+    institution_spread_from_true_faith = -0.2
+}
+
+unequal_nations_2_technology_institution_nerf_tier_3 = {
+    global_institution_spread = -0.3
+    institution_spread_from_true_faith = -0.3
+}
+

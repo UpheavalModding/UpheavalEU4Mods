@@ -114,11 +114,32 @@ namespace ModifierCreator
                 Directory.Delete("localisation", true);
             }
             Directory.CreateDirectory("localisation");
+            if (Directory.Exists("raw_data"))
+            {
+                Directory.Delete("raw_data", true);
+            }
+            Directory.CreateDirectory("raw_data");
 
             var localisations = new StringBuilder();
             localisations.AppendLine("l_english:");
             localisations.AppendLine("##### Modifiers");
 
+            var modifierList = new StringBuilder();
+            var randomizerList = new StringBuilder();
+            var legendaryBuffList = new StringBuilder();
+            var legendaryBuffAppliedModifiersList = new StringBuilder();
+            var legendaryNerfList = new StringBuilder();
+            var legendaryNerfAppliedModifiersList = new StringBuilder();
+            legendaryBuffList.AppendLine("limit = {");
+            legendaryBuffList.AppendLine("    has_country_flag = unequal_nations_2_legendary_buff_nation");
+            legendaryBuffList.AppendLine("}");
+            legendaryBuffList.AppendLine("clr_country_flag = unequal_nations_2_legendary_buff_nation");
+            legendaryBuffList.AppendLine("");
+            legendaryNerfList.AppendLine("limit = {");
+            legendaryNerfList.AppendLine("    has_country_flag = unequal_nations_2_legendary_nerf_nation");
+            legendaryNerfList.AppendLine("}");
+            legendaryNerfList.AppendLine("clr_country_flag = unequal_nations_2_legendary_nerf_nation");
+            legendaryNerfList.AppendLine("");
 
             var mods = new List<BuffOrNerf>();
             var modifierPrefix = modifiers.ModName.Replace(" - ", "_").Replace(' ', '_').Replace("-", "_").ToLowerInvariant();
@@ -132,7 +153,6 @@ namespace ModifierCreator
                 new Tuple<bool, int>(false, 3),
             };
 
-
             foreach (var modifier in modifiers.ModifierSets)
             {
                 var modifierOutput = new List<string>();
@@ -145,6 +165,27 @@ namespace ModifierCreator
                     var localisedName = string.Format("{0} - Tier {2} {1}", modifier.Name, set.Item1 ? "Buff" : "Nerf", set.Item2);
                     mods.Add(new BuffOrNerf(modifier.Name, set.Item1, set.Item2, name));
                     localisations.AppendLine(string.Format(" {0}:0 \"{1}\"", name, localisedName));
+                    modifierList.AppendLine(name);
+                    legendaryBuffList.AppendLine($"remove_country_modifier = {name}");
+                    legendaryNerfList.AppendLine($"remove_country_modifier = {name}");
+
+                    if (set.Item2 == 3)
+                    {
+                        if (set.Item1 == true)
+                        {
+                            legendaryBuffAppliedModifiersList.AppendLine("add_country_modifier = {");
+                            legendaryBuffAppliedModifiersList.AppendLine(String.Format("    name = {0}", name));
+                            legendaryBuffAppliedModifiersList.AppendLine("    duration = -1");
+                            legendaryBuffAppliedModifiersList.AppendLine("}");
+                        }
+                        else
+                        {
+                            legendaryNerfAppliedModifiersList.AppendLine("add_country_modifier = {");
+                            legendaryNerfAppliedModifiersList.AppendLine(String.Format("    name = {0}", name));
+                            legendaryNerfAppliedModifiersList.AppendLine("    duration = -1");
+                            legendaryNerfAppliedModifiersList.AppendLine("}");
+                        }
+                    }
                 }
 
                 foreach (var mod in modifier.Modifiers)
@@ -166,15 +207,98 @@ namespace ModifierCreator
                     }
                 }
 
+                randomizerList.AppendLine($"# {modifier.Name}");
+                randomizerList.AppendLine("if = {");
+                randomizerList.AppendLine("    limit = {");
+                randomizerList.AppendLine("        OR = {");
+                randomizerList.AppendLine("            AND = {");
+                randomizerList.AppendLine("                ai = no");
+                randomizerList.AppendLine("                NOT = { has_global_flag = unequal_nations_2_option_player_impacted_no }");
+                randomizerList.AppendLine("            }");
+                randomizerList.AppendLine("            AND = {");
+                randomizerList.AppendLine("                ai = yes");
+                randomizerList.AppendLine("                NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_no }");
+                randomizerList.AppendLine("            }");
+                randomizerList.AppendLine("        }");
+                randomizerList.AppendLine("    }");
+                // 10 - 15 - 20 - 5 - 20 - 15 - 10
+                randomizerList.AppendLine("    random_list = {");
+                randomizerList.AppendLine("        5 = { }");
+                foreach (var mod in mods)
+                {
+                    var amount = mod.Tier == 1
+                        ? "20"
+                        : mod.Tier == 2
+                        ? "15"
+                        : "10";
+                    randomizerList.AppendLine(String.Format("        {0} = {{", amount));
+                    randomizerList.AppendLine("            trigger = {");
+                    randomizerList.AppendLine("                OR = {");
+                    randomizerList.AppendLine("                    AND = {");
+                    randomizerList.AppendLine("                        ai = no");
+                    if (mod.Tier == 1)
+                    {
+                        randomizerList.AppendLine("                        NOT = { has_global_flag = unequal_nations_2_option_player_impacted_no }");
+                    }
+                    else
+                    {
+                        randomizerList.AppendLine("                        OR = {");
+                        randomizerList.AppendLine("                            has_global_flag = unequal_nations_2_option_player_impacted_tier3");
+                        randomizerList.AppendLine("                            has_global_flag = unequal_nations_2_option_player_impacted_legendary");
+                        randomizerList.AppendLine("                        }");
+                    }
+
+                    randomizerList.AppendLine("                    }");
+                    randomizerList.AppendLine("                    AND = {");
+                    randomizerList.AppendLine("                        ai = yes");
+                    if (mod.Tier == 1)
+                    {
+                        randomizerList.AppendLine("                        NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_no }");
+                    }
+                    else
+                    {
+                        randomizerList.AppendLine("                        OR = {");
+                        randomizerList.AppendLine("                            has_global_flag = unequal_nations_2_option_ai_impacted_tier3");
+                        randomizerList.AppendLine("                            has_global_flag = unequal_nations_2_option_ai_impacted_legendary");
+                        randomizerList.AppendLine("                        }");
+                    }
+
+                    randomizerList.AppendLine("                    }");
+                    randomizerList.AppendLine("                }");
+                    randomizerList.AppendLine("            }");
+                    randomizerList.AppendLine("            add_country_modifier = {");
+                    randomizerList.AppendLine(String.Format("                name = {0}", mod.ModifierName));
+                    randomizerList.AppendLine("                duration = -1");
+                    randomizerList.AppendLine("            }");
+
+                    randomizerList.AppendLine("        }");
+                }
+                randomizerList.AppendLine("    }");
+                randomizerList.AppendLine("}");
+                randomizerList.AppendLine("");
+
                 var finalFileName = Path.Combine(Constants.OutputDirectoryName, $"{modifier.FileName}.txt");
                 var finalText = new List<string>();
                 finalText.AddRange(GenerateHeaderText(modifier.Name));
                 finalText.AddRange(mods.Select(x => x.ToString()).ToList());
                 File.WriteAllLines(finalFileName, finalText);
-
-                var localisationFileName = Path.Combine("localisation", $"{Constants.FileNamePrefix}event_modifiers_l_english.yml");
-                File.WriteAllText(localisationFileName, localisations.ToString());
             }
+
+            var localisationFileName = Path.Combine("localisation", $"{Constants.FileNamePrefix}event_modifiers_l_english.yml");
+            File.WriteAllText(localisationFileName, localisations.ToString());
+
+            var rawDataFileName = Path.Combine("raw_data", $"{Constants.FileNamePrefix}modifier_list.txt");
+            File.WriteAllText(rawDataFileName, modifierList.ToString());
+            rawDataFileName = Path.Combine("raw_data", $"{Constants.FileNamePrefix}randomizer.txt");
+            File.WriteAllText(rawDataFileName, randomizerList.ToString());
+            rawDataFileName = Path.Combine("raw_data", $"{Constants.FileNamePrefix}legendaryBuff.txt");
+            File.WriteAllText(rawDataFileName, legendaryBuffList.ToString());
+            rawDataFileName = Path.Combine("raw_data", $"{Constants.FileNamePrefix}legendaryNerf.txt");
+            File.WriteAllText(rawDataFileName, legendaryNerfList.ToString());
+            rawDataFileName = Path.Combine("raw_data", $"{Constants.FileNamePrefix}legendaryBuffAppliedModifiersList.txt");
+            File.WriteAllText(rawDataFileName, legendaryBuffAppliedModifiersList.ToString());
+            rawDataFileName = Path.Combine("raw_data", $"{Constants.FileNamePrefix}legendaryNerfAppliedModifiersList.txt");
+            File.WriteAllText(rawDataFileName, legendaryNerfAppliedModifiersList.ToString());
         }
 
         public List<string> GenerateHeaderText(string name)

@@ -1,55 +1,64 @@
 
 # Player Impact
-unequal_nations_option_player_impacted_no           # Players will not have buffs/nerfs applied to their countries
-unequal_nations_option_player_impacted_tier1        # Players will have up to Tier 1 buffs/nerfs applied to their countries
-unequal_nations_option_player_impacted_tier3        # Players will have up to Tier 3 buffs/nerfs applied to their countries
-unequal_nations_option_player_impacted_legendary    # Players will have up to Legendary buffs/nerfs applied to their countries
+unequal_nations_2_option_player_impacted_no           # Players will not have buffs/nerfs applied to their countries
+unequal_nations_2_option_player_impacted_tier1        # Players will have up to Tier 1 buffs/nerfs applied to their countries
+unequal_nations_2_option_player_impacted_tier3        # Players will have up to Tier 3 buffs/nerfs applied to their countries
+unequal_nations_2_option_player_impacted_legendary    # Players will have up to Legendary buffs/nerfs applied to their countries
+
+# AI Impact
+unequal_nations_2_option_ai_impacted_no           # AIs will not have buffs/nerfs applied to their countries
+unequal_nations_2_option_ai_impacted_tier1        # AIs will have up to Tier 1 buffs/nerfs applied to their countries
+unequal_nations_2_option_ai_impacted_tier3        # AIs will have up to Tier 3 buffs/nerfs applied to their countries
+unequal_nations_2_option_ai_impacted_legendary    # AIs will have up to Legendary buffs/nerfs applied to their countries
 
 # Legendary Buff Nation Selection System Options
-unequal_nations_option_legendary_buff_selection_system_global                           # There is 1 Legendary Country Selected
-unequal_nations_option_legendary_buff_selection_system_continental                      # There is 1 Legendary Country per Continent
-unequal_nations_option_legendary_buff_selection_system_random_chance                    # There is a Random Chance for any country to be Legendary
-unequal_nations_option_legendary_buff_selection_system_continental_and_random_chance    # There is 1 Legendary Country per Continent, and a Random Chance for any country to be Legendary
+unequal_nations_2_option_legendary_buff_selection_system_no                               # There is no Legendary Buffed Selection System
+unequal_nations_2_option_legendary_buff_selection_system_global                           # There is 1 Legendary Country Selected
+unequal_nations_2_option_legendary_buff_selection_system_continental                      # There is 1 Legendary Country per Continent
+unequal_nations_2_option_legendary_buff_selection_system_random_chance                    # There is a Random Chance for any country to be Legendary
+unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance         # There is 1 Legendary Country in the World, and a Random Chance for any country to be Legendary
+unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance    # There is 1 Legendary Country per Continent, and a Random Chance for any country to be Legendary
 
 # Legendary Nerf Nation Selection System Options
-unequal_nations_option_legendary_buff_selection_system_global                           # There is 1 Legendary Country Selected
-unequal_nations_option_legendary_buff_selection_system_continental                      # There is 1 Legendary Country per Continent
-unequal_nations_option_legendary_buff_selection_system_random_chance                    # There is a Random Chance for any country to be Legendary
-unequal_nations_option_legendary_buff_selection_system_continental_and_random_chance    # There is 1 Legendary Country per Continent, and a Random Chance for any country to be Legendary
+unequal_nations_2_option_legendary_nerf_selection_system_no                               # There is no Legendary Nerfed Selection System
+unequal_nations_2_option_legendary_nerf_selection_system_global                           # There is 1 Legendary Country Selected
+unequal_nations_2_option_legendary_nerf_selection_system_continental                      # There is 1 Legendary Country per Continent
+unequal_nations_2_option_legendary_nerf_selection_system_random_chance                    # There is a Random Chance for any country to be Legendary
+unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance         # There is 1 Legendary Country in the World, and a Random Chance for any country to be Legendary
+unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance    # There is 1 Legendary Country per Continent, and a Random Chance for any country to be Legendary
 
-
+# Golden/Dark Ages
+unequal_nations_2_option_legendary_buff_after_legendary_nerf      # Force a Legendary Buff after a nation gets a Legendary Nerf
+unequal_nations_2_option_legendary_nerf_after_legendary_buff      # Force a Legendary Nerf after a nation gets a Legendary Buff
+unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs  # Only allow a single Legendary Buff/Nerf for a nation in a game
 
 # Legendary Buff Random Chances
+unequal_nations_2_option_legendary_buff_random_chance_1
+unequal_nations_2_option_legendary_buff_random_chance_3
+unequal_nations_2_option_legendary_buff_random_chance_5
+unequal_nations_2_option_legendary_buff_random_chance_15
+unequal_nations_2_option_legendary_buff_random_chance_25
+unequal_nations_2_option_legendary_buff_random_chance_50
+unequal_nations_2_option_legendary_buff_random_chance_100
 
-# Legendary 
+# Legendary Nerf Random Chances
+unequal_nations_2_option_legendary_nerf_random_chance_1
+unequal_nations_2_option_legendary_nerf_random_chance_3
+unequal_nations_2_option_legendary_nerf_random_chance_5
+unequal_nations_2_option_legendary_nerf_random_chance_15
+unequal_nations_2_option_legendary_nerf_random_chance_25
+unequal_nations_2_option_legendary_nerf_random_chance_50
+unequal_nations_2_option_legendary_nerf_random_chance_100
 
+# Legendary Min Country Development/Size for Buffs/Nerfs
+unequal_nations_2_option_legendary_countries_min_size_1
+unequal_nations_2_option_legendary_countries_min_size_250
+unequal_nations_2_option_legendary_countries_min_size_500
+unequal_nations_2_option_legendary_countries_min_size_750
+unequal_nations_2_option_legendary_countries_min_size_1500
 
-
-unequal_nations_option_legendary_countries_global_choice
-unequal_nations_option_legendary_countries_continental_choice
-unequal_nations_option_legendary_countries_random_chance
-
-unequal_nations_option_legendary_countries_random_chance_1
-unequal_nations_option_legendary_countries_random_chance_3
-unequal_nations_option_legendary_countries_random_chance_5
-unequal_nations_option_legendary_countries_random_chance_15
-unequal_nations_option_legendary_countries_random_chance_25
-unequal_nations_option_legendary_countries_random_chance_50
-unequal_nations_option_legendary_countries_random_chance_100
-
-
-unequal_nations_option_legendary_countries_min_size_1
-unequal_nations_option_legendary_countries_min_size_250
-unequal_nations_option_legendary_countries_min_size_500
-unequal_nations_option_legendary_countries_min_size_750
-unequal_nations_option_legendary_countries_min_size_1500
-
-
-
-
-
-unequal_nations_option_reroll_each_age
-
-
-
+# When to Reroll Buffs/Nerfs
+unequal_nations_2_option_reroll_never             # Never reroll buffs/nerfs
+unequal_nations_2_option_reroll_each_age          # Reroll on as the Age changes
+unequal_nations_2_option_reroll_on_monarch_death  # Reroll on Monarch/Ruler deaths
 

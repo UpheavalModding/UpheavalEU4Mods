@@ -1,0 +1,16 @@
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\bin\Release\ModifiersList.txt
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\bin\Release\ModifierCreator.exe.config
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\bin\Release\ModifierCreator.exe
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\bin\Release\ModifierCreator.pdb
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\bin\Release\Newtonsoft.Json.dll
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\bin\Release\Newtonsoft.Json.xml
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.csproj.SuggestedBindingRedirects.cache
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.CreateOrEditModifier.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.MainForm.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.ModifierConfig.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.Properties.Resources.resources
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.csproj.GenerateResource.cache
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.csproj.CoreCompileInputs.cache
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.csproj.CopyComplete
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.exe
+C:\Users\ricky\OneDrive\Projects\Modding\eu4_mods\UpheavalEU4Mods\TOOLS\ModifierCreator\ModifierCreator\obj\Release\ModifierCreator.pdb

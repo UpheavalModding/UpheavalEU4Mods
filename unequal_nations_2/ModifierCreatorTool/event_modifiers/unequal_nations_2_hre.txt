@@ -1,0 +1,54 @@
+###############################
+# Unequal Nations 2           #
+# HRE                         #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_hre_buff_tier_3 = {
+    imperial_authority_value = 0.075
+    imperial_authority = 0.15
+    manpower_against_imperial_enemies = 0.3
+    imperial_reform_catholic_approval = 15.0
+    legitimate_subject_elector = 60.0
+}
+
+unequal_nations_2_hre_buff_tier_2 = {
+    imperial_authority_value = 0.05
+    imperial_authority = 0.1
+    manpower_against_imperial_enemies = 0.2
+    imperial_reform_catholic_approval = 10.0
+    legitimate_subject_elector = 40.0
+}
+
+unequal_nations_2_hre_buff_tier_1 = {
+    imperial_authority_value = 0.025
+    imperial_authority = 0.05
+    manpower_against_imperial_enemies = 0.1
+    imperial_reform_catholic_approval = 5.0
+    legitimate_subject_elector = 20.0
+}
+
+unequal_nations_2_hre_nerf_tier_1 = {
+    imperial_authority_value = -0.025
+    imperial_authority = -0.05
+    manpower_against_imperial_enemies = -0.1
+    imperial_reform_catholic_approval = -5.0
+    legitimate_subject_elector = -20.0
+}
+
+unequal_nations_2_hre_nerf_tier_2 = {
+    imperial_authority_value = -0.05
+    imperial_authority = -0.1
+    manpower_against_imperial_enemies = -0.2
+    imperial_reform_catholic_approval = -10.0
+    legitimate_subject_elector = -40.0
+}
+
+unequal_nations_2_hre_nerf_tier_3 = {
+    imperial_authority_value = -0.075
+    imperial_authority = -0.15
+    manpower_against_imperial_enemies = -0.3
+    imperial_reform_catholic_approval = -15.0
+    legitimate_subject_elector = -60.0
+}
+

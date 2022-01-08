@@ -1,0 +1,24 @@
+###############################
+# Unequal Nations 2           #
+# Expansion - War             #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_expansion_war_buff_tier_3 = {
+}
+
+unequal_nations_2_expansion_war_buff_tier_2 = {
+}
+
+unequal_nations_2_expansion_war_buff_tier_1 = {
+}
+
+unequal_nations_2_expansion_war_nerf_tier_1 = {
+}
+
+unequal_nations_2_expansion_war_nerf_tier_2 = {
+}
+
+unequal_nations_2_expansion_war_nerf_tier_3 = {
+}
+

@@ -1,0 +1,40 @@
+###############################
+# Unequal Nations 2           #
+# Religion - Conversion       #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_religion_conversion_buff_tier_3 = {
+    global_missionary_strength = 1.5
+    global_religious_conversion_resistance = 0.15
+    missionaries = 2.0
+}
+
+unequal_nations_2_religion_conversion_buff_tier_2 = {
+    global_missionary_strength = 1.0
+    global_religious_conversion_resistance = 0.1
+    missionaries = 1.0
+}
+
+unequal_nations_2_religion_conversion_buff_tier_1 = {
+    global_missionary_strength = 0.5
+    global_religious_conversion_resistance = 0.05
+}
+
+unequal_nations_2_religion_conversion_nerf_tier_1 = {
+    global_missionary_strength = -0.5
+    global_religious_conversion_resistance = -0.05
+}
+
+unequal_nations_2_religion_conversion_nerf_tier_2 = {
+    global_missionary_strength = -1.0
+    global_religious_conversion_resistance = -0.1
+    missionaries = -1.0
+}
+
+unequal_nations_2_religion_conversion_nerf_tier_3 = {
+    global_missionary_strength = -1.5
+    global_religious_conversion_resistance = -0.15
+    missionaries = -2.0
+}
+

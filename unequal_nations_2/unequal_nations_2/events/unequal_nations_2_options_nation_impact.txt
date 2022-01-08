@@ -1,0 +1,220 @@
+##############################
+# Unequal Nations 2          #
+# Options - Nation Impact    #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_2_options_nation_impact
+
+# Presets
+country_event = {
+	id = unequal_nations_2_options_nation_impact.1
+	title = unequal_nations_2_options_nation_impact.1.title
+	desc = unequal_nations_2_current_settings
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_2_back
+		highlight = yes
+		country_event = { id = unequal_nations_2_menu_system.2 }
+	}
+
+	### Randomize
+	option = {
+		name = unequal_nations_2_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_player_impacted_no
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_player_impacted_legendary
+			clr_global_flag = unequal_nations_2_option_ai_impacted_no
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_ai_impacted_legendary
+
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_player_impacted_no
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_player_impacted_tier1
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_player_impacted_tier3
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_player_impacted_legendary
+				}
+			}
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_ai_impacted_no
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_ai_impacted_tier1
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_ai_impacted_tier3
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_ai_impacted_legendary
+				}
+			}
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+
+    ### Player Impact
+	# Disable Player Country Impact
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.player_impact.no
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_player_impacted_no }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_player_impacted_no
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_player_impacted_legendary
+
+			set_global_flag = unequal_nations_2_option_player_impacted_no
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+	# Enable Player Country Impact - Up to Tier 1
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.player_impact.tier1
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_player_impacted_tier1 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_player_impacted_no
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_player_impacted_legendary
+
+			set_global_flag = unequal_nations_2_option_player_impacted_tier1
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+	# Enable Player Country Impact - Up to Tier 3
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.player_impact.tier3
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_player_impacted_tier3 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_player_impacted_no
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_player_impacted_legendary
+			
+			set_global_flag = unequal_nations_2_option_player_impacted_tier3
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+	# Enable Player Country Impact - Up to Legendary Tier
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.player_impact.legendary
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_player_impacted_legendary }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_player_impacted_no
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_player_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_player_impacted_legendary
+			
+			set_global_flag = unequal_nations_2_option_player_impacted_legendary
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+
+    ### AI Impact
+	# Disable AI Country Impact
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.ai_impact.no
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_no }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_ai_impacted_no
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_ai_impacted_legendary
+
+			set_global_flag = unequal_nations_2_option_ai_impacted_no
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+	# Enable AI Country Impact - Up to Tier 1
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.ai_impact.tier1
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_tier1 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_ai_impacted_no
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			
+			set_global_flag = unequal_nations_2_option_ai_impacted_tier1
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+	# Enable AI Country Impact - Up to Tier 3
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.ai_impact.tier3
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_tier3 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_ai_impacted_no
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			
+			set_global_flag = unequal_nations_2_option_ai_impacted_tier3
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+	# Enable AI Country Impact - Up to Legendary Tier
+	option = {
+		name = unequal_nations_2_options_nation_impact.1.ai_impact.legendary
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_legendary }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_ai_impacted_no
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier1
+			clr_global_flag = unequal_nations_2_option_ai_impacted_tier3
+			clr_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			
+			set_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			country_event = { id = unequal_nations_2_menu_system.4 }
+		}
+	}
+}
+

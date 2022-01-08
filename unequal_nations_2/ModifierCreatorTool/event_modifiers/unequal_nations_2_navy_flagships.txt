@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Flagships            #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_flagships_buff_tier_3 = {
+    flagship_durability = 0.3
+    flagship_morale = 0.3
+}
+
+unequal_nations_2_navy_flagships_buff_tier_2 = {
+    flagship_durability = 0.2
+    flagship_morale = 0.2
+}
+
+unequal_nations_2_navy_flagships_buff_tier_1 = {
+    flagship_durability = 0.1
+    flagship_morale = 0.1
+}
+
+unequal_nations_2_navy_flagships_nerf_tier_1 = {
+    flagship_durability = -0.1
+    flagship_morale = -0.1
+}
+
+unequal_nations_2_navy_flagships_nerf_tier_2 = {
+    flagship_durability = -0.2
+    flagship_morale = -0.2
+}
+
+unequal_nations_2_navy_flagships_nerf_tier_3 = {
+    flagship_durability = -0.3
+    flagship_morale = -0.3
+}
+

@@ -1,0 +1,30 @@
+######################################
+# Unequal Nations 2                  #
+# Technology - Ideas and Policies    #
+#                                    #
+# Written by von_der_borch           #
+######################################
+unequal_nations_2_technology_ideas_and_policies_buff_tier_3 = {
+    free_policy = 1.0
+    possible_policy = 2.0
+}
+
+unequal_nations_2_technology_ideas_and_policies_buff_tier_2 = {
+    possible_policy = 1.0
+}
+
+unequal_nations_2_technology_ideas_and_policies_buff_tier_1 = {
+}
+
+unequal_nations_2_technology_ideas_and_policies_nerf_tier_1 = {
+}
+
+unequal_nations_2_technology_ideas_and_policies_nerf_tier_2 = {
+    possible_policy = -1.0
+}
+
+unequal_nations_2_technology_ideas_and_policies_nerf_tier_3 = {
+    free_policy = -1.0
+    possible_policy = -2.0
+}
+
