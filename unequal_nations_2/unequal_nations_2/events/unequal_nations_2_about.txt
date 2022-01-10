@@ -40,9 +40,9 @@ country_event = {
 
 		if = {
 			limit = {
-				has_country_flag = unequal_nations_settings_host
+				has_country_flag = unequal_nations_2_settings_host
 			}
-			country_event = { id = unequal_nations_main_menu.1 }
+			country_event = { id = unequal_nations_2_options_main_menu.1 }
 		}
 	}
 }
@@ -60,7 +60,7 @@ country_event = {
 	option = {
 		name = unequal_nations_2_ok
 
-		country_event = { id = unequal_nations_menu_skipper.1 }
+		country_event = { id = unequal_nations_2_menu_system.1 }
 	}
 }
 
@@ -77,7 +77,7 @@ country_event = {
 	option = {
 		name = unequal_nations_2_ok
 
-		country_event = { id = unequal_nations_menu_skipper.1 }
+		country_event = { id = unequal_nations_2_menu_system.1 }
 	}
 }
 
@@ -94,6 +94,6 @@ country_event = {
 	option = {
 		name = unequal_nations_2_ok
 
-		country_event = { id = unequal_nations_menu_skipper.1 }
+		country_event = { id = unequal_nations_2_menu_system.1 }
 	}
 }

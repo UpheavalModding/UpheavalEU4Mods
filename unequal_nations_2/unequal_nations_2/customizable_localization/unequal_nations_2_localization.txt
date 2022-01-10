@@ -3,25 +3,25 @@ defined_text = {
 	name = UnequalNations2GetPlayerImpact
 
 	text = {
-        localisation_key = unequal_nations_2_2_localization_player_impacted_no
+        localisation_key = unequal_nations_2_localization_player_impacted_no
         trigger = {
 			has_global_flag = unequal_nations_2_option_player_impacted_no
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_player_impacted_tier1
+        localisation_key = unequal_nations_2_localization_player_impacted_tier1
         trigger = {
 			has_global_flag = unequal_nations_2_option_player_impacted_tier1
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_player_impacted_tier3
+        localisation_key = unequal_nations_2_localization_player_impacted_tier3
         trigger = {
 			has_global_flag = unequal_nations_2_option_player_impacted_tier3
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_player_impacted_legendary
+        localisation_key = unequal_nations_2_localization_player_impacted_legendary
         trigger = {
 			has_global_flag = unequal_nations_2_option_player_impacted_legendary
         }
@@ -33,25 +33,25 @@ defined_text = {
 	name = UnequalNations2GetAIImpact
 
 	text = {
-        localisation_key = unequal_nations_2_2_localization_ai_impacted_no
+        localisation_key = unequal_nations_2_localization_ai_impacted_no
         trigger = {
 			has_global_flag = unequal_nations_2_option_ai_impacted_no
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_ai_impacted_tier1
+        localisation_key = unequal_nations_2_localization_ai_impacted_tier1
         trigger = {
 			has_global_flag = unequal_nations_2_option_ai_impacted_tier1
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_ai_impacted_tier3
+        localisation_key = unequal_nations_2_localization_ai_impacted_tier3
         trigger = {
 			has_global_flag = unequal_nations_2_option_ai_impacted_tier3
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_ai_impacted_legendary
+        localisation_key = unequal_nations_2_localization_ai_impacted_legendary
         trigger = {
 			has_global_flag = unequal_nations_2_option_ai_impacted_legendary
         }
@@ -63,37 +63,37 @@ defined_text = {
 	name = UnequalNations2GetLegendaryBuffSystem
 
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_buff_selection_system_no
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_no
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_buff_selection_system_global
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_global
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_buff_selection_system_continental
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_continental
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_buff_selection_system_random_chance
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_random_chance
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_buff_selection_system_global_and_random_chance
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_global_and_random_chance
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_buff_selection_system_continental_and_random_chance
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_continental_and_random_chance
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
         }
@@ -105,37 +105,37 @@ defined_text = {
 	name = UnequalNations2GetLegendaryNerfSystem
 
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_nerf_selection_system_no
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_no
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_no
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_nerf_selection_system_global
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_global
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_nerf_selection_system_continental
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_continental
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_nerf_selection_system_random_chance
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_random_chance
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_nerf_selection_system_global_and_random_chance
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_global_and_random_chance
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
         }
 	}
 	text = {
-        localisation_key = unequal_nations_2_2_localization_legendary_nerf_selection_system_continental_and_random_chance
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_continental_and_random_chance
         trigger = {
 			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
         }

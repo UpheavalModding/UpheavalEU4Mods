@@ -43,7 +43,7 @@ country_event = {
 					set_global_flag = unequal_nations_2_option_reroll_on_monarch_death
 				}
 			}
-			country_event = { id = unequal_nations_2_menu_system.6 }
+			country_event = { id = unequal_nations_2_menu_system.5 }
 		}
 	}
 
@@ -61,7 +61,7 @@ country_event = {
 			clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
 
 			set_global_flag = unequal_nations_2_option_reroll_never
-			country_event = { id = unequal_nations_2_menu_system.6 }
+			country_event = { id = unequal_nations_2_menu_system.5 }
 		}
 	}
 
@@ -79,7 +79,7 @@ country_event = {
 			clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
 
 			set_global_flag = unequal_nations_2_option_reroll_each_age
-			country_event = { id = unequal_nations_2_menu_system.6 }
+			country_event = { id = unequal_nations_2_menu_system.5 }
 		}
 	}
 
@@ -97,7 +97,7 @@ country_event = {
 			clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
 
 			set_global_flag = unequal_nations_2_option_reroll_on_monarch_death
-			country_event = { id = unequal_nations_2_menu_system.6 }
+			country_event = { id = unequal_nations_2_menu_system.5 }
 		}
 	}
 }

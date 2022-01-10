@@ -49,7 +49,7 @@
  unequal_nations_2_localization_legendary_buff_selection_system_continental:0 "Continental Legendary Buffed Nations"
  unequal_nations_2_localization_legendary_buff_selection_system_random_chance:0 "Random Chance of Legendary Buffs"
  unequal_nations_2_localization_legendary_buff_selection_system_global_and_random_chance:0 "Global Legendary Buffed Nation and Random Chance for All Nations"
- unequal_nations_2_localization_legendary_buff_selection_system_continental_and_random_chance:0 "Continental Legendary Buffed Nations and Random Chance for All Nations
+ unequal_nations_2_localization_legendary_buff_selection_system_continental_and_random_chance:0 "Continental Legendary Buffed Nations and Random Chance for All Nations"
 ### Legendary Nerf Nation Selection System
  unequal_nations_2_localization_legendary_nerf_selection_system_no:0 "Legendary Nerfed Nation Selection System Disabled"
  unequal_nations_2_localization_legendary_nerf_selection_system_global:0 "Global Legendary Nerfed Nation"
@@ -103,8 +103,10 @@
  unequal_nations_2_options_main_menu.1.confirm_settings:0 "Confirm Settings and Play!"
  unequal_nations_2_options_main_menu.1.open_presets:0 "Configure Preset Configurations"
  unequal_nations_2_options_main_menu.1.nation_impact:0 "Configure Impact on Player and AI Nations"
- unequal_nations_2_options_main_menu.1.legendary_settings:0 "Configure Legendary Buffs/Nerfs"
  unequal_nations_2_options_main_menu.1.reroll_options:0 "Configure Reroll Options"
+ unequal_nations_2_options_main_menu.1.legendary_buff_settings:0 "Configure Legendary Buffs"
+ unequal_nations_2_options_main_menu.1.legendary_nerf_settings:0 "Configure Legendary Nerfs"
+ unequal_nations_2_options_main_menu.1.legendary_general_settings:0 "Configure General Legendary Buffs/Nerfs Settings"
 
 ### Options - Presets
  unequal_nations_2_options_presets.1.title:0 "Unequal Nations 2 - Preset Configuration"
@@ -113,17 +115,24 @@
 ### Options - Nation Impact
  unequal_nations_2_options_nation_impact.1.title:0 "Unequal Nations 2 - Buff/Nerf Nation Impact"
  unequal_nations_2_options_nation_impact.1.player_impact.no:0 "Disable Player Nations Being Impacted"
- unequal_nations_2_options_nation_impact.1.player_impact.tier1:0 "Enable Player Nations Being Impacted up to Tier 1 Buffs/Nerfs
- unequal_nations_2_options_nation_impact.1.player_impact.tier3:0 "Enable Player Nations Being Impacted up to Tier 3 Buffs/Nerfs
+ unequal_nations_2_options_nation_impact.1.player_impact.tier1:0 "Enable Player Nations Being Impacted up to Tier 1 Buffs/Nerfs"
+ unequal_nations_2_options_nation_impact.1.player_impact.tier3:0 "Enable Player Nations Being Impacted up to Tier 3 Buffs/Nerfs"
  unequal_nations_2_options_nation_impact.1.player_impact.legendary:0 "Enable Player Nations Being Impacted up to Legendary Buffs/Nerfs"
  unequal_nations_2_options_nation_impact.1.ai_impact.no:0 "Disable AI Nations Being Impacted"
- unequal_nations_2_options_nation_impact.1.ai_impact.tier1:0 "Enable AI Nations Being Impacted up to Tier 1 Buffs/Nerfs
- unequal_nations_2_options_nation_impact.1.ai_impact.tier3:0 "Enable AI Nations Being Impacted up to Tier 3 Buffs/Nerfs
+ unequal_nations_2_options_nation_impact.1.ai_impact.tier1:0 "Enable AI Nations Being Impacted up to Tier 1 Buffs/Nerfs"
+ unequal_nations_2_options_nation_impact.1.ai_impact.tier3:0 "Enable AI Nations Being Impacted up to Tier 3 Buffs/Nerfs"
  unequal_nations_2_options_nation_impact.1.ai_impact.legendary:0 "Enable AI Nations Being Impacted up to Legendary Buffs/Nerfs"
 
-### Options - Legendary Settings
- unequal_nations_2_options_legendary_settings.1.title:0 "Unequal Nations 2 - Legendary Buff/Nerf Settings"
+### Options - Legendary Buff Settings
+ unequal_nations_2_options_legendary_settings.1.title:0 "Unequal Nations 2 - Legendary Buff Settings"
 
+### Options - Legendary Nerf Settings
+ unequal_nations_2_options_legendary_settings.1.title:0 "Unequal Nations 2 - Legendary Nerf Settings"
+
+### Options - Legendary General Settings
+ unequal_nations_2_options_legendary_settings.1.title:0 "Unequal Nations 2 - General Legendary Buff/Nerf Settings"
+
+### Options - Legendary General/Common
  unequal_nations_2_options_legendary_settings.1.legendary_buff_system.no:0 "Disable Legendary Randomization System Buffs"
  unequal_nations_2_options_legendary_settings.1.legendary_buff_system.global:0 "Enable a Global Legendary Buff Nation"
  unequal_nations_2_options_legendary_settings.1.legendary_buff_system.continental:0 "Enable a Legendary Buff Nation per Continent"
@@ -163,7 +172,7 @@
  unequal_nations_2_options_legendary_settings.1.min_development.1500:0 "Legendary Buff/Nerf Min Country Development - 1500"
 
 ### Options - Reroll Options
- unequal_nations_2_options_reroll_options.1.title:0 ""Unequal Nations 2 - Reroll Options
+ unequal_nations_2_options_reroll_options.1.title:0 ""Unequal Nations 2 - Reroll Options"
  unequal_nations_2_options_reroll_options.1.never:0 "Never Reroll Buffs/Nerfs"
  unequal_nations_2_options_reroll_options.1.each_age:0 "Reroll Buffs/Nerfs on Age Change"
  unequal_nations_2_options_reroll_options.1.on_monarch_death:0 "Reroll Buffs/Nerfs on Ruler Change"

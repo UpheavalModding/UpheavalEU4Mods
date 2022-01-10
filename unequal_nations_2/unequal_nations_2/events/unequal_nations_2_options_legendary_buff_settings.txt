@@ -1,0 +1,401 @@
+########################################
+# Unequal Nations 2                    #
+# Options - Legendary Buff Settings    #
+#                                      #
+# Written by von_der_borch             #
+########################################
+
+namespace = unequal_nations_2_options_legendary_buff_settings
+
+# Presets
+country_event = {
+	id = unequal_nations_2_options_legendary_buff_settings.1
+	title = unequal_nations_2_options_legendary_buff_settings.1.title
+	desc = unequal_nations_2_current_settings
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_2_back
+		highlight = yes
+		country_event = { id = unequal_nations_2_menu_system.2 }
+	}
+
+	### Randomize
+	option = {
+		name = unequal_nations_2_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+
+			# Randomly Choose Legendary Buff Setting
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+				}
+			}
+			# Legendary Buff Random Chances
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+				}
+			}
+			
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+
+    ### Legendary Buffs - System
+	# Disable Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_system.no
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+
+			set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# Enable Legendary Buffs - Global
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_system.global
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# Enable Legendary Buffs - Continental
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_system.continental
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# Enable Legendary Buffs - Random Chance
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_system.random
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# Enable Legendary Buffs - Global and Random
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_system.global_and_random
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# Enable Legendary Buffs - Continental and Random
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_system.continental_and_random
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+			clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+
+    ### Legendary Buffs - Random Chance
+	# 1% Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_random_chance.1
+
+		trigger = {
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# 3% Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_random_chance.3
+
+		trigger = {
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# 5% Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_random_chance.5
+
+		trigger = {
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# 15% Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_random_chance.15
+
+		trigger = {
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# 25% Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_random_chance.25
+
+		trigger = {
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# 50% Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_random_chance.50
+
+		trigger = {
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+	# 100% Legendary Buffs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.legendary_buff_random_chance.100
+
+		trigger = {
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			
+			set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			country_event = { id = unequal_nations_2_menu_system.6 }
+		}
+	}
+}
+

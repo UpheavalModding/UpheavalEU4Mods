@@ -29,16 +29,28 @@ country_event = {
 		country_event = { id = unequal_nations_2_options_nation_impact.1 }
 	}
 
-	# Open Sub-menu to choose what rules there are for Legendary Countries
-	option = {
-		name = unequal_nations_2_options_main_menu.1.legendary_settings
-		country_event = { id = unequal_nations_2_options_legendary_settings.1 }
-	}
-
 	# Open Sub-menu to choose when to reroll buffs/nerfs
 	option = {
 		name = unequal_nations_2_options_main_menu.1.reroll_options
 		country_event = { id = unequal_nations_2_options_reroll_options.1 }
+	}
+
+	# Open Sub-menu to choose what rules there are for Legendary Buff Countries
+	option = {
+		name = unequal_nations_2_options_main_menu.1.legendary_buff_settings
+		country_event = { id = unequal_nations_2_options_legendary_buff_settings.1 }
+	}
+
+	# Open Sub-menu to choose what rules there are for Legendary Nerf Countries
+	option = {
+		name = unequal_nations_2_options_main_menu.1.legendary_nerf_settings
+		country_event = { id = unequal_nations_2_options_legendary_nerf_settings.1 }
+	}
+
+	# Open Sub-menu to choose what rules there are for Legendary Countries Generally
+	option = {
+		name = unequal_nations_2_options_main_menu.1.legendary_general_settings
+		country_event = { id = unequal_nations_2_options_legendary_general_settings.1 }
 	}
 
 	# Confirm settings
@@ -48,7 +60,7 @@ country_event = {
 		set_global_flag = unequal_nations_2_initialized
 		
 		hidden_effect = {
-			country_event = { id = unequal_nations_randomizer.1 }
+			country_event = { id = unequal_nations_2_randomizer_initialization.1 }
 		}
 	}
 }

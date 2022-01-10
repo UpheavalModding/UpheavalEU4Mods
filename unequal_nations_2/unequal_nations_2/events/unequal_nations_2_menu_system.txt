@@ -87,29 +87,9 @@ country_event = {
 	}
 }
 
-# Go to Options - Legendary Settings
-country_event = {
-	id = unequal_nations_2_menu_system.5
-	title = unequal_nations_2_options_nation_impact.1.title
-	desc = unequal_nations_na
-	picture = CITY_DEVELOPMENT_eventPicture
-
-	hidden = yes
-	is_triggered_only = yes
-
-	after = {
-		country_event = { id = unequal_nations_2_options_nation_impact.1 }
-	}
-
-	# Close the event if it manages to pop up
-	option = {
-		name = unequal_nations_ok
-	}
-}
-
 # Go to Options - Reroll Options
 country_event = {
-	id = unequal_nations_2_menu_system.6
+	id = unequal_nations_2_menu_system.5
 	title = unequal_nations_2_options_reroll_options.1.title
 	desc = unequal_nations_na
 	picture = CITY_DEVELOPMENT_eventPicture
@@ -119,6 +99,66 @@ country_event = {
 
 	after = {
 		country_event = { id = unequal_nations_2_options_reroll_options.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Options - Legendary Buff Settings
+country_event = {
+	id = unequal_nations_2_menu_system.6
+	title = unequal_nations_2_options_legendary_buff_settings.1.title
+	desc = unequal_nations_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_2_options_legendary_buff_settings.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Options - Legendary Nerf Settings
+country_event = {
+	id = unequal_nations_2_menu_system.7
+	title = unequal_nations_2_options_legendary_nerf_settings.1.title
+	desc = unequal_nations_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_2_options_legendary_nerf_settings.1 }
+	}
+
+	# Close the event if it manages to pop up
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Go to Options - Legendary General Settings
+country_event = {
+	id = unequal_nations_2_menu_system.8
+	title = unequal_nations_2_options_legendary_general_settings.1.title
+	desc = unequal_nations_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	after = {
+		country_event = { id = unequal_nations_2_options_legendary_general_settings.1 }
 	}
 
 	# Close the event if it manages to pop up
