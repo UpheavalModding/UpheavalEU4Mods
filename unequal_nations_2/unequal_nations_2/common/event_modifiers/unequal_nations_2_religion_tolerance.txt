@@ -28,6 +28,8 @@ unequal_nations_2_religion_tolerance_buff_tier_1 = {
     religious_unity = 0.1
     tolerance_heathen = 1.0
     tolerance_heretic = 1.0
+    tolerance_of_heathens_capacity = 0.0
+    tolerance_of_heretics_capacity = 0.0
     tolerance_own = 1.0
     relation_with_heretics = 10.0
 }
@@ -36,6 +38,8 @@ unequal_nations_2_religion_tolerance_nerf_tier_1 = {
     religious_unity = -0.1
     tolerance_heathen = -1.0
     tolerance_heretic = -1.0
+    tolerance_of_heathens_capacity = 0.0
+    tolerance_of_heretics_capacity = 0.0
     tolerance_own = -1.0
     relation_with_heretics = -10.0
 }

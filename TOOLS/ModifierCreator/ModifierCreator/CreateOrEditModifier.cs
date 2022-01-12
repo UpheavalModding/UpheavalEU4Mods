@@ -93,10 +93,6 @@ namespace ModifierCreator
 
             var dialog = new ModifierConfig();
             var modifierName = gameModifiers_lst.SelectedItem.ToString();
-            if (!string.IsNullOrWhiteSpace(manualInput_txt.Text))
-            {
-                modifierName = manualInput_txt.Text;
-            }
             dialog.Initialize(new Modifier() { Name = modifierName });
 
             dialog.TopMost = this.TopMost;

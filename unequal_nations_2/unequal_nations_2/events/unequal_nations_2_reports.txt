@@ -54,3 +54,35 @@ country_event = {
 		name = unequal_nations_ok
 	}
 }
+
+# Legendary Buffed Nation Alert Event
+country_event = {
+	id = unequal_nations_2_reports.4
+	title = unequal_nations_2_reports.4.title
+	desc = unequal_nations_2_reports.4.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Legendary Nerfed Nation Alert Event
+country_event = {
+	id = unequal_nations_2_reports.5
+	title = unequal_nations_2_reports.5.title
+	desc = unequal_nations_2_reports.5.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}

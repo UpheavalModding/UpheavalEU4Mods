@@ -21,7 +21,7 @@ country_decisions = {
 		}
 
 		effect = {
-			country_event = { id = unequal_nations_2_main_menu.1 }
+			country_event = { id = unequal_nations_2_options_main_menu.1 }
 		}
 	}
 }
@@ -65,6 +65,8 @@ country_decisions = {
 			random_owned_province = {
 				add_province_triggered_modifier = unequal_nations_2_reroll_buffs_and_nerfs
 			}
+
+			country_event = { id = unequal_nations_2_reports.3 }
 		}
 	}
 }

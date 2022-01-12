@@ -223,6 +223,6 @@ add_country_modifier = {
     duration = -1
 }
 add_country_modifier = {
-    name = unequal_nations_2_legendary_buff_tier_3
+    name = unequal_nations_2_military_high_command_buff_tier_3
     duration = -1
 }

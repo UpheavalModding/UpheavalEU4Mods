@@ -1,0 +1,30 @@
+###############################
+# Unequal Nations 2           #
+# Military - High Command     #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_military_high_command_buff_tier_3 = {
+    leader = 3.0
+}
+
+unequal_nations_2_military_high_command_buff_tier_2 = {
+    leader = 2.0
+}
+
+unequal_nations_2_military_high_command_buff_tier_1 = {
+    leader = 1.0
+}
+
+unequal_nations_2_military_high_command_nerf_tier_1 = {
+    leader = -1.0
+}
+
+unequal_nations_2_military_high_command_nerf_tier_2 = {
+    leader = -2.0
+}
+
+unequal_nations_2_military_high_command_nerf_tier_3 = {
+    leader = -3.0
+}
+

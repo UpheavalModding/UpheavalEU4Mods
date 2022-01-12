@@ -58,10 +58,8 @@ country_event = {
 		name = unequal_nations_2_options_main_menu.1.confirm_settings
 		highlight = yes
 		set_global_flag = unequal_nations_2_initialized
-		
-		hidden_effect = {
-			country_event = { id = unequal_nations_2_randomizer_initialization.1 }
-		}
+
+		country_event = { id = unequal_nations_2_randomizer_initialization.1 }
 	}
 }
 

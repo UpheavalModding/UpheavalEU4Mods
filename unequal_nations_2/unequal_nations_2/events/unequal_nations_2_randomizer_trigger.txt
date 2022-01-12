@@ -101,11 +101,15 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_global_flag = unequal_nations_initialized
+		has_global_flag = unequal_nations_2_initialized
 		has_global_flag = unequal_nations_2_option_reroll_on_monarch_death
 	}
 
 	immediate = {
+		set_country_flag = unequal_nations_2_needs_buffs_and_nerfs_applied
+		set_country_flag = unequal_nations_2_needs_legendary_buff_choice
+		set_country_flag = unequal_nations_2_needs_legendary_nerf_choice
+
 		clr_country_flag = unequal_nations_2_buffs_and_nerfs_applied
 
 		remove_country_modifier = unequal_nations_2_army_high_command_buff_tier_3
@@ -446,6 +450,12 @@ country_event = {
 		remove_country_modifier = unequal_nations_2_trade_ships_nerf_tier_3
 		remove_country_modifier = unequal_nations_2_legendary_buff
 		remove_country_modifier = unequal_nations_2_legendary_nerf
+		remove_country_modifier = unequal_nations_2_military_high_command_buff_tier_3
+		remove_country_modifier = unequal_nations_2_military_high_command_buff_tier_2
+		remove_country_modifier = unequal_nations_2_military_high_command_buff_tier_1
+		remove_country_modifier = unequal_nations_2_military_high_command_nerf_tier_1
+		remove_country_modifier = unequal_nations_2_military_high_command_nerf_tier_2
+		remove_country_modifier = unequal_nations_2_military_high_command_nerf_tier_3
 		
 		country_event = { id = unequal_nations_2_randomizer_core.1 }
 	}

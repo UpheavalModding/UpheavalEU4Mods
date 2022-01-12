@@ -7,7 +7,7 @@
 
 namespace = unequal_nations_2_randomizer_legendary_buff
 
-# Apply Legendary Buff to Nations
+# Global Legendary Country Randomizer
 country_event = {
 	id = unequal_nations_2_randomizer_legendary_buff.1
 	title = unequal_nations_2_randomizer_legendary_buff.1.title
@@ -18,649 +18,59 @@ country_event = {
 	hidden = yes
 
 	immediate = {
-        hidden = {
-			every_country = {
-				limit = {
-					has_country_flag = unequal_nations_2_legendary_buff_nation
+		random_country = {
+			limit = {
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
 				}
-				
-				clr_country_flag = unequal_nations_2_legendary_buff_nation
-				set_country_flag = unequal_nations_2_had_legendary_buff
-
-				remove_country_modifier = unequal_nations_2_army_high_command_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_high_command_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_high_command_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_high_command_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_high_command_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_high_command_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_infantry_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_infantry_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_infantry_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_infantry_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_infantry_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_infantry_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_cavalry_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_cavalry_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_cavalry_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_cavalry_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_cavalry_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_cavalry_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_artillery_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_artillery_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_artillery_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_artillery_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_artillery_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_artillery_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_mercenaries_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_mercenaries_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_mercenaries_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_mercenaries_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_mercenaries_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_mercenaries_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_logistics_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_logistics_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_logistics_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_logistics_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_logistics_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_logistics_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_quantity_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_quantity_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_quantity_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_quantity_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_quantity_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_quantity_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_quality_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_quality_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_quality_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_quality_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_quality_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_quality_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_training_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_training_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_training_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_training_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_training_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_training_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_defenses_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_defenses_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_defenses_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_defenses_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_defenses_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_defenses_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_army_seiges_buff_tier_3
-				remove_country_modifier = unequal_nations_2_army_seiges_buff_tier_2
-				remove_country_modifier = unequal_nations_2_army_seiges_buff_tier_1
-				remove_country_modifier = unequal_nations_2_army_seiges_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_army_seiges_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_army_seiges_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_high_command_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_high_command_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_high_command_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_high_command_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_high_command_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_high_command_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_transports_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_transports_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_transports_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_transports_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_transports_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_transports_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_light_ships_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_light_ships_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_light_ships_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_light_ships_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_light_ships_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_light_ships_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_galleys_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_galleys_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_galleys_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_galleys_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_galleys_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_galleys_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_heavy_ships_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_heavy_ships_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_heavy_ships_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_heavy_ships_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_heavy_ships_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_heavy_ships_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_logistics_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_logistics_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_logistics_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_logistics_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_logistics_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_logistics_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_training_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_training_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_training_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_training_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_training_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_training_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_construction_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_construction_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_construction_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_construction_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_construction_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_construction_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_blockades_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_blockades_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_blockades_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_blockades_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_blockades_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_blockades_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_navy_flagships_buff_tier_3
-				remove_country_modifier = unequal_nations_2_navy_flagships_buff_tier_2
-				remove_country_modifier = unequal_nations_2_navy_flagships_buff_tier_1
-				remove_country_modifier = unequal_nations_2_navy_flagships_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_navy_flagships_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_navy_flagships_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_expansion_war_buff_tier_3
-				remove_country_modifier = unequal_nations_2_expansion_war_buff_tier_2
-				remove_country_modifier = unequal_nations_2_expansion_war_buff_tier_1
-				remove_country_modifier = unequal_nations_2_expansion_war_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_expansion_war_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_expansion_war_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_expansion_peace_buff_tier_3
-				remove_country_modifier = unequal_nations_2_expansion_peace_buff_tier_2
-				remove_country_modifier = unequal_nations_2_expansion_peace_buff_tier_1
-				remove_country_modifier = unequal_nations_2_expansion_peace_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_expansion_peace_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_expansion_peace_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_diplomats_buff_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_diplomats_buff_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_diplomats_buff_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_diplomats_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_diplomats_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_diplomats_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_buff_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_buff_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_buff_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_economy_taxes_buff_tier_3
-				remove_country_modifier = unequal_nations_2_economy_taxes_buff_tier_2
-				remove_country_modifier = unequal_nations_2_economy_taxes_buff_tier_1
-				remove_country_modifier = unequal_nations_2_economy_taxes_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_economy_taxes_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_economy_taxes_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_economy_production_buff_tier_3
-				remove_country_modifier = unequal_nations_2_economy_production_buff_tier_2
-				remove_country_modifier = unequal_nations_2_economy_production_buff_tier_1
-				remove_country_modifier = unequal_nations_2_economy_production_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_economy_production_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_economy_production_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_buff_tier_3
-				remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_buff_tier_2
-				remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_buff_tier_1
-				remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_buff_tier_3
-				remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_buff_tier_2
-				remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_buff_tier_1
-				remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_economy_construction_buff_tier_3
-				remove_country_modifier = unequal_nations_2_economy_construction_buff_tier_2
-				remove_country_modifier = unequal_nations_2_economy_construction_buff_tier_1
-				remove_country_modifier = unequal_nations_2_economy_construction_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_economy_construction_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_economy_construction_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_technology_research_buff_tier_3
-				remove_country_modifier = unequal_nations_2_technology_research_buff_tier_2
-				remove_country_modifier = unequal_nations_2_technology_research_buff_tier_1
-				remove_country_modifier = unequal_nations_2_technology_research_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_technology_research_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_technology_research_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_buff_tier_3
-				remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_buff_tier_2
-				remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_buff_tier_1
-				remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_technology_institution_buff_tier_3
-				remove_country_modifier = unequal_nations_2_technology_institution_buff_tier_2
-				remove_country_modifier = unequal_nations_2_technology_institution_buff_tier_1
-				remove_country_modifier = unequal_nations_2_technology_institution_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_technology_institution_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_technology_institution_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_court_advisors_buff_tier_3
-				remove_country_modifier = unequal_nations_2_court_advisors_buff_tier_2
-				remove_country_modifier = unequal_nations_2_court_advisors_buff_tier_1
-				remove_country_modifier = unequal_nations_2_court_advisors_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_court_advisors_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_court_advisors_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_court_heir_buff_tier_3
-				remove_country_modifier = unequal_nations_2_court_heir_buff_tier_2
-				remove_country_modifier = unequal_nations_2_court_heir_buff_tier_1
-				remove_country_modifier = unequal_nations_2_court_heir_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_court_heir_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_court_heir_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_court_ruler_buff_tier_3
-				remove_country_modifier = unequal_nations_2_court_ruler_buff_tier_2
-				remove_country_modifier = unequal_nations_2_court_ruler_buff_tier_1
-				remove_country_modifier = unequal_nations_2_court_ruler_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_court_ruler_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_court_ruler_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_court_prestige_buff_tier_3
-				remove_country_modifier = unequal_nations_2_court_prestige_buff_tier_2
-				remove_country_modifier = unequal_nations_2_court_prestige_buff_tier_1
-				remove_country_modifier = unequal_nations_2_court_prestige_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_court_prestige_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_court_prestige_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_government_reform_buff_tier_3
-				remove_country_modifier = unequal_nations_2_government_reform_buff_tier_2
-				remove_country_modifier = unequal_nations_2_government_reform_buff_tier_1
-				remove_country_modifier = unequal_nations_2_government_reform_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_government_reform_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_government_reform_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_government_cohesion_buff_tier_3
-				remove_country_modifier = unequal_nations_2_government_cohesion_buff_tier_2
-				remove_country_modifier = unequal_nations_2_government_cohesion_buff_tier_1
-				remove_country_modifier = unequal_nations_2_government_cohesion_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_government_cohesion_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_government_cohesion_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_government_legitimacy_buff_tier_3
-				remove_country_modifier = unequal_nations_2_government_legitimacy_buff_tier_2
-				remove_country_modifier = unequal_nations_2_government_legitimacy_buff_tier_1
-				remove_country_modifier = unequal_nations_2_government_legitimacy_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_government_legitimacy_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_government_legitimacy_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_hre_buff_tier_3
-				remove_country_modifier = unequal_nations_2_hre_buff_tier_2
-				remove_country_modifier = unequal_nations_2_hre_buff_tier_1
-				remove_country_modifier = unequal_nations_2_hre_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_hre_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_hre_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_culture_buff_tier_3
-				remove_country_modifier = unequal_nations_2_culture_buff_tier_2
-				remove_country_modifier = unequal_nations_2_culture_buff_tier_1
-				remove_country_modifier = unequal_nations_2_culture_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_culture_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_culture_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_stability_autonomy_buff_tier_3
-				remove_country_modifier = unequal_nations_2_stability_autonomy_buff_tier_2
-				remove_country_modifier = unequal_nations_2_stability_autonomy_buff_tier_1
-				remove_country_modifier = unequal_nations_2_stability_autonomy_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_stability_autonomy_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_stability_autonomy_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_buff_tier_3
-				remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_buff_tier_2
-				remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_buff_tier_1
-				remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_vassals_buff_tier_3
-				remove_country_modifier = unequal_nations_2_diplomacy_vassals_buff_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_vassals_buff_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_vassals_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_diplomacy_vassals_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_diplomacy_vassals_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_espionage_buff_tier_3
-				remove_country_modifier = unequal_nations_2_espionage_buff_tier_2
-				remove_country_modifier = unequal_nations_2_espionage_buff_tier_1
-				remove_country_modifier = unequal_nations_2_espionage_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_espionage_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_espionage_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_religion_conversion_buff_tier_3
-				remove_country_modifier = unequal_nations_2_religion_conversion_buff_tier_2
-				remove_country_modifier = unequal_nations_2_religion_conversion_buff_tier_1
-				remove_country_modifier = unequal_nations_2_religion_conversion_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_religion_conversion_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_religion_conversion_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_religion_tolerance_buff_tier_3
-				remove_country_modifier = unequal_nations_2_religion_tolerance_buff_tier_2
-				remove_country_modifier = unequal_nations_2_religion_tolerance_buff_tier_1
-				remove_country_modifier = unequal_nations_2_religion_tolerance_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_religion_tolerance_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_religion_tolerance_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_religion_fervor_buff_tier_3
-				remove_country_modifier = unequal_nations_2_religion_fervor_buff_tier_2
-				remove_country_modifier = unequal_nations_2_religion_fervor_buff_tier_1
-				remove_country_modifier = unequal_nations_2_religion_fervor_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_religion_fervor_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_religion_fervor_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_colonisation_native_relations_buff_tier_3
-				remove_country_modifier = unequal_nations_2_colonisation_native_relations_buff_tier_2
-				remove_country_modifier = unequal_nations_2_colonisation_native_relations_buff_tier_1
-				remove_country_modifier = unequal_nations_2_colonisation_native_relations_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_colonisation_native_relations_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_colonisation_native_relations_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_colonisation_expansion_buff_tier_3
-				remove_country_modifier = unequal_nations_2_colonisation_expansion_buff_tier_2
-				remove_country_modifier = unequal_nations_2_colonisation_expansion_buff_tier_1
-				remove_country_modifier = unequal_nations_2_colonisation_expansion_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_colonisation_expansion_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_colonisation_expansion_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_colonists_income_buff_tier_3
-				remove_country_modifier = unequal_nations_2_colonists_income_buff_tier_2
-				remove_country_modifier = unequal_nations_2_colonists_income_buff_tier_1
-				remove_country_modifier = unequal_nations_2_colonists_income_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_colonists_income_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_colonists_income_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_trade_merchants_buff_tier_3
-				remove_country_modifier = unequal_nations_2_trade_merchants_buff_tier_2
-				remove_country_modifier = unequal_nations_2_trade_merchants_buff_tier_1
-				remove_country_modifier = unequal_nations_2_trade_merchants_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_trade_merchants_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_trade_merchants_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_trade_trade_routes_buff_tier_3
-				remove_country_modifier = unequal_nations_2_trade_trade_routes_buff_tier_2
-				remove_country_modifier = unequal_nations_2_trade_trade_routes_buff_tier_1
-				remove_country_modifier = unequal_nations_2_trade_trade_routes_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_trade_trade_routes_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_trade_trade_routes_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_trade_ships_buff_tier_3
-				remove_country_modifier = unequal_nations_2_trade_ships_buff_tier_2
-				remove_country_modifier = unequal_nations_2_trade_ships_buff_tier_1
-				remove_country_modifier = unequal_nations_2_trade_ships_nerf_tier_1
-				remove_country_modifier = unequal_nations_2_trade_ships_nerf_tier_2
-				remove_country_modifier = unequal_nations_2_trade_ships_nerf_tier_3
-				remove_country_modifier = unequal_nations_2_legendary_buff
-				remove_country_modifier = unequal_nations_2_legendary_nerf
-
-				add_country_modifier = {
-					name = unequal_nations_2_army_high_command_buff_tier_3
-					duration = -1
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+					}
 				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_infantry_buff_tier_3
-					duration = -1
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
+					}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+					}
 				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_cavalry_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_artillery_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_mercenaries_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_logistics_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_quantity_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_quality_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_training_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_defenses_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_army_seiges_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_high_command_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_transports_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_light_ships_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_galleys_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_heavy_ships_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_logistics_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_training_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_construction_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_blockades_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_navy_flagships_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_expansion_war_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_expansion_peace_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_diplomacy_diplomats_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_diplomacy_peace_treaties_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_economy_taxes_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_economy_production_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_economy_inflation_and_loans_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_economy_prosperity_and_development_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_economy_construction_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_technology_research_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_technology_ideas_and_policies_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_technology_institution_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_court_advisors_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_court_heir_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_court_ruler_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_court_prestige_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_government_reform_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_government_cohesion_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_government_legitimacy_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_hre_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_culture_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_stability_autonomy_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_stability_unrest_and_rebels_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_diplomacy_vassals_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_espionage_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_religion_conversion_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_religion_tolerance_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_religion_fervor_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_colonisation_native_relations_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_colonisation_expansion_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_colonists_income_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_trade_merchants_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_trade_trade_routes_buff_tier_3
-					duration = -1
-				}
-				add_country_modifier = {
-					name = unequal_nations_2_trade_ships_buff_tier_3
-					duration = -1
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+					}
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+					}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+					}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+					}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+					}
 				}
 			}
-        }
-	}
+			
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
 
-	# OK
-	option = {
-		name = unequal_nations_2_ok
-	}
-}
-
-# Global Legendary Country Randomizer
-country_event = {
-	id = unequal_nations_2_randomizer_legendary_buff.2
-	title = unequal_nations_2_randomizer_legendary_buff.2.title
-	desc = unequal_nations_2_na
-	picture = CITY_DEVELOPMENT_eventPicture
-
-	is_triggered_only = yes
-	hidden = yes
-
-	immediate = {
-        hidden = {
-			random_country = {
-				limit = {
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
-					}
-				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
-			}
+		every_country = {
+			clr_country_flag = unequal_nations_2_needs_legendary_buff_choice
 		}
 	}
 
@@ -672,8 +82,8 @@ country_event = {
 
 # Continental Legendary Country Randomizer
 country_event = {
-	id = unequal_nations_2_randomizer_legendary_buff.3
-	title = unequal_nations_2_randomizer_legendary_buff.3.title
+	id = unequal_nations_2_randomizer_legendary_buff.2
+	title = unequal_nations_2_randomizer_legendary_buff.2.title
 	desc = unequal_nations_2_na
 	picture = CITY_DEVELOPMENT_eventPicture
 
@@ -681,438 +91,393 @@ country_event = {
 	hidden = yes
 
 	immediate = {
-        hidden = {
-			# Europe
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = europe
-					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+		# Europe
+		random_country = {
+			limit = {
+				capital_scope = {
+					continent = europe
+				}
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
+					}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+					}
+				}
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+					}
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+					}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+					}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+					}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+					}
+				}
 			}
 			
-			# Asia
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = asia
-					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
+		
+		# Asia
+		random_country = {
+			limit = {
+				capital_scope = {
+					continent = asia
+				}
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
-			}
-
-			# Africa
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = africa
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
 					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
-			}
-
-			# North America
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = north_america
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
 					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
 					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
 					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
 					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
 			}
+			
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
 
-			# South America
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = south_america
-					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+		# Africa
+		random_country = {
+			limit = {
+				capital_scope = {
+					continent = africa
+				}
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
-			}
-
-			# Oceania
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = oceania
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
 					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
-			}
-
-			# Island Check Provinces
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = island_check_provinces
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
 					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
 					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
 					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
 					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
 			}
+			
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
 
-			# RNW
-			random_country = {
-				limit = {
-					capital_scope = {
-						continent = new_world
-					}
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
+		# North America
+		random_country = {
+			limit = {
+				capital_scope = {
+					continent = north_america
+				}
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
 					}
 				}
-
-				set_country_flag = unequal_nations_2_legendary_buff_nation
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
+					}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+					}
+				}
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+					}
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+					}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+					}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+					}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+					}
+				}
 			}
+			
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
+
+		# South America
+		random_country = {
+			limit = {
+				capital_scope = {
+					continent = south_america
+				}
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+					}
+				}
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
+					}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+					}
+				}
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+					}
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+					}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+					}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+					}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+					}
+				}
+			}
+			
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
+
+		# Oceania
+		random_country = {
+			limit = {
+				capital_scope = {
+					continent = oceania
+				}
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+					}
+				}
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
+					}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+					}
+				}
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+					}
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+					}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+					}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+					}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+					}
+				}
+			}
+			
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
+
+		# RNW
+		random_country = {
+			limit = {
+				capital_scope = {
+					continent = new_world
+				}
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+					}
+				}
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
+					}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+					}
+				}
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+					}
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+					}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+					}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+					}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+					}
+				}
+			}
+			
+			set_country_flag = unequal_nations_2_legendary_buff_nation
+		}
+
+		every_country = {
+			clr_country_flag = unequal_nations_2_needs_legendary_buff_choice
 		}
 	}
 
@@ -1124,8 +489,8 @@ country_event = {
 
 # Random Chance Legendary Country Randomizer
 country_event = {
-	id = unequal_nations_2_randomizer_legendary_buff.4
-	title = unequal_nations_2_randomizer_legendary_buff.4.title
+	id = unequal_nations_2_randomizer_legendary_buff.3
+	title = unequal_nations_2_randomizer_legendary_buff.3.title
 	desc = unequal_nations_2_na
 	picture = CITY_DEVELOPMENT_eventPicture
 
@@ -1133,128 +498,128 @@ country_event = {
 	hidden = yes
 
 	immediate = {
-        hidden = {
-			every_country = {
+		every_country = {
+			limit = {
+				has_country_flag = unequal_nations_2_needs_legendary_buff_choice
+				NOT = {
+					tag = REB
+					tag = PIR
+					tag = NAT
+				}
+				NOT = {
+					AND = {
+						has_country_flag = unequal_nations_2_had_legendary_buff
+						has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+					}
+				}
+				OR = {
+					AND = {
+						ai = no
+						has_global_flag = unequal_nations_2_option_player_impacted_legendary
+					}
+					AND = {
+						ai = yes
+						has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+					}
+				}
+				OR = {
+					AND = {
+						total_development = 1
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+					}
+					AND = {
+						total_development = 250
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+					}
+					AND = {
+						total_development = 500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+					}
+					AND = {
+						total_development = 750
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+					}
+					AND = {
+						total_development = 1500
+						has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+					}
+				}
+			}
+
+			clr_country_flag = unequal_nations_2_needs_legendary_buff_choice
+			# 1%
+			if = {
 				limit = {
-					NOT = {
-						tag = REB
-						tag = PIR
-						tag = NAT
-					}
-					NOT = {
-						AND = {
-							has_country_flag = unequal_nations_2_had_legendary_buff
-							has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
-						}
-					}
-					OR = {
-						AND = {
-							ai = no
-							has_global_flag = unequal_nations_2_option_player_impacted_legendary
-						}
-						AND = {
-							ai = yes
-							has_global_flag = unequal_nations_2_option_ai_impacted_legendary
-						}
-					}
-					OR = {
-						AND = {
-							total_development = 1
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1
-						}
-						AND = {
-							total_development = 250
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_250
-						}
-						AND = {
-							total_development = 500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_500
-						}
-						AND = {
-							total_development = 750
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_750
-						}
-						AND = {
-							total_development = 1500
-							has_global_flag = unequal_nations_option_legendary_countries_min_size_1500
-						}
-					}
+					has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
 				}
 
-				# 1%
-				if = {
-					limit = {
-						has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
-					}
-
-					random_list = {
-						99 = { }
-						1 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
-					}
+				random_list = {
+					99 = { }
+					1 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
 				}
-				# 3%
-				if = {
-					limit = {
-						has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
-					}
-
-					random_list = {
-						97 = { }
-						3 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
-					}
+			}
+			# 3%
+			if = {
+				limit = {
+					has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
 				}
-				# 5%
-				if = {
-					limit = {
-						has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
-					}
 
-					random_list = {
-						95 = { }
-						5 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
-					}
+				random_list = {
+					97 = { }
+					3 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
 				}
-				# 15%
-				if = {
-					limit = {
-						has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
-					}
+			}
+			# 5%
+			if = {
+				limit = {
+					has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+				}
 
-					random_list = {
-						85 = { }
-						15 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
-					}
+				random_list = {
+					95 = { }
+					5 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
 				}
-				# 25%
-				if = {
-					limit = {
-						has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
-					}
+			}
+			# 15%
+			if = {
+				limit = {
+					has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+				}
 
-					random_list = {
-						75 = { }
-						25 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
-					}
+				random_list = {
+					85 = { }
+					15 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
 				}
-				# 50%
-				if = {
-					limit = {
-						has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
-					}
+			}
+			# 25%
+			if = {
+				limit = {
+					has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+				}
 
-					random_list = {
-						50 = { }
-						50 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
-					}
+				random_list = {
+					75 = { }
+					25 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
 				}
-				# 100%
-				if = {
-					limit = {
-						has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
-					}
+			}
+			# 50%
+			if = {
+				limit = {
+					has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+				}
 
-					set_country_flag = unequal_nations_2_legendary_buff_nation
+				random_list = {
+					50 = { }
+					50 = { set_country_flag = unequal_nations_2_legendary_buff_nation }
 				}
+			}
+			# 100%
+			if = {
+				limit = {
+					has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+				}
+
+				set_country_flag = unequal_nations_2_legendary_buff_nation
 			}
 		}
 	}

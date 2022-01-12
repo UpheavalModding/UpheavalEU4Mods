@@ -38,12 +38,15 @@ namespace ModifierCreator
             if (!dialog.Cancelled)
             {
                 var results = dialog.GetSet();
-                modifiers.ModifierSets.Add(results);
-                UpdateDisplay();
-
-                if (autoSave_cxb.Checked)
+                if (!string.IsNullOrWhiteSpace(results.Name))
                 {
-                    button2_Click(sender, e);
+                    modifiers.ModifierSets.Add(results);
+                    UpdateDisplay();
+
+                    if (autoSave_cxb.Checked)
+                    {
+                        button2_Click(sender, e);
+                    }
                 }
             }
         }
@@ -97,6 +100,21 @@ namespace ModifierCreator
         public void UpdateDisplay()
         {
             modifierList_lst.DataSource = null;
+
+            var indexesToRemove = new Stack<int>();
+            for (var i = 0; i < modifiers.ModifierSets.Count; i++)
+            {
+                if (string.IsNullOrEmpty(modifiers.ModifierSets[i].Name))
+                {
+                    indexesToRemove.Push(i);
+                }
+            }
+            while (indexesToRemove.Count > 0)
+            {
+                var i = indexesToRemove.Pop();
+                modifiers.ModifierSets.RemoveAt(i);
+            }
+
             var list = modifiers.ModifierSets.Select(x => x.Name).ToList();
             modifierList_lst.DataSource = list;
             modifiersCount_txt.Text = $"Modifiers: {modifiers.ModifierSets.Count}";
@@ -158,49 +176,76 @@ namespace ModifierCreator
                 var modifierOutput = new List<string>();
                 mods.Clear();
                 var baseName = modifier.Name.Replace(" - ", "_").Replace(' ', '_').Replace("-", "_").ToLowerInvariant();
-                
+
+                var amountTier1Modifiers = modifier.Modifiers.Where(x => x.Value.Tier1Amount != decimal.Zero).ToList().Count;
+                var amountTier2Modifiers = modifier.Modifiers.Where(x => x.Value.Tier2Amount != decimal.Zero).ToList().Count;
+                var amountTier3Modifiers = modifier.Modifiers.Where(x => x.Value.Tier3Amount != decimal.Zero).ToList().Count;
+                var onlyTier1 = false;
+
                 foreach (var set in buffsAndNerfsList)
                 {
                     var name = string.Format("{0}_{1}_{2}_tier_{3}", modifierPrefix, baseName, set.Item1 ? "buff" : "nerf", set.Item2);
                     var localisedName = string.Format("{0} - Tier {2} {1}", modifier.Name, set.Item1 ? "Buff" : "Nerf", set.Item2);
-                    mods.Add(new BuffOrNerf(modifier.Name, set.Item1, set.Item2, name));
-                    localisations.AppendLine(string.Format(" {0}:0 \"{1}\"", name, localisedName));
-                    modifierList.AppendLine(name);
-                    legendaryBuffList.AppendLine($"remove_country_modifier = {name}");
-                    legendaryNerfList.AppendLine($"remove_country_modifier = {name}");
 
-                    if (set.Item2 == 3)
+                    if (set.Item2 == 1 && amountTier2Modifiers == 0 && amountTier3Modifiers == 0)
                     {
-                        if (set.Item1 == true)
+                        name = string.Format("{0}_{1}_{2}", modifierPrefix, baseName, set.Item1 ? "buff" : "nerf");
+                        localisedName = string.Format("{0} {1}", modifier.Name, set.Item1 ? "Buff" : "Nerf");
+                    }
+                    else if ((set.Item2 == 2 && amountTier2Modifiers == 0) || (set.Item2 == 3 && amountTier3Modifiers == 0))
+                    {
+                        name = String.Empty;
+                        localisedName = String.Empty;
+                        onlyTier1 = true;
+                    }
+
+                    if (!string.IsNullOrEmpty(name))
+                    {
+                        mods.Add(new BuffOrNerf(modifier.Name, set.Item1, set.Item2, name));
+                        localisations.AppendLine(string.Format(" {0}:0 \"{1}\"", name, localisedName));
+                        modifierList.AppendLine(name);
+                        legendaryBuffList.AppendLine($"remove_country_modifier = {name}");
+                        legendaryNerfList.AppendLine($"remove_country_modifier = {name}");
+
+                        if (set.Item2 == 3)
                         {
-                            legendaryBuffAppliedModifiersList.AppendLine("add_country_modifier = {");
-                            legendaryBuffAppliedModifiersList.AppendLine(String.Format("    name = {0}", name));
-                            legendaryBuffAppliedModifiersList.AppendLine("    duration = -1");
-                            legendaryBuffAppliedModifiersList.AppendLine("}");
-                        }
-                        else
-                        {
-                            legendaryNerfAppliedModifiersList.AppendLine("add_country_modifier = {");
-                            legendaryNerfAppliedModifiersList.AppendLine(String.Format("    name = {0}", name));
-                            legendaryNerfAppliedModifiersList.AppendLine("    duration = -1");
-                            legendaryNerfAppliedModifiersList.AppendLine("}");
+                            if (set.Item1 == true)
+                            {
+                                legendaryBuffAppliedModifiersList.AppendLine("add_country_modifier = {");
+                                legendaryBuffAppliedModifiersList.AppendLine(String.Format("    name = {0}", name));
+                                legendaryBuffAppliedModifiersList.AppendLine("    duration = -1");
+                                legendaryBuffAppliedModifiersList.AppendLine("}");
+                            }
+                            else
+                            {
+                                legendaryNerfAppliedModifiersList.AppendLine("add_country_modifier = {");
+                                legendaryNerfAppliedModifiersList.AppendLine(String.Format("    name = {0}", name));
+                                legendaryNerfAppliedModifiersList.AppendLine("    duration = -1");
+                                legendaryNerfAppliedModifiersList.AppendLine("}");
+                            }
                         }
                     }
+
                 }
 
                 foreach (var mod in modifier.Modifiers)
                 {
-                    if (mod.Value.Tier1Amount > 0)
+                    if (mod.Value.Tier1Amount != decimal.Zero && onlyTier1)
+                    {
+                        mods[0].Rows.Add($"{mod.Value.Name} = {Math.Round(mod.Value.Tier1Amount, 4)}");
+                        mods[1].Rows.Add($"{mod.Value.Name} = {Math.Round(-mod.Value.Tier1Amount, 4)}");
+                    }
+                    else
                     {
                         mods[2].Rows.Add($"{mod.Value.Name} = {Math.Round(mod.Value.Tier1Amount, 4)}");
                         mods[3].Rows.Add($"{mod.Value.Name} = {Math.Round(-mod.Value.Tier1Amount, 4)}");
                     }
-                    if (mod.Value.Tier2Amount > 0)
+                    if (mod.Value.Tier2Amount != decimal.Zero)
                     {
                         mods[1].Rows.Add($"{mod.Value.Name} = {Math.Round(mod.Value.Tier2Amount, 4)}");
                         mods[4].Rows.Add($"{mod.Value.Name} = {Math.Round(-mod.Value.Tier2Amount, 4)}");
                     }
-                    if (mod.Value.Tier3Amount > 0)
+                    if (mod.Value.Tier3Amount != decimal.Zero)
                     {
                         mods[0].Rows.Add($"{mod.Value.Name} = {Math.Round(mod.Value.Tier3Amount, 4)}");
                         mods[5].Rows.Add($"{mod.Value.Name} = {Math.Round(-mod.Value.Tier3Amount, 4)}");

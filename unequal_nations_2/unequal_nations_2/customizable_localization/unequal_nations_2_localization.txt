@@ -199,6 +199,7 @@ defined_text = {
 ### Legendary Buff Random Chance
 defined_text = {
 	name = UnequalNations2GetLegendaryBuffRandomChance
+	random = no
 
 	text = {
         localisation_key = unequal_nations_2_localization_random_chance_na
@@ -289,11 +290,18 @@ defined_text = {
 			}
         }
 	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_na
+        trigger = {
+			always = yes
+        }
+	}
 }
 
 ### Legendary Nerf Random Chance
 defined_text = {
 	name = UnequalNations2GetLegendaryNerfRandomChance
+	random = no
 
 	text = {
         localisation_key = unequal_nations_2_localization_random_chance_na
@@ -384,6 +392,12 @@ defined_text = {
 			}
         }
 	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_na
+        trigger = {
+			always = yes
+        }
+	}
 }
 
 ### Legendary Dev Size
@@ -442,6 +456,48 @@ defined_text = {
         localisation_key = unequal_nations_2_localization_reroll_on_monarch_death
         trigger = {
 			has_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+        }
+	}
+}
+
+### Preset Options
+defined_text = {
+	name = UnequalNations2GetGeneralSettings
+
+	text = {
+        localisation_key = unequal_nations_2_localization_preset_default
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_no
+			has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_no
+			has_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_3
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			has_global_flag = unequal_nations_2_option_reroll_each_age
+        }
+	}
+
+	text = {
+        localisation_key = unequal_nations_2_localization_preset_mp_default
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_tier1
+			has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+			has_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_3
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			has_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+        }
+	}
+	
+	text = {
+        localisation_key = unequal_nations_2_localization_preset_custom
+        trigger = {
+			always = yes
         }
 	}
 }

@@ -8470,6 +8470,61 @@ if = {
     }
     random_list = {
         5 = { }
+        20 = {
+            trigger = {
+                OR = {
+                    AND = {
+                        ai = no
+                        NOT = { has_global_flag = unequal_nations_2_option_player_impacted_no }
+                    }
+                    AND = {
+                        ai = yes
+                        NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_no }
+                    }
+                }
+            }
+            add_country_modifier = {
+                name = unequal_nations_2_legendary_buff
+                duration = -1
+            }
+        }
+        20 = {
+            trigger = {
+                OR = {
+                    AND = {
+                        ai = no
+                        NOT = { has_global_flag = unequal_nations_2_option_player_impacted_no }
+                    }
+                    AND = {
+                        ai = yes
+                        NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_no }
+                    }
+                }
+            }
+            add_country_modifier = {
+                name = unequal_nations_2_legendary_nerf
+                duration = -1
+            }
+        }
+    }
+}
+
+# Military - High Command
+if = {
+    limit = {
+        OR = {
+            AND = {
+                ai = no
+                NOT = { has_global_flag = unequal_nations_2_option_player_impacted_no }
+            }
+            AND = {
+                ai = yes
+                NOT = { has_global_flag = unequal_nations_2_option_ai_impacted_no }
+            }
+        }
+    }
+    random_list = {
+        5 = { }
         10 = {
             trigger = {
                 OR = {
@@ -8490,7 +8545,7 @@ if = {
                 }
             }
             add_country_modifier = {
-                name = unequal_nations_2_legendary_buff_tier_3
+                name = unequal_nations_2_military_high_command_buff_tier_3
                 duration = -1
             }
         }
@@ -8514,7 +8569,7 @@ if = {
                 }
             }
             add_country_modifier = {
-                name = unequal_nations_2_legendary_buff_tier_2
+                name = unequal_nations_2_military_high_command_buff_tier_2
                 duration = -1
             }
         }
@@ -8532,7 +8587,7 @@ if = {
                 }
             }
             add_country_modifier = {
-                name = unequal_nations_2_legendary_buff_tier_1
+                name = unequal_nations_2_military_high_command_buff_tier_1
                 duration = -1
             }
         }
@@ -8550,7 +8605,7 @@ if = {
                 }
             }
             add_country_modifier = {
-                name = unequal_nations_2_legendary_nerf_tier_1
+                name = unequal_nations_2_military_high_command_nerf_tier_1
                 duration = -1
             }
         }
@@ -8574,7 +8629,7 @@ if = {
                 }
             }
             add_country_modifier = {
-                name = unequal_nations_2_legendary_nerf_tier_2
+                name = unequal_nations_2_military_high_command_nerf_tier_2
                 duration = -1
             }
         }
@@ -8598,7 +8653,7 @@ if = {
                 }
             }
             add_country_modifier = {
-                name = unequal_nations_2_legendary_nerf_tier_3
+                name = unequal_nations_2_military_high_command_nerf_tier_3
                 duration = -1
             }
         }

@@ -23,12 +23,18 @@ unequal_nations_2_court_heir_buff_tier_1 = {
     heir_chance = 0.1
     monthly_heir_claim_increase = 0.05
     monthly_support_heir_gain = 0.05
+    local_heir_adm = 0.0
+    local_heir_dip = 0.0
+    local_heir_mil = 0.0
 }
 
 unequal_nations_2_court_heir_nerf_tier_1 = {
     heir_chance = -0.1
     monthly_heir_claim_increase = -0.05
     monthly_support_heir_gain = -0.05
+    local_heir_adm = 0.0
+    local_heir_dip = 0.0
+    local_heir_mil = 0.0
 }
 
 unequal_nations_2_court_heir_nerf_tier_2 = {

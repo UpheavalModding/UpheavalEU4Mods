@@ -6,6 +6,7 @@
 ###############################
 unequal_nations_2_religion_fervor_buff_tier_3 = {
     church_power_modifier = 0.3
+    establish_order_cost = -0.3
     harmonization_speed = 0.3
     monthly_fervor_increase = 1.5
     monthly_karma = 1.5
@@ -19,6 +20,7 @@ unequal_nations_2_religion_fervor_buff_tier_3 = {
 
 unequal_nations_2_religion_fervor_buff_tier_2 = {
     church_power_modifier = 0.2
+    establish_order_cost = -0.2
     harmonization_speed = 0.2
     monthly_fervor_increase = 1.0
     monthly_karma = 1.0
@@ -32,6 +34,7 @@ unequal_nations_2_religion_fervor_buff_tier_2 = {
 
 unequal_nations_2_religion_fervor_buff_tier_1 = {
     church_power_modifier = 0.1
+    establish_order_cost = -0.1
     harmonization_speed = 0.1
     monthly_fervor_increase = 0.5
     monthly_karma = 0.5
@@ -45,6 +48,7 @@ unequal_nations_2_religion_fervor_buff_tier_1 = {
 
 unequal_nations_2_religion_fervor_nerf_tier_1 = {
     church_power_modifier = -0.1
+    establish_order_cost = 0.1
     harmonization_speed = -0.1
     monthly_fervor_increase = -0.5
     monthly_karma = -0.5
@@ -58,6 +62,7 @@ unequal_nations_2_religion_fervor_nerf_tier_1 = {
 
 unequal_nations_2_religion_fervor_nerf_tier_2 = {
     church_power_modifier = -0.2
+    establish_order_cost = 0.2
     harmonization_speed = -0.2
     monthly_fervor_increase = -1.0
     monthly_karma = -1.0
@@ -71,6 +76,7 @@ unequal_nations_2_religion_fervor_nerf_tier_2 = {
 
 unequal_nations_2_religion_fervor_nerf_tier_3 = {
     church_power_modifier = -0.3
+    establish_order_cost = 0.3
     harmonization_speed = -0.3
     monthly_fervor_increase = -1.5
     monthly_karma = -1.5

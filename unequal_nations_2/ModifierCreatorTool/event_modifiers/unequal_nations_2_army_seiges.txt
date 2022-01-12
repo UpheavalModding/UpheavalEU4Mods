@@ -24,6 +24,7 @@ unequal_nations_2_army_seiges_buff_tier_1 = {
     loot_amount = 0.1
     raze_power_gain = 0.1
     siege_ability = 0.1
+    siege_blockade_progress = 0.0
 }
 
 unequal_nations_2_army_seiges_nerf_tier_1 = {
@@ -31,6 +32,7 @@ unequal_nations_2_army_seiges_nerf_tier_1 = {
     loot_amount = -0.1
     raze_power_gain = -0.1
     siege_ability = -0.1
+    siege_blockade_progress = 0.0
 }
 
 unequal_nations_2_army_seiges_nerf_tier_2 = {
