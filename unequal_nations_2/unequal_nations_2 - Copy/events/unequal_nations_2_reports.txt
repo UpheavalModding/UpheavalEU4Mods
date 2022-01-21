@@ -1,0 +1,88 @@
+##############################
+# Unequal Nations 2          #
+# Reports                    #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_2_reports
+
+# You're a legendarily GOOD nation Harry!
+country_event = {
+	id = unequal_nations_2_reports.1
+	title = unequal_nations_2_reports.1.title
+	desc = unequal_nations_2_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# You're a legendarily BAD nation Harry!
+country_event = {
+	id = unequal_nations_2_reports.2
+	title = unequal_nations_2_reports.2.title
+	desc = unequal_nations_2_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Confirmation that you re-rolled buffs/nerfs
+country_event = {
+	id = unequal_nations_2_reports.3
+	title = unequal_nations_2_reports.3.title
+	desc = unequal_nations_2_reports.3.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Legendary Buffed Nation Alert Event
+country_event = {
+	id = unequal_nations_2_reports.4
+	title = unequal_nations_2_reports.4.title
+	desc = unequal_nations_2_reports.4.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}
+
+# Legendary Nerfed Nation Alert Event
+country_event = {
+	id = unequal_nations_2_reports.5
+	title = unequal_nations_2_reports.5.title
+	desc = unequal_nations_2_reports.5.desc
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	# OK
+	option = {
+		name = unequal_nations_ok
+	}
+}

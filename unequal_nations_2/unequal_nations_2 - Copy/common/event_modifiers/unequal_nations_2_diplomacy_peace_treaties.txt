@@ -1,0 +1,46 @@
+#################################
+# Unequal Nations 2             #
+# Diplomacy - Peace Treaties    #
+#                               #
+# Written by von_der_borch      #
+#################################
+unequal_nations_2_diplomacy_peace_treaties_buff_tier_3 = {
+    ae_impact = -0.3
+    unjustified_demands = -0.3
+    province_warscore_cost = -0.3
+    stability_cost_to_declare_war = -1.0
+}
+
+unequal_nations_2_diplomacy_peace_treaties_buff_tier_2 = {
+    ae_impact = -0.2
+    unjustified_demands = -0.2
+    province_warscore_cost = -0.2
+}
+
+unequal_nations_2_diplomacy_peace_treaties_buff_tier_1 = {
+    ae_impact = -0.1
+    unjustified_demands = -0.1
+    province_warscore_cost = -0.1
+    stability_cost_to_declare_war = 0.0
+}
+
+unequal_nations_2_diplomacy_peace_treaties_nerf_tier_1 = {
+    ae_impact = 0.1
+    unjustified_demands = 0.1
+    province_warscore_cost = 0.1
+    stability_cost_to_declare_war = 0.0
+}
+
+unequal_nations_2_diplomacy_peace_treaties_nerf_tier_2 = {
+    ae_impact = 0.2
+    unjustified_demands = 0.2
+    province_warscore_cost = 0.2
+}
+
+unequal_nations_2_diplomacy_peace_treaties_nerf_tier_3 = {
+    ae_impact = 0.3
+    unjustified_demands = 0.3
+    province_warscore_cost = 0.3
+    stability_cost_to_declare_war = 1.0
+}
+

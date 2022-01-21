@@ -1,0 +1,103 @@
+##############################
+# Unequal Nations 2          #
+# Decisions                  #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+country_decisions = {
+	unequal_nations_2_change_settings = {
+		major = yes
+		
+		potential = {
+			has_global_flag = unequal_nations_2_initialized
+			has_country_flag = unequal_nations_2_settings_host
+		}
+		allow = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			country_event = { id = unequal_nations_2_options_main_menu.1 }
+		}
+	}
+}
+
+country_decisions = {
+	unequal_nations_2_current_settings_dec = {
+		major = yes
+		
+		potential = {
+			has_global_flag = unequal_nations_2_initialized
+		}
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			custom_tooltip = unequal_nations_2_current_settings
+		}
+	}
+}
+
+country_decisions = {
+	unequal_nations_2_reroll_nations = {
+		major = yes
+		
+		potential = {
+			has_global_flag = unequal_nations_2_initialized
+			has_country_flag = unequal_nations_2_settings_host
+		}
+		allow = {
+			always = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			random_owned_province = {
+				add_province_triggered_modifier = unequal_nations_2_reroll_buffs_and_nerfs
+			}
+
+			country_event = { id = unequal_nations_2_reports.3 }
+		}
+	}
+}
+
+country_decisions = {
+	unequal_nations_2_list_legendary_nations = {
+		major = yes
+		
+		potential = {
+			has_global_flag = unequal_nations_2_initialized
+		}
+		allow = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		effect = {
+			every_country = {
+				limit = {
+					has_country_modifier = unequal_nations_2_legendary_buff
+				}
+				country_event = { id = unequal_nations_2_reports.1 }
+			}
+			every_country = {
+				limit = {
+					has_country_modifier = unequal_nations_2_legendary_nerf
+				}
+				country_event = { id = unequal_nations_2_reports.2 }
+			}
+		}
+	}
+}

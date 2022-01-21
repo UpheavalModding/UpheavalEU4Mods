@@ -1,0 +1,72 @@
+###############################
+# Unequal Nations 2           #
+# Government - Legitimacy     #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_government_legitimacy_buff_tier_3 = {
+    legitimacy = 1.0
+    imperial_mandate = 0.03
+    horde_unity = 1.0
+    devotion = 1.0
+    meritocracy = 1.0
+    republican_tradition = 1.0
+    yearly_tribal_allegiance = 1.0
+    all_estate_loyalty_equilibrium = 0.15
+}
+
+unequal_nations_2_government_legitimacy_buff_tier_2 = {
+    legitimacy = 0.66
+    imperial_mandate = 0.02
+    horde_unity = 0.66
+    devotion = 0.66
+    meritocracy = 0.66
+    republican_tradition = 0.66
+    yearly_tribal_allegiance = 0.66
+    all_estate_loyalty_equilibrium = 0.1
+}
+
+unequal_nations_2_government_legitimacy_buff_tier_1 = {
+    legitimacy = 0.33
+    imperial_mandate = 0.01
+    horde_unity = 0.33
+    devotion = 0.33
+    meritocracy = 0.33
+    republican_tradition = 0.33
+    yearly_tribal_allegiance = 0.33
+    all_estate_loyalty_equilibrium = 0.05
+}
+
+unequal_nations_2_government_legitimacy_nerf_tier_1 = {
+    legitimacy = -0.33
+    imperial_mandate = -0.01
+    horde_unity = -0.33
+    devotion = -0.33
+    meritocracy = -0.33
+    republican_tradition = -0.33
+    yearly_tribal_allegiance = -0.33
+    all_estate_loyalty_equilibrium = -0.05
+}
+
+unequal_nations_2_government_legitimacy_nerf_tier_2 = {
+    legitimacy = -0.66
+    imperial_mandate = -0.02
+    horde_unity = -0.66
+    devotion = -0.66
+    meritocracy = -0.66
+    republican_tradition = -0.66
+    yearly_tribal_allegiance = -0.66
+    all_estate_loyalty_equilibrium = -0.1
+}
+
+unequal_nations_2_government_legitimacy_nerf_tier_3 = {
+    legitimacy = -1.0
+    imperial_mandate = -0.03
+    horde_unity = -1.0
+    devotion = -1.0
+    meritocracy = -1.0
+    republican_tradition = -1.0
+    yearly_tribal_allegiance = -1.0
+    all_estate_loyalty_equilibrium = -0.15
+}
+

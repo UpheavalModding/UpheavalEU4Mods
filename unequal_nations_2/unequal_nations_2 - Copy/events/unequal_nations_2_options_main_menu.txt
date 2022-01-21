@@ -1,0 +1,65 @@
+##############################
+# Unequal Nations 2          #
+# Options - Main Menu        #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_2_options_main_menu
+
+# Main Menu
+country_event = {
+	id = unequal_nations_2_options_main_menu.1
+	title = unequal_nations_2_options_main_menu.1.title
+	desc = unequal_nations_2_current_settings
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Open Sub-menu to choose presets
+	option = {
+		name = unequal_nations_2_options_main_menu.1.open_presets
+		country_event = { id = unequal_nations_2_options_presets.1 }
+	}
+
+	# Open Sub-menu to choose what countries can be impacted by buffs/tiers, and what tiers
+	option = {
+		name = unequal_nations_2_options_main_menu.1.nation_impact
+		country_event = { id = unequal_nations_2_options_nation_impact.1 }
+	}
+
+	# Open Sub-menu to choose when to reroll buffs/nerfs
+	option = {
+		name = unequal_nations_2_options_main_menu.1.reroll_options
+		country_event = { id = unequal_nations_2_options_reroll_options.1 }
+	}
+
+	# Open Sub-menu to choose what rules there are for Legendary Buff Countries
+	option = {
+		name = unequal_nations_2_options_main_menu.1.legendary_buff_settings
+		country_event = { id = unequal_nations_2_options_legendary_buff_settings.1 }
+	}
+
+	# Open Sub-menu to choose what rules there are for Legendary Nerf Countries
+	option = {
+		name = unequal_nations_2_options_main_menu.1.legendary_nerf_settings
+		country_event = { id = unequal_nations_2_options_legendary_nerf_settings.1 }
+	}
+
+	# Open Sub-menu to choose what rules there are for Legendary Countries Generally
+	option = {
+		name = unequal_nations_2_options_main_menu.1.legendary_general_settings
+		country_event = { id = unequal_nations_2_options_legendary_general_settings.1 }
+	}
+
+	# Confirm settings
+	option = {
+		name = unequal_nations_2_options_main_menu.1.confirm_settings
+		highlight = yes
+		set_global_flag = unequal_nations_2_initialized
+
+		country_event = { id = unequal_nations_2_randomizer_initialization.1 }
+	}
+}
+

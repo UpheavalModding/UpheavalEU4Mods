@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Light Ships          #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_light_ships_buff_tier_3 = {
+    light_ship_cost = -0.3
+    light_ship_power = 0.3
+}
+
+unequal_nations_2_navy_light_ships_buff_tier_2 = {
+    light_ship_cost = -0.2
+    light_ship_power = 0.2
+}
+
+unequal_nations_2_navy_light_ships_buff_tier_1 = {
+    light_ship_cost = -0.1
+    light_ship_power = 0.1
+}
+
+unequal_nations_2_navy_light_ships_nerf_tier_1 = {
+    light_ship_cost = 0.1
+    light_ship_power = -0.1
+}
+
+unequal_nations_2_navy_light_ships_nerf_tier_2 = {
+    light_ship_cost = 0.2
+    light_ship_power = -0.2
+}
+
+unequal_nations_2_navy_light_ships_nerf_tier_3 = {
+    light_ship_cost = 0.3
+    light_ship_power = -0.3
+}
+

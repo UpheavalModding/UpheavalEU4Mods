@@ -1,0 +1,42 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Construction         #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_construction_buff_tier_3 = {
+    ship_durability = 0.3
+    global_ship_recruit_speed = -0.3
+    global_ship_repair = 0.3
+}
+
+unequal_nations_2_navy_construction_buff_tier_2 = {
+    ship_durability = 0.2
+    global_ship_recruit_speed = -0.2
+    global_ship_repair = 0.2
+}
+
+unequal_nations_2_navy_construction_buff_tier_1 = {
+    ship_durability = 0.1
+    global_ship_recruit_speed = -0.1
+    global_ship_repair = 0.1
+}
+
+unequal_nations_2_navy_construction_nerf_tier_1 = {
+    ship_durability = -0.1
+    global_ship_recruit_speed = 0.1
+    global_ship_repair = -0.1
+}
+
+unequal_nations_2_navy_construction_nerf_tier_2 = {
+    ship_durability = -0.2
+    global_ship_recruit_speed = 0.2
+    global_ship_repair = -0.2
+}
+
+unequal_nations_2_navy_construction_nerf_tier_3 = {
+    ship_durability = -0.3
+    global_ship_recruit_speed = 0.3
+    global_ship_repair = -0.3
+}
+

@@ -1,0 +1,60 @@
+###############################
+# Unequal Nations 2           #
+# Religion - Conversion       #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_religion_conversion_buff_tier_3 = {
+    missionary_maintenance_cost = -0.3
+    global_missionary_strength = 1.5
+    global_religious_conversion_resistance = 0.15
+    warscore_cost_vs_other_religion = -0.15
+    enforce_religion_cost = -0.3
+    missionaries = 2.0
+}
+
+unequal_nations_2_religion_conversion_buff_tier_2 = {
+    missionary_maintenance_cost = -0.2
+    global_missionary_strength = 1.0
+    global_religious_conversion_resistance = 0.1
+    warscore_cost_vs_other_religion = -0.1
+    enforce_religion_cost = -0.2
+    missionaries = 1.0
+}
+
+unequal_nations_2_religion_conversion_buff_tier_1 = {
+    missionary_maintenance_cost = -0.1
+    global_missionary_strength = 0.5
+    global_religious_conversion_resistance = 0.05
+    warscore_cost_vs_other_religion = -0.05
+    enforce_religion_cost = -0.1
+    missionaries = 0.0
+}
+
+unequal_nations_2_religion_conversion_nerf_tier_1 = {
+    missionary_maintenance_cost = 0.1
+    global_missionary_strength = -0.5
+    global_religious_conversion_resistance = -0.05
+    warscore_cost_vs_other_religion = 0.05
+    enforce_religion_cost = 0.1
+    missionaries = 0.0
+}
+
+unequal_nations_2_religion_conversion_nerf_tier_2 = {
+    missionary_maintenance_cost = 0.2
+    global_missionary_strength = -1.0
+    global_religious_conversion_resistance = -0.1
+    warscore_cost_vs_other_religion = 0.1
+    enforce_religion_cost = 0.2
+    missionaries = -1.0
+}
+
+unequal_nations_2_religion_conversion_nerf_tier_3 = {
+    missionary_maintenance_cost = 0.3
+    global_missionary_strength = -1.5
+    global_religious_conversion_resistance = -0.15
+    warscore_cost_vs_other_religion = 0.15
+    enforce_religion_cost = 0.3
+    missionaries = -2.0
+}
+

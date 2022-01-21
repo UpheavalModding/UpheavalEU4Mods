@@ -1,0 +1,104 @@
+##############################
+# Unequal Nations 2          #
+# Options - Reroll Options   #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_2_options_reroll_options
+
+# Presets
+country_event = {
+	id = unequal_nations_2_options_reroll_options.1
+	title = unequal_nations_2_options_reroll_options.1.title
+	desc = unequal_nations_2_current_settings
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_2_back
+		highlight = yes
+		country_event = { id = unequal_nations_2_menu_system.2 }
+	}
+
+	### Randomize
+	option = {
+		name = unequal_nations_2_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_reroll_never
+			clr_global_flag = unequal_nations_2_option_reroll_each_age
+			clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_reroll_never
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_reroll_each_age
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+				}
+			}
+			country_event = { id = unequal_nations_2_menu_system.5 }
+		}
+	}
+
+    ### Reroll - Never
+	option = {
+		name = unequal_nations_2_options_reroll_options.1.never
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_reroll_never }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_reroll_never
+			clr_global_flag = unequal_nations_2_option_reroll_each_age
+			clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+
+			set_global_flag = unequal_nations_2_option_reroll_never
+			country_event = { id = unequal_nations_2_menu_system.5 }
+		}
+	}
+
+    ### Reroll - Each Age
+	option = {
+		name = unequal_nations_2_options_reroll_options.1.each_age
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_reroll_each_age }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_reroll_never
+			clr_global_flag = unequal_nations_2_option_reroll_each_age
+			clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+
+			set_global_flag = unequal_nations_2_option_reroll_each_age
+			country_event = { id = unequal_nations_2_menu_system.5 }
+		}
+	}
+
+    ### Reroll - On Monarch Death
+	option = {
+		name = unequal_nations_2_options_reroll_options.1.on_monarch_death
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_reroll_on_monarch_death }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_reroll_never
+			clr_global_flag = unequal_nations_2_option_reroll_each_age
+			clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+
+			set_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+			country_event = { id = unequal_nations_2_menu_system.5 }
+		}
+	}
+}
+

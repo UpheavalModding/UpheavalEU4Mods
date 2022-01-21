@@ -1,0 +1,54 @@
+###############################
+# Unequal Nations 2           #
+# Diplomacy - Vassals         #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_diplomacy_vassals_buff_tier_3 = {
+    reduced_liberty_desire = -0.15
+    liberty_desire_from_subject_development = -0.15
+    diplomatic_annexation_cost = -0.15
+    vassal_income = 0.15
+    vassal_forcelimit_bonus = 0.15
+}
+
+unequal_nations_2_diplomacy_vassals_buff_tier_2 = {
+    reduced_liberty_desire = -0.1
+    liberty_desire_from_subject_development = -0.1
+    diplomatic_annexation_cost = -0.1
+    vassal_income = 0.1
+    vassal_forcelimit_bonus = 0.1
+}
+
+unequal_nations_2_diplomacy_vassals_buff_tier_1 = {
+    reduced_liberty_desire = -0.05
+    liberty_desire_from_subject_development = -0.05
+    diplomatic_annexation_cost = -0.05
+    vassal_income = 0.05
+    vassal_forcelimit_bonus = 0.05
+}
+
+unequal_nations_2_diplomacy_vassals_nerf_tier_1 = {
+    reduced_liberty_desire = 0.05
+    liberty_desire_from_subject_development = 0.05
+    diplomatic_annexation_cost = 0.05
+    vassal_income = -0.05
+    vassal_forcelimit_bonus = -0.05
+}
+
+unequal_nations_2_diplomacy_vassals_nerf_tier_2 = {
+    reduced_liberty_desire = 0.1
+    liberty_desire_from_subject_development = 0.1
+    diplomatic_annexation_cost = 0.1
+    vassal_income = -0.1
+    vassal_forcelimit_bonus = -0.1
+}
+
+unequal_nations_2_diplomacy_vassals_nerf_tier_3 = {
+    reduced_liberty_desire = 0.15
+    liberty_desire_from_subject_development = 0.15
+    diplomatic_annexation_cost = 0.15
+    vassal_income = -0.15
+    vassal_forcelimit_bonus = -0.15
+}
+

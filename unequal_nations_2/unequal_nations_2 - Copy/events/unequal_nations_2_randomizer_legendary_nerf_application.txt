@@ -1,0 +1,609 @@
+###############################
+# Unequal Nations 2           #
+# Randomizer - Legendary Nerf #
+#                             #
+# Written by von_der_borch    #
+###############################
+
+namespace = unequal_nations_2_randomizer_legendary_nerf_application
+
+# Apply Legendary Buff to Nations
+country_event = {
+	id = unequal_nations_2_randomizer_legendary_nerf_application.1
+	title = unequal_nations_2_randomizer_legendary_nerf_application.1.title
+	desc = unequal_nations_2_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_country = {
+			limit = {
+				has_country_flag = unequal_nations_2_legendary_nerf_nation
+			}
+			
+			clr_country_flag = unequal_nations_2_legendary_nerf_nation
+			set_country_flag = unequal_nations_2_had_legendary_nerf
+
+			remove_country_modifier = unequal_nations_2_army_high_command_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_high_command_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_high_command_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_high_command_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_high_command_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_high_command_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_infantry_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_infantry_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_infantry_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_infantry_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_infantry_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_infantry_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_cavalry_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_cavalry_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_cavalry_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_cavalry_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_cavalry_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_cavalry_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_artillery_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_artillery_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_artillery_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_artillery_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_artillery_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_artillery_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_mercenaries_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_mercenaries_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_mercenaries_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_mercenaries_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_mercenaries_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_mercenaries_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_logistics_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_logistics_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_logistics_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_logistics_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_logistics_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_logistics_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_quantity_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_quantity_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_quantity_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_quantity_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_quantity_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_quantity_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_quality_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_quality_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_quality_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_quality_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_quality_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_quality_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_training_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_training_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_training_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_training_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_training_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_training_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_defenses_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_defenses_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_defenses_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_defenses_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_defenses_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_defenses_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_army_seiges_buff_tier_3
+			remove_country_modifier = unequal_nations_2_army_seiges_buff_tier_2
+			remove_country_modifier = unequal_nations_2_army_seiges_buff_tier_1
+			remove_country_modifier = unequal_nations_2_army_seiges_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_army_seiges_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_army_seiges_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_high_command_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_high_command_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_high_command_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_high_command_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_high_command_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_high_command_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_transports_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_transports_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_transports_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_transports_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_transports_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_transports_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_light_ships_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_light_ships_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_light_ships_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_light_ships_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_light_ships_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_light_ships_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_galleys_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_galleys_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_galleys_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_galleys_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_galleys_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_galleys_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_heavy_ships_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_heavy_ships_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_heavy_ships_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_heavy_ships_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_heavy_ships_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_heavy_ships_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_logistics_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_logistics_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_logistics_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_logistics_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_logistics_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_logistics_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_training_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_training_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_training_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_training_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_training_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_training_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_construction_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_construction_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_construction_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_construction_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_construction_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_construction_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_blockades_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_blockades_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_blockades_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_blockades_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_blockades_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_blockades_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_navy_flagships_buff_tier_3
+			remove_country_modifier = unequal_nations_2_navy_flagships_buff_tier_2
+			remove_country_modifier = unequal_nations_2_navy_flagships_buff_tier_1
+			remove_country_modifier = unequal_nations_2_navy_flagships_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_navy_flagships_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_navy_flagships_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_expansion_war_buff_tier_3
+			remove_country_modifier = unequal_nations_2_expansion_war_buff_tier_2
+			remove_country_modifier = unequal_nations_2_expansion_war_buff_tier_1
+			remove_country_modifier = unequal_nations_2_expansion_war_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_expansion_war_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_expansion_war_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_expansion_peace_buff_tier_3
+			remove_country_modifier = unequal_nations_2_expansion_peace_buff_tier_2
+			remove_country_modifier = unequal_nations_2_expansion_peace_buff_tier_1
+			remove_country_modifier = unequal_nations_2_expansion_peace_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_expansion_peace_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_expansion_peace_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_diplomats_buff_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_diplomats_buff_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_diplomats_buff_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_diplomats_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_diplomats_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_diplomats_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_buff_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_buff_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_buff_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_peace_treaties_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_economy_taxes_buff_tier_3
+			remove_country_modifier = unequal_nations_2_economy_taxes_buff_tier_2
+			remove_country_modifier = unequal_nations_2_economy_taxes_buff_tier_1
+			remove_country_modifier = unequal_nations_2_economy_taxes_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_economy_taxes_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_economy_taxes_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_economy_production_buff_tier_3
+			remove_country_modifier = unequal_nations_2_economy_production_buff_tier_2
+			remove_country_modifier = unequal_nations_2_economy_production_buff_tier_1
+			remove_country_modifier = unequal_nations_2_economy_production_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_economy_production_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_economy_production_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_buff_tier_3
+			remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_buff_tier_2
+			remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_buff_tier_1
+			remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_economy_inflation_and_loans_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_buff_tier_3
+			remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_buff_tier_2
+			remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_buff_tier_1
+			remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_economy_prosperity_and_development_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_economy_construction_buff_tier_3
+			remove_country_modifier = unequal_nations_2_economy_construction_buff_tier_2
+			remove_country_modifier = unequal_nations_2_economy_construction_buff_tier_1
+			remove_country_modifier = unequal_nations_2_economy_construction_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_economy_construction_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_economy_construction_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_technology_research_buff_tier_3
+			remove_country_modifier = unequal_nations_2_technology_research_buff_tier_2
+			remove_country_modifier = unequal_nations_2_technology_research_buff_tier_1
+			remove_country_modifier = unequal_nations_2_technology_research_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_technology_research_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_technology_research_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_buff_tier_3
+			remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_buff_tier_2
+			remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_buff_tier_1
+			remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_technology_ideas_and_policies_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_technology_institution_buff_tier_3
+			remove_country_modifier = unequal_nations_2_technology_institution_buff_tier_2
+			remove_country_modifier = unequal_nations_2_technology_institution_buff_tier_1
+			remove_country_modifier = unequal_nations_2_technology_institution_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_technology_institution_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_technology_institution_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_court_advisors_buff_tier_3
+			remove_country_modifier = unequal_nations_2_court_advisors_buff_tier_2
+			remove_country_modifier = unequal_nations_2_court_advisors_buff_tier_1
+			remove_country_modifier = unequal_nations_2_court_advisors_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_court_advisors_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_court_advisors_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_court_heir_buff_tier_3
+			remove_country_modifier = unequal_nations_2_court_heir_buff_tier_2
+			remove_country_modifier = unequal_nations_2_court_heir_buff_tier_1
+			remove_country_modifier = unequal_nations_2_court_heir_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_court_heir_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_court_heir_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_court_ruler_buff_tier_3
+			remove_country_modifier = unequal_nations_2_court_ruler_buff_tier_2
+			remove_country_modifier = unequal_nations_2_court_ruler_buff_tier_1
+			remove_country_modifier = unequal_nations_2_court_ruler_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_court_ruler_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_court_ruler_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_court_prestige_buff_tier_3
+			remove_country_modifier = unequal_nations_2_court_prestige_buff_tier_2
+			remove_country_modifier = unequal_nations_2_court_prestige_buff_tier_1
+			remove_country_modifier = unequal_nations_2_court_prestige_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_court_prestige_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_court_prestige_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_government_reform_buff_tier_3
+			remove_country_modifier = unequal_nations_2_government_reform_buff_tier_2
+			remove_country_modifier = unequal_nations_2_government_reform_buff_tier_1
+			remove_country_modifier = unequal_nations_2_government_reform_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_government_reform_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_government_reform_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_government_cohesion_buff_tier_3
+			remove_country_modifier = unequal_nations_2_government_cohesion_buff_tier_2
+			remove_country_modifier = unequal_nations_2_government_cohesion_buff_tier_1
+			remove_country_modifier = unequal_nations_2_government_cohesion_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_government_cohesion_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_government_cohesion_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_government_legitimacy_buff_tier_3
+			remove_country_modifier = unequal_nations_2_government_legitimacy_buff_tier_2
+			remove_country_modifier = unequal_nations_2_government_legitimacy_buff_tier_1
+			remove_country_modifier = unequal_nations_2_government_legitimacy_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_government_legitimacy_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_government_legitimacy_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_hre_buff_tier_3
+			remove_country_modifier = unequal_nations_2_hre_buff_tier_2
+			remove_country_modifier = unequal_nations_2_hre_buff_tier_1
+			remove_country_modifier = unequal_nations_2_hre_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_hre_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_hre_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_culture_buff_tier_3
+			remove_country_modifier = unequal_nations_2_culture_buff_tier_2
+			remove_country_modifier = unequal_nations_2_culture_buff_tier_1
+			remove_country_modifier = unequal_nations_2_culture_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_culture_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_culture_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_stability_autonomy_buff_tier_3
+			remove_country_modifier = unequal_nations_2_stability_autonomy_buff_tier_2
+			remove_country_modifier = unequal_nations_2_stability_autonomy_buff_tier_1
+			remove_country_modifier = unequal_nations_2_stability_autonomy_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_stability_autonomy_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_stability_autonomy_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_buff_tier_3
+			remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_buff_tier_2
+			remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_buff_tier_1
+			remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_stability_unrest_and_rebels_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_vassals_buff_tier_3
+			remove_country_modifier = unequal_nations_2_diplomacy_vassals_buff_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_vassals_buff_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_vassals_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_diplomacy_vassals_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_diplomacy_vassals_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_espionage_buff_tier_3
+			remove_country_modifier = unequal_nations_2_espionage_buff_tier_2
+			remove_country_modifier = unequal_nations_2_espionage_buff_tier_1
+			remove_country_modifier = unequal_nations_2_espionage_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_espionage_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_espionage_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_religion_conversion_buff_tier_3
+			remove_country_modifier = unequal_nations_2_religion_conversion_buff_tier_2
+			remove_country_modifier = unequal_nations_2_religion_conversion_buff_tier_1
+			remove_country_modifier = unequal_nations_2_religion_conversion_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_religion_conversion_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_religion_conversion_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_religion_tolerance_buff_tier_3
+			remove_country_modifier = unequal_nations_2_religion_tolerance_buff_tier_2
+			remove_country_modifier = unequal_nations_2_religion_tolerance_buff_tier_1
+			remove_country_modifier = unequal_nations_2_religion_tolerance_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_religion_tolerance_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_religion_tolerance_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_religion_fervor_buff_tier_3
+			remove_country_modifier = unequal_nations_2_religion_fervor_buff_tier_2
+			remove_country_modifier = unequal_nations_2_religion_fervor_buff_tier_1
+			remove_country_modifier = unequal_nations_2_religion_fervor_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_religion_fervor_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_religion_fervor_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_colonisation_native_relations_buff_tier_3
+			remove_country_modifier = unequal_nations_2_colonisation_native_relations_buff_tier_2
+			remove_country_modifier = unequal_nations_2_colonisation_native_relations_buff_tier_1
+			remove_country_modifier = unequal_nations_2_colonisation_native_relations_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_colonisation_native_relations_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_colonisation_native_relations_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_colonisation_expansion_buff_tier_3
+			remove_country_modifier = unequal_nations_2_colonisation_expansion_buff_tier_2
+			remove_country_modifier = unequal_nations_2_colonisation_expansion_buff_tier_1
+			remove_country_modifier = unequal_nations_2_colonisation_expansion_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_colonisation_expansion_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_colonisation_expansion_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_colonists_income_buff_tier_3
+			remove_country_modifier = unequal_nations_2_colonists_income_buff_tier_2
+			remove_country_modifier = unequal_nations_2_colonists_income_buff_tier_1
+			remove_country_modifier = unequal_nations_2_colonists_income_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_colonists_income_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_colonists_income_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_trade_merchants_buff_tier_3
+			remove_country_modifier = unequal_nations_2_trade_merchants_buff_tier_2
+			remove_country_modifier = unequal_nations_2_trade_merchants_buff_tier_1
+			remove_country_modifier = unequal_nations_2_trade_merchants_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_trade_merchants_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_trade_merchants_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_trade_trade_routes_buff_tier_3
+			remove_country_modifier = unequal_nations_2_trade_trade_routes_buff_tier_2
+			remove_country_modifier = unequal_nations_2_trade_trade_routes_buff_tier_1
+			remove_country_modifier = unequal_nations_2_trade_trade_routes_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_trade_trade_routes_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_trade_trade_routes_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_trade_ships_buff_tier_3
+			remove_country_modifier = unequal_nations_2_trade_ships_buff_tier_2
+			remove_country_modifier = unequal_nations_2_trade_ships_buff_tier_1
+			remove_country_modifier = unequal_nations_2_trade_ships_nerf_tier_1
+			remove_country_modifier = unequal_nations_2_trade_ships_nerf_tier_2
+			remove_country_modifier = unequal_nations_2_trade_ships_nerf_tier_3
+			remove_country_modifier = unequal_nations_2_legendary_buff
+			remove_country_modifier = unequal_nations_2_legendary_nerf
+
+			add_country_modifier = {
+				name = unequal_nations_2_army_high_command_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_infantry_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_cavalry_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_artillery_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_mercenaries_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_logistics_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_quantity_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_quality_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_training_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_defenses_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_army_seiges_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_high_command_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_transports_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_light_ships_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_galleys_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_heavy_ships_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_logistics_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_training_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_construction_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_blockades_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_navy_flagships_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_expansion_war_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_expansion_peace_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_diplomacy_diplomats_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_diplomacy_peace_treaties_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_economy_taxes_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_economy_production_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_economy_inflation_and_loans_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_economy_prosperity_and_development_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_economy_construction_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_technology_research_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_technology_ideas_and_policies_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_technology_institution_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_court_advisors_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_court_heir_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_court_ruler_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_court_prestige_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_government_reform_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_government_cohesion_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_government_legitimacy_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_hre_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_culture_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_stability_autonomy_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_stability_unrest_and_rebels_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_diplomacy_vassals_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_espionage_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_religion_conversion_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_religion_tolerance_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_religion_fervor_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_colonisation_native_relations_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_colonisation_expansion_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_colonists_income_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_trade_merchants_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_trade_trade_routes_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_trade_ships_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_military_high_command_nerf_tier_3
+				duration = -1
+			}
+			add_country_modifier = {
+				name = unequal_nations_2_legendary_nerf
+				duration = -1
+			}
+
+			country_event = { id = unequal_nations_2_reports.5 }
+		}
+	}
+
+	# OK
+	option = {
+		name = unequal_nations_2_ok
+	}
+}

@@ -1,0 +1,58 @@
+###############################
+# Unequal Nations 2           #
+# Navy - High Command         #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_high_command_buff_tier_3 = {
+    navy_tradition = 1.5
+    naval_tradition_from_battle = 0.3
+    prestige_from_naval = 0.3
+    leader_naval_fire = 1.0
+    leader_naval_manuever = 1.0
+    leader_naval_shock = 1.0
+    own_coast_naval_combat_bonus = 1.0
+}
+
+unequal_nations_2_navy_high_command_buff_tier_2 = {
+    navy_tradition = 1.0
+    naval_tradition_from_battle = 0.2
+    prestige_from_naval = 0.2
+}
+
+unequal_nations_2_navy_high_command_buff_tier_1 = {
+    navy_tradition = 0.5
+    naval_tradition_from_battle = 0.1
+    prestige_from_naval = 0.1
+    leader_naval_fire = 0.0
+    leader_naval_manuever = 0.0
+    leader_naval_shock = 0.0
+    own_coast_naval_combat_bonus = 0.0
+}
+
+unequal_nations_2_navy_high_command_nerf_tier_1 = {
+    navy_tradition = -0.5
+    naval_tradition_from_battle = -0.1
+    prestige_from_naval = -0.1
+    leader_naval_fire = 0.0
+    leader_naval_manuever = 0.0
+    leader_naval_shock = 0.0
+    own_coast_naval_combat_bonus = 0.0
+}
+
+unequal_nations_2_navy_high_command_nerf_tier_2 = {
+    navy_tradition = -1.0
+    naval_tradition_from_battle = -0.2
+    prestige_from_naval = -0.2
+}
+
+unequal_nations_2_navy_high_command_nerf_tier_3 = {
+    navy_tradition = -1.5
+    naval_tradition_from_battle = -0.3
+    prestige_from_naval = -0.3
+    leader_naval_fire = -1.0
+    leader_naval_manuever = -1.0
+    leader_naval_shock = -1.0
+    own_coast_naval_combat_bonus = -1.0
+}
+

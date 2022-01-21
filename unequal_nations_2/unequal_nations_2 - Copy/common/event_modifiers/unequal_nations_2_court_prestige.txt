@@ -1,0 +1,42 @@
+###############################
+# Unequal Nations 2           #
+# Court - Prestige            #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_court_prestige_buff_tier_3 = {
+    monthly_splendor = 3.0
+    prestige = 1.0
+    yearly_corruption = -0.3
+}
+
+unequal_nations_2_court_prestige_buff_tier_2 = {
+    monthly_splendor = 2.0
+    prestige = 0.66
+    yearly_corruption = -0.2
+}
+
+unequal_nations_2_court_prestige_buff_tier_1 = {
+    monthly_splendor = 1.0
+    prestige = 0.33
+    yearly_corruption = -0.1
+}
+
+unequal_nations_2_court_prestige_nerf_tier_1 = {
+    monthly_splendor = -1.0
+    prestige = -0.33
+    yearly_corruption = 0.1
+}
+
+unequal_nations_2_court_prestige_nerf_tier_2 = {
+    monthly_splendor = -2.0
+    prestige = -0.66
+    yearly_corruption = 0.2
+}
+
+unequal_nations_2_court_prestige_nerf_tier_3 = {
+    monthly_splendor = -3.0
+    prestige = -1.0
+    yearly_corruption = 0.3
+}
+

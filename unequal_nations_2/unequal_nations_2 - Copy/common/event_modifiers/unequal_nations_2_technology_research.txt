@@ -1,0 +1,42 @@
+###############################
+# Unequal Nations 2           #
+# Technology - Research       #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_technology_research_buff_tier_3 = {
+    native_advancement_cost = -0.15
+    innovativeness_gain = 0.15
+    technology_cost = -0.15
+}
+
+unequal_nations_2_technology_research_buff_tier_2 = {
+    native_advancement_cost = -0.1
+    innovativeness_gain = 0.1
+    technology_cost = -0.1
+}
+
+unequal_nations_2_technology_research_buff_tier_1 = {
+    native_advancement_cost = -0.05
+    innovativeness_gain = 0.05
+    technology_cost = -0.05
+}
+
+unequal_nations_2_technology_research_nerf_tier_1 = {
+    native_advancement_cost = 0.05
+    innovativeness_gain = -0.05
+    technology_cost = 0.05
+}
+
+unequal_nations_2_technology_research_nerf_tier_2 = {
+    native_advancement_cost = 0.1
+    innovativeness_gain = -0.1
+    technology_cost = 0.1
+}
+
+unequal_nations_2_technology_research_nerf_tier_3 = {
+    native_advancement_cost = 0.15
+    innovativeness_gain = -0.15
+    technology_cost = 0.15
+}
+

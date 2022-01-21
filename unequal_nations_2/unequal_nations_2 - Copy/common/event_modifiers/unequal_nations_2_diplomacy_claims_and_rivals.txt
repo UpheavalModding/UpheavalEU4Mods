@@ -1,0 +1,42 @@
+####################################
+# Unequal Nations 2                #
+# Diplomacy - Claims and Rivals    #
+#                                  #
+# Written by von_der_borch         #
+####################################
+unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_3 = {
+    claim_duration = 0.3
+    fabricate_claims_cost = -0.3
+    rival_change_cost = -0.3
+}
+
+unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_2 = {
+    claim_duration = 0.2
+    fabricate_claims_cost = -0.2
+    rival_change_cost = -0.2
+}
+
+unequal_nations_2_diplomacy_claims_and_rivals_buff_tier_1 = {
+    claim_duration = 0.1
+    fabricate_claims_cost = -0.1
+    rival_change_cost = -0.1
+}
+
+unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_1 = {
+    claim_duration = -0.1
+    fabricate_claims_cost = 0.1
+    rival_change_cost = 0.1
+}
+
+unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_2 = {
+    claim_duration = -0.2
+    fabricate_claims_cost = 0.2
+    rival_change_cost = 0.2
+}
+
+unequal_nations_2_diplomacy_claims_and_rivals_nerf_tier_3 = {
+    claim_duration = -0.3
+    fabricate_claims_cost = 0.3
+    rival_change_cost = 0.3
+}
+

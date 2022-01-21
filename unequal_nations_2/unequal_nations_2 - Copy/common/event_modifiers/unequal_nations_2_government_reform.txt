@@ -1,0 +1,54 @@
+###############################
+# Unequal Nations 2           #
+# Government - Reform         #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_government_reform_buff_tier_3 = {
+    expand_administration_cost = -0.3
+    governing_capacity_modifier = 0.3
+    state_governing_cost = -0.15
+    trade_company_governing_cost = -0.15
+    monthly_reform_progress = 0.3
+}
+
+unequal_nations_2_government_reform_buff_tier_2 = {
+    expand_administration_cost = -0.2
+    governing_capacity_modifier = 0.2
+    state_governing_cost = -0.1
+    trade_company_governing_cost = -0.1
+    monthly_reform_progress = 0.2
+}
+
+unequal_nations_2_government_reform_buff_tier_1 = {
+    expand_administration_cost = -0.1
+    governing_capacity_modifier = 0.1
+    state_governing_cost = -0.05
+    trade_company_governing_cost = -0.05
+    monthly_reform_progress = 0.1
+}
+
+unequal_nations_2_government_reform_nerf_tier_1 = {
+    expand_administration_cost = 0.1
+    governing_capacity_modifier = -0.1
+    state_governing_cost = 0.05
+    trade_company_governing_cost = 0.05
+    monthly_reform_progress = -0.1
+}
+
+unequal_nations_2_government_reform_nerf_tier_2 = {
+    expand_administration_cost = 0.2
+    governing_capacity_modifier = -0.2
+    state_governing_cost = 0.1
+    trade_company_governing_cost = 0.1
+    monthly_reform_progress = -0.2
+}
+
+unequal_nations_2_government_reform_nerf_tier_3 = {
+    expand_administration_cost = 0.3
+    governing_capacity_modifier = -0.3
+    state_governing_cost = 0.15
+    trade_company_governing_cost = 0.15
+    monthly_reform_progress = -0.3
+}
+

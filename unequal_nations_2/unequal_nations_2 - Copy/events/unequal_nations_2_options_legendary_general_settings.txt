@@ -1,0 +1,264 @@
+########################################
+# Unequal Nations 2                    #
+# Options - Legendary General Settings #
+#                                      #
+# Written by von_der_borch             #
+########################################
+
+namespace = unequal_nations_2_options_legendary_general_settings
+
+# Presets
+country_event = {
+	id = unequal_nations_2_options_legendary_general_settings.1
+	title = unequal_nations_2_options_legendary_general_settings.1.title
+	desc = unequal_nations_2_current_settings
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	# Back to Main Menu
+	option = {
+		name = unequal_nations_2_back
+		highlight = yes
+		country_event = { id = unequal_nations_2_menu_system.2 }
+	}
+
+	### Randomize
+	option = {
+		name = unequal_nations_2_random
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+			clr_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+			clr_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+
+			# Randomly Choose Legendary Buff After Nerf
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+				}
+				10 = { }
+			}
+			# Randomly Choose Legendary Nerf After Buff
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+				}
+				10 = { }
+			}
+			# Randomly Choose Legendary Buff/Nerf Repeat
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+				}
+				10 = { }
+			}
+			# Legendary Dev Size
+			random_list = {
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+				}
+				10 = {
+					set_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+				}
+			}
+			
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+
+	### Golden/Dark Ages
+	# Enable Golden Age After Dark Age
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.golden_age_post_dark_age.enable
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# Disable Golden Age After Dark Age
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.golden_age_post_dark_age.disable
+
+		trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# Enable Dark Age After Golden Age
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.dark_age_post_golden_age.enable
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# Disable Dark Age After Golden Age
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.dark_age_post_golden_age.disable
+
+		trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+
+	### Legendary Limits
+	# Enable One-Time Legendary Buffs/Nerfs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.one_time_buffs.enable
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs }
+		}
+
+		hidden_effect = {
+			set_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# Disable One-Time Legendary Buffs/Nerfs
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.one_time_buffs.enable
+
+		trigger = {
+			has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+
+
+	### Legendary Min Development
+	# 1
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.min_development.1
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+
+			set_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# 250
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.min_development.250
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+
+			set_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# 500
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.min_development.500
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+
+			set_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# 750
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.min_development.750
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+
+			set_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+	# 1500
+	option = {
+		name = unequal_nations_2_options_legendary_settings.1.min_development.1500
+
+		trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500 }
+		}
+
+		hidden_effect = {
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+			clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+
+			set_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+			country_event = { id = unequal_nations_2_menu_system.8 }
+		}
+	}
+}
+

@@ -1,0 +1,48 @@
+###############################
+# Unequal Nations 2           #
+# Culture                     #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_culture_buff_tier_3 = {
+    culture_conversion_cost = -0.3
+    num_accepted_cultures = 3.0
+    promote_culture_cost = -0.3
+    same_culture_advisor_cost = -0.3
+}
+
+unequal_nations_2_culture_buff_tier_2 = {
+    culture_conversion_cost = -0.2
+    num_accepted_cultures = 2.0
+    promote_culture_cost = -0.2
+    same_culture_advisor_cost = -0.2
+}
+
+unequal_nations_2_culture_buff_tier_1 = {
+    culture_conversion_cost = -0.1
+    num_accepted_cultures = 1.0
+    promote_culture_cost = -0.1
+    same_culture_advisor_cost = -0.1
+}
+
+unequal_nations_2_culture_nerf_tier_1 = {
+    culture_conversion_cost = 0.1
+    num_accepted_cultures = -1.0
+    promote_culture_cost = 0.1
+    same_culture_advisor_cost = 0.1
+}
+
+unequal_nations_2_culture_nerf_tier_2 = {
+    culture_conversion_cost = 0.2
+    num_accepted_cultures = -2.0
+    promote_culture_cost = 0.2
+    same_culture_advisor_cost = 0.2
+}
+
+unequal_nations_2_culture_nerf_tier_3 = {
+    culture_conversion_cost = 0.3
+    num_accepted_cultures = -3.0
+    promote_culture_cost = 0.3
+    same_culture_advisor_cost = 0.3
+}
+

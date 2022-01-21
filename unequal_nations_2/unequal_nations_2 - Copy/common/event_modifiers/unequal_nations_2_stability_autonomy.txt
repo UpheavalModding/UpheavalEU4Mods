@@ -1,0 +1,42 @@
+###############################
+# Unequal Nations 2           #
+# Stability - Autonomy        #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_stability_autonomy_buff_tier_3 = {
+    autonomy_change_time = -0.3
+    global_autonomy = -0.75
+    min_autonomy_in_territories = -0.15
+}
+
+unequal_nations_2_stability_autonomy_buff_tier_2 = {
+    autonomy_change_time = -0.2
+    global_autonomy = -0.05
+    min_autonomy_in_territories = -0.1
+}
+
+unequal_nations_2_stability_autonomy_buff_tier_1 = {
+    autonomy_change_time = -0.1
+    global_autonomy = -0.025
+    min_autonomy_in_territories = -0.05
+}
+
+unequal_nations_2_stability_autonomy_nerf_tier_1 = {
+    autonomy_change_time = 0.1
+    global_autonomy = 0.025
+    min_autonomy_in_territories = 0.05
+}
+
+unequal_nations_2_stability_autonomy_nerf_tier_2 = {
+    autonomy_change_time = 0.2
+    global_autonomy = 0.05
+    min_autonomy_in_territories = 0.1
+}
+
+unequal_nations_2_stability_autonomy_nerf_tier_3 = {
+    autonomy_change_time = 0.3
+    global_autonomy = 0.75
+    min_autonomy_in_territories = 0.15
+}
+

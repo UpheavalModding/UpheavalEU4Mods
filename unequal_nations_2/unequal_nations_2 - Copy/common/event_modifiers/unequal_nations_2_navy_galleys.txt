@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Galleys              #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_galleys_buff_tier_3 = {
+    galley_cost = -0.3
+    galley_power = 0.3
+}
+
+unequal_nations_2_navy_galleys_buff_tier_2 = {
+    galley_cost = -0.2
+    galley_power = 0.2
+}
+
+unequal_nations_2_navy_galleys_buff_tier_1 = {
+    galley_cost = -0.1
+    galley_power = 0.1
+}
+
+unequal_nations_2_navy_galleys_nerf_tier_1 = {
+    galley_cost = 0.1
+    galley_power = -0.1
+}
+
+unequal_nations_2_navy_galleys_nerf_tier_2 = {
+    galley_cost = 0.2
+    galley_power = -0.2
+}
+
+unequal_nations_2_navy_galleys_nerf_tier_3 = {
+    galley_cost = 0.3
+    galley_power = -0.3
+}
+

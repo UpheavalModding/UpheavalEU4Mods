@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Economy - Taxes             #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_economy_taxes_buff_tier_3 = {
+    global_tax_modifier = 0.3
+    state_maintenance_modifier = -0.3
+}
+
+unequal_nations_2_economy_taxes_buff_tier_2 = {
+    global_tax_modifier = 0.2
+    state_maintenance_modifier = -0.2
+}
+
+unequal_nations_2_economy_taxes_buff_tier_1 = {
+    global_tax_modifier = 0.1
+    state_maintenance_modifier = -0.1
+}
+
+unequal_nations_2_economy_taxes_nerf_tier_1 = {
+    global_tax_modifier = -0.1
+    state_maintenance_modifier = 0.1
+}
+
+unequal_nations_2_economy_taxes_nerf_tier_2 = {
+    global_tax_modifier = -0.2
+    state_maintenance_modifier = 0.2
+}
+
+unequal_nations_2_economy_taxes_nerf_tier_3 = {
+    global_tax_modifier = -0.3
+    state_maintenance_modifier = 0.3
+}
+

@@ -1,0 +1,38 @@
+###################################
+# Unequal Nations 2               #
+# Randomizer - Regular Randomizer #
+#                                 #
+# Written by von_der_borch        #
+###################################
+
+namespace = unequal_nations_2_randomizer_regular_randomizer
+
+# Begin the Randomization 
+country_event = {
+	id = unequal_nations_2_randomizer_regular_randomizer.1
+	title = unequal_nations_2_randomizer_regular_randomizer.1.title
+	desc = unequal_nations_2_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		
+	}
+
+	# Apply Legendary Buffs/Nerfs as needed
+	after = {
+
+
+
+
+
+		clr_global_flag = unequal_nations_2_randomizer_rerolling
+	}
+
+	# OK
+	option = {
+		name = unequal_nations_2_ok
+	}
+}

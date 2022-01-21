@@ -1,0 +1,60 @@
+###############################
+# Unequal Nations 2           #
+# Colonisation - Expansion    #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_colonisation_expansion_buff_tier_3 = {
+    colonist_placement_chance = 0.15
+    global_colonial_growth = 30.0
+    expel_minorities_cost = -0.3
+    migration_cost = -0.3
+    range = 0.3
+    colonists = 2.0
+}
+
+unequal_nations_2_colonisation_expansion_buff_tier_2 = {
+    colonist_placement_chance = 0.1
+    global_colonial_growth = 20.0
+    expel_minorities_cost = -0.2
+    migration_cost = -0.2
+    range = 0.2
+    colonists = 1.0
+}
+
+unequal_nations_2_colonisation_expansion_buff_tier_1 = {
+    colonist_placement_chance = 0.05
+    global_colonial_growth = 10.0
+    expel_minorities_cost = -0.1
+    migration_cost = -0.1
+    range = 0.1
+    colonists = 0.0
+}
+
+unequal_nations_2_colonisation_expansion_nerf_tier_1 = {
+    colonist_placement_chance = -0.05
+    global_colonial_growth = -10.0
+    expel_minorities_cost = 0.1
+    migration_cost = 0.1
+    range = -0.1
+    colonists = 0.0
+}
+
+unequal_nations_2_colonisation_expansion_nerf_tier_2 = {
+    colonist_placement_chance = -0.1
+    global_colonial_growth = -20.0
+    expel_minorities_cost = 0.2
+    migration_cost = 0.2
+    range = -0.2
+    colonists = -1.0
+}
+
+unequal_nations_2_colonisation_expansion_nerf_tier_3 = {
+    colonist_placement_chance = -0.15
+    global_colonial_growth = -30.0
+    expel_minorities_cost = 0.3
+    migration_cost = 0.3
+    range = -0.3
+    colonists = -2.0
+}
+

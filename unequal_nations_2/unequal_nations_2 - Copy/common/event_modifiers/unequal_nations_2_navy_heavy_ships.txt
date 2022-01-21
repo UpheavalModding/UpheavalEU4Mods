@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Heavy Ships          #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_heavy_ships_buff_tier_3 = {
+    heavy_ship_cost = -0.3
+    heavy_ship_power = 0.3
+}
+
+unequal_nations_2_navy_heavy_ships_buff_tier_2 = {
+    heavy_ship_cost = -0.2
+    heavy_ship_power = 0.2
+}
+
+unequal_nations_2_navy_heavy_ships_buff_tier_1 = {
+    heavy_ship_cost = -0.1
+    heavy_ship_power = 0.1
+}
+
+unequal_nations_2_navy_heavy_ships_nerf_tier_1 = {
+    heavy_ship_cost = 0.1
+    heavy_ship_power = -0.1
+}
+
+unequal_nations_2_navy_heavy_ships_nerf_tier_2 = {
+    heavy_ship_cost = 0.2
+    heavy_ship_power = -0.2
+}
+
+unequal_nations_2_navy_heavy_ships_nerf_tier_3 = {
+    heavy_ship_cost = 0.3
+    heavy_ship_power = -0.3
+}
+

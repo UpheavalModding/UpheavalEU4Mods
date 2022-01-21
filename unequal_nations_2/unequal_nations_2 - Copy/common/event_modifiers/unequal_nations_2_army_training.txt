@@ -1,0 +1,42 @@
+###############################
+# Unequal Nations 2           #
+# Army - Training             #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_army_training_buff_tier_3 = {
+    drill_gain_modifier = 0.3
+    drill_decay_modifier = -0.3
+    global_regiment_recruit_speed = -0.3
+}
+
+unequal_nations_2_army_training_buff_tier_2 = {
+    drill_gain_modifier = 0.2
+    drill_decay_modifier = -0.2
+    global_regiment_recruit_speed = -0.2
+}
+
+unequal_nations_2_army_training_buff_tier_1 = {
+    drill_gain_modifier = 0.1
+    drill_decay_modifier = -0.1
+    global_regiment_recruit_speed = -0.1
+}
+
+unequal_nations_2_army_training_nerf_tier_1 = {
+    drill_gain_modifier = -0.1
+    drill_decay_modifier = 0.1
+    global_regiment_recruit_speed = 0.1
+}
+
+unequal_nations_2_army_training_nerf_tier_2 = {
+    drill_gain_modifier = -0.2
+    drill_decay_modifier = 0.2
+    global_regiment_recruit_speed = 0.2
+}
+
+unequal_nations_2_army_training_nerf_tier_3 = {
+    drill_gain_modifier = -0.3
+    drill_decay_modifier = 0.3
+    global_regiment_recruit_speed = 0.3
+}
+

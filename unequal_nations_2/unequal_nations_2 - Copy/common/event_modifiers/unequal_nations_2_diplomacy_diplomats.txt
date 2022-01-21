@@ -1,0 +1,54 @@
+###############################
+# Unequal Nations 2           #
+# Diplomacy - Diplomats       #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_diplomacy_diplomats_buff_tier_3 = {
+    diplomatic_upkeep = 3.0
+    diplomats = 2.0
+    envoy_travel_time = -0.3
+    diplomatic_reputation = 3.0
+    improve_relation_modifier = 0.3
+}
+
+unequal_nations_2_diplomacy_diplomats_buff_tier_2 = {
+    diplomatic_upkeep = 2.0
+    diplomats = 1.0
+    envoy_travel_time = -0.2
+    diplomatic_reputation = 2.0
+    improve_relation_modifier = 0.2
+}
+
+unequal_nations_2_diplomacy_diplomats_buff_tier_1 = {
+    diplomatic_upkeep = 1.0
+    diplomats = 0.0
+    envoy_travel_time = -0.1
+    diplomatic_reputation = 1.0
+    improve_relation_modifier = 0.1
+}
+
+unequal_nations_2_diplomacy_diplomats_nerf_tier_1 = {
+    diplomatic_upkeep = -1.0
+    diplomats = 0.0
+    envoy_travel_time = 0.1
+    diplomatic_reputation = -1.0
+    improve_relation_modifier = -0.1
+}
+
+unequal_nations_2_diplomacy_diplomats_nerf_tier_2 = {
+    diplomatic_upkeep = -2.0
+    diplomats = -1.0
+    envoy_travel_time = 0.2
+    diplomatic_reputation = -2.0
+    improve_relation_modifier = -0.2
+}
+
+unequal_nations_2_diplomacy_diplomats_nerf_tier_3 = {
+    diplomatic_upkeep = -3.0
+    diplomats = -2.0
+    envoy_travel_time = 0.3
+    diplomatic_reputation = -3.0
+    improve_relation_modifier = -0.3
+}
+

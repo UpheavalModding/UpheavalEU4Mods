@@ -1,0 +1,48 @@
+###############################
+# Unequal Nations 2           #
+# Army - Quantity             #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_army_quantity_buff_tier_3 = {
+    special_unit_forcelimit = 0.3
+    global_manpower_modifier = 0.3
+    land_forcelimit_modifier = 0.3
+    land_maintenance_modifier = -0.3
+}
+
+unequal_nations_2_army_quantity_buff_tier_2 = {
+    special_unit_forcelimit = 0.2
+    global_manpower_modifier = 0.2
+    land_forcelimit_modifier = 0.2
+    land_maintenance_modifier = -0.2
+}
+
+unequal_nations_2_army_quantity_buff_tier_1 = {
+    special_unit_forcelimit = 0.1
+    global_manpower_modifier = 0.1
+    land_forcelimit_modifier = 0.1
+    land_maintenance_modifier = -0.1
+}
+
+unequal_nations_2_army_quantity_nerf_tier_1 = {
+    special_unit_forcelimit = -0.1
+    global_manpower_modifier = -0.1
+    land_forcelimit_modifier = -0.1
+    land_maintenance_modifier = 0.1
+}
+
+unequal_nations_2_army_quantity_nerf_tier_2 = {
+    special_unit_forcelimit = -0.2
+    global_manpower_modifier = -0.2
+    land_forcelimit_modifier = -0.2
+    land_maintenance_modifier = 0.2
+}
+
+unequal_nations_2_army_quantity_nerf_tier_3 = {
+    special_unit_forcelimit = -0.3
+    global_manpower_modifier = -0.3
+    land_forcelimit_modifier = -0.3
+    land_maintenance_modifier = 0.3
+}
+

@@ -1,0 +1,42 @@
+##############################
+# Unequal Nations 2          #
+# On Actions                 #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+on_new_monarch = {
+	events = {
+		unequal_nations_2_randomizer_triggers.4
+	}
+}
+
+on_regent = {
+	events = {
+		unequal_nations_2_randomizer_triggers.4
+	}
+}
+
+on_death_election = {
+	events = {
+		unequal_nations_2_randomizer_triggers.4
+	}
+}
+
+on_death_foreign_slave_ruler = {
+	events = {
+		unequal_nations_2_randomizer_triggers.4
+	}
+}
+
+on_replace_governor = {
+	events = {
+		unequal_nations_2_randomizer_triggers.4
+	}
+}
+
+on_government_change = {
+	events = {
+		unequal_nations_2_randomizer_triggers.4
+	}
+}

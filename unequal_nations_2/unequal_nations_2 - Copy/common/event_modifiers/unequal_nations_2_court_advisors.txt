@@ -1,0 +1,42 @@
+###############################
+# Unequal Nations 2           #
+# Court - Advisors            #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_court_advisors_buff_tier_3 = {
+    advisor_cost = -0.15
+    advisor_pool = 3.0
+    female_advisor_chance = 0.15
+}
+
+unequal_nations_2_court_advisors_buff_tier_2 = {
+    advisor_cost = -0.1
+    advisor_pool = 2.0
+    female_advisor_chance = 0.1
+}
+
+unequal_nations_2_court_advisors_buff_tier_1 = {
+    advisor_cost = -0.05
+    advisor_pool = 1.0
+    female_advisor_chance = 0.05
+}
+
+unequal_nations_2_court_advisors_nerf_tier_1 = {
+    advisor_cost = 0.05
+    advisor_pool = -1.0
+    female_advisor_chance = -0.05
+}
+
+unequal_nations_2_court_advisors_nerf_tier_2 = {
+    advisor_cost = 0.1
+    advisor_pool = -2.0
+    female_advisor_chance = -0.1
+}
+
+unequal_nations_2_court_advisors_nerf_tier_3 = {
+    advisor_cost = 0.15
+    advisor_pool = -3.0
+    female_advisor_chance = -0.15
+}
+

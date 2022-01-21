@@ -1,0 +1,42 @@
+###############################
+# Unequal Nations 2           #
+# Economy - Construction      #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_economy_construction_buff_tier_3 = {
+    build_cost = -0.3
+    build_time = -0.3
+    great_project_upgrade_cost = -0.3
+}
+
+unequal_nations_2_economy_construction_buff_tier_2 = {
+    build_cost = -0.2
+    build_time = -0.2
+    great_project_upgrade_cost = -0.2
+}
+
+unequal_nations_2_economy_construction_buff_tier_1 = {
+    build_cost = -0.1
+    build_time = -0.1
+    great_project_upgrade_cost = -0.1
+}
+
+unequal_nations_2_economy_construction_nerf_tier_1 = {
+    build_cost = 0.1
+    build_time = 0.1
+    great_project_upgrade_cost = 0.1
+}
+
+unequal_nations_2_economy_construction_nerf_tier_2 = {
+    build_cost = 0.2
+    build_time = 0.2
+    great_project_upgrade_cost = 0.2
+}
+
+unequal_nations_2_economy_construction_nerf_tier_3 = {
+    build_cost = 0.3
+    build_time = 0.3
+    great_project_upgrade_cost = 0.3
+}
+

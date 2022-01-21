@@ -1,0 +1,60 @@
+###############################
+# Unequal Nations 2           #
+# Army - Cavalry              #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_army_cavalry_buff_tier_3 = {
+    cavalry_cost = -0.3
+    cavalry_fire = 0.3
+    cavalry_power = 0.3
+    cavalry_shock = 0.3
+    cav_to_inf_ratio = 0.15
+    cavalry_flanking = 0.3
+}
+
+unequal_nations_2_army_cavalry_buff_tier_2 = {
+    cavalry_cost = -0.2
+    cavalry_fire = 0.2
+    cavalry_power = 0.2
+    cavalry_shock = 0.2
+    cav_to_inf_ratio = 0.1
+    cavalry_flanking = 0.2
+}
+
+unequal_nations_2_army_cavalry_buff_tier_1 = {
+    cavalry_cost = -0.1
+    cavalry_fire = 0.1
+    cavalry_power = 0.1
+    cavalry_shock = 0.1
+    cav_to_inf_ratio = 0.05
+    cavalry_flanking = 0.1
+}
+
+unequal_nations_2_army_cavalry_nerf_tier_1 = {
+    cavalry_cost = 0.1
+    cavalry_fire = -0.1
+    cavalry_power = -0.1
+    cavalry_shock = -0.1
+    cav_to_inf_ratio = -0.05
+    cavalry_flanking = -0.1
+}
+
+unequal_nations_2_army_cavalry_nerf_tier_2 = {
+    cavalry_cost = 0.2
+    cavalry_fire = -0.2
+    cavalry_power = -0.2
+    cavalry_shock = -0.2
+    cav_to_inf_ratio = -0.1
+    cavalry_flanking = -0.2
+}
+
+unequal_nations_2_army_cavalry_nerf_tier_3 = {
+    cavalry_cost = 0.3
+    cavalry_fire = -0.3
+    cavalry_power = -0.3
+    cavalry_shock = -0.3
+    cav_to_inf_ratio = -0.15
+    cavalry_flanking = -0.3
+}
+

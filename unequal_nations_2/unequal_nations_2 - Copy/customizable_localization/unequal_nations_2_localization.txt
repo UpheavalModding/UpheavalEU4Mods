@@ -1,0 +1,503 @@
+### Get Player Nation Impact
+defined_text = {
+	name = UnequalNations2GetPlayerImpact
+
+	text = {
+        localisation_key = unequal_nations_2_localization_player_impacted_no
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_no
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_player_impacted_tier1
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_tier1
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_player_impacted_tier3
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_tier3
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_player_impacted_legendary
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_legendary
+        }
+	}
+}
+
+### Get AI Nation Impact
+defined_text = {
+	name = UnequalNations2GetAIImpact
+
+	text = {
+        localisation_key = unequal_nations_2_localization_ai_impacted_no
+        trigger = {
+			has_global_flag = unequal_nations_2_option_ai_impacted_no
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_ai_impacted_tier1
+        trigger = {
+			has_global_flag = unequal_nations_2_option_ai_impacted_tier1
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_ai_impacted_tier3
+        trigger = {
+			has_global_flag = unequal_nations_2_option_ai_impacted_tier3
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_ai_impacted_legendary
+        trigger = {
+			has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+        }
+	}
+}
+
+### Legendary Buff Nation Selection System
+defined_text = {
+	name = UnequalNations2GetLegendaryBuffSystem
+
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_no
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_global
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_continental
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_random_chance
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_global_and_random_chance
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_buff_selection_system_continental_and_random_chance
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+        }
+	}
+}
+
+### Legendary Nerf Nation Selection System
+defined_text = {
+	name = UnequalNations2GetLegendaryNerfSystem
+
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_no
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_no
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_global
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_continental
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_random_chance
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_global_and_random_chance
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_legendary_nerf_selection_system_continental_and_random_chance
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+        }
+	}
+}
+
+### Legendary Buff -> Nerf
+defined_text = {
+	name = UnequalNations2GetLegendaryBuffToNerf
+
+	text = {
+        localisation_key = unequal_nations_2_localization_enabled
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf }
+        }
+	}
+}
+
+### Legendary Nerf -> Buff
+defined_text = {
+	name = UnequalNations2GetLegendaryNerfToBuff
+
+	text = {
+        localisation_key = unequal_nations_2_localization_enabled
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff }
+        }
+	}
+}
+
+### Repeat Legendary Buffs/Nerfs
+defined_text = {
+	name = UnequalNations2GetRepeatedLegendaryBuffsAndNerfs
+
+	text = {
+        localisation_key = unequal_nations_2_localization_enabled
+        trigger = {
+			has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_disabled
+        trigger = {
+			NOT = { has_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs }
+        }
+	}
+}
+
+### Legendary Buff Random Chance
+defined_text = {
+	name = UnequalNations2GetLegendaryBuffRandomChance
+	random = no
+
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_na
+        trigger = {
+			NOT = {
+				OR = {
+					has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+					has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+					has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+				}
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_1
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_3
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_5
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_15
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_25
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_50
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_100
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_na
+        trigger = {
+			always = yes
+        }
+	}
+}
+
+### Legendary Nerf Random Chance
+defined_text = {
+	name = UnequalNations2GetLegendaryNerfRandomChance
+	random = no
+
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_na
+        trigger = {
+			NOT = {
+				OR = {
+					has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_no
+					has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global
+					has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental
+				}
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_1
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_1
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_3
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_3
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_5
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_5
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_15
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_15
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_25
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_25
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_50
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_50
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_100
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_100
+			OR = {
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+				has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+			}
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_random_chance_na
+        trigger = {
+			always = yes
+        }
+	}
+}
+
+### Legendary Dev Size
+defined_text = {
+	name = UnequalNations2GetLegendaryDevSize
+
+	text = {
+        localisation_key = unequal_nations_2_localization_dev_size_1
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_dev_size_250
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_dev_size_500
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_dev_size_750
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_dev_size_1500
+        trigger = {
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+        }
+	}
+}
+
+### Buff/Nerf Reroll Options
+defined_text = {
+	name = UnequalNations2GetRerollOptions
+
+	text = {
+        localisation_key = unequal_nations_2_localization_reroll_never
+        trigger = {
+			has_global_flag = unequal_nations_2_option_reroll_never
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_reroll_each_age
+        trigger = {
+			has_global_flag = unequal_nations_2_option_reroll_each_age
+        }
+	}
+	text = {
+        localisation_key = unequal_nations_2_localization_reroll_on_monarch_death
+        trigger = {
+			has_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+        }
+	}
+}
+
+### Preset Options
+defined_text = {
+	name = UnequalNations2GetGeneralSettings
+
+	text = {
+        localisation_key = unequal_nations_2_localization_preset_default
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_no
+			has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_no
+			has_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_3
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			has_global_flag = unequal_nations_2_option_reroll_each_age
+        }
+	}
+
+	text = {
+        localisation_key = unequal_nations_2_localization_preset_mp_default
+        trigger = {
+			has_global_flag = unequal_nations_2_option_player_impacted_tier1
+			has_global_flag = unequal_nations_2_option_ai_impacted_legendary
+			has_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+			has_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+			has_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+			has_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+			has_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_3
+			has_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+			has_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+        }
+	}
+	
+	text = {
+        localisation_key = unequal_nations_2_localization_preset_custom
+        trigger = {
+			always = yes
+        }
+	}
+}

@@ -1,0 +1,115 @@
+##############################
+# Unequal Nations 2          #
+# Initialization             #
+#                            #
+# Written by von_der_borch   #
+##############################
+
+namespace = unequal_nations_2_initialization
+
+# Initialize the Mod 
+country_event = {
+	id = unequal_nations_2_initialization.1
+	title = unequal_nations_2_initialization.1.title
+	desc = unequal_nations_2_na
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	mean_time_to_happen = { days = 0 }
+
+	trigger = {
+		NOT = { has_global_flag = unequal_nations_2_initialized }
+	}
+
+	immediate = {
+        ### Feature Enablement (Defaults)
+        # Clear flags (just to be safe!)
+        clr_global_flag = unequal_nations_2_option_player_impacted_no
+        clr_global_flag = unequal_nations_2_option_player_impacted_tier1
+        clr_global_flag = unequal_nations_2_option_player_impacted_tier3
+        clr_global_flag = unequal_nations_2_option_player_impacted_legendary
+        clr_global_flag = unequal_nations_2_option_ai_impacted_no
+        clr_global_flag = unequal_nations_2_option_ai_impacted_tier1
+        clr_global_flag = unequal_nations_2_option_ai_impacted_tier3
+        clr_global_flag = unequal_nations_2_option_ai_impacted_legendary
+        clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_no
+        clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global
+        clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental
+        clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_random_chance
+        clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_global_and_random_chance
+        clr_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_no
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_random_chance
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_global_and_random_chance
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_continental_and_random_chance
+        clr_global_flag = unequal_nations_2_option_legendary_buff_after_legendary_nerf
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+        clr_global_flag = unequal_nations_2_option_disable_repeat_legendary_buffs_or_nerfs
+        clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_1
+        clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_3
+        clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+        clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_15
+        clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_25
+        clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_50
+        clr_global_flag = unequal_nations_2_option_legendary_buff_random_chance_100
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_1
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_3
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_5
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_15
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_25
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_50
+        clr_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_100
+        clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1
+        clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+        clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_500
+        clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_750
+        clr_global_flag = unequal_nations_2_option_legendary_countries_min_size_1500
+        clr_global_flag = unequal_nations_2_option_reroll_never
+        clr_global_flag = unequal_nations_2_option_reroll_each_age
+        clr_global_flag = unequal_nations_2_option_reroll_on_monarch_death
+
+        ### Set defaults
+        set_global_flag = unequal_nations_2_option_player_impacted_no
+        set_global_flag = unequal_nations_2_option_ai_impacted_legendary
+        set_global_flag = unequal_nations_2_option_legendary_buff_selection_system_continental_and_random_chance
+        set_global_flag = unequal_nations_2_option_legendary_nerf_selection_system_no
+        set_global_flag = unequal_nations_2_option_legendary_nerf_after_legendary_buff
+        set_global_flag = unequal_nations_2_option_legendary_buff_random_chance_5
+        set_global_flag = unequal_nations_2_option_legendary_nerf_random_chance_3
+        set_global_flag = unequal_nations_2_option_legendary_countries_min_size_250
+        set_global_flag = unequal_nations_2_option_reroll_each_age
+	}
+
+    after = {
+        ### Remove the flag to indicate that the player is going to be the "host"
+        every_country = {
+            clr_country_flag = unequal_nations_2_settings_host
+        }
+
+        ### Choose a random player to be the host
+        random_country = {
+            limit = {
+                ai = no
+            }
+
+            set_country_flag = unequal_nations_2_settings_host
+        }
+        
+        ### Bring up the About menu for all players
+        every_country = {
+            limit = {
+                ai = no
+            }
+
+            country_event = { id = unequal_nations_2_about.1 }
+        }
+    }
+
+	# OK
+	option = {
+		name = unequal_nations_2_ok
+	}
+}

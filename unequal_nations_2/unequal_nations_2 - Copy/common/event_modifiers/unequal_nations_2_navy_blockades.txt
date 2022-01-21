@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Blockades            #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_blockades_buff_tier_3 = {
+    blockade_efficiency = 0.3
+    global_naval_barrage_cost = -0.3
+}
+
+unequal_nations_2_navy_blockades_buff_tier_2 = {
+    blockade_efficiency = 0.2
+    global_naval_barrage_cost = -0.2
+}
+
+unequal_nations_2_navy_blockades_buff_tier_1 = {
+    blockade_efficiency = 0.1
+    global_naval_barrage_cost = -0.1
+}
+
+unequal_nations_2_navy_blockades_nerf_tier_1 = {
+    blockade_efficiency = -0.1
+    global_naval_barrage_cost = 0.1
+}
+
+unequal_nations_2_navy_blockades_nerf_tier_2 = {
+    blockade_efficiency = -0.2
+    global_naval_barrage_cost = 0.2
+}
+
+unequal_nations_2_navy_blockades_nerf_tier_3 = {
+    blockade_efficiency = -0.3
+    global_naval_barrage_cost = 0.3
+}
+

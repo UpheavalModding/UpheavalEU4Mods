@@ -1,0 +1,48 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Logistics            #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_logistics_buff_tier_3 = {
+    naval_attrition = -0.3
+    naval_forcelimit = 0.3
+    sailors_recovery_speed = 0.3
+    sailor_maintenance_modifer = 0.3
+}
+
+unequal_nations_2_navy_logistics_buff_tier_2 = {
+    naval_attrition = -0.2
+    naval_forcelimit = 0.2
+    sailors_recovery_speed = 0.2
+    sailor_maintenance_modifer = 0.2
+}
+
+unequal_nations_2_navy_logistics_buff_tier_1 = {
+    naval_attrition = -0.1
+    naval_forcelimit = 0.1
+    sailors_recovery_speed = 0.1
+    sailor_maintenance_modifer = 0.1
+}
+
+unequal_nations_2_navy_logistics_nerf_tier_1 = {
+    naval_attrition = 0.1
+    naval_forcelimit = -0.1
+    sailors_recovery_speed = -0.1
+    sailor_maintenance_modifer = -0.1
+}
+
+unequal_nations_2_navy_logistics_nerf_tier_2 = {
+    naval_attrition = 0.2
+    naval_forcelimit = -0.2
+    sailors_recovery_speed = -0.2
+    sailor_maintenance_modifer = -0.2
+}
+
+unequal_nations_2_navy_logistics_nerf_tier_3 = {
+    naval_attrition = 0.3
+    naval_forcelimit = -0.3
+    sailors_recovery_speed = -0.3
+    sailor_maintenance_modifer = -0.3
+}
+

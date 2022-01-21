@@ -1,0 +1,54 @@
+###############################
+# Unequal Nations 2           #
+# Army - Mercenaries          #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_army_mercenaries_buff_tier_3 = {
+    mercenary_cost = -0.3
+    merc_maintenance_modifier = -0.3
+    mercenary_discipline = 0.15
+    mercenary_manpower = 0.3
+    possible_condottieri = 15.0
+}
+
+unequal_nations_2_army_mercenaries_buff_tier_2 = {
+    mercenary_cost = -0.2
+    merc_maintenance_modifier = -0.2
+    mercenary_discipline = 0.1
+    mercenary_manpower = 0.2
+    possible_condottieri = 10.0
+}
+
+unequal_nations_2_army_mercenaries_buff_tier_1 = {
+    mercenary_cost = -0.1
+    merc_maintenance_modifier = -0.1
+    mercenary_discipline = 0.05
+    mercenary_manpower = 0.1
+    possible_condottieri = 5.0
+}
+
+unequal_nations_2_army_mercenaries_nerf_tier_1 = {
+    mercenary_cost = 0.1
+    merc_maintenance_modifier = 0.1
+    mercenary_discipline = -0.05
+    mercenary_manpower = -0.1
+    possible_condottieri = -5.0
+}
+
+unequal_nations_2_army_mercenaries_nerf_tier_2 = {
+    mercenary_cost = 0.2
+    merc_maintenance_modifier = 0.2
+    mercenary_discipline = -0.1
+    mercenary_manpower = -0.2
+    possible_condottieri = -10.0
+}
+
+unequal_nations_2_army_mercenaries_nerf_tier_3 = {
+    mercenary_cost = 0.3
+    merc_maintenance_modifier = 0.3
+    mercenary_discipline = -0.15
+    mercenary_manpower = -0.3
+    possible_condottieri = -15.0
+}
+

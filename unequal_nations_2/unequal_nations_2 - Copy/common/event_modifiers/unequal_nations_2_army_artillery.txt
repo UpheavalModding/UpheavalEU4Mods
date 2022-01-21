@@ -1,0 +1,54 @@
+###############################
+# Unequal Nations 2           #
+# Army - Artillery            #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_army_artillery_buff_tier_3 = {
+    artillery_cost = -0.3
+    artillery_fire = 0.3
+    artillery_power = 0.3
+    artillery_shock = 0.3
+    backrow_artillery_damage = 0.3
+}
+
+unequal_nations_2_army_artillery_buff_tier_2 = {
+    artillery_cost = -0.2
+    artillery_fire = 0.2
+    artillery_power = 0.2
+    artillery_shock = 0.2
+    backrow_artillery_damage = 0.2
+}
+
+unequal_nations_2_army_artillery_buff_tier_1 = {
+    artillery_cost = -0.1
+    artillery_fire = 0.1
+    artillery_power = 0.1
+    artillery_shock = 0.1
+    backrow_artillery_damage = 0.1
+}
+
+unequal_nations_2_army_artillery_nerf_tier_1 = {
+    artillery_cost = 0.1
+    artillery_fire = -0.1
+    artillery_power = -0.1
+    artillery_shock = -0.1
+    backrow_artillery_damage = -0.1
+}
+
+unequal_nations_2_army_artillery_nerf_tier_2 = {
+    artillery_cost = 0.2
+    artillery_fire = -0.2
+    artillery_power = -0.2
+    artillery_shock = -0.2
+    backrow_artillery_damage = -0.2
+}
+
+unequal_nations_2_army_artillery_nerf_tier_3 = {
+    artillery_cost = 0.3
+    artillery_fire = -0.3
+    artillery_power = -0.3
+    artillery_shock = -0.3
+    backrow_artillery_damage = -0.3
+}
+

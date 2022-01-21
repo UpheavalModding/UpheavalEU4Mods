@@ -1,0 +1,36 @@
+###############################
+# Unequal Nations 2           #
+# Navy - Transports           #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_navy_transports_buff_tier_3 = {
+    transport_cost = -0.3
+    transport_power = 0.3
+}
+
+unequal_nations_2_navy_transports_buff_tier_2 = {
+    transport_cost = -0.2
+    transport_power = 0.2
+}
+
+unequal_nations_2_navy_transports_buff_tier_1 = {
+    transport_cost = -0.1
+    transport_power = 0.1
+}
+
+unequal_nations_2_navy_transports_nerf_tier_1 = {
+    transport_cost = 0.1
+    transport_power = -0.1
+}
+
+unequal_nations_2_navy_transports_nerf_tier_2 = {
+    transport_cost = 0.2
+    transport_power = -0.2
+}
+
+unequal_nations_2_navy_transports_nerf_tier_3 = {
+    transport_cost = 0.3
+    transport_power = -0.3
+}
+

@@ -1,0 +1,36 @@
+######################################
+# Unequal Nations 2                  #
+# Colonisation - Native Relations    #
+#                                    #
+# Written by von_der_borch           #
+######################################
+unequal_nations_2_colonisation_native_relations_buff_tier_3 = {
+    native_assimilation = 0.45
+    native_uprising_chance = -0.45
+}
+
+unequal_nations_2_colonisation_native_relations_buff_tier_2 = {
+    native_assimilation = 0.3
+    native_uprising_chance = -0.3
+}
+
+unequal_nations_2_colonisation_native_relations_buff_tier_1 = {
+    native_assimilation = 0.15
+    native_uprising_chance = -0.15
+}
+
+unequal_nations_2_colonisation_native_relations_nerf_tier_1 = {
+    native_assimilation = -0.15
+    native_uprising_chance = 0.15
+}
+
+unequal_nations_2_colonisation_native_relations_nerf_tier_2 = {
+    native_assimilation = -0.3
+    native_uprising_chance = 0.3
+}
+
+unequal_nations_2_colonisation_native_relations_nerf_tier_3 = {
+    native_assimilation = -0.45
+    native_uprising_chance = 0.45
+}
+

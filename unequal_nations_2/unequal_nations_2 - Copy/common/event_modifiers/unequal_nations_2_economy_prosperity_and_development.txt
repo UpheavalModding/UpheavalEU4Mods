@@ -1,0 +1,48 @@
+###########################################
+# Unequal Nations 2                       #
+# Economy - Prosperity and Development    #
+#                                         #
+# Written by von_der_borch                #
+###########################################
+unequal_nations_2_economy_prosperity_and_development_buff_tier_3 = {
+    global_prosperity_growth = 0.3
+    global_monthly_devastation = -0.3
+    development_cost = -0.15
+    tribal_development_growth = 0.15
+}
+
+unequal_nations_2_economy_prosperity_and_development_buff_tier_2 = {
+    global_prosperity_growth = 0.2
+    global_monthly_devastation = -0.2
+    development_cost = -0.1
+    tribal_development_growth = 0.1
+}
+
+unequal_nations_2_economy_prosperity_and_development_buff_tier_1 = {
+    global_prosperity_growth = 0.1
+    global_monthly_devastation = -0.1
+    development_cost = -0.05
+    tribal_development_growth = 0.05
+}
+
+unequal_nations_2_economy_prosperity_and_development_nerf_tier_1 = {
+    global_prosperity_growth = -0.1
+    global_monthly_devastation = 0.1
+    development_cost = 0.05
+    tribal_development_growth = -0.05
+}
+
+unequal_nations_2_economy_prosperity_and_development_nerf_tier_2 = {
+    global_prosperity_growth = -0.2
+    global_monthly_devastation = 0.2
+    development_cost = 0.1
+    tribal_development_growth = -0.1
+}
+
+unequal_nations_2_economy_prosperity_and_development_nerf_tier_3 = {
+    global_prosperity_growth = -0.3
+    global_monthly_devastation = 0.3
+    development_cost = 0.15
+    tribal_development_growth = -0.15
+}
+

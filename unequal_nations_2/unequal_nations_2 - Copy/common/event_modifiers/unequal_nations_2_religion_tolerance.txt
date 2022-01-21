@@ -1,0 +1,66 @@
+###############################
+# Unequal Nations 2           #
+# Religion - Tolerance        #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_religion_tolerance_buff_tier_3 = {
+    religious_unity = 0.3
+    tolerance_heathen = 3.0
+    tolerance_heretic = 3.0
+    tolerance_of_heathens_capacity = 2.0
+    tolerance_of_heretics_capacity = 2.0
+    tolerance_own = 3.0
+    relation_with_heretics = 30.0
+}
+
+unequal_nations_2_religion_tolerance_buff_tier_2 = {
+    religious_unity = 0.2
+    tolerance_heathen = 2.0
+    tolerance_heretic = 2.0
+    tolerance_of_heathens_capacity = 1.0
+    tolerance_of_heretics_capacity = 1.0
+    tolerance_own = 2.0
+    relation_with_heretics = 20.0
+}
+
+unequal_nations_2_religion_tolerance_buff_tier_1 = {
+    religious_unity = 0.1
+    tolerance_heathen = 1.0
+    tolerance_heretic = 1.0
+    tolerance_of_heathens_capacity = 0.0
+    tolerance_of_heretics_capacity = 0.0
+    tolerance_own = 1.0
+    relation_with_heretics = 10.0
+}
+
+unequal_nations_2_religion_tolerance_nerf_tier_1 = {
+    religious_unity = -0.1
+    tolerance_heathen = -1.0
+    tolerance_heretic = -1.0
+    tolerance_of_heathens_capacity = 0.0
+    tolerance_of_heretics_capacity = 0.0
+    tolerance_own = -1.0
+    relation_with_heretics = -10.0
+}
+
+unequal_nations_2_religion_tolerance_nerf_tier_2 = {
+    religious_unity = -0.2
+    tolerance_heathen = -2.0
+    tolerance_heretic = -2.0
+    tolerance_of_heathens_capacity = -1.0
+    tolerance_of_heretics_capacity = -1.0
+    tolerance_own = -2.0
+    relation_with_heretics = -20.0
+}
+
+unequal_nations_2_religion_tolerance_nerf_tier_3 = {
+    religious_unity = -0.3
+    tolerance_heathen = -3.0
+    tolerance_heretic = -3.0
+    tolerance_of_heathens_capacity = -2.0
+    tolerance_of_heretics_capacity = -2.0
+    tolerance_own = -3.0
+    relation_with_heretics = -30.0
+}
+

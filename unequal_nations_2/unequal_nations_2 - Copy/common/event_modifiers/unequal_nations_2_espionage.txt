@@ -1,0 +1,48 @@
+###############################
+# Unequal Nations 2           #
+# Espionage                   #
+#                             #
+# Written by von_der_borch    #
+###############################
+unequal_nations_2_espionage_buff_tier_3 = {
+    discovered_relations_impact = -0.3
+    rebel_support_efficiency = 0.3
+    spy_offence = 0.3
+    global_spy_defence = 0.3
+}
+
+unequal_nations_2_espionage_buff_tier_2 = {
+    discovered_relations_impact = -0.2
+    rebel_support_efficiency = 0.2
+    spy_offence = 0.2
+    global_spy_defence = 0.2
+}
+
+unequal_nations_2_espionage_buff_tier_1 = {
+    discovered_relations_impact = -0.1
+    rebel_support_efficiency = 0.1
+    spy_offence = 0.1
+    global_spy_defence = 0.1
+}
+
+unequal_nations_2_espionage_nerf_tier_1 = {
+    discovered_relations_impact = 0.1
+    rebel_support_efficiency = -0.1
+    spy_offence = -0.1
+    global_spy_defence = -0.1
+}
+
+unequal_nations_2_espionage_nerf_tier_2 = {
+    discovered_relations_impact = 0.2
+    rebel_support_efficiency = -0.2
+    spy_offence = -0.2
+    global_spy_defence = -0.2
+}
+
+unequal_nations_2_espionage_nerf_tier_3 = {
+    discovered_relations_impact = 0.3
+    rebel_support_efficiency = -0.3
+    spy_offence = -0.3
+    global_spy_defence = -0.3
+}
+

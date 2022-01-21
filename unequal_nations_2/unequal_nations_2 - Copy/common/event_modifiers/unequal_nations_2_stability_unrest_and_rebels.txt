@@ -1,0 +1,54 @@
+####################################
+# Unequal Nations 2                #
+# Stability - Unrest and Rebels    #
+#                                  #
+# Written by von_der_borch         #
+####################################
+unequal_nations_2_stability_unrest_and_rebels_buff_tier_3 = {
+    stability_cost_modifier = -0.15
+    global_unrest = -3.0
+    harsh_treatment_cost = -0.3
+    years_of_nationalism = -6.0
+    global_rebel_suppression_efficiency = 0.3
+}
+
+unequal_nations_2_stability_unrest_and_rebels_buff_tier_2 = {
+    stability_cost_modifier = -0.1
+    global_unrest = -2.0
+    harsh_treatment_cost = -0.2
+    years_of_nationalism = -4.0
+    global_rebel_suppression_efficiency = 0.2
+}
+
+unequal_nations_2_stability_unrest_and_rebels_buff_tier_1 = {
+    stability_cost_modifier = -0.05
+    global_unrest = -1.0
+    harsh_treatment_cost = -0.1
+    years_of_nationalism = -2.0
+    global_rebel_suppression_efficiency = 0.1
+}
+
+unequal_nations_2_stability_unrest_and_rebels_nerf_tier_1 = {
+    stability_cost_modifier = 0.05
+    global_unrest = 1.0
+    harsh_treatment_cost = 0.1
+    years_of_nationalism = 2.0
+    global_rebel_suppression_efficiency = -0.1
+}
+
+unequal_nations_2_stability_unrest_and_rebels_nerf_tier_2 = {
+    stability_cost_modifier = 0.1
+    global_unrest = 2.0
+    harsh_treatment_cost = 0.2
+    years_of_nationalism = 4.0
+    global_rebel_suppression_efficiency = -0.2
+}
+
+unequal_nations_2_stability_unrest_and_rebels_nerf_tier_3 = {
+    stability_cost_modifier = 0.15
+    global_unrest = 3.0
+    harsh_treatment_cost = 0.3
+    years_of_nationalism = 6.0
+    global_rebel_suppression_efficiency = -0.3
+}
+
